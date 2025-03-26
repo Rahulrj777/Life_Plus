@@ -67,7 +67,7 @@ const Header = () => {
                                 </div>
 
                                 <span className="font-[Roboto] text-[10px] md:text-[12px] text-white font-medium">
-                                    +91 9047651568
+                                    abcd@gmail.com
                                 </span>
                             </div>
                         </a>

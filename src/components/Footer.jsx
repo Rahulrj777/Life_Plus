@@ -40,7 +40,7 @@ const Footer = () => {
                     <div class="px-4  w-full  md:w-[85%] mx-auto md:px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 ">
 
                         <div class=" p-2 md:p-4">
-                            <img src={logo} className='w-14 sm:w-14 md:w-32  object-cover drop-shadow-lg  shadow-gray-light' alt="" />
+                            <img src={logo} className='w-14 sm:w-14 md:w-32  object-cover ' alt="" />
 
                             <p className='mt-3 font-[Merriweather]  text-[11px] leading-5 text-white font-extralight'>Discover holistic wellness with PranaVeda's expert Ayurveda services and transform your health naturally.</p>
 
