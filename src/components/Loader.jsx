@@ -28,7 +28,7 @@ const Loader = () => {
             <div className="flex justify-center items-center">
                 {/* <img src={lodaer} alt="loader" className="w-20 md:w-32  " /> */}
 
-                <video autoPlay loop muted className="w-[50%] md:w-[30%] ">
+                <video autoPlay loop muted className="w-[50%] md:w-[20%] ">
                     <source src={lodaer1} type="video/mp4" />
                 </video>
 

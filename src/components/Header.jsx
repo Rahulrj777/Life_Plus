@@ -18,7 +18,7 @@ import { MdPhoneAndroid } from "react-icons/md";
 const Header = () => {
 
     const [nav, setNav] = useState(false); // State to manage mobile menu visibility
-    const [navbarBg, setNavbarBg] = useState('bg-[#cce6d7] text-gray-700'); // State to manage navbar background color
+    const [navbarBg, setNavbarBg] = useState('bg-gray-100 text-gray-700'); // State to manage navbar background color
 
     const handleNav = () => {
         setNav(!nav);
@@ -29,7 +29,7 @@ const Header = () => {
             if (window.scrollY > 50) {
                 setNavbarBg('bg-slate-50 shadow-md text-black');
             } else {
-                setNavbarBg('bg-[#cce6d7] text-gray-700');
+                setNavbarBg('bg-gray-100 text-gray-700');
             }
         };
         window.addEventListener('scroll', handleScroll);
@@ -106,22 +106,22 @@ const Header = () => {
                         {/* Desktop Navigation */}
                         <ul className="hidden md:flex w-full justify-end mr-12  gap-x-4 xl:gap-x-10 font-medium">
                             <li>
-                                <Link to="/" onClick={topPage} className="hover:text-green-600  text-[13px] ">
+                                <Link to="/" onClick={topPage} className="hover:text-green-700  text-[13px] ">
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/about" onClick={topPage} className="hover:text-green-600 text-[13px]">
+                                <Link to="/about" onClick={topPage} className="hover:text-green-700 text-[13px]">
                                     About Us
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/healthcare_services" onClick={topPage} className="hover:text-green-600 text-[13px]">
+                                <Link to="/healthcare_services" onClick={topPage} className="hover:text-green-700 text-[13px]">
                                     Healthcare Services
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/contact" onClick={topPage} className="hover:text-green-600 text-[13px]">
+                                <Link to="/contact" onClick={topPage} className="hover:text-green-700 text-[13px]">
                                     Contact Us
                                 </Link>
                             </li>
@@ -131,15 +131,15 @@ const Header = () => {
                         {/* WhatsApp Button */}
                         <div className="cursor-pointer flex justify-end items-end w-full md:w-fit">
                             <Link href="#">
-                                <div className="relative">
+                                <div className="relative ">
 
                                     {/* Button */}
                                     <button
 
-                                        className="relative  cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8  py-0.5 md:py-1.5 uppercase rounded-md duration-500 transform perspective-100 transition-transform hover:scale-105 hover:shadow-xl shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]"
+                                        className="relative cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8  py-0.5 md:py-1.5 uppercase rounded-md duration-500 transform perspective-100 transition-transform hover:scale-105 hover:shadow-xl shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]"
 
                                     >
-                                        <span  className="inline-block text-[10px] md:text-[13px] font-medium ">Explore  </span>
+                                        <span  className="inline-block text-[10px] md:text-[13px] font-medium "> Start  </span>
                                     </button>
                                 </div>
                             </Link>

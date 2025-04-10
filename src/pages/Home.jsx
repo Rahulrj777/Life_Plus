@@ -28,7 +28,6 @@ import booking from '../images/appointment.jpg'
 
 import midBanner from '../images/banner/mid_banner.jpg'
 
-
 import review from '../images/review-1.jpg'
 
 import doctor from '../images/doctor.jpg'
@@ -74,20 +73,25 @@ const Home = () => {
                 {/* -------------- banner slide ---------------- */}
 
                 <section className='w-full h-full font-[poppins]' id='home'>
-                    <div className='w-full   flex justify-center items-center  bg-[#cce6d7] overflow-hidden'>
+                    <div className='w-full   flex justify-center items-center  bg-gray-50 overflow-hidden'>
 
                         <div className='w-[50%] mx-auto  h-full '>
 
                             <div className='pl-16 pr-5' data-aos="fade-up" data-aos-duration="3000">
-                                <p className='text-[13px] font-semibold text-green-700 '>Welcome to Life Plus</p>
-                                <div className='font-bold tracking-[2px] text-gray-700'>
-                                    <h2 className='font-[Merriweather] text-[3.8rem]  '>Transform Your </h2>
-                                    <h2 className='font-[Merriweather] text-[3.8rem] '>Health Naturally </h2>
+                                <p className='text-[16px] font-semibold text-green-800 '>Welcome to Life Plus</p>
+                                <div className='font-bold font-[Lora] tracking-[2px] '>
+                                    <h2 className=' text-[3.8rem] uppercase  text-red-500 drop-shadow-md'>Transform Your </h2>
+                                    <h2 className=' text-[3.5rem] uppercase text-gray-600'>Health Naturally </h2>
                                 </div>
-                                <p className='mt-5 text-[14px]  text-gray-400 font-medium'>Experience Holistic Wellness with PranaVeda: Embrace the Power of Ayurveda for a Balanced Life </p>
+                                <p className='mt-5 text-[14px]  text-gray-500 leading-7 font-[roboto] font-medium'>
+                                    Experience Holistic Wellness with PranaVeda: Embrace the Power of Ayurveda for a Balanced Life
+                                    Experience Holistic Wellness with PranaVeda:
+                                </p>
 
-                                <div className='mt-6 font-[Merriweather]'>
-                                    <button className='px-8 py-2.5 rounded-sm bg-[#cda43e] hover:bg-[#abc283] text-white text-[14px] cursor-pointer'> Get start Get start </button>
+                                <div className='mt-14 font-[Merriweather]'>
+                                    <button className='px-8 py-2.5 rounded-md bg-[#cda43e] hover:scale-105 duration-500 font-semibold hover:bg-[#abc283] text-white text-[14px] cursor-pointer shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)] '>
+                                        Get Start Now
+                                    </button>
                                 </div>
 
                             </div>
@@ -115,7 +119,7 @@ const Home = () => {
                                 </div>
 
                                 <div className='absolute -bottom-2 left-0 right-0 flex justify-start' data-aos='fade-right' data-aos-duratoin='1000'>
-                                    <img src={doctor} className='w-[30%] bg-white p-2  object-cover' alt='none' />
+                                    <img src={doctor} className='w-[30%] bg-gray-50 p-2  object-cover' alt='none' />
                                 </div>
 
 
@@ -848,7 +852,7 @@ const Home = () => {
                     <div className='w-[80%] mx-auto'>
                         <div className='flex justify-center items-center'>
 
-                            <div className='w-[50%] mx-auto' data-aos='fade-right' data-aos-duration='2000' data-aos-delay='50'> 
+                            <div className='w-[50%] mx-auto' data-aos='fade-right' data-aos-duration='2000' data-aos-delay='50'>
                                 <div className='relative'>
                                     <img src={review} className='w-full object-cover' alt='none' />
                                     <div className='absolute top-6 left-6 bg-white ' data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='10'>
@@ -916,7 +920,7 @@ const Home = () => {
                         </div>
 
 
-                  
+
                     </div>
                 </section>
 
