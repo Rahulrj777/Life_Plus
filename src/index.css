@@ -20,3 +20,31 @@
     transform: translateX(-100%);
   }
 }
+
+
+
+/* button */
+
+
+@keyframes outlineLoopRedGreen {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6); /* Red */
+  }
+  25% {
+    box-shadow: 0 0 0 5px rgba(255, 0, 0, 0);
+  }
+  50% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.6); /* Green */
+  }
+  75% {
+    box-shadow: 0 0 0 5px rgba(0, 255, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
+  }
+}
+
+.animate-outlineLoopRedGreen {
+  animation: outlineLoopRedGreen 11s infinite ease-in-out;
+  border-radius: 0.375rem; /* match button's rounded-md */
+}

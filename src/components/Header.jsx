@@ -48,8 +48,8 @@ const Header = () => {
         <>
             {/* Top Navbar */}
             <div className="flex items-center justify-between bg-[#45601a] h-8 md:h-11 w-full font-[roboto]">
-               
-               
+
+
                 <div className="overflow-hidden w-[40%] md:w-[50%] h-full">
                     <div className="w-full px-4 md:px-6 h-full flex justify-center items-center">
                         <div className="marquee-container relative overflow-hidden w-full">
@@ -138,13 +138,18 @@ const Header = () => {
                                 <div className="relative ">
 
                                     {/* Button */}
-                                    <button
+                                    <div className="relative group">
+                                        <button
+                                            className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8 py-0.5 md:py-1.5 uppercase rounded-md duration-500 transform transition-transform hover:scale-105 hover:shadow-xl text-[10px] md:text-[13px]"
+                                        >
+                                            Start
+                                        </button>
 
-                                        className="relative cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8  py-0.5 md:py-1.5 uppercase rounded-md duration-500 transform perspective-100 transition-transform hover:scale-105 hover:shadow-xl "
+                                        {/* Outline Animation Layer */}
+                                        <span className="absolute inset-0 rounded-md border-2 border-transparent animate-outlineLoopRedGreen pointer-events-none"></span>
+                                    </div>
 
-                                    >
-                                        <span className="inline-block text-[10px] md:text-[13px] font-medium "> Start  </span>
-                                    </button>
+
                                 </div>
                             </Link>
                         </div>

@@ -67,8 +67,8 @@ const Home = () => {
                             <div className='md:pl-16 md:pr-5' data-aos="fade-up" data-aos-duration="3000">
                                 <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-green-800 '> Balancing Body, Mind & Nature </p>
                                 <div className='font-bold font-[Lora] md:tracking-[2px] '>
-                                    <h2 className='text-[2rem] md:text-[3.8rem] uppercase  text-red-500 drop-shadow-md'>Transform Your </h2>
-                                    <h2 className='text-[1.8rem] md:text-[3.5rem] uppercase text-gray-600'>Health Naturally </h2>
+                                    <h2 className='text-[2rem] md:text-[3.8rem] uppercase  text-red-500 drop-shadow-md'> Helping You Feel </h2>
+                                    <h2 className='text-[1.8rem] md:text-[3.5rem] uppercase text-gray-600'> Better—Naturally </h2>
                                 </div>
                                 <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px]  text-gray-500  leading-5 md:leading-7 font-[roboto]  md:font-medium pr-8'>
                                     We use natural herbs and safe treatments to support your health and well-being. Whether you're
@@ -207,17 +207,18 @@ const Home = () => {
                             <div className='w-full md:w-[50%] mx-auto'>
                                 <div data-aos='fade-left' data-aos-duratoin='1000'>
                                     <p className='text-red-500 text-[12px] md:text-[13px] font-semibold uppercase mb-2'>Who We Are </p>
-                                    <h3 className='text-[16px] md:text-[30px] font-semibold font-[Merriweather] leading-11 '>The natural way to achieving balance and optimal health</h3>
+                                    <h3 className='text-[16px] md:text-[30px] font-semibold font-[Merriweather] leading-11 '>Natural Healing. Real Results</h3>
                                     <p className='text-[10px] md:text-[12px] text-gray-500 mt-2  md:mt-5'>
-                                        Embrace the wisdom of nature with Ayurveda, a holistic approach to wellness that promotes balance and supports your journey to optimal health.
-                                        By aligning your body, mind, and spirit with natural rhythms, Ayurveda offers personalized solutions for a healthier and more vibrant life.
+                                        LifePlusHerbal Healthcare Center is dedicated to helping you achieve better health through the power of nature. We provide herbal treatments,
+                                        wellness guidance, and personalized care designed to support your body’s natural healing process. Our goal is to help you feel your best—gently,
+                                        safely, and naturally.
                                     </p>
                                     <div className='border border-gray-200  my-6 w-[95%]'></div>
                                     <ul className='grid grid-cols-2 md:grid-cols-3 font-[Merriweather]  gap-x-2 md:gap-x-4 gap-y-4  md:gap-y-8  text-[10px] md:text-[12px] font-semibold '>
-                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Holistic Healing</span> </li>
-                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Natural Remedies</span> </li>
-                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Boosts Immunity</span> </li>
-                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Improves Digestion</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Herbal Expertise</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Certified Doctors</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>24/7 Support</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Natural Treatments</span> </li>
                                     </ul>
                                     <div className='mt-2'>
                                         <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-5 bg-green-800 hover:bg-green-700 hover:scale-105 duration-300  font-semibold text-white rounded-md text-[10px] md:text-[12px] '>Learn More</button>
@@ -255,8 +256,8 @@ const Home = () => {
 
                         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
                             <div className='w-[50%] mx-auto' data-aos='fade-up' data-aos-duratoin='2000'>
-                                <h2 className="text-gray-600 text-[5rem] font-semibold font-[Merriweather]">Holistic Health, Ancient Wisdom</h2>
-                                <p className='tracking-tight'>Ultrices quam mattis posuere porttitor tellus rhoncus tristique. Primis aliquam dignissim interdum vel suscipit sodales.</p>
+                                <h2 className="text-gray-600 text-[5rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
+                                <p className='tracking-tight'> Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way. </p>
                             </div>
                         </div>
 
