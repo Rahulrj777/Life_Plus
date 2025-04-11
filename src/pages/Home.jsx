@@ -24,26 +24,15 @@ import service1 from '../images/services/service1.jpg'
 // import service3 from '../images/services/naturopathy.jpg'
 
 import icon1 from '../images/services/1.png'
-
 import booking from '../images/appointment.jpg'
-
 import midBanner from '../images/banner/mid_banner.jpg'
-
 import review from '../images/review-1.jpg'
-
 import doctor from '../images/doctor.jpg'
 
 
 //icons
-import { MdDateRange } from "react-icons/md";
-import { TbClock } from "react-icons/tb";
-import { TbHealthRecognition } from "react-icons/tb";
-import { LiaFileMedicalAltSolid } from "react-icons/lia";
-import { GiLifeInTheBalance } from "react-icons/gi";
-import { FaLaptopMedical } from "react-icons/fa";
 import { GiLindenLeaf } from "react-icons/gi";
 import { FaStethoscope } from "react-icons/fa6";
-import { PiHeartbeatFill } from "react-icons/pi";
 import BestServices from '../components/BestServices'
 
 import { FaCheck } from "react-icons/fa";
@@ -52,8 +41,7 @@ import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaQuoteRight } from "react-icons/fa";
 
-
-
+import { GiMedicinePills } from "react-icons/gi";
 
 
 
@@ -69,27 +57,27 @@ const Home = () => {
 
             <div className='overflow-hidden '>
 
-
                 {/* -------------- banner slide ---------------- */}
 
-                <section className='w-full h-full font-[poppins]' id='home'>
-                    <div className='w-full   flex justify-center items-center  bg-gray-50 overflow-hidden'>
+                <section className='w-full h-full font-[poppins] py-10 md:py-0' id='home'>
+                    <div className='w-full    flex flex-col  md:flex-row gap-y-10 justify-center items-center  bg-gray-50 overflow-hidden'>
 
-                        <div className='w-[50%] mx-auto  h-full '>
+                        <div className='w-full px-4 md:w-[50%] mx-auto  h-full '>
 
-                            <div className='pl-16 pr-5' data-aos="fade-up" data-aos-duration="3000">
-                                <p className='text-[16px] font-semibold text-green-800 '> Balancing Body, Mind & Nature </p>
-                                <div className='font-bold font-[Lora] tracking-[2px] '>
-                                    <h2 className=' text-[3.8rem] uppercase  text-red-500 drop-shadow-md'>Transform Your </h2>
-                                    <h2 className=' text-[3.5rem] uppercase text-gray-600'>Health Naturally </h2>
+                            <div className='md:pl-16 md:pr-5' data-aos="fade-up" data-aos-duration="3000">
+                                <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-green-800 '> Balancing Body, Mind & Nature </p>
+                                <div className='font-bold font-[Lora] md:tracking-[2px] '>
+                                    <h2 className='text-[2rem] md:text-[3.8rem] uppercase  text-red-500 drop-shadow-md'>Transform Your </h2>
+                                    <h2 className='text-[1.8rem] md:text-[3.5rem] uppercase text-gray-600'>Health Naturally </h2>
                                 </div>
-                                <p className='mt-5 text-[14px]  text-gray-500 leading-7 font-[roboto] font-medium'>
-                                    Experience Holistic Wellness with PranaVeda: Embrace the Power of Ayurveda for a Balanced Life
-                                    Experience Holistic Wellness with PranaVeda:
+                                <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px]  text-gray-500  leading-5 md:leading-7 font-[roboto]  md:font-medium pr-8'>
+                                    We use natural herbs and safe treatments to support your health and well-being. Whether you're
+                                    looking to reduce stress, boost your energy, or improve your overall health, we’re here to help with
+                                    gentle and effective herbal care.
                                 </p>
 
-                                <div className='mt-14 font-[Merriweather]'>
-                                    <button className='px-8 py-2.5 rounded-md bg-[#cda43e] hover:scale-105 duration-500 font-semibold hover:bg-[#abc283] text-white text-[14px] cursor-pointer shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)] '>
+                                <div className='mt-6 md:mt-14 font-[Merriweather]'>
+                                    <button className='px-4 md:px-8  py-2 md:py-2.5 rounded-md bg-[#cda43e] hover:scale-105 duration-500 font-semibold hover:bg-[#abc283] text-white text-[12px] md:text-[14px] cursor-pointer shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)] '>
                                         Get Start Now
                                     </button>
                                 </div>
@@ -99,7 +87,7 @@ const Home = () => {
                             {/* <img src={banner} className='w-full object-cover' alt='none' /> */}
                         </div>
 
-                        <div className='w-[50%] mx-auto bg-white  h-full'>
+                        <div className='w-full md:w-[50%] mx-auto bg-white  h-full'>
                             <div className=' relative'>
                                 <video className='w-full rounded-br-[10rem]' autoPlay loop muted playsInline>
                                     <source src={bannervideo} className='' type='video/mp4' />
@@ -225,15 +213,14 @@ const Home = () => {
                                         By aligning your body, mind, and spirit with natural rhythms, Ayurveda offers personalized solutions for a healthier and more vibrant life.
                                     </p>
                                     <div className='border border-gray-200  my-6 w-[95%]'></div>
-                                    <ul className='grid grid-cols-2 md:grid-cols-3 font-[Merriweather]  gap-x-2 md:gap-x-4 gap-y-4  md:gap-y-8  text-[10px] md:text-[12px] font-semibold list-disc list-inside'>
-                                        <li>Holistic Healing</li>
-                                        <li>Natural Remedies</li>
-                                        <li>Boosts Immunity</li>
-                                        <li>Stress Relief</li>
-                                        <li>Improves Digestion</li>
+                                    <ul className='grid grid-cols-2 md:grid-cols-3 font-[Merriweather]  gap-x-2 md:gap-x-4 gap-y-4  md:gap-y-8  text-[10px] md:text-[12px] font-semibold '>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Holistic Healing</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Natural Remedies</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Boosts Immunity</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Improves Digestion</span> </li>
                                     </ul>
                                     <div className='mt-2'>
-                                        <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2 mt-3 md:mt-5 bg-green-800 hover:bg-green-700 hover:scale-105 duration-300  font-semibold text-white rounded-md text-[10px] md:text-[12px] '>Learn More</button>
+                                        <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-5 bg-green-800 hover:bg-green-700 hover:scale-105 duration-300  font-semibold text-white rounded-md text-[10px] md:text-[12px] '>Learn More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1062,7 +1049,7 @@ const Home = () => {
                     </div>
                 </section>
 
-            
+
 
 
 

@@ -2,22 +2,21 @@
 
 
 
-.marquee-text {
-    display: inline-block;
-    animation: marquee 10s linear infinite;
-  }
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+}
 
-.marquee-text span {
-    color: #2dd4bf; /* Teal color for emphasis */
-    cursor: pointer;
+.marquee-text {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
   }
-  
-  /* Keyframes for the marquee animation */
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-100%);
   }
+}

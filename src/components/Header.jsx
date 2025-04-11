@@ -48,25 +48,29 @@ const Header = () => {
         <>
             {/* Top Navbar */}
             <div className="flex items-center justify-between bg-[#45601a] h-8 md:h-11 w-full font-[roboto]">
-                <div className="overflow-hidden w-[65%] md:w-[50%] h-full">
-                    <div className="w-fit px-4 md:px-6 h-full flex justify-center items-center">
-                        <div className="marquee-container">
-                            <p className="marquee-text text-[8px] md:text-[12px] font-bold text-white">
-                                You’re in good hands at LifePlusHerbal Healthcare Center
+               
+               
+                <div className="overflow-hidden w-[40%] md:w-[50%] h-full">
+                    <div className="w-full px-4 md:px-6 h-full flex justify-center items-center">
+                        <div className="marquee-container relative overflow-hidden w-full">
+                            <p className="marquee-text text-[8px] md:text-[12px] font-bold text-white whitespace-nowrap">
+                                <span className="inline-block">Trusted hands. Natural care. LifePlusHerbal Healthcare Center</span>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div className="w-[35%] md:w-[50%] flex justify-end gap-x-6 pr-4 sm:pr-6 md:pr-8 lg:pr-10">
+
+
+                <div className="w-[60%] md:w-[50%] flex justify-end  gap-x-2 md:gap-x-6 pr-4 sm:pr-6 md:pr-8 lg:pr-10">
 
                     <div>
                         <a href="tel:+916379172058" target="_blank" rel="noopener noreferrer">
                             <div className="flex items-center gap-x-1">
                                 <div>
-                                    <MdOutlineEmail className='text-green-400 text-[21px]' />
+                                    <MdOutlineEmail className='text-green-400 text-[17px] md:text-[21px]' />
                                 </div>
 
-                                <span className="font-[Roboto] text-[10px] md:text-[12px] text-white font-medium">
+                                <span className="font-[Roboto] text-[9px] md:text-[12px] text-white font-medium">
                                     abcd@gmail.com
                                 </span>
                             </div>
@@ -78,10 +82,10 @@ const Header = () => {
                         <a href="tel:+916379172058" target="_blank" rel="noopener noreferrer">
                             <div className="flex items-center gap-x-1">
                                 <div>
-                                    <MdPhoneAndroid className='text-green-400 text-[20px]' />
+                                    <MdPhoneAndroid className='text-green-400 text-[15px] md:text-[21px] ' />
                                 </div>
 
-                                <span className="font-[Roboto] text-[10px] md:text-[12px] text-white font-medium">
+                                <span className="font-[Roboto] text-[9px] md:text-[12px] text-white font-medium mt-0.5">
                                     +91 9047651568
                                 </span>
                             </div>
@@ -92,19 +96,19 @@ const Header = () => {
             </div>
 
             {/* Main Navbar */}
-            <nav className={`w-full sticky top-0 z-30 py-3 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
+            <nav className={`w-full sticky top-0 z-30 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
                 <div className="max-w-full mx-auto font-[poppins]">
                     <div className="flex justify-between items-center px-4 sm:px-9 w-full xl:w-[90%] mx-auto">
                         {/* Logo */}
                         <div className="w-fit">
                             <Link to="/" onClick={topPage}>
                                 {/* <span className="text-xl font-bold text-black">Logo</span> */}
-                                <img src={logo} className="w-32" alt="none" />
+                                <img src={logo} className="w-20 md:w-32" alt="none" />
                             </Link>
                         </div>
 
                         {/* Desktop Navigation */}
-                        <ul className="hidden md:flex w-full justify-end mr-12  gap-x-4 xl:gap-x-10 font-medium">
+                        <ul className="hidden md:flex w-full justify-end mr-12  gap-x-4 xl:gap-x-10 font-semibold">
                             <li>
                                 <Link to="/" onClick={topPage} className="hover:text-green-700  text-[13px] ">
                                     Home
@@ -147,7 +151,7 @@ const Header = () => {
 
 
                         {/* Mobile Menu Icon */}
-                        <div onClick={handleNav} className="block lg:hidden cursor-pointer px-2 mb-2">
+                        <div onClick={handleNav} className="block lg:hidden cursor-pointer px-2 ">
                             {nav ? (
                                 <AiOutlineClose className=" text-[16px] md:text-[20px] text-black" />
                             ) : (
