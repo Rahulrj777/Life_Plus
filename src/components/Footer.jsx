@@ -39,7 +39,7 @@ const Footer = () => {
                 <div class="  font-[poppins]  pt-8 md:pt-14 z-40">
                     <div class="px-4  w-full  md:w-[85%] mx-auto md:px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 ">
 
-                        <div class=" p-2 md:p-4">
+                        <div class=" p-2 md:p-4 ">
                             <img src={logo} className='w-14 sm:w-14 md:w-32  object-cover ' alt="" />
 
                             <p className='mt-3 font-[Merriweather]  text-[11px] leading-5 text-white font-extralight'>Discover holistic wellness with PranaVeda's expert Ayurveda services and transform your health naturally.</p>
@@ -47,7 +47,7 @@ const Footer = () => {
                         </div>
 
                         <div className="p-2 md:p-4">
-                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1 border-b w-fit border-gray-100 border-dotted">Get in Touch</div>
+                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1  w-fit ">Get in Touch</div>
                             <Link className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="home" smooth={true} duration={500}>
                                 Home
                             </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
 
 
                         <div class="p-2 md:p-4">
-                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1 border-b w-fit border-gray-100 border-dotted">Email Support</div>
+                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1  w-fit ">Email Support</div>
 
                             <Link to='/' onClick={topPage}>
                                 <p class="text-gray-100 my-3 block  text-[12px] sm:text-[13px]  md:text-[13px] hover:text-red-500" >Help Center </p>
@@ -81,7 +81,7 @@ const Footer = () => {
                         </div>
 
                         <div class="p-2 md:p-4">
-                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1 border-b w-fit border-gray-100 border-dotted">Head Office</div>
+                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1  w-fit ">Head Office</div>
 
 
                             <div >
@@ -101,7 +101,7 @@ const Footer = () => {
 
 
                 <div class="bg-[#4a5c24] md:pt-2 z-40">
-                    <div class="flex flex-col  justify-between md:flex-row-reverse pb-2 md:pb-5 px-3 m-auto border-t border-[#aaaaaa] text-gray-800 text-sm  w-full md:w-[80%]  items-center">
+                    <div class="flex flex-col  justify-between md:flex-row-reverse pb-2 md:pb-5 px-4 m-auto border-t border-[#aaaaaa] text-gray-800 text-sm  w-full md:w-[85%]  items-center">
 
                         <div class="mt-1 md:mt-2 flex-col  flex gap-x-4 md:gap-x-8 ">
 
