@@ -192,7 +192,7 @@ const BestServices = () => {
                         <div className="text-center relative pb-8 md:pb-12 w-full">
                             {/* Title and Image for each slide */}
                             <div className='flex justify-center items-center w-full '>
-                                <div className='px-5 md:px-4 py-3 md:py-2 rounded-xl bg-white border border-gray-100 drop-shadow-sm'>
+                                <div className='px-5 md:px-4 py-3 md:py-2 rounded-lg drop-shadow-sm bg-white border border-gray-100 '>
                                     <img src={slide.img} className="text-3xl font-bold text-gray-950 mb-2 w-9  md:w-10 object-cover " />
                                 </div>
                                 {/* <div className="bg-white p-6 rounded-tr-3xl  rounded-bl-3xl border-l-2 border-green-500 shadow-md drop-shadow-md text-[28px] ">{slide.img}</div> */}

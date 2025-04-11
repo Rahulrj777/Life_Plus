@@ -1,7 +1,7 @@
 import React from 'react'
 
 // import logo from '../images/64.png'
-import logo from '../images/logo.png'
+import logo from '../images/footer_logo.png'
 // import line from '../images/banner/line.png'
 
 

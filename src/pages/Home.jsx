@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import Testimonials from '../components/Testmonials';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -50,7 +51,6 @@ import { PiHeadsetFill } from "react-icons/pi";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaQuoteRight } from "react-icons/fa";
-import Testimonials from '../components/Testmonials';
 
 
 
@@ -78,7 +78,7 @@ const Home = () => {
                         <div className='w-[50%] mx-auto  h-full '>
 
                             <div className='pl-16 pr-5' data-aos="fade-up" data-aos-duration="3000">
-                                <p className='text-[16px] font-semibold text-green-800 '>Welcome to Life Plus</p>
+                                <p className='text-[16px] font-semibold text-green-800 '> Balancing Body, Mind & Nature </p>
                                 <div className='font-bold font-[Lora] tracking-[2px] '>
                                     <h2 className=' text-[3.8rem] uppercase  text-red-500 drop-shadow-md'>Transform Your </h2>
                                     <h2 className=' text-[3.5rem] uppercase text-gray-600'>Health Naturally </h2>
@@ -323,7 +323,7 @@ const Home = () => {
                             <div className='w-[70%] mx-auto pr-20'>
 
                                 <p className='text-[14px] font-semibold mb-5 text-[#c49125]'>Our Services</p>
-                                <h2 className='font-[Merriweather] text-[2.5rem] text-[#4a5c24]'>Extraordinary medicine for ordinary people.</h2>
+                                <h2 className='font-[Merriweather] text-[2.5rem] text-[#4a5c24]'>Extraordinary medicine for ordinary people</h2>
 
                                 <div className='border border-gray-200 w-full my-7'></div>
 
@@ -525,7 +525,7 @@ const Home = () => {
                     <div className='w-[80%] mx-auto'>
                         <div className='flex flex-col items-center gap-y-4 mb-16' data-aos='fade-up' data-aos-duratoin='1000'>
                             <p className='text-[14px] text-[#936932] font-semibold uppercase'>What We Offer</p>
-                            <h2 className='leading-13 text-[24px] md:text-[50px] w-[70%] mx-auto text-center font-normal font-[Merriweather] text-[#4a5c24]'>The combination of nature and science.</h2>
+                            <h2 className='leading-13 text-[24px] md:text-[50px] w-[70%] mx-auto text-center font-normal font-[Merriweather] text-[#4a5c24]'>The combination of nature and science</h2>
                         </div>
 
 
@@ -1061,6 +1061,8 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+            
 
 
 
