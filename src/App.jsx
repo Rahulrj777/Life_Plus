@@ -38,7 +38,7 @@ const App = () => {
     <>
       <div>
         <Router>
-          <Loader />
+          {/* <Loader /> */}
           {/* <ChatBot /> */}
           <Routes>
 

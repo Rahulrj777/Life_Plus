@@ -59,8 +59,8 @@ const Home = () => {
 
                 {/* -------------- banner slide ---------------- */}
 
-                <section className='w-full h-full font-[poppins] py-10 md:py-0' id='home'>
-                    <div className='w-full    flex flex-col  md:flex-row gap-y-10 justify-center items-center  bg-gray-50 overflow-hidden'>
+                <section className='w-full h-full font-[poppins] py-10 md:py-0 bg-gray-50' id='home'>
+                    <div className='w-full    flex flex-col  md:flex-row gap-y-10 justify-center items-center   overflow-hidden'>
 
                         <div className='w-full px-4 md:w-[50%] mx-auto  h-full '>
 
@@ -176,7 +176,7 @@ const Home = () => {
 
                 {/* --------------- About us ---------------- */}
 
-                <section className='py-10 md:py-20 bg-white font-[poppins]'>
+                <section className='pb-6 pt-10 md:py-20 bg-white font-[poppins]'>
                     <div className='w-full px-4 md:w-[90%] mx-auto'>
 
                         <div className='flex flex-col md:flex-row  gap-y-12 justify-center '>
@@ -206,7 +206,7 @@ const Home = () => {
 
                             <div className='w-full md:w-[50%] mx-auto'>
                                 <div data-aos='fade-left' data-aos-duratoin='1000'>
-                                    <p className='text-red-500 text-[12px] md:text-[13px] font-semibold uppercase mb-2'>Who We Are </p>
+                                    <p className='text-red-500 text-[12px] md:text-[13px] font-semibold uppercase md:mb-2'>Who We Are </p>
                                     <h3 className='text-[16px] md:text-[30px] font-semibold font-[Merriweather] leading-11 '>Natural Healing. Real Results</h3>
                                     <p className='text-[10px] md:text-[12px] text-gray-500 mt-2  md:mt-5'>
                                         LifePlusHerbal Healthcare Center is dedicated to helping you achieve better health through the power of nature. We provide herbal treatments,
@@ -215,10 +215,10 @@ const Home = () => {
                                     </p>
                                     <div className='border border-gray-200  my-6 w-[95%]'></div>
                                     <ul className='grid grid-cols-2 md:grid-cols-3 font-[Merriweather]  gap-x-2 md:gap-x-4 gap-y-4  md:gap-y-8  text-[10px] md:text-[12px] font-semibold '>
-                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Herbal Expertise</span> </li>
-                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Certified Doctors</span> </li>
-                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>24/7 Support</span> </li>
-                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-red-500 text-[24px]' /></span>   <span>Natural Treatments</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-[#c49227] text-[24px]' /></span>   <span>Herbal Expertise</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-[#c49227] text-[24px]' /></span>   <span>Certified Doctors</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-[#c49227] text-[24px]' /></span>   <span>24/7 Support</span> </li>
+                                        <li className='flex items-end gap-x-1'>  <span><GiMedicinePills className=' text-[#c49227] text-[24px]' /></span>   <span>Natural Treatments</span> </li>
                                     </ul>
                                     <div className='mt-2'>
                                         <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-5 bg-green-800 hover:bg-green-700 hover:scale-105 duration-300  font-semibold text-white rounded-md text-[10px] md:text-[12px] '>Learn More</button>
@@ -232,15 +232,15 @@ const Home = () => {
 
                 {/* contact box */}
 
-                <section className='py-20 '>
+                <section className='py-8 md:py-20 '>
                     <div className='w-full flex justify-center items-center relative font-[Merriweather]'>
 
                         <div className='border border-gray-200 w-full absolute z-10'></div>
 
-                        <div className='flex items-center gap-x-10 bg-white z-40 border border-gray-200 px-16 py-4 rounded-4xl' data-aos='fade-up' data-aos-duratoin='1000'>
-                            <h3 className='font-light text-[14px] flex items-center gap-x-4'>  <span> <PiHeadsetFill className='text-green-500 text-[40px]' /> </span> <span>   Start Your Personal Health Plan with Life Plus! </span> </h3>
+                        <div className='flex flex-col md:flex-row items-center  md:gap-x-10 bg-white z-40 border border-gray-200 px-5 md:px-16 py-2 md:py-4 rounded-xl  md:rounded-4xl' data-aos='fade-up' data-aos-duratoin='1000'>
+                            <h3 className='font-light text-[8px] md:text-[14px] flex items-center gap-x-2 md:gap-x-4'>  <span> <PiHeadsetFill className='text-green-500 text-[20px] md:text-[40px]' /> </span> <span> Begin your personalized wellness journey with Life Plus. </span> </h3>
                             <div>
-                                <button className='px-6 py-1.5 bg-[#a48125] rounded-xl text-[14px] text-white'>Contact us</button>
+                                <button className='px-3 md:px-6  mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#a48125] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white font-bold'>Contact us</button>
                             </div>
                         </div>
 
@@ -254,39 +254,39 @@ const Home = () => {
                     <div className="relative">
                         <img src={midBanner} className="w-full object-cover" alt="none" />
 
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
-                            <div className='w-[50%] mx-auto' data-aos='fade-up' data-aos-duratoin='2000'>
-                                <h2 className="text-gray-600 text-[5rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
-                                <p className='tracking-tight'> Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way. </p>
+                        <div className="absolute  top-20 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
+                            <div className='w-[60%] md:w-[50%] mx-auto' data-aos='fade-up' data-aos-duratoin='2000'>
+                                <h2 className="text-gray-600 text-[12px] md:text-[5rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
+                                <p className='tracking-tight text-[8px] md:'> Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way. </p>
                             </div>
                         </div>
 
-                        <div className='absolute bottom-0 bg-black/70 w-full py-8 font-[Merriweather]'>
-                            <div className='w-[85%] mx-auto'>
-                                <div className='grid grid-cols-4 gap-x-6'>
+                        <div className='absolute bottom-0 bg-black/70 w-full py-3 md:py-8 font-[Merriweather]'>
+                            <div className='w-full md:w-[85%] mx-auto flex justify-center items-center'>
+                                <div className='grid grid-cols-2 md:grid-cols-4  gap-y-3 gap-x-20 md:gap-x-24 text-[7px] md:text-[14px]'>
 
                                     <div>
-                                        <div className='flex items-center gap-x-6'>
-                                            <PiHeadsetFill className='text-green-500 text-[40px]' />
-                                            <h3 className='text-[18px] font-semibold text-white'>Trusted Company</h3>
+                                        <div className='flex items-center gap-x-2 md:gap-x-6'>
+                                            <PiHeadsetFill className='text-green-500 text-[16px] md:text-[40px]' />
+                                            <h3 className='font-semibold text-white'> Personalized Care </h3>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='flex items-center gap-x-6'>
-                                            <PiHeadsetFill className='text-green-500 text-[40px]' />
-                                            <h3 className='text-[18px] font-semibold text-white'>Premium Support</h3>
+                                        <div className='flex items-center gap-x-2 md:gap-x-6'>
+                                            <PiHeadsetFill className='text-green-500 text-[16px] md:text-[40px]' />
+                                            <h3 className='font-semibold text-white'>Healing Support</h3>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='flex items-center gap-x-6'>
-                                            <PiHeadsetFill className='text-green-500 text-[40px]' />
-                                            <h3 className='text-[18px] font-semibold text-white'>Safety Payment</h3>
+                                        <div className='flex items-center gap-x-2 md:gap-x-6'>
+                                            <PiHeadsetFill className='text-green-500 text-[16px] md:text-[40px]' />
+                                            <h3 className='font-semibold text-white'>Secure Treatment</h3>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='flex items-center gap-x-6'>
-                                            <PiHeadsetFill className='text-green-500 text-[40px]' />
-                                            <h3 className='text-[18px] font-semibold text-white'>Help Center</h3>
+                                        <div className='flex items-center gap-x-2 md:gap-x-6'>
+                                            <PiHeadsetFill className='text-green-500 text-[16px] md:text-[40px]' />
+                                            <h3 className='font-semibold text-white'>Care Hotline</h3>
                                         </div>
                                     </div>
 
@@ -299,47 +299,45 @@ const Home = () => {
 
 
 
-
                 {/* ---------------------- Our Services -------------- */}
 
+                <section className='pt-14 pb-10 md:py-20  font-[poppins]'>
+                    <div className='w-full px-4 md:w-[80%]   md:h-[35rem] mx-auto relative'>
 
-                <section className=' py-20  font-[poppins]'>
-                    <div className='w-[80%] h-[35rem] mx-auto relative'>
+                        <div className='flex flex-col md:flex-row items-start justify-center '>
 
-                        <div className='flex items-start justify-center '>
+                            <div className='w-full md:w-[70%] mx-auto md:pr-20'>
 
-                            <div className='w-[70%] mx-auto pr-20'>
+                                <p className='text-[12px] md:text-[14px] font-semibold md:mb-5 text-[#c49125]'>Our Services</p>
+                                <h2 className='font-[Merriweather] text-[16px] md:text-[2.5rem] text-[#4a5c24]'>Extraordinary medicine for ordinary people</h2>
 
-                                <p className='text-[14px] font-semibold mb-5 text-[#c49125]'>Our Services</p>
-                                <h2 className='font-[Merriweather] text-[2.5rem] text-[#4a5c24]'>Extraordinary medicine for ordinary people</h2>
+                                <div className='border border-gray-200 w-full my-2 md:my-7'></div>
 
-                                <div className='border border-gray-200 w-full my-7'></div>
-
-                                <div className='flex items-center gap-x-10 text-[12px] text-gray-500 text-justify'>
+                                <div className='flex items-center gap-x-10 text-[10px] md:text-[12px] text-gray-500 text-justify'>
                                     <p>Et orci volutpat penatibus facilisis lectus fermentum eu aptent torquent habitasse. Rutrum interdum volutpat a non taciti sollicitudin. Magnis rhoncus letius morbi quisque elementum purus si</p>
                                     <p>Et orci volutpat penatibus facilisis lectus fermentum eu aptent torquent habitasse. Rutrum interdum volutpat a non taciti sollicitudin. Magnis rhoncus letius morbi quisque elementum purus si</p>
                                 </div>
 
                             </div>
 
-                            <div className='w-[30%] h-full mx-auto'>
+                            <div className='w-full md:w-[30%] h-full mx-auto hidden md:block'>
                                 <div data-aos='fade-left' data-aos-duratoin='2000'>
-                                    <img src={service} className='w-full h-[35rem] object-cover' alt='none' />
+                                    <img src={service} className='w-full  md:h-[35rem] object-cover' alt='none' />
                                 </div>
                             </div>
 
-                            <div className='absolute -bottom-10 mr-40 flex justify-start' data-aos='fade-right' data-aos-duratoin='2000'>
+                            <div className=' md:absolute -bottom-10 mt-6 md:mt-0 md:mr-40 flex justify-start' data-aos='fade-right' data-aos-duratoin='2000'>
                                 <div className='flex  items-center'>
                                     <div className='grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10 '>
 
                                         <div>
-                                            <div className='bg-white drop-shadow-sm px-6 py-14'>
+                                            <div className='bg-white drop-shadow-sm px-6 py-6 md:py-14 h-full'>
                                                 <div className='flex flex-col gap-y-6 items-center justify-center'>
                                                     <PiHeadsetFill className='text-[32px] text-[#9dd246]' />
 
                                                     <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[18px] font-semibold  font-[Merriweather] text-[#6e9039]'>Natural Solutions</h3>
-                                                        <p className='text-[12px] text-gray-500 text-center'>Mollis vulputate penatibus leo pellentesque faucibus posuere consectetuer in gravida litora tincidunt</p>
+                                                        <h3 className='text-[16px] font-semibold  font-[Merriweather] text-[#6e9039]'> Ayurvedic Consultation </h3>
+                                                        <p className='text-[12px] text-gray-500 text-center'> Get personalized advice on herbs, diet, and lifestyle based on your body type and health goals. </p>
                                                     </div>
 
                                                 </div>
@@ -347,13 +345,13 @@ const Home = () => {
                                         </div>
 
                                         <div>
-                                            <div className='bg-[#6e9039] drop-shadow-sm px-6 py-14'>
+                                            <div className='bg-[#6e9039] drop-shadow-sm px-6 py-6 md:py-14 h-full'>
                                                 <div className='flex flex-col gap-y-6 items-center justify-center'>
                                                     <PiHeadsetFill className='text-[32px] text-white' />
 
                                                     <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[18px] font-semibold  font-[Merriweather] text-white'>Natural Solutions</h3>
-                                                        <p className='text-[12px] text-gray-100 text-center'>Mollis vulputate penatibus leo pellentesque faucibus posuere consectetuer in gravida litora tincidunt</p>
+                                                        <h3 className='text-[16px] font-semibold  font-[Merriweather] text-white'>Panchakarma Detox Therapy</h3>
+                                                        <p className='text-[12px] text-gray-100 text-center'>  five-step detox to cleanse the body, boost immunity, and restore energy.</p>
                                                     </div>
 
                                                 </div>
@@ -361,13 +359,13 @@ const Home = () => {
                                         </div>
 
                                         <div>
-                                            <div className='bg-white drop-shadow-sm px-6 py-14'>
+                                            <div className='bg-white drop-shadow-sm px-6 py-6 md:py-14 h-full'>
                                                 <div className='flex flex-col gap-y-6 items-center justify-center'>
                                                     <PiHeadsetFill className='text-[32px] text-[#9dd246]' />
 
                                                     <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[18px] font-semibold  font-[Merriweather] text-[#6e9039]'>Natural Solutions</h3>
-                                                        <p className='text-[12px] text-gray-500 text-center'>Mollis vulputate penatibus leo pellentesque faucibus posuere consectetuer in gravida litora tincidunt</p>
+                                                        <h3 className='text-[16px] font-semibold  font-[Merriweather] text-[#6e9039]'> Abhyanga (Herbal Oil Massage)</h3>
+                                                        <p className='text-[12px] text-gray-500 text-center'> Relaxing oil massage to balance doshas, improve circulation, and ease stress. </p>
                                                     </div>
 
                                                 </div>
@@ -509,16 +507,16 @@ const Home = () => {
 
                 {/* -------------- we offer  -------------------- */}
 
-                <section className='py-20 bg-[#f9f3eb] font-[poppins]' >
-                    <div className='w-[80%] mx-auto'>
-                        <div className='flex flex-col items-center gap-y-4 mb-16' data-aos='fade-up' data-aos-duratoin='1000'>
-                            <p className='text-[14px] text-[#936932] font-semibold uppercase'>What We Offer</p>
-                            <h2 className='leading-13 text-[24px] md:text-[50px] w-[70%] mx-auto text-center font-normal font-[Merriweather] text-[#4a5c24]'>The combination of nature and science</h2>
+                <section className='py-10 md:py-20 bg-[#f9f3eb] font-[poppins]' >
+                    <div className='w-full px-4 md:w-[80%] mx-auto'>
+                        <div className='flex flex-col items-center md:gap-y-4 mb-10 md:mb-16' data-aos='fade-up' data-aos-duratoin='1000'>
+                            <p className='text-[10px] md:text-[14px] text-[#936932] font-semibold uppercase'>What We Offer</p>
+                            <h2 className='md:leading-13  text-[20px] md:text-[50px] md:w-[70%] mx-auto text-center font-normal font-[Merriweather] text-[#4a5c24]'>The combination of nature and science</h2>
                         </div>
 
 
                         <div className='flex justify-center items-center'>
-                            <div className='grid grid-cols-3 gap-x-6 gap-y-10' data-aos='fade-up' data-aos-duratoin='3000'>
+                            <div className='grid  grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10' data-aos='fade-up' data-aos-duratoin='3000'>
 
                                 <div>
                                     <div className='bg-white  flex flex-col gap-y-8'>
@@ -714,116 +712,110 @@ const Home = () => {
                 {/* ---------- why choose us --------------*/}
 
                 <section>
-                    <div className="relative">
-
-                        <div className='relative'>
-                            <img src={whychoosebanner} className="w-full object-cover" alt="none" />
-                            <div className='absolute w-full top-0 bg-black/70 backdrop-blur-sm inset-0'></div>
+                    <div className="relative h-[75rem] md:h-[40rem]">
+                        {/* Background Image and Overlay */}
+                        <div className="relative h-full">
+                            <img src={whychoosebanner} className="w-full h-full object-cover" alt="none" />
+                            <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
                         </div>
 
-                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
-                            <div>
-
-
-                                <div className='w-[50%] mx-auto mb-14' data-aos='fade-up' data-aos-duratoin='1000'>
-                                    <p className='text-[14px] text font-semibold uppercase text-[#9dd246] mb-3'>Why Choose Us</p>
-                                    <h2 className="text-white text-[3rem] font-semibold font-[Merriweather]">Medicine with the green perspective.</h2>
+                        {/* Centered Content */}
+                        <div className="absolute inset-0 flex justify-center items-center text-center px-4">
+                            <div className="w-full max-w-7xl">
+                                {/* Heading */}
+                               
+                                <div className="w-full md:w-[50%] mx-auto mb-10 md:mb-14" data-aos="fade-up" data-aos-duration="1000">
+                                    <p className="text-[12px] md:text-[14px] font-semibold uppercase text-[#9dd246] mb-3">Why Choose Us</p>
+                                    <h2 className="text-white text-[20px] md:text-[3rem] font-semibold font-[Merriweather]">
+                                        Medicine with the green perspective.
+                                    </h2>
                                 </div>
 
-                                <div className='flex justify-center items-center w-[80%] mx-auto'>
-                                    <div className='grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-10 '>
-
-                                        <div>
-                                            <div className='bg-black/30 shadow-md drop-shadow-sm px-6 py-16' data-aos='fade-up' data-aos-duratoin='1000' data-aos-delay='10'>
-                                                <div className='flex flex-col gap-y-6 items-center justify-center'>
-                                                    <PiHeadsetFill className='text-[38px] text-[#9dd246]' />
-
-                                                    <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[18px] font-semibold  font-[Merriweather] text-white'>Expert Guidance</h3>
-                                                        <p className='text-[12px] text-gray-300 text-center'>Fames et tortor integer ut phasellus auctor primis himenaeos gravida</p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className='bg-black/30 shadow-md drop-shadow-sm px-6 py-16' data-aos='fade-up' data-aos-duratoin='1000' data-aos-delay='50'>
-                                                <div className='flex flex-col gap-y-6 items-center justify-center'>
-                                                    <PiHeadsetFill className='text-[38px] text-[#9dd246]' />
-
-                                                    <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[18px] font-semibold  font-[Merriweather] text-white'>Holistic Approach</h3>
-                                                        <p className='text-[12px] text-gray-300 text-center'>Fames et tortor integer ut phasellus auctor primis himenaeos gravida</p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className='bg-black/30 shadow-md drop-shadow-sm px-6 py-16' data-aos='fade-up' data-aos-duratoin='2000' data-aos-delay='50'>
-                                                <div className='flex flex-col gap-y-6 items-center justify-center'>
-                                                    <PiHeadsetFill className='text-[38px] text-[#9dd246]' />
-
-                                                    <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[18px] font-semibold  font-[Merriweather] text-white'>Natural Solutions</h3>
-                                                        <p className='text-[12px] text-gray-300 text-center'>Fames et tortor integer ut phasellus auctor primis himenaeos gravida</p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className='bg-black/30 shadow-md drop-shadow-sm px-6 py-16' data-aos='fade-up' data-aos-duratoin='3000' data-aos-delay='100'>
-                                                <div className='flex flex-col gap-y-6 items-center justify-center'>
-                                                    <PiHeadsetFill className='text-[38px] text-[#9dd246]' />
-
-                                                    <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[18px] font-semibold  font-[Merriweather] text-white'>Community Support</h3>
-                                                        <p className='text-[12px] text-gray-300 text-center'>Fames et tortor integer ut phasellus auctor primis himenaeos gravida</p>
-                                                    </div>
-
+                                {/* Feature Cards */}
+                                <div className="w-full md:w-[90%] mx-auto">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                                        {/* Card 1 */}
+                                        <div className="bg-black/30 shadow-md drop-shadow-sm px-6 py-12 sm:py-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10">
+                                            <div className="flex flex-col gap-y-6 items-center justify-center">
+                                                <PiHeadsetFill className="text-[38px] text-[#9dd246]" />
+                                                <div className="flex flex-col items-center gap-y-2">
+                                                    <h3 className="text-[18px] font-semibold font-[Merriweather] text-white">Expert Guidance</h3>
+                                                    <p className="text-[12px] text-gray-300 text-center">Fames et tortor integer ut phasellus auctor primis himenaeos gravida</p>
                                                 </div>
                                             </div>
                                         </div>
 
+                                        {/* Card 2 */}
+                                        <div className="bg-black/30 shadow-md drop-shadow-sm px-6 py-12 sm:py-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+                                            <div className="flex flex-col gap-y-6 items-center justify-center">
+                                                <PiHeadsetFill className="text-[38px] text-[#9dd246]" />
+                                                <div className="flex flex-col items-center gap-y-2">
+                                                    <h3 className="text-[18px] font-semibold font-[Merriweather] text-white">Holistic Approach</h3>
+                                                    <p className="text-[12px] text-gray-300 text-center">Fames et tortor integer ut phasellus auctor primis himenaeos gravida</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Card 3 */}
+                                        <div className="bg-black/30 shadow-md drop-shadow-sm px-6 py-12 sm:py-16" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
+                                            <div className="flex flex-col gap-y-6 items-center justify-center">
+                                                <PiHeadsetFill className="text-[38px] text-[#9dd246]" />
+                                                <div className="flex flex-col items-center gap-y-2">
+                                                    <h3 className="text-[18px] font-semibold font-[Merriweather] text-white">Natural Solutions</h3>
+                                                    <p className="text-[12px] text-gray-300 text-center">Fames et tortor integer ut phasellus auctor primis himenaeos gravida</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* Card 4 */}
+                                        <div className="bg-black/30 shadow-md drop-shadow-sm px-6 py-12 sm:py-16" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+                                            <div className="flex flex-col gap-y-6 items-center justify-center">
+                                                <PiHeadsetFill className="text-[38px] text-[#9dd246]" />
+                                                <div className="flex flex-col items-center gap-y-2">
+                                                    <h3 className="text-[18px] font-semibold font-[Merriweather] text-white">Community Support</h3>
+                                                    <p className="text-[12px] text-gray-300 text-center">Fames et tortor integer ut phasellus auctor primis himenaeos gravida</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-
                     </div>
                 </section>
+
 
                 {/* reviews */}
 
                 <section className='bg-[#5d772f]'>
                     <div className='w-[95%] mx-auto'>
-                        <div className='bottom-0  w-full py-8 font-[Merriweather]'>
-                            <div className='w-[85%] mx-auto'>
+                        <div className='bottom-0  w-full py-5 md:py-8 font-[Merriweather]'>
+                            <div className='w-full md:w-[85%] mx-auto'>
                                 <div className='grid grid-cols-4 gap-x-6'>
 
                                     <div>
                                         <div className='flex flex-col items-center gap-y-2'>
-                                            <h2 className='text-[48px] font-bold text-white'>47K+</h2>
-                                            <h3 className='text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Product Sold</h3>
+                                            <h2 className='text-[16px] md:text-[48px] font-bold text-white'>47K+</h2>
+                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Product Sold</h3>
                                         </div>
                                     </div>
                                     <div>
                                         <div className='flex flex-col items-center gap-y-2'>
-                                            <h2 className='text-[48px] font-bold text-white'>8K+</h2>
-                                            <h3 className='text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Happy Customer</h3>
+                                            <h2 className='text-[16px] md:text-[48px] font-bold text-white'>8K+</h2>
+                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Happy Customer</h3>
                                         </div>
                                     </div>
                                     <div>
                                         <div className='flex flex-col items-center gap-y-2'>
-                                            <h2 className='text-[48px] font-bold text-white'>51+</h2>
-                                            <h3 className='text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Country Support</h3>
+                                            <h2 className='text-[16px] md:text-[48px] font-bold text-white'>51+</h2>
+                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Country Support</h3>
                                         </div>
                                     </div>
                                     <div>
                                         <div className='flex flex-col items-center gap-y-2'>
-                                            <h2 className='text-[48px] font-bold text-white'>4.8</h2>
-                                            <h3 className='text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Customer Ratings</h3>
+                                            <h2 className='text-[16px] md:text-[48px] font-bold text-white'>4.8</h2>
+                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Customer Ratings</h3>
                                         </div>
                                     </div>
 
@@ -837,30 +829,30 @@ const Home = () => {
                 {/* -------------- client ratings ---------------- */}
 
                 <section className='py-10 md:py-20 bg-[#f9f3eb] font-[poppins]'>
-                    <div className='w-[80%] mx-auto'>
-                        <div className='flex justify-center items-center'>
+                    <div className='w-full px-4 md:w-[80%] mx-auto'>
+                        <div className='flex flex-col-reverse md:flex-row gap-y-9 justify-center items-center'>
 
-                            <div className='w-[50%] mx-auto' data-aos='fade-right' data-aos-duration='2000' data-aos-delay='50'>
+                            <div className='w-full md:w-[50%] mx-auto' data-aos='fade-right' data-aos-duration='2000' data-aos-delay='50'>
                                 <div className='relative'>
                                     <img src={review} className='w-full object-cover' alt='none' />
-                                    <div className='absolute top-6 left-6 bg-white ' data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='10'>
+                                    <div className='absolute top-3 md:top-6 left-3 md:left-6 bg-white ' data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='10'>
                                         <div>
-                                            <h2 className='bg-[#6e9039] w-full px-6 py-2 text-white font-medium text-[15px] text-center '>Excellent</h2>
+                                            <h2 className='bg-[#6e9039] w-full px-6 py-2 text-white font-medium text-[12px] md:text-[15px] text-center '>Excellent</h2>
 
-                                            <div className='py-4 px-6'>
-                                                <div className='flex items-center justify-center gap-x-1.5'>
-                                                    <FaStar className='text-yellow-500 text-[12px]' />
-                                                    <FaStar className='text-yellow-500 text-[12px]' />
-                                                    <FaStar className='text-yellow-500 text-[12px]' />
-                                                    <FaStar className='text-yellow-500 text-[12px]' />
-                                                    <FaStar className='text-gray-200 text-[12px]' />
+                                            <div className='py-3 md:py-4  px-4 md:px-6'>
+                                                <div className='flex items-center justify-center gap-x-1.5 text-[10px] md:text-[12px]'>
+                                                    <FaStar className='text-yellow-500 ' />
+                                                    <FaStar className='text-yellow-500 ' />
+                                                    <FaStar className='text-yellow-500 ' />
+                                                    <FaStar className='text-yellow-500 ' />
+                                                    <FaStar className='text-gray-200 ' />
                                                 </div>
 
                                                 <div className='flex justify-center items-center py-2'>
-                                                    <h3 className='text-[45px] font-bold text-[#6e9039]'>4.7</h3>
+                                                    <h3 className='text-[28px] md:text-[45px] font-bold text-[#6e9039]'>4.7</h3>
                                                 </div>
                                                 <div>
-                                                    <p className='bg-[#a48125] px-4 py-1.5 rounded-full text-[12px]  text-white'>Client Ratings</p>
+                                                    <p className='bg-[#a48125] px-4 py-1.5 rounded-md md:rounded-full text-[10px] md:text-[12px]  text-white'>Client Ratings</p>
                                                 </div>
                                             </div>
 
@@ -870,12 +862,12 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className='w-[50%] mx-auto' data-aos='fade-left' data-aos-duration='2000' data-aos-delay='50'>
-                                <div className='pl-14 flex flex-col gap-y-8'>
-                                    <h3 className=' text-[45px] font-[Merriweather] text-[#4a5c24] font-extralight'>Ancient Wisdom for Modern Living.</h3>
-                                    <p className='text-[14px] text-gray-600 leading-7'>Aliquam pellentesque quam aenean bibendum mollis per. Duis non rhoncus vulputate maximus enim ornare. Diam eu id rutrum lobortis netus neque integer venenatis letius libero a.</p>
+                            <div className='w-full md:w-[50%] mx-auto' data-aos='fade-left' data-aos-duration='2000' data-aos-delay='50'>
+                                <div className=' md:pl-14 flex flex-col gap-y-3 md:gap-y-8'>
+                                    <h3 className='text-[24px] md:text-[45px] font-[Merriweather] text-[#4a5c24] font-extralight'>Ancient Wisdom for Modern Living.</h3>
+                                    <p className='text-[13px] md:text-[14px] text-gray-600  leading-5 md:leading-7'>Aliquam pellentesque quam aenean bibendum mollis per. Duis non rhoncus vulputate maximus enim ornare. Diam eu id rutrum lobortis netus neque integer venenatis letius libero a.</p>
                                     <div>
-                                        <button className='px-8 py-3 bg-[#a48125] flex items-center gap-x-3 text-white text-[14px]'> Discover more <FaArrowRight className='text-[15px]' /> </button>
+                                        <button className='px-4 md:px-8 py-1.5 md:py-3 bg-[#a48125] flex items-center gap-x-1.5 md:gap-x-3 text-white text-[12px] md:text-[14px]'> Discover more <FaArrowRight className='text-[12px] md:text-[15px]' /> </button>
                                     </div>
 
                                 </div>
@@ -888,18 +880,18 @@ const Home = () => {
 
                 {/* Testimonial */}
 
-                <section className='py-20'>
-                    <div className='w-[80%] mx-auto'>
+                <section className='py-10 md:py-20'>
+                    <div className='w-full px-4 md:w-[80%] mx-auto'>
 
                         <div className='flex flex-col justify-center items-center mx-auto mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
-                            <p className='text-[14px] text font-semibold uppercase text-[#936932] mb-3'>Testimonial</p>
-                            <h2 className=" text-[3rem]  font-[Merriweather]  text-[#4a5c24] ">Customer Feedback & Reviews</h2>
-                            <div className='flex items-center justify-center gap-x-3 mt-4'>
-                                <FaStar className='text-yellow-500 text-[22px]' />
-                                <FaStar className='text-yellow-500 text-[22px]' />
-                                <FaStar className='text-yellow-500 text-[22px]' />
-                                <FaStar className='text-yellow-500 text-[22px]' />
-                                <FaStar className='text-gray-200 text-[22px]' />
+                            <p className='text-[12px] md:text-[14px] text font-semibold uppercase text-[#936932] mb-3'>Testimonial</p>
+                            <h2 className="text-[20px] md:text-[3rem]  font-[Merriweather]  text-[#4a5c24] ">Customer Feedback & Reviews</h2>
+                            <div className='flex items-center justify-center gap-x-3 mt-4 text-[16px] md:text-[20px]'>
+                                <FaStar className='text-yellow-500 ' />
+                                <FaStar className='text-yellow-500 ' />
+                                <FaStar className='text-yellow-500 ' />
+                                <FaStar className='text-yellow-500 ' />
+                                <FaStar className='text-gray-200 ' />
                             </div>
                         </div>
 

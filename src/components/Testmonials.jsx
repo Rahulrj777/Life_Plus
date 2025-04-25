@@ -31,7 +31,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((testimonial) => (
                 <div key={testimonial.id} className="bg-[#f9f3eb] drop-shadow-sm px-6 py-14 relative overflow-hidden">
 

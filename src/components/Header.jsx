@@ -96,8 +96,8 @@ const Header = () => {
             </div>
 
             {/* Main Navbar */}
-            <nav className={`w-full sticky top-0 z-30 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
-                <div className="max-w-full mx-auto font-[poppins]">
+            <nav className={`w-full sticky top-0 z-50 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}> 
+                <div className="max-w-full mx-auto font-[poppins]"> 
                     <div className="flex justify-between items-center px-4 sm:px-9 w-full xl:w-[90%] mx-auto">
                         {/* Logo */}
                         <div className="w-fit">
@@ -140,7 +140,7 @@ const Header = () => {
                                     {/* Button */}
                                     <div className="relative group">
                                         <button
-                                            className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8 py-0.5 md:py-1.5 uppercase rounded-md duration-500 transform transition-transform hover:scale-105 hover:shadow-xl text-[10px] md:text-[13px]"
+                                            className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8 py-1.5 md:py-1.5 uppercase rounded-md duration-500 transform transition-transform hover:scale-105 hover:shadow-xl text-[10px] md:text-[13px]"
                                         >
                                             Start
                                         </button>
@@ -166,34 +166,34 @@ const Header = () => {
 
                         {/* Mobile Navigation */}
                         <ul
-                            className={`fixed top-0 left-0 pt-10 pl-6 w-[60%] h-full bg-gray-50 z-50 border-r transition-transform ${nav ? 'translate-x-0' : '-translate-x-full'
+                            className={`fixed top-0 left-0 pt-10 pl-6 w-[60%] h-[100vh] md:h-full bg-gray-50 z-50 drop-shadow-md transition-transform ${nav ? 'translate-x-0' : '-translate-x-full'
                                 }`}
                         >
                             <li>
                                 <div className="w-fit">
                                     <Link to="/" onClick={topPage}>
                                         {/* <span className="text-xl font-bold text-black">Logo</span> */}
-                                        <img src={logo} className="w-28" alt="none" />
+                                        <img src={logo} className="w-20" alt="none" />
                                     </Link>
                                 </div>
                             </li>
 
-                            <li className="px-6 py-4" onClick={topPage}>
+                            <li className="px-2 py-4" onClick={topPage}>
                                 <Link to="/" onClick={handleNav} className="text-[13px] font-semibold text-gray-700">
                                     Home
                                 </Link>
                             </li>
-                            <li className="px-6 py-4" onClick={topPage}>
+                            <li className="px-2 py-4" onClick={topPage}>
                                 <Link to="/about" onClick={handleNav} className="text-[13px] font-semibold text-gray-700">
                                     About Us
                                 </Link>
                             </li>
-                            <li className="px-6 py-4" onClick={topPage}>
+                            <li className="px-2 py-4" onClick={topPage}>
                                 <Link to="/healthcare_services" onClick={handleNav} className="text-[13px] font-semibold text-gray-700">
                                     Healthcare Services
                                 </Link>
                             </li>
-                            <li className="px-6 py-4" onClick={topPage}>
+                            <li className="px-2 py-4" onClick={topPage}>
                                 <Link to="/contact" onClick={handleNav} className="text-[13px] font-semibold text-gray-700">
                                     Contact Us
                                 </Link>
