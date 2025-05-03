@@ -53,11 +53,11 @@ const Footer = () => {
                             </Link>
 
                             <Link className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="home" smooth={true} duration={500}>
-                                Home
+                                About
                             </Link>
 
                             <Link className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="home" smooth={true} duration={500}>
-                                Home
+                                Contact
                             </Link>
 
                         </div>
@@ -91,7 +91,9 @@ const Footer = () => {
                             </div>
                             <a href="mailto::info@scipl.net" target="_blank" class="text-gray-100 my-3   text-[12px] sm:text-[13px]  md:text-[13px] flex items-center gap-x-2" ><MdOutlineMail className=' text-[16px] md:text-[20px] font-bold' />contact@lifeplus.com</a>
                             {/* <a href="tel:91" target="_blank" className='text-gray-100 text-[12px] sm:text-[13px] md:text-[14px] my-3 flex items-center gap-x-2 '><MdOutlinePhoneAndroid className='text-[16px] md:text-[20px] font-bold' /> 044 -22602050</a> */}
-                            <p href="tel:91" target="_blank" className='text-gray-100 text-[12px] sm:text-[13px] md:text-[13px] my-3 flex items-center gap-x-2 '><TbDeviceLandlinePhone className='text-[16px] md:text-[20px] font-bold' /> +91 987894683</p>
+                            <a href="tel:918015907797" target="_blank" className='text-gray-100 text-[12px] sm:text-[13px] md:text-[13px] my-3 flex items-center gap-x-2 '><MdOutlinePhoneAndroid className='text-[16px] md:text-[20px] font-bold' /> +91 8015907797</a>
+                            <a href="tel:918015525797" target="_blank" className='text-gray-100 text-[12px] sm:text-[13px] md:text-[13px] my-3 flex items-center gap-x-2 '><MdOutlinePhoneAndroid className='text-[16px] md:text-[20px] font-bold' /> +91 8015525797</a>
+                            <a href="tel:918015508797" target="_blank" className='text-gray-100 text-[12px] sm:text-[13px] md:text-[13px] my-3 flex items-center gap-x-2 '><MdOutlinePhoneAndroid className='text-[16px] md:text-[20px] font-bold' /> +91 8015508797</a>
 
                         </div>
 
@@ -112,7 +114,7 @@ const Footer = () => {
                                     </div>
                                 </Link>
 
-                                <Link to="" target='_blank'>
+                                <Link to="https://www.instagram.com/lifeplusayushvaidhyasala?igsh=MWw3cHp0YmtzbDM2Zw==" target='_blank'>
                                     <div className='w-6 h-6 md:w-9 md:h-9 bg-white hover:border hover:border-[#6bb8ff] hover:bg-[#fbfbfb] rounded-full flex justify-center items-center shadow-md drop-shadow-md  cursor-pointer hover:shadow-lg hover:drop-shadow-xl hover:animate-bounce'>
                                         <FiInstagram className='text-[12px] sm:text-[13px] md:text-[16px] text-green-800' />
                                     </div>

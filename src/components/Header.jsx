@@ -64,29 +64,27 @@ const Header = () => {
                 <div className="w-[60%] md:w-[50%] flex justify-end  gap-x-2 md:gap-x-6 pr-4 sm:pr-6 md:pr-8 lg:pr-10">
 
                     <div>
-                        <a href="tel:+916379172058" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:abcd@gmail.com" target="_blank" rel="noopener noreferrer">
                             <div className="flex items-center gap-x-1">
-                                <div>
-                                    <MdOutlineEmail className='text-green-400 text-[17px] md:text-[21px]' />
-                                </div>
-
+                                <MdOutlineEmail className="text-green-400 text-[17px] md:text-[21px]" />
                                 <span className="font-[Roboto] text-[9px] md:text-[12px] text-white font-medium">
                                     abcd@gmail.com
                                 </span>
                             </div>
                         </a>
+
                     </div>
 
 
                     <div>
-                        <a href="tel:+916379172058" target="_blank" rel="noopener noreferrer">
+                        <a href="tel:++918015907797" target="_blank" rel="noopener noreferrer">
                             <div className="flex items-center gap-x-1">
                                 <div>
                                     <MdPhoneAndroid className='text-green-400 text-[15px] md:text-[21px] ' />
                                 </div>
 
                                 <span className="font-[Roboto] text-[9px] md:text-[12px] text-white font-medium mt-0.5">
-                                    +91 9047651568
+                                    +91 8015907797
                                 </span>
                             </div>
                         </a>
@@ -96,8 +94,8 @@ const Header = () => {
             </div>
 
             {/* Main Navbar */}
-            <nav className={`w-full sticky top-0 z-50 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}> 
-                <div className="max-w-full mx-auto font-[poppins]"> 
+            <nav className={`w-full sticky top-0 z-50 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
+                <div className="max-w-full mx-auto font-[poppins]">
                     <div className="flex justify-between items-center px-4 sm:px-9 w-full xl:w-[90%] mx-auto">
                         {/* Logo */}
                         <div className="w-fit">

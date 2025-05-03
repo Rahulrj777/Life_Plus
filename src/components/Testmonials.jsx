@@ -1,6 +1,6 @@
 import React from "react";
 import { FaQuoteRight, FaStar } from "react-icons/fa";
-import doctor from "../images/doctor.jpg"; // Ensure the path is correct
+import doctor from "../images/doctor1.jpg"; // Ensure the path is correct
 
 const testimonials = [
     {

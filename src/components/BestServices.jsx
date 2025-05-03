@@ -7,17 +7,8 @@ import gsap from 'gsap'; // Import GSAP for animation
 
 
 
-import icon from '../images/doctor.jpg'
-import one from '../images/doctor.jpg'
-
-
 import icon1 from '../images/icon/abhyangam.png'
-import icon2 from '../images/icon/agnikarma.png'
-import icon3 from '../images/icon/kizhi_ottradam.png'
-import icon4 from '../images/icon/kshara_sutra.png'
-import icon5 from '../images/icon/Pugai.png'
-import icon6 from '../images/icon/shirodhara.png'
-import icon7 from '../images/icon/steam_bath.png'
+
 
 
 
@@ -34,52 +25,157 @@ const BestServices = () => {
     const slidesData = [
         {
             img: icon1,
-            title: "abhyangam",
-            description: 'A brand waiting to be born—an idea brimming with potential but needing a guiding hand to bring it to life. That’s where we come in.',
-            icon: icon
+            title: "Panchakarma",
         },
-
         {
-            img: icon2,
-            title: "agnikarma",
-            description: 'We start by listening. Deeply. Understanding your vision, your dreams, and your goals. Your story is our first chapter, and we can’t wait to write it with you',
-            icon: 'https://controleur.ca/wp-content/uploads/2021/11/performance.svg'
+            img: icon1,
+            title: "Nasyam ",
         },
-
         {
-            img: icon3,
-            title: "kizhi ottradam",
-            description: 'With a clear understanding of your brand, we craft a strategy that feels like magic. A roadmap that positions your brand to stand out, resonate, and engage. We set the stage for greatness.',
-            icon: 'https://controleur.ca/wp-content/uploads/2021/11/compass.svg'
+            img: icon1,
+            title: "Vamanam ",
         },
-
         {
-            img: icon4,
-            title: "kshara sutra",
-            description: 'Now that we have your brand’s heartbeat, we make it official. The legalities are handled, and your company stands tall, ready to conquer the world.',
-            icon: 'https://controleur.ca/wp-content/uploads/2021/10/expand.svg'
+            img: icon1,
+            title: "Virechanam",
         },
-
         {
-            img: icon5,
+            img: icon1,
+            title: "Raksta mokshanam",
+        },
+        {
+            img: icon1,
+            title: "Abhyangam ",
+        },
+        {
+            img: icon1,
+            title: "Steam bath ",
+        },
+        {
+            img: icon1,
+            title: "Podikizhi ",
+        },
+        {
+            img: icon1,
+            title: "Ilakizhi",
+        },
+        {
+            img: icon1,
+            title: "Navarakizhi",
+        },
+        {
+            img: icon1,
+            title: "Dhanyamlakizhi",
+        },
+        {
+            img: icon1,
+            title: "Dhanyamladhara",
+        },
+        {
+            img: icon1,
+            title: "Vasti",
+        },
+        {
+            img: icon1,
+            title: "janu vasti",
+        },
+        {
+            img: icon1,
+            title: "Upanaham",
+        },
+        {
+            img: icon1,
+            title: "Pada abhyangam",
+        },
+        {
+            img: icon1,
+            title: "Pizhichil",
+        },
+        {
+            img: icon1,
+            title: "Udvartanam ",
+        },
+        {
+            img: icon1,
+            title: "Takra dhara ",
+        },
+        {
+            img: icon1,
+            title: "Shirodhara ",
+        },
+        {
+            img: icon1,
+            title: "Shirovasti ",
+        },
+        {
+            img: icon1,
+            title: "Thalapothichil",
+        },
+        {
+            img: icon1,
+            title: "Kashayadhara",
+        },
+        {
+            img: icon1,
+            title: "Thokkanam",
+        },
+        {
+            img: icon1,
+            title: "Attai vidal",
+        },
+        {
+            img: icon1,
+            title: "Suttigai",
+        },
+        {
+            img: icon1,
+            title: "Patru",
+        },
+        {
+            img: icon1,
+            title: "Ottradam",
+        },
+        {
+            img: icon1,
+            title: "Nasiyam",
+        },
+        {
+            img: icon1,
+            title: "Vethu",
+        },
+        {
+            img: icon1,
+            title: "Seelai",
+        },
+        {
+            img: icon1,
+            title: "Ennai kattu",
+        },
+        {
+            img: icon1,
             title: "Pugai",
-            description: 'We craft your brands identity with a unique look, feel, and voice that instantly connects with your audience, telling your story with every detail.',
-            icon: 'https://controleur.ca/wp-content/uploads/2021/10/rocket.svg'
+        },
+        {
+            img: icon1,
+            title: "Pottanum",
+        },
+        {
+            img: icon1,
+            title: "Pasai",
+        },
+        {
+            img: icon1,
+            title: "Kalimbu",
+        },
+        {
+            img: icon1,
+            title: "Peechu",
+        },
+        {
+            img: icon1,
+            title: "Dharai",
         },
 
-        {
-            img: icon6,
-            title: "shirodhara",
-            description: 'We then set out on a quest to find the finest products that embody your brand’s promise. Only the best will do, and we make sure every product aligns with the story we’re telling.',
-            icon: 'https://controleur.ca/wp-content/uploads/2021/10/expand.svg'
-        },
-
-        {
-            img: icon7,
-            title: "steam bath",
-            description: 'From concept to creation, we bring your product to life. Designs that aren’t just functional—they’re pieces of art that showcase your brand in its best light.',
-            icon: 'https://controleur.ca/wp-content/uploads/2021/10/expand.svg'
-        },
 
 
 

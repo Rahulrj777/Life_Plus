@@ -15,6 +15,7 @@ import cup from '../images/contact/cup.png'
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Enquiry from '../components/Enquiry';
+import { FaLocationDot } from "react-icons/fa6";
 
 
 
@@ -106,6 +107,32 @@ const Contact = () => {
 
                             </div>
 
+
+
+
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section className='bg-[#f8f8ff] pt-0 md:pt-20 pb-0 md:pb-20 font-[poppins]'>
+                    <div className='w-[80%] mx-auto'>
+                        <div className='flex flex-col md:flex-row items-center gap-x-48 '>
+
+                            <div className='w-[50%] mx-auto h-full'>
+                                <div className='flex flex-col justify-center items-center gap-y-4 md:gap-y-5 bg-gray-200 rounded-md drop-shadow-md px-6 py-8 '>
+                                    <div><FaLocationDot className='text-[34px] text-yellow-600' /></div>
+                                    <p className='text-center text-[14px] font-semibold'>27th Karuneegar Street Adambakkam, Chennai - 600 008</p>
+                                </div>
+                            </div>
+
+                            <div className='w-[50%] mx-auto h-full'>
+                                <div className='flex flex-col justify-center items-center gap-y-4 md:gap-y-5 bg-gray-200 rounded-md drop-shadow-md px-6 py-8 '>
+                                    <div><FaLocationDot className='text-[34px] text-yellow-600' /></div>
+                                    <p className='text-center text-[14px] font-semibold'>No.(Plot No.) 212, Imayam Colony, 2nd Street Anna Nagar West Extension, Chennai - 600 101</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
