@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
 
 import { FaStethoscope, FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/ti'; 
+import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/ti';
 
 // ✅ Import separate doctor images
 import doctor1 from "../images/doctor1.jpg";
@@ -34,7 +34,20 @@ const doctorList = [
 const DoctorList = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+    const swiperRef = useRef(null); // Store swiper instance
 
+    useEffect(() => {
+        if (
+            swiperRef.current &&
+            swiperRef.current.params &&
+            swiperRef.current.params.navigation
+        ) {
+            swiperRef.current.params.navigation.prevEl = prevRef.current;
+            swiperRef.current.params.navigation.nextEl = nextRef.current;
+            swiperRef.current.navigation.init();
+            swiperRef.current.navigation.update();
+        }
+    }, []);
 
     useEffect(() => {
         AOS.init({ duration: 2000 });
@@ -42,6 +55,8 @@ const DoctorList = () => {
 
     return (
         <div className="w-full  relative">
+
+
             <Swiper
                 slidesPerView={3}
                 spaceBetween={40}
@@ -71,7 +86,7 @@ const DoctorList = () => {
                             <img
                                 src={doctorInfo.image}
                                 alt={doctorInfo.name}
-                                className="w-full object-cover rounded-3xl"
+                                className="w-full object-cover rounded-xl"
                             />
 
                             <div
@@ -105,8 +120,8 @@ const DoctorList = () => {
                 ))}
             </Swiper>
 
-            {/* Custom Navigation Buttons at Bottom */}
-            <div className="flex justify-start gap-4 mt-8">
+
+            <div className="flex  justify-start gap-4 mt-8">
                 <button
                     ref={prevRef}
                     className="w-10 h-10 rounded-full cursor-pointer bg-white shadow-md flex justify-center items-center text-[#a48125] hover:bg-gray-100 transition"
@@ -120,6 +135,8 @@ const DoctorList = () => {
                     <TiArrowRightThick />
                 </button>
             </div>
+
+
         </div>
     );
 };

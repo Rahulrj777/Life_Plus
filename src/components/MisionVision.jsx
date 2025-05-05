@@ -43,13 +43,13 @@ const TiltCard = ({ icon, title, description }) => {
     return (
         <div
             ref={cardRef}
-            className="w-full md:w-[90%] mx-auto rounded-lg overflow-hidden cursor-pointer mb-8 bg-slate-100 shadow-md  px-3 py-5  font-[poppins]"
+            className="w-full md:w-[90%] mx-auto rounded-lg overflow-hidden cursor-pointer mb-8 bg-slate-100 shadow-md  px-3 py-2 md:py-5  font-[poppins]"
             style={{ perspective: '1000px' }}
         >
-            <div className="mb-4 text-red-800 text-4xl">{icon}</div>
-            <div className="p-4">
-                <h3 className="text-[18px] font-semibold text-yellow-500 mb-2">{title}</h3>
-                <p className="text-gray-600 opacity-75 text-[14px] font-[roboto] text-justify">{description}</p>
+            <div className="mb-2 md:mb-4 mt-2 text-red-800 text-[24px] md:text-4xl">{icon}</div>
+            <div className="p-2 md:p-4">
+                <h3 className="text-[14px] md:text-[18px] font-semibold text-yellow-500 mb-2">{title}</h3>
+                <p className="text-gray-600 opacity-75 text-[12px] md:text-[14px] font-[roboto] text-justify">{description}</p>
             </div>
         </div>
 
@@ -77,8 +77,8 @@ const MisionVision = () => {
     ];
 
     return (
-        <div className="bg-gradient-to-br  py-20 from-white via-gray-100 to-white  rounded-b-3xl">
-            <div className="w-[85%] mx-auto grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1 gap-1">
+        <div className="bg-gradient-to-br py-10 md:py-20 from-white via-gray-100 to-white ">
+            <div className="w-full px-4 md:w-[85%] mx-auto grid grid-cols-1 md:grid-cols-3 sm:grid-cols-1 gap-1">
                 {data.map((item, idx) => (
                     <TiltCard
                         key={idx}

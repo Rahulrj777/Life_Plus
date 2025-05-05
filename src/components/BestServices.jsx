@@ -7,7 +7,32 @@ import gsap from 'gsap'; // Import GSAP for animation
 
 
 
-import icon1 from '../images/icon/abhyangam.png'
+import icon1 from '../images/therapies/back_pain_neck_pain.png'
+import icon2 from '../images/therapies/spine_disorders.png'
+import icon3 from '../images/therapies/Frozen_Shoulder.png'
+import icon4 from '../images/therapies/heel.png'
+import icon5 from '../images/therapies/Rheumatoid_Care.png'
+import icon6 from '../images/therapies/Psoriasis.png'
+import icon7 from '../images/therapies/Eczema_Therapy.png'
+import icon8 from '../images/therapies/Autoimmune_Care.png'
+import icon9 from '../images/therapies/hair_loss.png'
+import icon10 from '../images/therapies/thinning_hair.png'
+import icon11 from '../images/therapies/alopecia.png'
+import icon12 from '../images/therapies/wheelchair.png'
+import icon13 from '../images/therapies/Stroke_Rehabilitation.png'
+import icon14 from '../images/therapies/Diabetic_Foot.png'
+import icon15 from '../images/therapies/Digestive_Care.png'
+import icon16 from '../images/therapies/asthma.png'
+import icon17 from '../images/therapies/cold.png'
+import icon18 from '../images/therapies/Migraine_Treatment.png'
+import icon19 from '../images/therapies/Allergy_Management.png'
+import icon20 from '../images/therapies/Anxiety_Helief.png'
+import icon21 from '../images/therapies/sleeping.png'
+import icon22 from '../images/therapies/Gut_Health.png'
+import icon23 from '../images/therapies/Digestive_Care.png'
+import icon24 from '../images/therapies/kidney_stone.png'
+import icon25 from '../images/therapies/Urinary_Health.png'
+import icon26 from '../images/therapies/Renal_Care.png'
 
 
 
@@ -25,155 +50,107 @@ const BestServices = () => {
     const slidesData = [
         {
             img: icon1,
-            title: "Panchakarma",
+            title: "Neck & Back Pain",
         },
         {
-            img: icon1,
-            title: "Nasyam ",
+            img: icon2,
+            title: "Spine Disorders",
         },
         {
-            img: icon1,
-            title: "Vamanam ",
+            img: icon3,
+            title: "Frozen Shoulder",
         },
         {
-            img: icon1,
-            title: "Virechanam",
+            img: icon4,
+            title: "Heel Pain",
         },
         {
-            img: icon1,
-            title: "Raksta mokshanam",
+            img: icon5,
+            title: "Rheumatoid Care",
         },
         {
-            img: icon1,
-            title: "Abhyangam ",
+            img: icon6,
+            title: "Psoriasis Treatment",
         },
         {
-            img: icon1,
-            title: "Steam bath ",
+            img: icon7,
+            title: "Eczema Therapy",
         },
         {
-            img: icon1,
-            title: "Podikizhi ",
+            img: icon8,
+            title: "Autoimmune Care",
         },
         {
-            img: icon1,
-            title: "Ilakizhi",
+            img: icon9,
+            title: "Hair Fall",
         },
         {
-            img: icon1,
-            title: "Navarakizhi",
+            img: icon10,
+            title: "Thinning Hair",
         },
         {
-            img: icon1,
-            title: "Dhanyamlakizhi",
+            img: icon11,
+            title: "Alopecia Care",
         },
         {
-            img: icon1,
-            title: "Dhanyamladhara",
+            img: icon12,
+            title: "Paralysis Care",
         },
         {
-            img: icon1,
-            title: "Vasti",
+            img: icon13,
+            title: "Stroke Rehabilitation",
         },
         {
-            img: icon1,
-            title: "janu vasti",
+            img: icon14,
+            title: "Diabetic Foot",
         },
         {
-            img: icon1,
-            title: "Upanaham",
+            img: icon15,
+            title: "Diabetes Diet",
         },
         {
-            img: icon1,
-            title: "Pada abhyangam",
+            img: icon16,
+            title: "Asthma Care",
         },
         {
-            img: icon1,
-            title: "Pizhichil",
+            img: icon17,
+            title: "Sinusitis Relief",
         },
         {
-            img: icon1,
-            title: "Udvartanam ",
+            img: icon18,
+            title: "Migraine Treatment",
         },
         {
-            img: icon1,
-            title: "Takra dhara ",
+            img: icon19,
+            title: "Allergy Management",
         },
         {
-            img: icon1,
-            title: "Shirodhara ",
+            img: icon20,
+            title: "Anxiety Relief",
         },
         {
-            img: icon1,
-            title: "Shirovasti ",
+            img: icon21,
+            title: "Sleep Wellness",
         },
         {
-            img: icon1,
-            title: "Thalapothichil",
+            img: icon22,
+            title: "Gut Health",
         },
         {
-            img: icon1,
-            title: "Kashayadhara",
+            img: icon23,
+            title: "Digestive Care",
         },
         {
-            img: icon1,
-            title: "Thokkanam",
+            img: icon24,
+            title: "Kidney Stone Care",
         },
         {
-            img: icon1,
-            title: "Attai vidal",
+            img: icon25,
+            title: "Urinary Health",
         },
         {
-            img: icon1,
-            title: "Suttigai",
-        },
-        {
-            img: icon1,
-            title: "Patru",
-        },
-        {
-            img: icon1,
-            title: "Ottradam",
-        },
-        {
-            img: icon1,
-            title: "Nasiyam",
-        },
-        {
-            img: icon1,
-            title: "Vethu",
-        },
-        {
-            img: icon1,
-            title: "Seelai",
-        },
-        {
-            img: icon1,
-            title: "Ennai kattu",
-        },
-        {
-            img: icon1,
-            title: "Pugai",
-        },
-        {
-            img: icon1,
-            title: "Pottanum",
-        },
-        {
-            img: icon1,
-            title: "Pasai",
-        },
-        {
-            img: icon1,
-            title: "Kalimbu",
-        },
-        {
-            img: icon1,
-            title: "Peechu",
-        },
-        {
-            img: icon1,
-            title: "Dharai",
+            img: icon26,
+            title: "Renal Care",
         },
 
 

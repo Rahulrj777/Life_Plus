@@ -882,6 +882,36 @@ const Home = () => {
                     </div>
                 </section>
 
+
+
+
+                {/* Testimonial */}
+
+                <section className='py-10 md:py-20'>
+                    <div className='w-full px-4 md:w-[80%] mx-auto'>
+
+                        <div className='flex flex-col justify-center items-center mx-auto mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
+                            <p className='text-[12px] md:text-[14px] text font-semibold uppercase text-[#936932] mb-3'>Testimonial</p>
+                            <h2 className="text-[20px] md:text-[3rem]  font-[Merriweather]  text-[#4a5c24] ">Customer Feedback & Reviews</h2>
+                            <div className='flex items-center justify-center gap-x-3 mt-4 text-[16px] md:text-[20px]'>
+                                <FaStar className='text-yellow-500 ' />
+                                <FaStar className='text-yellow-500 ' />
+                                <FaStar className='text-yellow-500 ' />
+                                <FaStar className='text-yellow-500 ' />
+                                <FaStar className='text-gray-200 ' />
+                            </div>
+                        </div>
+
+                        <div>
+                            <Testimonials />
+                        </div>
+
+
+
+                    </div>
+                </section>
+
+
                 {/* -------------- client ratings ---------------- */}
 
                 <section className='py-10 md:py-20 bg-[#f9f3eb] font-[poppins]'>
@@ -930,33 +960,6 @@ const Home = () => {
                             </div>
 
                         </div>
-                    </div>
-                </section>
-
-
-                {/* Testimonial */}
-
-                <section className='py-10 md:py-20'>
-                    <div className='w-full px-4 md:w-[80%] mx-auto'>
-
-                        <div className='flex flex-col justify-center items-center mx-auto mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
-                            <p className='text-[12px] md:text-[14px] text font-semibold uppercase text-[#936932] mb-3'>Testimonial</p>
-                            <h2 className="text-[20px] md:text-[3rem]  font-[Merriweather]  text-[#4a5c24] ">Customer Feedback & Reviews</h2>
-                            <div className='flex items-center justify-center gap-x-3 mt-4 text-[16px] md:text-[20px]'>
-                                <FaStar className='text-yellow-500 ' />
-                                <FaStar className='text-yellow-500 ' />
-                                <FaStar className='text-yellow-500 ' />
-                                <FaStar className='text-yellow-500 ' />
-                                <FaStar className='text-gray-200 ' />
-                            </div>
-                        </div>
-
-                        <div>
-                            <Testimonials />
-                        </div>
-
-
-
                     </div>
                 </section>
 
@@ -1025,10 +1028,12 @@ const Home = () => {
 
                 <section className='pt-4 pb-10 md:py-20 bg-white font-[poppins]'>
                     <div className='w-full px-4 md:w-[90%] mx-auto'>
-                        <div className='flex flex-col items-center gap-y-3 mb-8 md:mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
+
+                        <div className='flex flex-col items-center gap-y-2 mb-8 md:mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
                             <h3 className='font-bold text-[16px] md:text-[32px] font-[Merriweather]'>Meet our professional therapist</h3>
                             <p className='text-[10px] md:text-[12px] text-gray-600 text-center'>Our skilled therapists are experts in Siddha and Ayurveda, offering personalized care to support your unique healing journey with dedication and expertise</p>
                         </div>
+
 
                         {/* <div className='flex justify-center items-center'>
                             <div className='grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-8 mt-8'>

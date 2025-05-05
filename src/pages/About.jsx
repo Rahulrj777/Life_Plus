@@ -153,7 +153,7 @@ const About = () => {
 
             {/* About Section */}
             <section className='py-10 md:py-20 font-[poppins] bg-white'>
-                <div className='w-full px-4 md:w-[85%] mx-auto'>
+                <div className='w-full px-5 md:w-[85%] mx-auto'>
                     <div className='flex flex-col-reverse md:flex-row gap-y-14 justify-center items-center'>
                         <div className='w-full md:w-[50%]'>
                             <div className='flex justify-center items-center'>
@@ -165,19 +165,19 @@ const About = () => {
                                 <p className='flex items-center gap-x-2 text-[12px] md:text-[14px] text-red-600 font-medium'>
                                     About Us <span className='mt-0.5 rounded-3xl border border-red-600 w-[10%]'></span>
                                 </p>
-                                <h3 className='text-[18px] md:text-[26px] font-semibold mb-3 md:mb-6'>
+                                <h3 className='text-[20px] md:text-[26px] font-semibold mb-3 md:mb-6'>
                                     Your Trusted Partner in Holistic Healthcare
                                 </h3>
-                                <p className='text-[12px] md:text-[14px] leading-6 md:leading-7 text-gray-600'>
+                                <p className='text-[11px] md:text-[14px] leading-6 md:leading-7 text-gray-600 text-justify'>
                                     At LifePlus Ayush Vaidyasala, we bring together the time-honored wisdom of Siddha, Ayurveda, and Naturopathy to offer a truly integrative approach to healing.
                                     Guided by experienced physicians and skilled therapists, each treatment is tailored to address the root cause of illness while nurturing your body, mind, and spirit.
                                 </p>
-                                <ul className='mt-4 md:mt-8 text-[11px] md:text-[12px] space-y-2 md:space-y-4 list-disc list-inside font-medium'>
+                                <ul className='mt-4 md:mt-8 text-[9px] md:text-[12px] space-y-2 md:space-y-4 list-disc pl-2 md:pl-0 md:list-inside font-medium'>
                                     <li>Traditional Healing – Authentic care rooted in Siddha, Ayurveda, and Naturopathy.</li>
                                     <li>Skilled & Caring Experts – Guided by knowledgeable physicians and dedicated therapists.</li>
                                     <li>Root-Cause Wellness – Holistic solutions that go beyond symptoms to restore lasting health.</li>
                                 </ul>
-                                <p className='text-[12px] md:text-[12px] leading-6 text-gray-600 mt-6'>
+                                <p className='text-[10px] md:text-[12px] leading-5 md:leading-6 text-gray-600 mt-3 md:mt-6'>
                                     We are more than a healthcare center – we are your healing sanctuary. Step into a peaceful environment where personalized care meets the power of natural medicine, and embark on a journey back to your healthiest self.
                                 </p>
                             </div>
@@ -234,12 +234,12 @@ const About = () => {
                 <div className='w-full px-4 md:w-[80%] mx-auto font-[poppins]'>
                     <div className='flex justify-center items-center'>
                         <div className='flex flex-col items-center gap-y-6 md:gap-y-8'>
-                            <p className='text-[14px] md:text-[24px] md:w-[90%] leading-6 md:leading-11 font-semibold text-center text-white font-[Merriweather]'>
+                            <p className='text-[12px] md:text-[24px] md:w-[90%] leading-5 md:leading-11 font-semibold text-center text-white font-[Merriweather]'>
                                 Rooted in Siddha and Ayurveda, we offer holistic treatments that restore balance, promoting lasting health and wellness with natural healing.
                             </p>
                             <button
                                 ref={buttonRef}
-                                className="cursor-pointer px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-xl bg-[#587821] text-white font-medium hover:scale-105 transition duration-300"
+                                className="cursor-pointer text-[14px] md:text-[20px] px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#587821] text-white font-medium hover:scale-105 transition duration-300"
                             >
                                 Book Appointment
                             </button>
