@@ -98,7 +98,7 @@ const Enquiry = () => {
                                 </div>
 
                                 <div className="mb-6 md:mb-10">
-                                    <label className="block text-[12px] md:text-[14px] text-gray-50 font-semibold mb-2" htmlFor="course">Select a Course</label>
+                                    <label className="block text-[12px] md:text-[14px] text-gray-50 font-semibold mb-2" htmlFor="course">Select a Treatments</label>
                                     <select
                                         className="bg-transparent shadow appearance-none border border-gray-100 text-[12px] md:text-[12px] rounded-lg w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline text-gray-300"
                                         id="course"
@@ -107,10 +107,10 @@ const Enquiry = () => {
                                         onChange={handleChange}
                                         required
                                     >
-                                        <option value="">Select a Treatments</option>
-                                        <option value="digital-marketing-excellence">Siddha Treatments</option>
-                                        <option value="digital-marketing-mastery">Ayurveda Therapies</option>
-                                        <option value="seo-mastery">Naturopathy Therapies</option>
+                                        <option className='bg-black' value="">Select a Treatments</option>
+                                        <option className='bg-black' value="digital-marketing-excellence">Siddha Treatments</option>
+                                        <option className='bg-black' value="digital-marketing-mastery">Ayurveda Therapies</option>
+                                        <option className='bg-black' value="seo-mastery">Naturopathy Therapies</option>
                                     </select>
                                 </div>
 

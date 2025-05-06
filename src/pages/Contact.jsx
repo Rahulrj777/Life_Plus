@@ -40,7 +40,7 @@ const Contact = () => {
 
                         <div className='absolute w-full top-0 left-0 right-0 bottom-0 flex justify-start items-center bg-black/60 bg-opacity-40'>
                             <div className='w-full flex flex-col gap-y-2 md:gap-y-4 justify-start font-[Merriweather] px-9'>
-                                <h3 className='font-black text-[12px] md:text-[30px] text-white text-center'>
+                                <h3 className='font-black text-[12px] md:text-[40px] text-white text-center'>
                                     Get in Touch with Us for a Healthier Tomorrow
                                 </h3>
                                 <p className='text-[6px] md:text-[11px] font-[roboto] text-center text-gray-200 md:tracking-[1px] w-full md:w-[60%] mx-auto'>We are here to guide you on your path to natural healing and well-being. Whether you have queries about our treatments or wish to book a consultation, feel free to reach out</p>
@@ -87,12 +87,12 @@ const Contact = () => {
                                         <div className='flex justify-center md:justify-start items-center gap-x-4'>
                                             <div className='flex items-center gap-x-2'>
                                                 <FaPhone className='text-white text-[14px] md:text-[16px]' />
-                                                <p className='text-white text-[12px] md:text-[14px]'>+91 98765 43210</p>
+                                                <p className='text-white text-[12px] md:text-[14px]'>+91 8015907797</p>
                                             </div>
 
                                             <div className='flex items-center gap-x-2'>
                                                 <MdEmail className='text-white text-[14px] md:text-[16px]' />
-                                                <p className='text-white text-[12px] md:text-[14px]'>contact@lifeplus.com</p>
+                                                <p className='text-white text-[12px] md:text-[14px]'>lifeplusayushvadhyasala@gmail.com</p>
                                             </div>
                                         </div>
                                     </div>
@@ -116,21 +116,21 @@ const Contact = () => {
 
 
 
-                <section className='bg-[#f8f8ff] pt-0 md:pt-20 pb-0 md:pb-20 font-[poppins]'>
-                    <div className='w-[80%] mx-auto'>
-                        <div className='flex flex-col md:flex-row items-center gap-x-48 '>
+                <section className='bg-[#f8f8ff] py-10 md:pt-20  md:pb-20 font-[poppins]'>
+                    <div className='w-full px-4 md:w-[80%] mx-auto'>
+                        <div className='flex flex-col md:flex-row items-center gap-x-48 gap-y-6'>
 
-                            <div className='w-[50%] mx-auto h-full'>
+                            <div className='w-full md:w-[50%] mx-auto h-full'>
                                 <div className='flex flex-col justify-center items-center gap-y-4 md:gap-y-5 bg-gray-200 rounded-md drop-shadow-md px-6 py-8 '>
                                     <div><FaLocationDot className='text-[34px] text-yellow-600' /></div>
-                                    <p className='text-center text-[14px] font-semibold'>27th Karuneegar Street Adambakkam, Chennai - 600 008</p>
+                                    <p className='text-center text-[12px] md:text-[14px] font-semibold'>27th Karuneegar Street Adambakkam, Chennai - 600 008</p>
                                 </div>
                             </div>
 
-                            <div className='w-[50%] mx-auto h-full'>
+                            <div className='w-full md:w-[50%] mx-auto h-full'>
                                 <div className='flex flex-col justify-center items-center gap-y-4 md:gap-y-5 bg-gray-200 rounded-md drop-shadow-md px-6 py-8 '>
                                     <div><FaLocationDot className='text-[34px] text-yellow-600' /></div>
-                                    <p className='text-center text-[14px] font-semibold'>No.(Plot No.) 212, Imayam Colony, 2nd Street Anna Nagar West Extension, Chennai - 600 101</p>
+                                    <p className='text-center text-[12px] md:text-[14px] font-semibold'>No.(Plot No.) 212, Imayam Colony, 2nd Street Anna Nagar West Extension, Chennai - 600 101</p>
                                 </div>
                             </div>
                         </div>

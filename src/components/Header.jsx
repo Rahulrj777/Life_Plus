@@ -64,11 +64,11 @@ const Header = () => {
                 <div className="w-[60%] md:w-[50%] flex justify-end  gap-x-2 md:gap-x-6 pr-4 sm:pr-6 md:pr-8 lg:pr-10">
 
                     <div>
-                        <a href="mailto:abcd@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:lifeplusayushvadhyasala@gmail.com" target="_blank" rel="noopener noreferrer">
                             <div className="flex items-center gap-x-1">
                                 <MdOutlineEmail className="text-green-400 text-[17px] md:text-[21px]" />
                                 <span className="font-[Roboto] text-[9px] md:text-[12px] text-white font-medium">
-                                    abcd@gmail.com
+                                    lifeplusayushvadhyasala@gmail.com
                                 </span>
                             </div>
                         </a>

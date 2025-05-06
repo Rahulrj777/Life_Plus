@@ -1,6 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { FaRocket, FaLightbulb, FaLaptopCode } from 'react-icons/fa'; // Import your icons
+import { GoGoal } from "react-icons/go";
+import { IoEarthOutline } from "react-icons/io5";
+import { RiFundsLine } from "react-icons/ri";
+
+
 
 const TiltCard = ({ icon, title, description }) => {
     const cardRef = useRef(null);
@@ -46,9 +51,11 @@ const TiltCard = ({ icon, title, description }) => {
             className="w-full md:w-[90%] mx-auto rounded-lg overflow-hidden cursor-pointer mb-8 bg-slate-100 shadow-md  px-3 py-2 md:py-5  font-[poppins]"
             style={{ perspective: '1000px' }}
         >
-            <div className="mb-2 md:mb-4 mt-2 text-red-800 text-[24px] md:text-4xl">{icon}</div>
+            <div className='flex justify-start items-center gap-x-2 md:gap-x-3'>
+                <div className="mb-2 md:mb-2 mt-2 text-red-800 text-[30px] md:text-[40px]">{icon}</div>
+                <h3 className="text-[16px] md:text-[18px] font-semibold text-[#6b9883]">{title}</h3>
+            </div>
             <div className="p-2 md:p-4">
-                <h3 className="text-[14px] md:text-[18px] font-semibold text-yellow-500 mb-2">{title}</h3>
                 <p className="text-gray-600 opacity-75 text-[12px] md:text-[14px] font-[roboto] text-justify">{description}</p>
             </div>
         </div>
@@ -59,18 +66,18 @@ const TiltCard = ({ icon, title, description }) => {
 const MisionVision = () => {
     const data = [
         {
-            icon: <FaRocket />,
+            icon: <GoGoal />,
             title: 'Our Purpose:',
             description:
                 'To heal, empower, and transform lives by reviving ancient Siddha and Ayurvedic wisdom—offering natural, personalized healthcare that restores balance, boosts immunity, and nurtures the mind-body-spirit connection.',
         },
         {
-            icon: <FaLightbulb />,
+            icon: <IoEarthOutline />,
             title: 'Our Dream:',
             description: 'To be the most trusted and holistic healing destination in Chennai, where tradition meets innovation, and every individual discovers the power of nature’s timeless medicine for sustainable wellness',
         },
         {
-            icon: <FaLaptopCode />,
+            icon: <RiFundsLine />,
             title: 'Our Principles:',
             description: 'We honor Siddha and Ayurveda with pure herbs and trusted care. With compassion, integrity, and innovation, we heal naturally, sustainably, and extend wellness beyond our clinic to the community.',
         },

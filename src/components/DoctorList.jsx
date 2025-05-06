@@ -18,17 +18,17 @@ import doctor2 from "../images/doctor1.jpg";
 import doctor3 from "../images/doctor1.jpg";
 import doctor4 from "../images/doctor1.jpg";
 import doctor5 from "../images/doctor1.jpg";
-import doctor6 from "../images/doctor1.jpg";
+import doctor6 from "../images/doctors/as.png";
 
 
 // ✅ Add images to the doctor list
 const doctorList = [
-    { name: "Dr. A. Sheeladevi BSMS, MD(S)", quote: "Registered Medical Practitioner", des: "Professor, Sri Indra Ganesan Siddha Medical College, Trichy", image: doctor1 },
-    { name: "Dr. A. Vivekanandan BSMS, MD(S)", quote: "Registered Medical Practitioner", des: "Lecturer, Sri Indra Ganesan Siddha Medical College, Trichy", image: doctor2 },
-    { name: "Dr. T. Sophia BNYS", quote: "Registered Medical Practitioner", image: doctor3 },
-    { name: "Dr. M.S. Sivaranjani BNYS, MD(YOGA)", quote: "Registered Medical Practitioner", des: "Excel Naturopathy Medical College", image: doctor4 },
+    { name: "Dr. A. Sheeladevi BSMS, MD(S)", quote: "Registered Medical Practitioner",  image: doctor1 },
+    { name: "Dr. A. Vivekanandan BSMS, MD(S)", quote: "Registered Medical Practitioner",  image: doctor2 },
+    // { name: "Dr. T. Sophia BNYS", quote: "Registered Medical Practitioner", image: doctor3 },
+    { name: "Dr. M.S. Sivaranjani BNYS, MD(YOGA)", quote: "Registered Medical Practitioner",  image: doctor4 },
     { name: "Dr. B. Atchaya BAMS", quote: "Registered Medical Practitioner", image: doctor5 },
-    { name: "Dr. M. Suguna BAMS", quote: "Registered medical practitioner", image: doctor6 },
+    { name: "Dr. M. Suguna BAMS", quote: "Registered Ayurvedic Physician", image: doctor6 },
 ];
 
 const DoctorList = () => {
@@ -86,21 +86,21 @@ const DoctorList = () => {
                             <img
                                 src={doctorInfo.image}
                                 alt={doctorInfo.name}
-                                className="w-full object-cover rounded-xl"
+                                className="w-full object-cover rounded-xl drop-shadow-lg"
                             />
 
                             <div
-                                className="relative bg-white min-h-[90px] -mt-10 shadow-md drop-shadow-md border-b-2 border-green-600 w-[95%] md:w-[80%] mx-auto p-4 flex flex-col items-center justify-between"
+                                className="relative bg-white min-h-[90px] -mt-10 shadow-md drop-shadow-md border-b-2 border-green-600 w-[95%] md:w-[80%] mx-auto p-6 flex flex-col items-center justify-between"
                                 data-aos="fade-down"
                                 data-aos-duration="1000"
                             >
                                 <h3 className="text-[13px] md:text-[14px] font-semibold">{doctorInfo.name}</h3>
-                                <p className="font-[roboto] font-medium text-[11px] md:text-[12px] text-gray-600 mt-1 ">
+                                <p className="font-[roboto] font-medium text-[11px] md:text-[12px] text-gray-600 mt- ">
                                     {doctorInfo.quote}
                                 </p>
-                                <p className="font-[roboto] text-[10px] md:text-[10px] text-center text-gray-600">
+                                {/* <p className="font-[roboto] text-[10px] md:text-[10px] text-center text-gray-600">
                                     {doctorInfo.des}
-                                </p>
+                                </p> */}
 
                                 <div
                                     className="absolute -top-6 left-2"

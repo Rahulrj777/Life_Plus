@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 // import logo from '../images/64.png'
 import logo from '../images/footer_logo.png'
@@ -21,8 +22,7 @@ import { FaMobileScreen } from "react-icons/fa6";
 
 
 
-import { Link } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+
 
 
 const Footer = () => {
@@ -48,15 +48,15 @@ const Footer = () => {
 
                         <div className="p-2 md:p-4">
                             <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1  w-fit ">Get in Touch</div>
-                            <Link className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="home" smooth={true} duration={500}>
+                            <Link onClick={topPage} className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="/" smooth={true} duration={500}>
                                 Home
                             </Link>
 
-                            <Link className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="home" smooth={true} duration={500}>
+                            <Link onClick={topPage} className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="about" smooth={true} duration={500}>
                                 About
                             </Link>
 
-                            <Link className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="home" smooth={true} duration={500}>
+                            <Link onClick={topPage} className="text-gray-100 my-3 block text-[12px] sm:text-[13px] md:text-[13px] cursor-pointer hover:text-red-500" to="contact" smooth={true} duration={500}>
                                 Contact
                             </Link>
 
@@ -64,7 +64,7 @@ const Footer = () => {
 
 
                         <div class="p-2 md:p-4">
-                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1  w-fit ">Email Support</div>
+                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1  w-fit "> Support</div>
 
                             <Link to='/' onClick={topPage}>
                                 <p class="text-gray-100 my-3 block  text-[12px] sm:text-[13px]  md:text-[13px] hover:text-red-500" >Help Center </p>
@@ -81,7 +81,7 @@ const Footer = () => {
                         </div>
 
                         <div class="p-2 md:p-4">
-                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1  w-fit ">Head Office</div>
+                            <div className="text-[12px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] pb-1  w-fit ">Contact</div>
 
 
                             <div >
@@ -89,7 +89,7 @@ const Footer = () => {
                                 <p class="text-gray-100 my-3 block  text-[12px] sm:text-[13px]  md:text-[13px]" >  Chennai  </p>
 
                             </div>
-                            <a href="mailto::info@scipl.net" target="_blank" class="text-gray-100 my-3   text-[12px] sm:text-[13px]  md:text-[13px] flex items-center gap-x-2" ><MdOutlineMail className=' text-[16px] md:text-[20px] font-bold' />contact@lifeplus.com</a>
+                            <a href="mailto::lifeplusayushvadhyasala@gmail.com" target="_blank" class="text-gray-100 my-3   text-[12px] sm:text-[13px]  md:text-[13px] flex items-center gap-x-2" ><MdOutlineMail className=' text-[16px] md:text-[20px] font-bold' /> lifeplusayushvadhyasala@gmail.com</a>
                             {/* <a href="tel:91" target="_blank" className='text-gray-100 text-[12px] sm:text-[13px] md:text-[14px] my-3 flex items-center gap-x-2 '><MdOutlinePhoneAndroid className='text-[16px] md:text-[20px] font-bold' /> 044 -22602050</a> */}
                             <a href="tel:918015907797" target="_blank" className='text-gray-100 text-[12px] sm:text-[13px] md:text-[13px] my-3 flex items-center gap-x-2 '><MdOutlinePhoneAndroid className='text-[16px] md:text-[20px] font-bold' /> +91 8015907797</a>
                             <a href="tel:918015525797" target="_blank" className='text-gray-100 text-[12px] sm:text-[13px] md:text-[13px] my-3 flex items-center gap-x-2 '><MdOutlinePhoneAndroid className='text-[16px] md:text-[20px] font-bold' /> +91 8015525797</a>
