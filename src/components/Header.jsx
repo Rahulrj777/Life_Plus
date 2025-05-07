@@ -47,10 +47,10 @@ const Header = () => {
     return (
         <>
             {/* Top Navbar */}
-            <div className="flex items-center justify-between bg-[#45601a] h-8 md:h-11 w-full font-[roboto]">
+            <div className="flex items-center justify-between bg-[#6d918c] h-8 md:h-11 w-full font-[roboto]">
 
 
-                <div className="overflow-hidden w-[40%] md:w-[50%] h-full">
+                <div className="overflow-hidden w-[30%] md:w-[50%] h-full">
                     <div className="w-full px-4 md:px-6 h-full flex justify-center items-center">
                         <div className="marquee-container relative overflow-hidden w-full">
                             <p className="marquee-text text-[8px] md:text-[12px] font-bold text-white whitespace-nowrap">
@@ -61,13 +61,13 @@ const Header = () => {
                 </div>
 
 
-                <div className="w-[60%] md:w-[50%] flex justify-end  gap-x-2 md:gap-x-6 pr-4 sm:pr-6 md:pr-8 lg:pr-10">
+                <div className="w-[70%] md:w-[50%] flex justify-end  gap-x-2 md:gap-x-6 pr-4 sm:pr-6 md:pr-8 lg:pr-10">
 
                     <div>
                         <a href="mailto:lifeplusayushvadhyasala@gmail.com" target="_blank" rel="noopener noreferrer">
                             <div className="flex items-center gap-x-1">
-                                <MdOutlineEmail className="text-green-400 text-[17px] md:text-[21px]" />
-                                <span className="font-[Roboto] text-[9px] md:text-[12px] text-white font-medium">
+                                <MdOutlineEmail className="text-white text-[17px] md:text-[21px]" />
+                                <span className="font-[Roboto] text-[8px] md:text-[12px] text-white md:font-medium">
                                     lifeplusayushvadhyasala@gmail.com
                                 </span>
                             </div>
@@ -80,18 +80,19 @@ const Header = () => {
                         <a href="tel:++918015907797" target="_blank" rel="noopener noreferrer">
                             <div className="flex items-center gap-x-1">
                                 <div>
-                                    <MdPhoneAndroid className='text-green-400 text-[15px] md:text-[21px] ' />
+                                    <MdPhoneAndroid className='text-white text-[15px] md:text-[21px] ' />
                                 </div>
 
-                                <span className="font-[Roboto] text-[9px] md:text-[12px] text-white font-medium mt-0.5">
+                                <span className="font-[Roboto] text-[8px] md:text-[12px] text-white md:font-medium mt-0.5">
                                     +91 8015907797
                                 </span>
                             </div>
                         </a>
                     </div>
-
                 </div>
             </div>
+
+
 
             {/* Main Navbar */}
             <nav className={`w-full sticky top-0 z-50 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
@@ -135,17 +136,19 @@ const Header = () => {
                             <Link href="#">
                                 <div className="relative ">
 
-                                    {/* Button */}
-                                    <div className="relative group">
-                                        <button
-                                            className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8 py-1.5 md:py-1.5 uppercase rounded-md duration-500 transform transition-transform hover:scale-105 hover:shadow-xl text-[10px] md:text-[13px]"
-                                        >
-                                            Start
-                                        </button>
+                                    <Link to="/contact" onClick={topPage}>
+                                        {/* Button */}
+                                        <div className="relative group">
+                                            <button
+                                                className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8 py-1.5 md:py-1.5 uppercase rounded-md duration-500 transform transition-transform hover:scale-105 hover:shadow-xl text-[10px] md:text-[13px]"
+                                            >
+                                                Start
+                                            </button>
 
-                                        {/* Outline Animation Layer */}
-                                        <span className="absolute inset-0 rounded-md border-2 border-transparent animate-outlineLoopRedGreen pointer-events-none"></span>
-                                    </div>
+                                            {/* Outline Animation Layer */}
+                                            <span className="absolute inset-0 rounded-md border-2 border-transparent animate-outlineLoopRedGreen pointer-events-none"></span>
+                                        </div>
+                                        </Link>
 
 
                                 </div>

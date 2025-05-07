@@ -169,7 +169,7 @@ const About = () => {
                                 <p className='flex items-center gap-x-2 text-[12px] md:text-[14px] text-red-600 font-medium'>
                                     About Us <span className='mt-0.5 rounded-3xl border border-red-600 w-[10%]'></span>
                                 </p>
-                                <h3 className='text-[20px] md:text-[26px] font-semibold mb-3 md:mb-6'>
+                                <h3 className='text-[18px] md:text-[26px] font-semibold mb-3 md:mb-6 uppercase'>
                                     Your Trusted Partner in Holistic Healthcare
                                 </h3>
                                 <p className='text-[11px] md:text-[14px] leading-5 md:leading-7 text-gray-600 text-justify'>
@@ -242,10 +242,10 @@ const About = () => {
                                 Rooted in Siddha and Ayurveda, we offer holistic treatments that restore balance, promoting lasting health and wellness with natural healing.
                             </p>
                             <div>
-                                <Link to='/contact'>
+                                <Link to='/contact' onClick={() => window.scrollTo(0, 0)} >
                                     <button
                                         ref={buttonRef}
-                                        className="cursor-pointer text-[14px] md:text-[20px] px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#587821] text-white font-medium hover:scale-105 transition duration-300"
+                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#587821] text-white font-medium hover:scale-105 transition duration-300"
                                     >
                                         Book Appointment
                                     </button>

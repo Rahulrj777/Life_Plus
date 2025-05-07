@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import banner from '../images/banner/service_banner.webp'
+import banner from '../images/banner/service_banner.png'
+import bottombanner from '../images/banner/special.png'
 
 import highlight1 from '../images/icon/highlight1.png'
 import highlight2 from '../images/icon/highlight2.png'
@@ -83,8 +84,8 @@ const Service = () => {
                                 <div className='grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-10 w-full   pb-6 md:pb-6  px-6 md:px-9 rounded-md md:rounded-3xl'>
 
                                     <div>
-                                        <div className='h-full bg-yellow-800   drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-yellow-800 rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#c58653]   drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#c58653] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight1} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -95,8 +96,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className=' h-full bg-yellow-800  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-yellow-800 rounded-t-4xl p-4 -mt-6'>
+                                        <div className=' h-full bg-[#c58653]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#c58653] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight2} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -107,8 +108,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='h-full bg-yellow-800  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-yellow-800 rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#c58653]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#c58653] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight3} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -119,8 +120,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='h-full bg-yellow-800 drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-yellow-800 rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#c58653] drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#c58653] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight4} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -433,7 +434,7 @@ const Service = () => {
 
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto mb-14 md:mb-20'>
                                             <h1 className='font-[poppins] text-[16px] md:text-[32px] font-bold mx-auto text-center'>Ayurveda Panchakarma & Wellness Therapies</h1>
-                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Siddha medicine is a traditional healing system that originated in South India. It focuses on balancing the body's energies and promoting overall well-being through natural remedies, herbal treatments, and lifestyle practices.</p>
+                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Discover the ancient secrets of holistic well-being through authentic Panchakarma treatments and personalized Ayurvedic therapies. Rooted in centuries-old wisdom, our therapies aim to detoxify, rejuvenate, and restore balance to your body, mind, and spirit</p>
                                         </div>
 
                                         <div>
@@ -608,7 +609,7 @@ const Service = () => {
 
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto mb-20'>
                                             <h1 className='font-[poppins]   text-[16px] md:text-[32px] font-bold mx-auto text-center'>Naturopathy Therapies</h1>
-                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Siddha medicine is a traditional healing system that originated in South India. It focuses on balancing the body's energies and promoting overall well-being through natural remedies, herbal treatments, and lifestyle practices.</p>
+                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Embrace the power of nature to restore your health and vitality. Naturopathy focuses on drugless, holistic healing by stimulating the body’s self-healing abilities through natural elements like earth, water, sunlight, diet, and lifestyle.</p>
                                         </div>
 
                                         <div>
@@ -719,7 +720,7 @@ const Service = () => {
 
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto  mb-16 md:mb-20'>
                                             <h1 className='font-[poppins]   text-[16px] md:text-[32px] font-bold mx-auto text-center'>Lifestyle & Holistic Wellness</h1>
-                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Siddha medicine is a traditional healing system that originated in South India. It focuses on balancing the body's energies and promoting overall well-being through natural remedies, herbal treatments, and lifestyle practices.</p>
+                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Achieve balance in body, mind, and soul through an integrated approach to health. Lifestyle & Holistic Wellness focuses on mindful living, combining modern science with ancient wisdom to promote long-term well-being and inner harmony.</p>
                                         </div>
 
                                         <div>
@@ -811,7 +812,7 @@ const Service = () => {
 
                                     <div>
                                         <div>
-                                            <img src={banner} className='w-full object-cover rounded-md md:rounded-xl shadow-2xl drop-shadow-lg' alt='none' />
+                                            <img src={bottombanner} className='w-full object-cover rounded-md md:rounded-xl shadow-2xl drop-shadow-lg' alt='none' />
                                         </div>
                                     </div>
                                 </div>

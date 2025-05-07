@@ -34,7 +34,7 @@ const Footer = () => {
     return (
         <>
 
-            <div className='w-full relative bg-[#4a5c24]'>
+            <div className='w-full relative bg-[#86a39f]'>
 
                 <div class="  font-[poppins]  pt-8 md:pt-14 z-40">
                     <div class="px-4  w-full  md:w-[85%] mx-auto md:px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 ">
@@ -102,8 +102,8 @@ const Footer = () => {
                 </div>
 
 
-                <div class="bg-[#4a5c24] md:pt-2 z-40">
-                    <div class="flex flex-col  justify-between md:flex-row-reverse pb-2 md:pb-5 px-4 m-auto border-t border-[#aaaaaa] text-gray-800 text-sm  w-full md:w-[85%]  items-center">
+                <div class="bg-[#86a39f] md:pt-2 z-40">
+                    <div class="flex flex-col  justify-between md:flex-row-reverse pb-2 md:pb-5 px-2 m-auto border-t border-gray-200 text-gray-800 text-sm  w-full md:w-[85%]  items-center">
 
                         <div class="mt-1 md:mt-2 flex-col  flex gap-x-4 md:gap-x-8 ">
 
@@ -120,7 +120,7 @@ const Footer = () => {
                                     </div>
                                 </Link>
 
-                                <Link to="https://api.whatsapp.com/send?phone="
+                                {/* <Link to="https://api.whatsapp.com/send?phone="
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className=""
@@ -128,7 +128,7 @@ const Footer = () => {
                                     <div className='w-6 h-6 md:w-9 md:h-9 bg-white hover:border hover:border-[#6bb8ff] hover:bg-[#fbfbfb] rounded-full flex justify-center items-center shadow-md drop-shadow-md cursor-pointer hover:shadow-lg hover:drop-shadow-xl hover:animate-bounce'>
                                         <ImWhatsapp className='text-[12px] sm:text-[13px] md:text-[16px] text-green-800' />
                                     </div>
-                                </Link>
+                                </Link> */}
 
                                 <Link to="" target='_blank' className="">
                                     <div className='w-6 h-6 md:w-9 md:h-9 bg-white hover:border hover:border-[#6bb8ff] hover:bg-[#fbfbfb] rounded-full flex justify-center items-center shadow-md drop-shadow-md  cursor-pointer hover:shadow-lg hover:drop-shadow-xl hover:animate-bounce'>
@@ -150,7 +150,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div class=" mt-3 md:my-5 text-[9px] sm:text-[11px] md:text-[13px] text-gray-300 pb-8">Life Plus Pvt Ltd © 2025. All Rights Reserved.</div>
+                        <div class=" mt-3 md:my-5 text-[9px] sm:text-[11px] md:text-[13px] text-gray-100 pb-8">Life Plus Pvt Ltd © 2025. All Rights Reserved.</div>
 
                     </div>
                 </div>

@@ -108,9 +108,10 @@ const Enquiry = () => {
                                         required
                                     >
                                         <option className='bg-black' value="">Select a Treatments</option>
-                                        <option className='bg-black' value="digital-marketing-excellence">Siddha Treatments</option>
-                                        <option className='bg-black' value="digital-marketing-mastery">Ayurveda Therapies</option>
-                                        <option className='bg-black' value="seo-mastery">Naturopathy Therapies</option>
+                                        <option className='bg-black' value="Siddha Treatments">Siddha Treatments</option>
+                                        <option className='bg-black' value="Ayurveda Therapies">Ayurveda Therapies</option>
+                                        <option className='bg-black' value="Naturopathy Therapies">Naturopathy Therapies</option>
+                                        <option className='bg-black' value="Lifestyle & Holistic Wellness">Lifestyle & Holistic Wellness</option>
                                     </select>
                                 </div>
 

@@ -85,14 +85,14 @@ const Contact = () => {
 
                                     <div className='mt-6 md:mt-10 '>
                                         <div className='flex justify-center md:justify-start items-center gap-x-4'>
-                                            <div className='flex items-center gap-x-2'>
+                                            <div className='flex items-center gap-x-1 md:gap-x-2'>
                                                 <FaPhone className='text-white text-[14px] md:text-[16px]' />
-                                                <p className='text-white text-[12px] md:text-[14px]'>+91 8015907797</p>
+                                                <p className='text-white text-[10px] md:text-[14px]'>+91 8015907797</p>
                                             </div>
 
-                                            <div className='flex items-center gap-x-2'>
+                                            <div className='flex items-center gap-x-1 md:gap-x-2'>
                                                 <MdEmail className='text-white text-[14px] md:text-[16px]' />
-                                                <p className='text-white text-[12px] md:text-[14px]'>lifeplusayushvadhyasala@gmail.com</p>
+                                                <p className='text-white text-[10px] md:text-[14px]'>lifeplusayushvadhyasala@gmail.com</p>
                                             </div>
                                         </div>
                                     </div>

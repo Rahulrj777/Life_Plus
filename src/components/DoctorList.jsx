@@ -90,7 +90,7 @@ const DoctorList = () => {
                             />
 
                             <div
-                                className="relative bg-white min-h-[90px] -mt-10 shadow-md drop-shadow-md border-b-2 border-green-600 w-[95%] md:w-[80%] mx-auto p-6 flex flex-col items-center justify-between"
+                                className="relative bg-white min-h-[90px] -mt-10 shadow-md drop-shadow-md border-b-2 border-[#6d918c] w-[85%] md:w-[80%] mx-auto p-5 md:p-6 flex flex-col items-center justify-between"
                                 data-aos="fade-down"
                                 data-aos-duration="1000"
                             >

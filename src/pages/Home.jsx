@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import Testimonials from '../components/Testmonials';
+import gsap from 'gsap'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,10 +10,16 @@ import { FaPlay } from "react-icons/fa";
 import { GiBodyBalance } from "react-icons/gi";
 
 
+import leaf1 from '../images/banner/leaf1.png'
+import leaf2 from '../images/banner/leaf2.png'
+import leaf3 from '../images/banner/leaf3.png'
+import leaf4 from '../images/banner/leaf4.png'
 
 import banner from '../images/banner/banner.jpg'
 import bannervideo from '../images/banner.mp4'
 import whychoosebanner from '../images/banner/whybanner.jpg'
+
+import patternbackground from '../images/banner/pattern.png'
 
 import about1 from '../images/about1.jpg'
 import about2 from '../images/about2.jpg'
@@ -59,6 +66,7 @@ import booking from '../images/appointment.jpg'
 import midBanner from '../images/banner/mid_banner.jpg'
 import review from '../images/review-1.jpg'
 import doctor from '../images/doctor.jpg'
+import option from '../images/option.png'
 
 
 //icons
@@ -79,6 +87,32 @@ import DoctorList from '../components/DoctorList';
 
 const Home = () => {
 
+    const arrowRef = useRef(null);
+    const arrowRef1 = useRef(null);
+
+    useEffect(() => {
+
+        // Floating animation for the arrow image
+        gsap.to(arrowRef.current, {
+            y: 30,           // Vertical floating distance
+            duration: 2,     // Duration of the floating animation
+            repeat: -1,      // Infinite loop
+            yoyo: true,      // Move up and down
+            ease: "sine.inOut", // Smooth sine wave effect
+        });
+
+        // Floating animation for the arrow image
+        gsap.to(arrowRef1.current, {
+            y: 50,
+            x: -20,           // Vertical floating distance
+            duration: 2,     // Duration of the floating animation
+            repeat: -1,      // Infinite loop
+            yoyo: true,      // Move up and down
+            ease: "sine.inOut", // Smooth sine wave effect
+        });
+
+    }, [])
+
     useEffect(() => {
         AOS.init({ duration: 2000 });
     }, []);
@@ -87,36 +121,93 @@ const Home = () => {
     return (
         <>
 
-            <div className='overflow-hidden '>
+            <div className='overflow-hidden z-20'>
+
+
+                <div className='fixed top-0 left-0 right-0 bottom-0 -z-10 '>
+                    <img src={patternbackground} className='w-full h-screen object-cover' />
+                </div>
 
                 {/* -------------- banner slide ---------------- */}
 
-                <section className='w-full h-full font-[poppins] py-10 md:py-0 bg-gray-50' id='home'>
-                    <div className='w-full    flex flex-col  md:flex-row gap-y-10 justify-center items-center   overflow-hidden'>
+                <section className='w-full h-full font-[poppins] py-10 md:py-20  relative overflow-hidden' id='home'>
 
-                        <div className='w-full px-4 md:w-[50%] mx-auto  h-full '>
+                    <div className='absolute top-0 left-0'>
+                        <img src={leaf1} className='w-60 object-cover' alt='none' />
+                    </div>
+
+                    <div className='absolute bottom-0 right-0'>
+                        <img src={leaf2} className='w-44 object-cover blur-[2px]' alt='none' />
+                    </div>
+
+                    <div className='absolute -bottom-2 left-20'>
+                        <img src={leaf3} className='w-36 object-cover' alt='none' />
+                    </div>
+
+
+                    {/* Floating Arrow Image */}
+                    <div className='absolute top-16 right-20  '>
+                        <img ref={arrowRef} src={leaf4} className='w-20 md:w-28 blur-[2px] -rotate-45 object-cover' alt='arrow' />
+                    </div>
+
+                    {/* Floating Arrow Image */}
+                    <div className='absolute bottom-52  left-40  w-full flex justify-start'>
+                        <img ref={arrowRef1} src={leaf4} className=' w-14 md:w-16 object-cover' alt='arrow' />
+                    </div>
+
+
+                    <div className='w-full flex flex-col md:flex-row gap-y-10 justify-center items-center overflow-hidden'>
+
+                        <div className='md:pl-16 md:pr-5 flex flex-col items-center justify-center' data-aos="fade-up" data-aos-duration="3000">
+                            <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-red-500/60 flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
+                            <div className='font-bold  md:tracking-[2px]  '>
+                                <h2 className='text-[2rem] md:text-[4.6rem] text-center uppercase  text-[#6d918c] drop-shadow-md'> Helping You Feel </h2>
+                                <h2 className='text-[1.8rem] md:text-[4.2rem] text-center uppercase text-gray-500'> Better—Naturally </h2>
+                            </div>
+                            <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px] w-[70%] text-center text-gray-500    leading-5 md:leading-7 font-[roboto]  md:font-medium md:pr-8'>
+                                We use natural herbs and safe treatments to support your health and well-being. Whether you're
+                                looking to reduce stress, boost your energy, or improve your overall health, we’re here to help with
+                                gentle and effective herbal care.
+                            </p>
+
+                            <div className='mt-6 md:mt-11 font-[Merriweather]'>
+                                <Link to='/healthcare_services' onClick={() => window.scrollTo(0, 0)}>
+                                    <button className='px-4 md:px-8  py-2 md:py-2.5 rounded-md bg-[#cda43e] hover:scale-105 duration-500 font-semibold hover:bg-[#abc283] text-white text-[12px] md:text-[14px] cursor-pointer shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)] '>
+                                        Get Start Now
+                                    </button>
+                                </Link>
+                            </div>
+
+                        </div>
+
+
+
+
+                        {/* <div className='w-full px-4 md:w-[50%] mx-auto  h-full '>
 
                             <div className='md:pl-16 md:pr-5' data-aos="fade-up" data-aos-duration="3000">
-                                <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-green-800 flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
-                                <div className='font-bold font-[Lora] md:tracking-[2px] '>
-                                    <h2 className='text-[2rem] md:text-[3.8rem] uppercase  text-red-500 drop-shadow-md'> Helping You Feel </h2>
-                                    <h2 className='text-[1.8rem] md:text-[3.5rem] uppercase text-gray-600'> Better—Naturally </h2>
+                                <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-red-500/60 flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
+                                <div className='font-bold  md:tracking-[2px] '>
+                                    <h2 className='text-[2rem] md:text-[3.6rem] uppercase  text-[#6d918c] drop-shadow-md'> Helping You Feel </h2>
+                                    <h2 className='text-[1.8rem] md:text-[3.2rem] uppercase text-gray-500'> Better—Naturally </h2>
                                 </div>
-                                <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px]  text-gray-500  leading-5 md:leading-7 font-[roboto]  md:font-medium pr-8'>
+                                <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px]  text-gray-500 text-justify   leading-5 md:leading-7 font-[roboto]  md:font-medium md:pr-8'>
                                     We use natural herbs and safe treatments to support your health and well-being. Whether you're
                                     looking to reduce stress, boost your energy, or improve your overall health, we’re here to help with
                                     gentle and effective herbal care.
                                 </p>
 
                                 <div className='mt-6 md:mt-14 font-[Merriweather]'>
-                                    <button className='px-4 md:px-8  py-2 md:py-2.5 rounded-md bg-[#cda43e] hover:scale-105 duration-500 font-semibold hover:bg-[#abc283] text-white text-[12px] md:text-[14px] cursor-pointer shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)] '>
-                                        Get Start Now
-                                    </button>
+                                    <Link to='/healthcare_services' onClick={() => window.scrollTo(0, 0)}>
+                                        <button className='px-4 md:px-8  py-2 md:py-2.5 rounded-md bg-[#cda43e] hover:scale-105 duration-500 font-semibold hover:bg-[#abc283] text-white text-[12px] md:text-[14px] cursor-pointer shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)] '>
+                                            Get Start Now
+                                        </button>
+                                    </Link>
                                 </div>
 
                             </div>
 
-                            {/* <img src={banner} className='w-full object-cover' alt='none' /> */}
+                           
                         </div>
 
                         <div className='w-full md:w-[50%] mx-auto   h-full'>
@@ -127,24 +218,24 @@ const Home = () => {
 
 
                                 <div className='absolute inset-0 flex justify-center items-center'>
-                                    <span className="relative flex size-20 cursor-pointer">
+                                    <span className="relative flex size-14 md:size-20 cursor-pointer">
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#4CAF50] opacity-70 scale-75 transform transition-transform duration-1500 ease-out"></span>
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#66BB6A] opacity-60 scale-90 transform transition-transform duration-2000 ease-out delay-300"></span>
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#81C784] opacity-50 scale-100 transform transition-transform duration-2500 ease-out delay-600"></span>
                                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#A5D6A7] opacity-40 scale-110 transform transition-transform duration-3000 ease-out delay-900"></span>
-                                        <span className="relative inline-flex size-20 rounded-full bg-[#388E3C] justify-center items-center">
-                                            <FaPlay className='text-white text-[30px]' />
+                                        <span className="relative inline-flex  size-14 md:size-20 rounded-full bg-[#78ba7b] justify-center items-center">
+                                            <FaPlay className='text-white  text-[20px] md:text-[30px]' />
                                         </span>
                                     </span>
                                 </div>
 
                                 <div className='absolute -bottom-2 left-0 right-0 flex justify-start' data-aos='fade-right' data-aos-duratoin='1000'>
-                                    <img src={doctor} className='w-[30%] bg-gray-50 p-2  object-cover' alt='none' />
+                                    <img src={option} className='w-[30%] bg-gray-50 p-2  object-cover' alt='none' />
                                 </div>
 
 
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
                 </section>
@@ -253,7 +344,9 @@ const Home = () => {
                                         <li className='flex items-center gap-x-2'>  <span><img src={who4} className='w-6 md:w-8 object-cover' alt='none' /></span>   <span>Natural Treatments</span> </li>
                                     </ul>
                                     <div className='mt-2'>
-                                        <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-5 bg-green-800 hover:bg-green-700 hover:scale-105 duration-300  font-semibold text-white rounded-md text-[10px] md:text-[12px] '>Learn More</button>
+                                        <Link to='/about' onClick={() => window.scrollTo(0, 0)}>
+                                            <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-5 bg-green-800 hover:bg-green-700 hover:scale-105 duration-300  font-semibold text-white rounded-md text-[10px] md:text-[12px] '>Learn More</button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -264,7 +357,7 @@ const Home = () => {
 
                 {/* contact box */}
 
-                <section className='py-8 md:py-20 '>
+                <section className='py-8 md:py-20 bg-white'>
                     <div className='w-full flex justify-center items-center relative font-[Merriweather]'>
 
                         <div className='border border-gray-200 w-full absolute z-10'></div>
@@ -272,7 +365,9 @@ const Home = () => {
                         <div className='flex flex-col md:flex-row items-center  md:gap-x-10 bg-white z-40 border border-gray-200 px-5 md:px-16 py-2 md:py-4 rounded-xl  md:rounded-4xl' data-aos='fade-up' data-aos-duratoin='1000'>
                             <h3 className='font-light text-[8px] md:text-[14px] flex items-center gap-x-2 md:gap-x-4'>  <span> <PiHeadsetFill className='text-green-500 text-[20px] md:text-[40px]' /> </span> <span> Begin your personalized wellness journey with Life Plus. </span> </h3>
                             <div>
-                                <button className='px-3 md:px-6  mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#a48125] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white font-bold'>Contact us</button>
+                                <Link to='/contact' onClick={() => window.scrollTo(0, 0)}>
+                                    <button className='px-3 md:px-6 cursor-pointer hover:scale-105 duration-300 mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#cda43e] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white font-bold'>Contact us</button>
+                                </Link>
                             </div>
                         </div>
 
@@ -282,7 +377,7 @@ const Home = () => {
 
                 {/* ----------------- mid banner -------------- */}
 
-                <section>
+                <section className='bg-white'>
                     <div className="relative">
                         <img src={midBanner} className="w-full object-cover" alt="none" />
 
@@ -333,7 +428,7 @@ const Home = () => {
 
                 {/* ---------------------- Our Services -------------- */}
 
-                <section className='pt-14 pb-10 md:py-20  font-[poppins]'>
+                <section className='pt-14 pb-10 md:py-20  font-[poppins] bg-white'>
                     <div className='w-full px-4 md:w-[80%]   md:h-[35rem] mx-auto relative'>
 
                         <div className='flex flex-col md:flex-row items-start justify-center '>
@@ -371,7 +466,7 @@ const Home = () => {
 
 
                                                     <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[14px] font-bold  font-[Merriweather] text-[#6e9039] text-center'> Siddha Medicine & Therapies </h3>
+                                                        <h3 className='text-[14px] font-bold  font-[Merriweather] text-[#86a39f] text-center'> Siddha Medicine & Therapies </h3>
                                                         <p className='text-[11px] md:text-[12px] text-gray-500 text-center'> Siddha is a powerful ancient healing science from Tamil Nadu, focusing on balancing the three humors — Vata, Pitta, and Kapha. Our Siddha care includes: </p>
                                                     </div>
 
@@ -380,7 +475,7 @@ const Home = () => {
                                         </div>
 
                                         <div>
-                                            <div className='bg-[#6e9039] drop-shadow-sm px-2 md:px-4 py-6 md:py-8 h-full'>
+                                            <div className='bg-[#86a39f] drop-shadow-sm px-2 md:px-4 py-6 md:py-8 h-full'>
                                                 <div className='flex flex-col gap-y-2 md:gap-y-6 items-center justify-center'>
                                                     <div>
                                                         <img src={service2} className='w-14 md:w-20 object-cover' alt='none' />
@@ -403,7 +498,7 @@ const Home = () => {
                                                     </div>
 
                                                     <div className='flex flex-col items-center gap-y-2'>
-                                                        <h3 className='text-[14px] font-bold  font-[Merriweather] text-[#6e9039] text-center'> Naturopathy Therapies </h3>
+                                                        <h3 className='text-[14px] font-bold  font-[Merriweather] text-[#86a39f] text-center'> Naturopathy Therapies </h3>
                                                         <p className='text-[11px] md:text-[12px] text-gray-500 text-center'> Naturopathy restores health using elements of nature like water, mud, air, and plant-based remedies. Our treatments include: </p>
                                                     </div>
 
@@ -412,7 +507,7 @@ const Home = () => {
                                         </div>
 
                                         <div>
-                                            <div className='bg-[#6e9039] drop-shadow-sm px-2 md:px-6 py-6 md:py-8 h-full flex md:hidden'>
+                                            <div className='bg-[#86a39f] drop-shadow-sm px-2 md:px-6 py-6 md:py-8 h-full flex md:hidden'>
                                                 <div className='flex flex-col gap-y-2 md:gap-y-6 items-center justify-center'>
                                                     <div>
                                                         <img src={service4} className='w-14 md:w-20 object-cover' alt='none' />
@@ -573,10 +668,6 @@ const Home = () => {
                         <div className='flex justify-center items-center'>
                             <div className='grid  grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10' data-aos='fade-up' data-aos-duratoin='3000'>
 
-
-
-
-
                                 <div>
                                     <div className='bg-white  flex flex-col justify-center gap-y-4 md:gap-y-6 hover:drop-shadow-md hover:rounded-xl duration-500 overflow-hidden h-full'>
 
@@ -640,7 +731,6 @@ const Home = () => {
 
                                             <div className='border border-gray-200'></div>
 
-
                                         </div>
                                     </div>
                                 </div>
@@ -661,7 +751,6 @@ const Home = () => {
                                             <p className='text-[12px] md:text-[14px] leading-6 text-gray-600'>Nasyam is the nasal administration of medicated oils, providing relief from sinus issues, migraines, and enhancing mental clarity.</p>
 
                                             <div className='border border-gray-200'></div>
-
 
                                         </div>
                                     </div>
@@ -684,7 +773,6 @@ const Home = () => {
                                             <p className='text-[12px] md:text-[14px] leading-6 text-gray-600'>Vamanam is a therapeutic emesis treatment that helps detoxify the body and balances Kapha-related disorders for improved health</p>
 
                                             <div className='border border-gray-200'></div>
-
 
                                         </div>
                                     </div>
@@ -713,6 +801,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+
 
 
                         <div className='flex justify-center items-center mt-8 '>
@@ -758,7 +847,7 @@ const Home = () => {
 
                 {/* ---------- why choose us --------------*/}
 
-                <section>
+                <section className='bg-white'>
                     <div className="relative h-[70rem] md:h-[40rem]">
                         {/* Background Image and Overlay */}
                         <div className="relative h-full">
@@ -843,7 +932,7 @@ const Home = () => {
 
                 {/* reviews */}
 
-                <section className='bg-[#5d772f]'>
+                <section className='bg-[#86a39f]'>
                     <div className='w-[95%] mx-auto'>
                         <div className='bottom-0  w-full py-5 md:py-8 font-[Merriweather]'>
                             <div className='w-full md:w-[85%] mx-auto'>
@@ -852,26 +941,26 @@ const Home = () => {
                                     <div>
                                         <div className='flex flex-col items-center md:gap-y-2'>
                                             <h2 className='text-[16px] md:text-[48px] font-bold text-white'>45K+</h2>
-                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Happy Customer</h3>
+                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-gray-200 font-[poppins] uppercase '>Happy Customer</h3>
                                         </div>
                                     </div>
 
                                     <div>
                                         <div className='flex flex-col items-center md:gap-y-2'>
                                             <h2 className='text-[16px] md:text-[48px] font-bold text-white'>40+</h2>
-                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Services</h3>
+                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-gray-200 font-[poppins] uppercase '>Services</h3>
                                         </div>
                                     </div>
                                     <div>
                                         <div className='flex flex-col items-center md:gap-y-2'>
                                             <h2 className='text-[16px] md:text-[48px] font-bold text-white'>31+</h2>
-                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Doctors</h3>
+                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-gray-200 font-[poppins] uppercase '>Doctors</h3>
                                         </div>
                                     </div>
                                     <div>
                                         <div className='flex flex-col items-center md:gap-y-2'>
                                             <h2 className='text-[16px] md:text-[48px] font-bold text-white'>25+</h2>
-                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-[#99c24a] font-[poppins] uppercase '>Experiecne</h3>
+                                            <h3 className='text-[7px] md:text-[14px] font-medium tracking-tight text-gray-200 font-[poppins] uppercase '>Experiecne</h3>
                                         </div>
                                     </div>
 
@@ -887,7 +976,7 @@ const Home = () => {
 
                 {/* Testimonial */}
 
-                <section className='py-10 md:py-20'>
+                <section className='py-10 md:py-20 bg-white'>
                     <div className='w-full px-4 md:w-[80%] mx-auto'>
 
                         <div className='flex flex-col justify-center items-center mx-auto mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>

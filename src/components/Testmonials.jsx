@@ -108,7 +108,7 @@ const Testimonials = () => {
                     ))}
                   </div>
 
-                  <p className="text-[12px] font-[roboto] text-gray-500 text-center">
+                  <p className="text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-center">
                     {testimonial.review}
                   </p>
                 </div>
