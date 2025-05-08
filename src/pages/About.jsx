@@ -245,7 +245,7 @@ const About = () => {
                                 <Link to='/contact' onClick={() => window.scrollTo(0, 0)} >
                                     <button
                                         ref={buttonRef}
-                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#587821] text-white font-medium hover:scale-105 transition duration-300"
+                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#cda43e] text-white font-medium hover:scale-105 transition duration-300"
                                     >
                                         Book Appointment
                                     </button>

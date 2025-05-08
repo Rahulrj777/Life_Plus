@@ -42,6 +42,44 @@ const Header = () => {
 
 
 
+    // button
+
+    const buttonRef = useRef(null);
+    const borderRef = useRef(null);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.set(borderRef.current, {
+                scale: 1,
+                opacity: 0.5,
+            });
+        }, buttonRef);
+
+        return () => ctx.revert();
+    }, []);
+
+    const handleMouseEnter = () => {
+        gsap.to(borderRef.current, {
+            scale: 1.1,
+            opacity: 1,
+            borderColor: "#00FF99",
+            boxShadow: "0 0 15px #00FF99",
+            duration: 0.4,
+            ease: "power2.out",
+        });
+    };
+
+    const handleMouseLeave = () => {
+        gsap.to(borderRef.current, {
+            scale: 1,
+            opacity: 0.5,
+            borderColor: "transparent",
+            boxShadow: "none",
+            duration: 0.4,
+            ease: "power2.inOut",
+        });
+    };
+
 
 
     return (
@@ -138,17 +176,22 @@ const Header = () => {
 
                                     <Link to="/contact" onClick={topPage}>
                                         {/* Button */}
-                                        <div className="relative group">
+                                        <div className="relative group" ref={buttonRef}>
                                             <button
+                                                onMouseEnter={handleMouseEnter}
+                                                onMouseLeave={handleMouseLeave}
                                                 className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8 py-1.5 md:py-1.5 uppercase rounded-md duration-500 transform transition-transform hover:scale-105 hover:shadow-xl text-[10px] md:text-[13px]"
                                             >
                                                 Start
                                             </button>
 
-                                            {/* Outline Animation Layer */}
-                                            <span className="absolute inset-0 rounded-md border-2 border-transparent animate-outlineLoopRedGreen pointer-events-none"></span>
+                                            {/* Glowing Border Animation */}
+                                            <span
+                                                ref={borderRef}
+                                                className="absolute inset-0 rounded-md border-2 border-transparent pointer-events-none"
+                                            ></span>
                                         </div>
-                                        </Link>
+                                    </Link>
 
 
                                 </div>

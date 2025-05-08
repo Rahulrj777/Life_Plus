@@ -133,26 +133,26 @@ const Home = () => {
                 <section className='w-full h-full font-[poppins] py-10 md:py-20  relative overflow-hidden' id='home'>
 
                     <div className='absolute top-0 left-0'>
-                        <img src={leaf1} className='w-60 object-cover' alt='none' />
+                        <img src={leaf1} className='w-14 md:w-60 object-cover' alt='none' />
                     </div>
 
                     <div className='absolute bottom-0 right-0'>
-                        <img src={leaf2} className='w-44 object-cover blur-[2px]' alt='none' />
+                        <img src={leaf2} className='w-20 md:w-44 object-cover blur-[2px]' alt='none' />
                     </div>
 
-                    <div className='absolute -bottom-2 left-20'>
-                        <img src={leaf3} className='w-36 object-cover' alt='none' />
+                    <div className='absolute  bottom-0 md:-bottom-2  left-4 md:left-20'>
+                        <img src={leaf3} className='w-16 md:w-36 object-cover' alt='none' />
                     </div>
 
 
                     {/* Floating Arrow Image */}
-                    <div className='absolute top-16 right-20  '>
-                        <img ref={arrowRef} src={leaf4} className='w-20 md:w-28 blur-[2px] -rotate-45 object-cover' alt='arrow' />
+                    <div className='absolute top-0 md:top-16 right-0 md:right-20  '>
+                        <img ref={arrowRef} src={leaf4} className='w-12 md:w-28 blur-[2px] -rotate-45 object-cover' alt='arrow' />
                     </div>
 
                     {/* Floating Arrow Image */}
-                    <div className='absolute bottom-52  left-40  w-full flex justify-start'>
-                        <img ref={arrowRef1} src={leaf4} className=' w-14 md:w-16 object-cover' alt='arrow' />
+                    <div className='absolute bottom-36 md:bottom-52  left-10 md:left-40  w-full flex justify-start'>
+                        <img ref={arrowRef1} src={leaf4} className=' w-8 md:w-16 object-cover' alt='arrow' />
                     </div>
 
 
@@ -164,7 +164,7 @@ const Home = () => {
                                 <h2 className='text-[2rem] md:text-[4.6rem] text-center uppercase  text-[#6d918c] drop-shadow-md'> Helping You Feel </h2>
                                 <h2 className='text-[1.8rem] md:text-[4.2rem] text-center uppercase text-gray-500'> Better—Naturally </h2>
                             </div>
-                            <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px] w-[70%] text-center text-gray-500    leading-5 md:leading-7 font-[roboto]  md:font-medium md:pr-8'>
+                            <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px] w-full px-4 md:w-[70%] text-center text-gray-500    leading-5 md:leading-7 font-[roboto]  md:font-medium md:pr-8'>
                                 We use natural herbs and safe treatments to support your health and well-being. Whether you're
                                 looking to reduce stress, boost your energy, or improve your overall health, we’re here to help with
                                 gentle and effective herbal care.
@@ -314,7 +314,7 @@ const Home = () => {
                                         <div className='bg-white p-3 md:p-4 overflow-hidden  h-full  w-[80%] md:w-[50%] mx-auto rounded-bl-4xl'>
                                             <div className='bg-white p-3 md:p-7  mx-auto border-2 border-green-600 rounded-bl-3xl  space-y-1 md:space-y-3'>
                                                 <div className='flex justify-center items-center'>
-                                                    <GiLindenLeaf className=' text-[14px] md:text-[20px] text-green-600' />
+                                                    <GiLindenLeaf className=' text-[14px] md:text-[20px] text-yellow-600' />
                                                 </div>
                                                 <h3 className='text-center font-bold text-[10px] md:text-[16px] font-[Merriweather]'>Renew Yourself with Ayurveda</h3>
                                                 <p className='text-[8px] md:text-[10px] text-center'>
@@ -345,7 +345,7 @@ const Home = () => {
                                     </ul>
                                     <div className='mt-2'>
                                         <Link to='/about' onClick={() => window.scrollTo(0, 0)}>
-                                            <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-5 bg-green-800 hover:bg-green-700 hover:scale-105 duration-300  font-semibold text-white rounded-md text-[10px] md:text-[12px] '>Learn More</button>
+                                            <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-8 bg-transparent hover:bg-yellow-600 border border-yellow-600 hover:scale-105 duration-300  text-yellow-700 hover:text-white rounded-md font-bold text-[10px] md:text-[12px] '>Learn More</button>
                                         </Link>
                                     </div>
                                 </div>
@@ -363,7 +363,7 @@ const Home = () => {
                         <div className='border border-gray-200 w-full absolute z-10'></div>
 
                         <div className='flex flex-col md:flex-row items-center  md:gap-x-10 bg-white z-40 border border-gray-200 px-5 md:px-16 py-2 md:py-4 rounded-xl  md:rounded-4xl' data-aos='fade-up' data-aos-duratoin='1000'>
-                            <h3 className='font-light text-[8px] md:text-[14px] flex items-center gap-x-2 md:gap-x-4'>  <span> <PiHeadsetFill className='text-green-500 text-[20px] md:text-[40px]' /> </span> <span> Begin your personalized wellness journey with Life Plus. </span> </h3>
+                            <h3 className='font-light text-[8px] md:text-[14px] flex items-center gap-x-2 md:gap-x-4'>  <span> <PiHeadsetFill className='text-[#6d918c] text-[20px] md:text-[40px]' /> </span> <span> Begin your personalized wellness journey with Life Plus. </span> </h3>
                             <div>
                                 <Link to='/contact' onClick={() => window.scrollTo(0, 0)}>
                                     <button className='px-3 md:px-6 cursor-pointer hover:scale-105 duration-300 mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#cda43e] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white font-bold'>Contact us</button>
@@ -383,7 +383,7 @@ const Home = () => {
 
                         <div className="absolute  top-20 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
                             <div className='w-[60%] md:w-[50%] mx-auto' data-aos='fade-up' data-aos-duratoin='2000'>
-                                <h2 className="text-gray-600 text-[12px] md:text-[5rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
+                                <h2 className="text-gray-600 text-[13px] md:text-[5rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
                                 <p className='tracking-tight text-[8px]  md:text-[16px] text-gra'> Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way. </p>
                             </div>
                         </div>
@@ -805,7 +805,9 @@ const Home = () => {
 
 
                         <div className='flex justify-center items-center mt-8 '>
-                            <button className='bg-[#a48125] px-6 py-2 text-white text-[12px] cursor-pointer hover:scale-105 duration-200' >Explain More</button>
+                            <Link to='/healthcare_services' onClick={() => window.scrollTo(0, 0)}>
+                                <button className='bg-[#a48125] px-6 py-2 text-white text-[12px] cursor-pointer hover:scale-105 duration-200' >Explain More</button>
+                            </Link>
                         </div>
 
                     </div>

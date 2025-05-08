@@ -13,20 +13,20 @@ import { FaStethoscope, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/ti';
 
 // ✅ Import separate doctor images
-import doctor1 from "../images/doctor1.jpg";
-import doctor2 from "../images/doctor1.jpg";
-import doctor3 from "../images/doctor1.jpg";
-import doctor4 from "../images/doctor1.jpg";
-import doctor5 from "../images/doctor1.jpg";
-import doctor6 from "../images/doctors/as.png";
+import doctor1 from "../images/doctors/doctor.jpg";
+import doctor2 from "../images/doctors/3.jpg";
+import doctor3 from "../images/doctors/doctor.jpg";
+import doctor4 from "../images/doctors/doctor.jpg"; 
+import doctor5 from "../images/doctors/2.jpg";
+import doctor6 from "../images/doctors/1.jpg";
 
 
 // ✅ Add images to the doctor list
 const doctorList = [
-    { name: "Dr. A. Sheeladevi BSMS, MD(S)", quote: "Registered Medical Practitioner",  image: doctor1 },
-    { name: "Dr. A. Vivekanandan BSMS, MD(S)", quote: "Registered Medical Practitioner",  image: doctor2 },
+    { name: "Dr. A. Sheeladevi BSMS, MD(S)", quote: "Registered Medical Practitioner", image: doctor1 },
+    { name: "Dr. A. Vivekanandan BSMS, MD(S)", quote: "Registered Medical Practitioner", image: doctor2 },
     // { name: "Dr. T. Sophia BNYS", quote: "Registered Medical Practitioner", image: doctor3 },
-    { name: "Dr. M.S. Sivaranjani BNYS, MD(YOGA)", quote: "Registered Medical Practitioner",  image: doctor4 },
+    { name: "Dr. M.S. Sivaranjani BNYS, MD(YOGA)", quote: "Registered Medical Practitioner", image: doctor4 },
     { name: "Dr. B. Atchaya BAMS", quote: "Registered Medical Practitioner", image: doctor5 },
     { name: "Dr. M. Suguna BAMS", quote: "Registered Ayurvedic Physician", image: doctor6 },
 ];
@@ -59,7 +59,7 @@ const DoctorList = () => {
 
             <Swiper
                 slidesPerView={3}
-                spaceBetween={40}
+                spaceBetween={90}
                 loop={true}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 navigation={{
@@ -86,11 +86,11 @@ const DoctorList = () => {
                             <img
                                 src={doctorInfo.image}
                                 alt={doctorInfo.name}
-                                className="w-full object-cover rounded-xl drop-shadow-lg"
+                                className="w-full object-cover rounded-xl drop-shadow-md shadow-md "
                             />
 
                             <div
-                                className="relative bg-white min-h-[90px] -mt-10 shadow-md drop-shadow-md border-b-2 border-[#6d918c] w-[85%] md:w-[80%] mx-auto p-5 md:p-6 flex flex-col items-center justify-between"
+                                className="relative bg-white min-h-[80px] -mt-10 shadow-md drop-shadow-md border-b-2 border-[#6d918c] w-[85%] md:w-[80%] mx-auto  flex flex-col items-center justify-center"
                                 data-aos="fade-down"
                                 data-aos-duration="1000"
                             >
