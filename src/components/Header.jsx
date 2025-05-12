@@ -180,16 +180,12 @@ const Header = () => {
                                             <button
                                                 onMouseEnter={handleMouseEnter}
                                                 onMouseLeave={handleMouseLeave}
-                                                className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#cda43e] hover:bg-slate-100 text-white hover:text-green-400 px-5 md:px-8 py-1.5 md:py-1.5 uppercase rounded-md duration-500 transform transition-transform hover:scale-105 hover:shadow-xl text-[10px] md:text-[13px]"
+                                                className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#a64c4f] hover:bg-slate-900 text-white  px-5 md:px-8 py-1.5 md:py-2 uppercase rounded-md duration-500 transform transition-transform hover:scale-105  text-[10px] md:text-[13px]"
                                             >
                                                 Start
                                             </button>
 
-                                            {/* Glowing Border Animation */}
-                                            <span
-                                                ref={borderRef}
-                                                className="absolute inset-0 rounded-md border-2 border-transparent pointer-events-none"
-                                            ></span>
+                                           
                                         </div>
                                     </Link>
 

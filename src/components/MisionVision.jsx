@@ -52,8 +52,8 @@ const TiltCard = ({ icon, title, description }) => {
             style={{ perspective: '1000px' }}
         >
             <div className='flex justify-start items-center gap-x-2 md:gap-x-3'>
-                <div className="mb-2 md:mb-2 mt-2 text-red-800 text-[30px] md:text-[40px]">{icon}</div>
-                <h3 className="text-[16px] md:text-[18px] font-semibold text-[#6b9883]">{title}</h3>
+                <div className="mb-2 md:mb-2 mt-2 text-[#a64c4f] text-[30px] md:text-[40px]">{icon}</div>
+                <h3 className="text-[16px] md:text-[18px] font-semibold text-[#6d918c]">{title}</h3>
             </div>
             <div className="p-2 md:p-4">
                 <p className="text-gray-600 opacity-75 text-[12px] md:text-[14px] font-[roboto] text-justify">{description}</p>

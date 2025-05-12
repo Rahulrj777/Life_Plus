@@ -132,7 +132,7 @@ const Enquiry = () => {
                                     </div>
                                 </div>
 
-                                <button className="w-full cursor-pointer border border-green-700 rounded-xl  bg-[#619F9B] uppercase text-white hover:scale-105 duration-500 font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline" type="submit">
+                                <button className="w-full cursor-pointer border border-green-700 rounded-xl  bg-[#6d918c] uppercase text-white hover:scale-105 duration-500 font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline" type="submit">
                                     Submit
                                 </button>
                             </form>

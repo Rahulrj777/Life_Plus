@@ -107,7 +107,7 @@ const DoctorList = () => {
                                     data-aos="fade-up"
                                     data-aos-duration="1000"
                                 >
-                                    <div className="size-10 bg-[#a48125] rounded-full p-2 flex justify-center items-center">
+                                    <div className="size-10 bg-[#6d918c] rounded-full p-2 flex justify-center items-center">
                                         <FaStethoscope className="text-white" />
                                     </div>
                                 </div>

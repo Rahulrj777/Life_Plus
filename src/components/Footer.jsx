@@ -110,13 +110,13 @@ const Footer = () => {
                             <div className='mt-1 md:mt-2 flex-row  flex gap-x-4 md:gap-x-8 '>
                                 <Link to='' target='_blank' >
                                     <div className='w-6 h-6 md:w-9 md:h-9 bg-white hover:border hover:border-[#6bb8ff] hover:bg-[#fbfbfb] rounded-full flex justify-center items-center shadow-md drop-shadow-md  cursor-pointer hover:shadow-lg hover:drop-shadow-xl hover:animate-bounce'>
-                                        <FaSquareXTwitter className='text-[12px] sm:text-[13px] md:text-[16px] text-yellow-600' />
+                                        <FaSquareXTwitter className='text-[12px] sm:text-[13px] md:text-[16px] text-[#8e6600]' />
                                     </div>
                                 </Link>
 
                                 <Link to="https://www.instagram.com/lifeplusayushvaidhyasala?igsh=MWw3cHp0YmtzbDM2Zw==" target='_blank'>
                                     <div className='w-6 h-6 md:w-9 md:h-9 bg-white hover:border hover:border-[#6bb8ff] hover:bg-[#fbfbfb] rounded-full flex justify-center items-center shadow-md drop-shadow-md  cursor-pointer hover:shadow-lg hover:drop-shadow-xl hover:animate-bounce'>
-                                        <FiInstagram className='text-[12px] sm:text-[13px] md:text-[16px] text-yellow-600' />
+                                        <FiInstagram className='text-[12px] sm:text-[13px] md:text-[16px] text-[#8e6600]' />
                                     </div>
                                 </Link>
 
@@ -132,13 +132,13 @@ const Footer = () => {
 
                                 <Link to="" target='_blank' className="">
                                     <div className='w-6 h-6 md:w-9 md:h-9 bg-white hover:border hover:border-[#6bb8ff] hover:bg-[#fbfbfb] rounded-full flex justify-center items-center shadow-md drop-shadow-md  cursor-pointer hover:shadow-lg hover:drop-shadow-xl hover:animate-bounce'>
-                                        <PiLinkedinLogoBold className='text-[12px] sm:text-[13px] md:text-[16px] text-yellow-600' />
+                                        <PiLinkedinLogoBold className='text-[12px] sm:text-[13px] md:text-[16px] text-[#8e6600]' />
                                     </div>
                                 </Link>
 
                                 <Link to='' target='_blank'>
                                     <div className='w-6 h-6 md:w-9 md:h-9 bg-white hover:border hover:border-[#6bb8ff] hover:bg-[#fbfbfb] rounded-full flex justify-center items-center shadow-md drop-shadow-md cursor-pointer hover:shadow-lg hover:drop-shadow-xl hover:animate-bounce'>
-                                        <LuFacebook className='text-[12px] sm:text-[13px] md:text-[16px] text-yellow-600' />
+                                        <LuFacebook className='text-[12px] sm:text-[13px] md:text-[16px] text-[#8e6600]' />
                                     </div>
                                 </Link>
 

@@ -75,7 +75,7 @@ const Testimonials = () => {
           <SwiperSlide key={testimonial.id}>
             <div className="bg-[#f9f3eb] drop-shadow-sm px-6 py-14 relative overflow-hidden rounded-lg h-[50vh]">
               <div className="bg-white absolute w-fit -top-1 right-0 pt-5 pr-5 pl-7 pb-7 rounded-bl-full">
-                <FaQuoteRight className="text-[24px] text-[#9dd246]" />
+                <FaQuoteRight className="text-[24px] text-[#a64c4f]" />
               </div>
 
               <div className="flex flex-col gap-y-6 items-center justify-center">

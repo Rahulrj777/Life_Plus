@@ -159,10 +159,10 @@ const Home = () => {
                     <div className='w-full flex flex-col md:flex-row gap-y-10 justify-center items-center overflow-hidden'>
 
                         <div className='md:pl-16 md:pr-5 flex flex-col items-center justify-center' data-aos="fade-up" data-aos-duration="3000">
-                            <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-red-500/60 flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
+                            <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-[#a64c4f] flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
                             <div className='font-bold  md:tracking-[2px]  '>
                                 <h2 className='text-[2rem] md:text-[4.6rem] text-center uppercase  text-[#6d918c] drop-shadow-md'> Helping You Feel </h2>
-                                <h2 className='text-[1.8rem] md:text-[4.2rem] text-center uppercase text-gray-500'> Better—Naturally </h2>
+                                <h2 className='text-[1.8rem] md:text-[4.2rem] text-center uppercase text-[#6d918c]'> Better—Naturally </h2>
                             </div>
                             <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px] w-full px-4 md:w-[70%] text-center text-gray-500    leading-5 md:leading-7 font-[roboto]  md:font-medium md:pr-8'>
                                 We use natural herbs and safe treatments to support your health and well-being. Whether you're
@@ -172,7 +172,7 @@ const Home = () => {
 
                             <div className='mt-6 md:mt-11 font-[Merriweather]'>
                                 <Link to='/healthcare_services' onClick={() => window.scrollTo(0, 0)}>
-                                    <button className='px-4 md:px-8  py-2 md:py-2.5 rounded-md bg-[#cda43e] hover:scale-105 duration-500 font-semibold hover:bg-[#abc283] text-white text-[12px] md:text-[14px] cursor-pointer shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)] '>
+                                    <button className='px-4 md:px-8  py-2 md:py-2.5 rounded-md bg-[#a64c4f] hover:scale-105 duration-500 font-bold hover:bg-[#abc283] text-white text-[12px] md:text-[14px] cursor-pointer shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)] '>
                                         Get Start Now
                                     </button>
                                 </Link>
@@ -312,9 +312,9 @@ const Home = () => {
                                     </div>
                                     <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full  md:py-0 px-5' data-aos='zoom-out' data-aos-duratoin='1000'  >
                                         <div className='bg-white p-3 md:p-4 overflow-hidden  h-full  w-[80%] md:w-[50%] mx-auto rounded-bl-4xl'>
-                                            <div className='bg-white p-3 md:p-7  mx-auto border-2 border-green-600 rounded-bl-3xl  space-y-1 md:space-y-3'>
+                                            <div className='bg-white p-3 md:p-7  mx-auto border-2 border-[#6d918c] rounded-bl-3xl  space-y-1 md:space-y-3'>
                                                 <div className='flex justify-center items-center'>
-                                                    <GiLindenLeaf className=' text-[14px] md:text-[20px] text-yellow-600' />
+                                                    <GiLindenLeaf className=' text-[14px] md:text-[20px] text-[#a64c4f]' />
                                                 </div>
                                                 <h3 className='text-center font-bold text-[10px] md:text-[16px] font-[Merriweather]'>Renew Yourself with Ayurveda</h3>
                                                 <p className='text-[8px] md:text-[10px] text-center'>
@@ -329,7 +329,7 @@ const Home = () => {
 
                             <div className='w-full md:w-[50%] mx-auto'>
                                 <div data-aos='fade-left' data-aos-duratoin='1000'>
-                                    <p className='text-red-500 text-[12px] md:text-[13px] font-semibold uppercase md:mb-2'>Who We Are </p>
+                                    <p className='text-[#a64c4f] text-[12px] md:text-[13px] font-semibold uppercase md:mb-2'>Who We Are </p>
                                     <h3 className='text-[16px] md:text-[30px] font-semibold font-[Merriweather] leading-11 '>Natural Healing. Real Results</h3>
                                     <p className='text-[10px] md:text-[12px] text-gray-500 mt-2  md:mt-5'>
                                         LifePlusHerbal Healthcare Center is dedicated to helping you achieve better health through the power of nature. We provide herbal treatments,
@@ -345,7 +345,7 @@ const Home = () => {
                                     </ul>
                                     <div className='mt-2'>
                                         <Link to='/about' onClick={() => window.scrollTo(0, 0)}>
-                                            <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-8 bg-transparent hover:bg-yellow-600 border border-yellow-600 hover:scale-105 duration-300  text-yellow-700 hover:text-white rounded-md font-bold text-[10px] md:text-[12px] '>Learn More</button>
+                                            <button className='font-[Merriweather] cursor-pointer px-3 md:px-8 py-1.5 md:py-2.5 drop-shadow-lg mt-3 md:mt-8 bg-transparent hover:bg-[#a64c4f] border border-[#a64c4f] hover:scale-105 duration-300  text-[#a64c4f] hover:text-white rounded-md font-bold text-[10px] md:text-[12px] '>Learn More</button>
                                         </Link>
                                     </div>
                                 </div>
@@ -366,7 +366,7 @@ const Home = () => {
                             <h3 className='font-light text-[8px] md:text-[14px] flex items-center gap-x-2 md:gap-x-4'>  <span> <PiHeadsetFill className='text-[#6d918c] text-[20px] md:text-[40px]' /> </span> <span> Begin your personalized wellness journey with Life Plus. </span> </h3>
                             <div>
                                 <Link to='/contact' onClick={() => window.scrollTo(0, 0)}>
-                                    <button className='px-3 md:px-6 cursor-pointer hover:scale-105 duration-300 mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#cda43e] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white font-bold'>Contact us</button>
+                                    <button className='px-3 md:px-6 cursor-pointer hover:scale-105 duration-300 mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#a64c4f] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white font-bold'>Contact us</button>
                                 </Link>
                             </div>
                         </div>
@@ -383,12 +383,12 @@ const Home = () => {
 
                         <div className="absolute  top-20 md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
                             <div className='w-[60%] md:w-[50%] mx-auto' data-aos='fade-up' data-aos-duratoin='2000'>
-                                <h2 className="text-gray-600 text-[13px] md:text-[5rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
+                                <h2 className="text-[#6d918c] text-[13px] md:text-[5rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
                                 <p className='tracking-tight text-[8px]  md:text-[16px] text-gra'> Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way. </p>
                             </div>
                         </div>
 
-                        <div className='absolute bottom-0 bg-black/70 w-full pt-3 md:py-8 font-[Merriweather]'>
+                        <div className='absolute bottom-0 bg-black/80 w-full pt-3 md:py-8 font-[Merriweather]'>
                             <div className='w-full md:w-[95%] mx-auto flex justify-center items-center'>
                                 <div className='grid grid-cols-3 md:grid-cols-4  gap-y-3 gap-x-9 md:gap-x-32 text-[7px] md:text-[14px]'>
 
@@ -435,8 +435,8 @@ const Home = () => {
 
                             <div className='w-full md:w-[70%] mx-auto md:pr-20'>
 
-                                <p className='text-[12px] md:text-[14px] font-semibold md:mb-5 text-[#c49125]'>Our Services</p>
-                                <h2 className='font-[Merriweather] font-bold text-[17px] md:text-[2.5rem] text-[#4a5c24]'>Your Wellness Journey Starts Naturally</h2>
+                                <p className='text-[12px] md:text-[14px] font-semibold md:mb-5 text-[#a64c4f]'>Our Services</p>
+                                <h2 className='font-[Merriweather] font-bold text-[17px] md:text-[2.5rem] text-[#6d918c]'>Your Wellness Journey Starts Naturally</h2>
 
                                 <div className='border border-gray-200 w-full my-2 md:my-7'></div>
 
@@ -660,8 +660,8 @@ const Home = () => {
                 <section className='py-10 md:py-20 bg-[#f9f3eb] font-[poppins]' >
                     <div className='w-full px-4 md:w-[90%] mx-auto'>
                         <div className='flex flex-col items-center md:gap-y-4 mb-10 md:mb-16' data-aos='fade-up' data-aos-duratoin='1000'>
-                            <p className='text-[10px] md:text-[14px] text-[#936932] font-semibold uppercase'>What We Offer</p>
-                            <h2 className='md:leading-13  text-[20px] md:text-[50px] md:w-[70%] mx-auto text-center font-bold font-[Merriweather] text-[#4a5c24]'>Healing Powered by Nature</h2>
+                            <p className='text-[10px] md:text-[14px] text-[#a64c4f] font-semibold uppercase'>What We Offer</p>
+                            <h2 className='md:leading-13  text-[20px] md:text-[50px] md:w-[70%] mx-auto text-center font-bold font-[Merriweather] text-[#6d918c]'>Healing Powered by Nature</h2>
                         </div>
 
 
@@ -673,7 +673,7 @@ const Home = () => {
 
                                         <div className='flex items-center justify-between w-full'>
                                             <div className='w-[60%] mx-auto'>
-                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-[#4a5c24] font-bold'>Varmam therapy</h3>
+                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-gray-800 font-bold'>Varmam therapy</h3>
                                             </div>
                                             <div className='w-[40%] mx-auto flex justify-end'>
                                                 <img src={offer1} className='w-[100%] rounded-bl-[5rem]' />
@@ -696,7 +696,7 @@ const Home = () => {
 
                                         <div className='flex items-center justify-between w-full'>
                                             <div className='w-[60%] mx-auto'>
-                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-[#4a5c24] font-bold'>Thokkanam</h3>
+                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-gray-800 font-bold'>Thokkanam</h3>
                                             </div>
                                             <div className='w-[40%] mx-auto flex justify-end'>
                                                 <img src={offer2} className='w-[100%] rounded-bl-[5rem]' />
@@ -719,7 +719,7 @@ const Home = () => {
 
                                         <div className='flex items-center justify-between w-full'>
                                             <div className='w-[60%] mx-auto'>
-                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-[#4a5c24] font-bold'>Abhyangam</h3>
+                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-gray-800 font-bold'>Abhyangam</h3>
                                             </div>
                                             <div className='w-[40%] mx-auto flex justify-end'>
                                                 <img src={offer3} className='w-[100%] rounded-bl-[5rem]' />
@@ -740,7 +740,7 @@ const Home = () => {
 
                                         <div className='flex items-center justify-between w-full'>
                                             <div className='w-[60%] mx-auto'>
-                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-[#4a5c24] font-bold'>Nasyam</h3>
+                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-gray-800 font-bold'>Nasyam</h3>
                                             </div>
                                             <div className='w-[40%] mx-auto flex justify-end'>
                                                 <img src={offer4} className='w-[90%] rounded-bl-[5rem]' />
@@ -762,7 +762,7 @@ const Home = () => {
 
                                         <div className='flex items-center justify-between w-full'>
                                             <div className='w-[60%] mx-auto'>
-                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-[#4a5c24] font-bold'>Vamanam</h3>
+                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-gray-800 font-bold'>Vamanam</h3>
                                             </div>
                                             <div className='w-[40%] mx-auto flex justify-end'>
                                                 <img src={offer5} className='w-[90%] rounded-bl-[5rem]' />
@@ -783,7 +783,7 @@ const Home = () => {
 
                                         <div className='flex items-center justify-between w-full'>
                                             <div className='w-[60%] mx-auto'>
-                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-[#4a5c24] font-bold'>Virechanam</h3>
+                                                <h3 className='px-5 font-[Merriweather] text-[16px] md:text-[20px] text-gray-800 font-bold'>Virechanam</h3>
                                             </div>
                                             <div className='w-[40%] mx-auto flex justify-end'>
                                                 <img src={offer6} className='w-[90%] rounded-bl-[5rem]' />
@@ -804,9 +804,10 @@ const Home = () => {
 
 
 
+
                         <div className='flex justify-center items-center mt-8 '>
                             <Link to='/healthcare_services' onClick={() => window.scrollTo(0, 0)}>
-                                <button className='bg-[#a48125] px-6 py-2 text-white text-[12px] cursor-pointer hover:scale-105 duration-200' >Explain More</button>
+                                <button className='bg-[#a64c4f] px-6 py-2 text-white text-[12px] cursor-pointer hover:rounded-3xl hover:scale-105 duration-500' >Explain More</button>
                             </Link>
                         </div>
 
@@ -863,7 +864,7 @@ const Home = () => {
                                 {/* Heading */}
 
                                 <div className="w-full  mx-auto mb-10 md:mb-14" data-aos="fade-up" data-aos-duration="1000">
-                                    <p className="text-[12px] md:text-[14px] font-semibold uppercase text-[#9dd246] mb-3">Why Choose Us</p>
+                                    <p className="text-[12px] md:text-[14px] font-semibold uppercase text-[#a64c4f] mb-3">Why Choose Us</p>
                                     <h2 className="text-white text-[20px] md:text-[3rem] font-semibold font-[Merriweather]">
                                         Embracing Nature’s Healing Power for Better Health
                                     </h2>
@@ -982,8 +983,8 @@ const Home = () => {
                     <div className='w-full px-4 md:w-[80%] mx-auto'>
 
                         <div className='flex flex-col justify-center items-center mx-auto mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
-                            <p className='text-[12px] md:text-[14px] text font-semibold uppercase text-[#936932] mb-3'>Testimonial</p>
-                            <h2 className="text-[20px] md:text-[3rem]  font-[Merriweather]  text-[#4a5c24] ">Customer Feedback & Reviews</h2>
+                            <p className='text-[12px] md:text-[14px] text font-semibold uppercase text-[#a64c4f]  mb-3'>Testimonial</p>
+                            <h2 className="text-[20px] md:text-[3rem]  font-[Merriweather]  text-[#6d918c] ">Customer Feedback & Reviews</h2>
                             <div className='flex items-center justify-center gap-x-3 mt-4 text-[16px] md:text-[20px]'>
                                 <FaStar className='text-yellow-500 ' />
                                 <FaStar className='text-yellow-500 ' />
@@ -1014,7 +1015,7 @@ const Home = () => {
                                     <img src={review} className='w-full object-cover' alt='none' />
                                     <div className='absolute top-3 md:top-6 left-3 md:left-6 bg-white ' data-aos='zoom-in' data-aos-duration='1000' data-aos-delay='10'>
                                         <div>
-                                            <h2 className='bg-[#6e9039] w-full px-6 py-2 text-white font-medium text-[12px] md:text-[15px] text-center '>Excellent</h2>
+                                            <h2 className='bg-[#6d918c] w-full px-6 py-2 text-white font-medium text-[12px] md:text-[15px] text-center '>Excellent</h2>
 
                                             <div className='py-3 md:py-4  px-4 md:px-6'>
                                                 <div className='flex items-center justify-center gap-x-1.5 text-[10px] md:text-[12px]'>
@@ -1026,10 +1027,10 @@ const Home = () => {
                                                 </div>
 
                                                 <div className='flex justify-center items-center py-2'>
-                                                    <h3 className='text-[28px] md:text-[45px] font-bold text-[#6e9039]'>4.7</h3>
+                                                    <h3 className='text-[28px] md:text-[45px] font-bold text-[#6d918c]'>4.7</h3>
                                                 </div>
                                                 <div>
-                                                    <p className='bg-[#a48125] px-4 py-1.5 rounded-md md:rounded-full text-[10px] md:text-[12px]  text-white'>Client Ratings</p>
+                                                    <p className='bg-[#a64c4f] px-4 py-1.5 rounded-md md:rounded-full text-[10px] md:text-[12px]  text-white'>Client Ratings</p>
                                                 </div>
                                             </div>
 
@@ -1041,10 +1042,10 @@ const Home = () => {
 
                             <div className='w-full md:w-[50%] mx-auto' data-aos='fade-left' data-aos-duration='2000' data-aos-delay='50'>
                                 <div className=' md:pl-14 flex flex-col gap-y-3 md:gap-y-8'>
-                                    <h3 className='text-[24px] md:text-[45px] font-[Merriweather] text-[#4a5c24] '> Your health is a reflection of nature's balance </h3>
+                                    <h3 className='text-[24px] md:text-[45px] font-[Merriweather] text-[#6d918c] '> Your health is a reflection of nature's balance </h3>
                                     <p className='text-[13px] md:text-[14px] text-gray-600  leading-5 md:leading-7'>Your health mirrors nature’s balance. Our Siddha treatments restore harmony between your body’s energies for lasting wellness and vitality.</p>
                                     <div>
-                                        <button className='px-4 md:px-8 py-1.5 md:py-3 bg-[#a48125] flex items-center gap-x-1.5 md:gap-x-3 text-white text-[12px] md:text-[14px]'> Discover more <FaArrowRight className='text-[12px] md:text-[15px]' /> </button>
+                                        <button className='px-4 md:px-8 py-1.5 md:py-3 bg-[#a64c4f] hover:rounded-4xl duration-700 cursor-alias flex items-center gap-x-1.5 md:gap-x-3 text-white text-[12px] md:text-[14px]'> Discover more <FaArrowRight className='text-[12px] md:text-[15px]' /> </button>
                                     </div>
 
                                 </div>

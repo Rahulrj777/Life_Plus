@@ -122,14 +122,14 @@ const Contact = () => {
 
                             <div className='w-full md:w-[50%] mx-auto h-full'>
                                 <div className='flex flex-col justify-center items-center gap-y-4 md:gap-y-5 bg-gray-200 rounded-md drop-shadow-md px-6 py-8 '>
-                                    <div><FaLocationDot className='text-[34px] text-yellow-600' /></div>
+                                    <div><FaLocationDot className='text-[34px] text-[#a64c4f]' /></div>
                                     <p className='text-center text-[12px] md:text-[14px] font-semibold'>27th Karuneegar Street Adambakkam, Chennai - 600 008</p>
                                 </div>
                             </div>
 
                             <div className='w-full md:w-[50%] mx-auto h-full'>
                                 <div className='flex flex-col justify-center items-center gap-y-4 md:gap-y-5 bg-gray-200 rounded-md drop-shadow-md px-6 py-8 '>
-                                    <div><FaLocationDot className='text-[34px] text-yellow-600' /></div>
+                                    <div><FaLocationDot className='text-[34px] text-[#a64c4f]' /></div>
                                     <p className='text-center text-[12px] md:text-[14px] font-semibold'>No.(Plot No.) 212, Imayam Colony, 2nd Street Anna Nagar West Extension, Chennai - 600 101</p>
                                 </div>
                             </div>

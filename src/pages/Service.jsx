@@ -84,8 +84,8 @@ const Service = () => {
                                 <div className='grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-10 w-full   pb-6 md:pb-6  px-6 md:px-9 rounded-md md:rounded-3xl'>
 
                                     <div>
-                                        <div className='h-full bg-[#b9a36a]   drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-[#b9a36a] rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#a64c4f]   drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#a64c4f] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight1} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -96,8 +96,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className=' h-full bg-[#b9a36a]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-[#b9a36a] rounded-t-4xl p-4 -mt-6'>
+                                        <div className=' h-full bg-[#a64c4f]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#a64c4f] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight2} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -108,8 +108,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='h-full bg-[#b9a36a]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-[#b9a36a] rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#a64c4f]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#a64c4f] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight3} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -120,8 +120,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='h-full bg-[#b9a36a] drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-[#b9a36a] rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#a64c4f] drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#a64c4f] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight4} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -804,7 +804,7 @@ const Service = () => {
 
                                 <div className='w-full md:w-[50%] mx-auto'>
                                     <div className='flex flex-col gap-y-1 justify-center items-start  mb-8 md:mb-12'>
-                                        <p className='text-[10px]  md:text-[12px] font-semibold text-green-600'>Specialized in</p>
+                                        <p className='text-[10px]  md:text-[12px] font-semibold text-[#a64c4f]'>Specialized in</p>
                                         <h2 className='font-[roboto] text-gray-600   font-semibold text-[13px] md:text-[18px] text-start  '>We specialize in holistic Siddha and Ayurvedic treatments, focusing on pain relief, rejuvenation, detox, and restoring balance to the body and mind naturally. </h2>
                                     </div>
 

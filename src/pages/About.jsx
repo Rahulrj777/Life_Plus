@@ -166,10 +166,10 @@ const About = () => {
                         </div>
                         <div className='w-full md:w-[50%]'>
                             <div ref={textRef}>
-                                <p className='flex items-center gap-x-2 text-[12px] md:text-[14px] text-red-600 font-medium'>
-                                    About Us <span className='mt-0.5 rounded-3xl border border-red-600 w-[10%]'></span>
+                                <p className='flex items-center gap-x-2 text-[12px] md:text-[14px] text-[#a64c4f] font-medium'>
+                                    About Us <span className='mt-0.5 rounded-3xl border border-[#a64c4f] w-[10%]'></span>
                                 </p>
-                                <h3 className='text-[18px] md:text-[26px] font-semibold mb-3 md:mb-6 uppercase'>
+                                <h3 className='text-[18px] md:text-[26px] font-bold mb-3 md:mb-6 uppercase text-[#6d918c]'>
                                     Your Trusted Partner in Holistic Healthcare
                                 </h3>
                                 <p className='text-[11px] md:text-[14px] leading-5 md:leading-7 text-gray-600 text-justify'>
@@ -245,7 +245,7 @@ const About = () => {
                                 <Link to='/contact' onClick={() => window.scrollTo(0, 0)} >
                                     <button
                                         ref={buttonRef}
-                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#cda43e] text-white font-medium hover:scale-105 transition duration-300"
+                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#a64c4f] text-white font-medium hover:scale-105 transition duration-300"
                                     >
                                         Book Appointment
                                     </button>
