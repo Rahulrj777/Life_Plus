@@ -84,8 +84,8 @@ const Service = () => {
                                 <div className='grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-10 w-full   pb-6 md:pb-6  px-6 md:px-9 rounded-md md:rounded-3xl'>
 
                                     <div>
-                                        <div className='h-full bg-[#a64c4f]   drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-[#a64c4f] rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#aabc9b]   drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#aabc9b] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight1} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -96,8 +96,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className=' h-full bg-[#a64c4f]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-[#a64c4f] rounded-t-4xl p-4 -mt-6'>
+                                        <div className=' h-full bg-[#aabc9b]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#aabc9b] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight2} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -108,8 +108,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='h-full bg-[#a64c4f]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-[#a64c4f] rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#aabc9b]  drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#aabc9b] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight3} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -120,8 +120,8 @@ const Service = () => {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className='h-full bg-[#a64c4f] drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
-                                            <div className='bg-[#a64c4f] rounded-t-4xl p-4 -mt-6'>
+                                        <div className='h-full bg-[#aabc9b] drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
+                                            <div className='bg-[#aabc9b] rounded-t-4xl p-4 -mt-6'>
                                                 <img src={highlight4} className='w-9 md:w-12 object-cover' alt='none' />
                                             </div>
 
@@ -706,7 +706,6 @@ const Service = () => {
 
 
 
-
                     {/* <!-- ------------------------------- Lifestyle & Holistic Wellness ------------------------------- --> */}
 
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-green-50/40'>
@@ -787,11 +786,6 @@ const Service = () => {
 
                         </div>
                     </section>
-
-
-
-
-
 
 
 

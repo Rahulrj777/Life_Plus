@@ -16,6 +16,7 @@ import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Enquiry from '../components/Enquiry';
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 
@@ -56,7 +57,7 @@ const Contact = () => {
 
                 <section className='bg-[#f8f8ff] pt-0 md:pt-20 pb-0 md:pb-20 font-[poppins]'>
 
-                    <div className='relative  w-full px-4 md:w-[80%] mx-auto bg-[#9f6165] py-8 md:px-6 md:rounded-lg z-0'>
+                    <div className='relative  w-full px-4 md:w-[80%] mx-auto bg-[#a64c4f] py-8 md:px-6 md:rounded-lg z-0'>
 
                         <div className='absolute bottom-8 left-0 -z-10' data-aos='fade-right' data-aos-delay="50" data-aos-duration="1000">
 
@@ -116,26 +117,70 @@ const Contact = () => {
 
 
 
-                <section className='bg-[#f8f8ff] py-10 md:pt-20  md:pb-20 font-[poppins]'>
-                    <div className='w-full px-4 md:w-[80%] mx-auto'>
-                        <div className='flex flex-col md:flex-row items-center gap-x-48 gap-y-6'>
+                <section className='bg-[#f3f3f3] py-10 md:pt-10 md:pb-20 font-[poppins]'>
+                    <div className='w-full px-3 md:w-[80%] mx-auto'>
 
-                            <div className='w-full md:w-[50%] mx-auto h-full'>
-                                <div className='flex flex-col justify-center items-center gap-y-4 md:gap-y-5 bg-gray-200 rounded-md drop-shadow-md px-6 py-8 '>
-                                    <div><FaLocationDot className='text-[34px] text-[#a64c4f]' /></div>
-                                    <p className='text-center text-[12px] md:text-[14px] font-semibold'>27th Karuneegar Street Adambakkam, Chennai - 600 008</p>
+
+                        <div className='flex flex-col items-center md:gap-y-2  mb-8 md:mb-16'>
+                            <h2 className='font-bold text-[16px] md:text-[24px]  text-gray-800'>A Place That Truly Cares!</h2>
+                            <p className='text-gray-600 tracking-tight text-center  text-[12px] md:text-[14px] '>I’ve tried many treatments, but this place made a real difference. The team is amazing, and I’m feeling better every day!</p>
+                        </div>
+
+
+                        <div className='flex flex-col md:flex-row items-center gap-x-10 gap-y-6 h-full'>
+
+                            {/* Location 1 */}
+                            <div className='w-full md:w-[50%]  h-[31vh] md:h-[35vh]'>
+                                <div className='flex flex-col justify-between bg-gray-50 rounded-md drop-shadow-md px-6 py-8 h-full'>
+                                    <div className="flex flex-col justify-center items-center gap-y-3 md:gap-y-5">
+                                        <FaLocationDot className='text-[28px] md:text-[34px] text-[#a64c4f]' />
+
+                                        <div>
+                                            <h3 className='text-center uppercase font-bold text-[#6d918c] text-[14px] md:text-[18px] '>Life Plus herbal health care centre </h3>
+                                            <p className='text-center text-[11px] md:text-[14px] font-semibold font-[roboto] text-gray-600'>
+                                                27, Karuneegar St, Ramapuram, Paramesh Nagar, Adambakkam, Chennai, Tamil Nadu 600088
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className='mt-3 md:mt-6 flex justify-center'>
+                                        <Link to='https://maps.app.goo.gl/C6hRF3BuVD38THQn9' target='_blank'>
+                                        <button className='text-[12px] md:text-[14px] font-medium  border border-[#6d918c] hover:bg-[#6d918c] hover:text-white hover:scale-105 duration-300 cursor-pointer text-black px-3 md:px-4  py-1.5 md:py-2 rounded-md text-sm  transition-all'>
+                                            Get Directions
+                                        </button>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className='w-full md:w-[50%] mx-auto h-full'>
-                                <div className='flex flex-col justify-center items-center gap-y-4 md:gap-y-5 bg-gray-200 rounded-md drop-shadow-md px-6 py-8 '>
-                                    <div><FaLocationDot className='text-[34px] text-[#a64c4f]' /></div>
-                                    <p className='text-center text-[12px] md:text-[14px] font-semibold'>No.(Plot No.) 212, Imayam Colony, 2nd Street Anna Nagar West Extension, Chennai - 600 101</p>
+                            {/* Location 2 */}
+                            <div className='w-full md:w-[50%]  h-[31vh] md:h-[35vh]'>
+                                <div className='flex flex-col justify-between bg-gray-50 rounded-md drop-shadow-md px-6 py-8 h-full'>
+                                    <div className="flex flex-col justify-center items-center gap-y-4 md:gap-y-5">
+                                        <FaLocationDot className='text-[28px] md:text-[34px] text-[#a64c4f]' />
+                                        <div>
+                                            <h3 className='text-center uppercase font-bold text-[#6d918c] text-[14px] md:text-[18px] '>Life Plus herbal health care centre </h3>
+                                            <p className='text-center text-[11px] md:text-[14px] font-semibold font-[roboto] text-gray-600'>
+                                                No.(Plot No.) 212, Imayam Colony, 2nd Street Anna Nagar West Extension, Chennai - 600 101
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className='mt-3 md:mt-6 flex justify-center'>
+                                        <Link to='https://maps.app.goo.gl/u6qeA6gjTrh3YpRc6' target='_blank' >
+                                            <button className=' text-[12px] md:text-[14px] font-medium border border-[#6d918c] hover:bg-[#6d918c] hover:text-white hover:scale-105 duration-300 cursor-pointer text-black px-3 md:px-4  py-1.5 md:py-2 rounded-md text-sm  transition-all'>
+                                                Get Directions
+                                            </button>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
+
+
+
+
 
             </div>
 

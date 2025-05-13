@@ -293,13 +293,13 @@ const BestServices = () => {
             {/* Left and Right Arrows */}
             <div className="flex items-center gap-x-4 md:gap-x-8 justify-start w-full px-4 md:w-[90%] ">
                 <div className="z-10">
-                    <button onClick={moveLeft} className="cursor-pointer bg-white hover:bg-[#a48125] hover:border hover:border-gray-100 text-[#a48125] hover:text-gray-50 p-2 hover:scale-105 duration-100 rounded-full shadow-lg">
+                    <button onClick={moveLeft} className="cursor-pointer bg-white hover:bg-[#dddddd] hover:border hover:border-gray-100 text-[#a64c4f] hover:text-gray-50 p-2 hover:scale-105 duration-100 rounded-full shadow-lg">
                         <TiArrowLeftThick className="text-[12px] md:text-[22px]" />
                     </button>
                 </div>
 
                 <div className="z-10">
-                    <button onClick={moveRight} className="cursor-pointer bg-white hover:bg-[#a48125] hover:border hover:border-gray-100 text-[#a48125] hover:text-gray-50 p-2 hover:scale-105 duration-100 rounded-full shadow-lg">
+                    <button onClick={moveRight} className="cursor-pointer bg-white hover:bg-[#dddddd] hover:border hover:border-gray-100 text-[#a64c4f] hover:text-gray-50 p-2 hover:scale-105 duration-100 rounded-full shadow-lg">
                         <TiArrowRightThick className="text-[12px] md:text-[22px]" />
                     </button>
                 </div>

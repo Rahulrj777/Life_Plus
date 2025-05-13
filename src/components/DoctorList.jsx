@@ -124,13 +124,13 @@ const DoctorList = () => {
             <div className="flex  justify-start gap-4 mt-8">
                 <button
                     ref={prevRef}
-                    className="w-10 h-10 rounded-full cursor-pointer bg-white shadow-md flex justify-center items-center text-[#a48125] hover:bg-gray-100 transition"
+                    className="w-10 h-10 rounded-full cursor-pointer bg-white shadow-md flex justify-center items-center text-[#a64c4f] hover:bg-gray-100 transition"
                 >
                     <TiArrowLeftThick />
                 </button>
                 <button
                     ref={nextRef}
-                    className="w-10 h-10 rounded-full cursor-pointer bg-white shadow-md flex justify-center items-center text-[#a48125] hover:bg-gray-100 transition"
+                    className="w-10 h-10 rounded-full cursor-pointer bg-white shadow-md flex justify-center items-center text-[#a64c4f] hover:bg-gray-100 transition"
                 >
                     <TiArrowRightThick />
                 </button>
