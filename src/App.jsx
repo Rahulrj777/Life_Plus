@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Home from './pages/Home'
 // import Admin from './admin/Admin'
 import Header from './components/Header'
@@ -40,6 +42,9 @@ const App = () => {
         <Router>
           {/* <Loader /> */}
           {/* <ChatBot /> */}
+
+          <ToastContainer />
+
           <Routes>
 
             {/* userlayout */}

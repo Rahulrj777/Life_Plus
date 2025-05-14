@@ -145,7 +145,7 @@ const Header = () => {
                         </div>
 
                         {/* Desktop Navigation */}
-                        <ul className="hidden md:flex w-full justify-end mr-12  gap-x-4 xl:gap-x-10 font-semibold">
+                        <ul className="hidden md:flex w-fit justify-end ml-80  gap-x-4 xl:gap-x-10 font-semibold">
                             <li>
                                 <Link to="/" onClick={topPage} className="hover:text-green-700  text-[13px] ">
                                     Home
@@ -180,12 +180,12 @@ const Header = () => {
                                             <button
                                                 onMouseEnter={handleMouseEnter}
                                                 onMouseLeave={handleMouseLeave}
-                                                className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#a64c4f] hover:bg-slate-900 text-white  px-5 md:px-8 py-1.5 md:py-2 uppercase rounded-md duration-500 transform transition-transform hover:scale-105  text-[10px] md:text-[13px]"
+                                                className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#a64c4f] hover:bg-slate-900 text-white  px-3 md:px-8 py-1.5 md:py-2 uppercase rounded-md duration-500 transform transition-transform hover:scale-105  text-[10px] md:text-[12px]"
                                             >
-                                                Start
+                                                book appointment
                                             </button>
 
-                                           
+
                                         </div>
                                     </Link>
 

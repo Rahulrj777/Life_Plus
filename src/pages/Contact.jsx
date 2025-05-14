@@ -57,7 +57,7 @@ const Contact = () => {
 
                 <section className='bg-[#f8f8ff] pt-0 md:pt-20 pb-0 md:pb-20 font-[poppins]'>
 
-                    <div className='relative  w-full px-4 md:w-[80%] mx-auto bg-[#a64c4f] py-8 md:px-6 md:rounded-lg z-0'>
+                    <div className='relative  w-full px-4 md:w-[80%] mx-auto bg-[#6D918C] py-8 md:px-6 md:rounded-lg z-0'>
 
                         <div className='absolute bottom-8 left-0 -z-10' data-aos='fade-right' data-aos-delay="50" data-aos-duration="1000">
 

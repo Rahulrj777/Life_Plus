@@ -1,14 +1,67 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Enquiry = () => {
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
         course: '',
-        message: ''
+        message: '',
+        date: '',
+        time: ''
     });
+
+
+    // date & time
+    const [loading, setLoading] = useState(false);
+    const [todayDate, setTodayDate] = useState('');
+    const [disabledSlots, setDisabledSlots] = useState([]);
+
+    useEffect(() => {
+        const today = new Date();
+        const formattedDate = today.toISOString().split('T')[0]; // YYYY-MM-DD
+        setTodayDate(formattedDate);
+
+
+        const now = new Date();
+        const todayStr = now.toISOString().split("T")[0]; // e.g., "2025-05-14"
+
+        if (formData.date === todayStr) {
+            // Disable only past time slots
+            const pastSlots = timeSlots.filter(slot => {
+                const [time, modifier] = slot.split(" ");
+                let [hours, minutes] = time.split(":").map(Number);
+                if (modifier === "PM" && hours !== 12) hours += 12;
+                if (modifier === "AM" && hours === 12) hours = 0;
+
+                const slotDate = new Date(formData.date);
+                slotDate.setHours(hours, minutes, 0, 0);
+
+                return slotDate <= now;
+            });
+            setDisabledSlots(pastSlots);
+        } else {
+            // Future dates: enable all slots
+            setDisabledSlots([]);
+        }
+
+
+    }, [formData.date]);
+
+
+
+    const timeSlots = [
+        "09:00 AM", "09:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM",
+        "12:00 PM", "12:30 PM", "01:00 PM", "01:30 PM", "02:00 PM", "02:30 PM",
+        "03:00 PM", "03:30 PM", "04:00 PM", "04:30 PM", "05:00 PM", "05:30 PM",
+        "06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM", "08:00 PM"
+    ];
+
+
+
 
     const handleChange = (e) => {
         setFormData({
@@ -19,40 +72,58 @@ const Enquiry = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
 
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzhgf522n7vs3wXCGabXjrnuDHjvQrXMUc-acIUXnjmYeGs7cm8900bkgAOzO-Emaju/exec'; // Replace with your actual script URL
+        // const scriptURL = 'https://script.google.com/macros/s/AKfycbzhgf522n7vs3wXCGabXjrnuDHjvQrXMUc-acIUXnjmYeGs7cm8900bkgAOzO-Emaju/exec'; // Replace with your actual script URL
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLGjkEdGQSByzsirddDpMvLICzj_6fxRu6tkdv8ovSPzhnNeho8Wf0uGGhWfZ1Gq_TQA/exec'; // Replace with your actual script URL
 
         // Convert formData object into URL-encoded format
         const formDataEncoded = new URLSearchParams(formData).toString();
+        console.log(formDataEncoded); // Log the encoded form data to verify all fields are present
+
+
 
         try {
             const response = await fetch(scriptURL, {
                 method: 'POST',
-                body: formDataEncoded, // Send URL-encoded data
+                body: formDataEncoded,
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded', // Set content type to URL-encoded
+                    'Content-Type': 'application/x-www-form-urlencoded',
                 },
             });
 
-            const result = await response.text(); // Expect a text response from the script
-            if (result.includes('Success')) {
-                toast.success('Form submitted successfully!');
+            const resultText = await response.text();
+            const result = resultText.toLowerCase().trim();
 
-                // Clear the form
+            if (result.includes('success')) {
+                toast.success('slot is Booked successfully!');
                 setFormData({
                     name: '',
                     phone: '',
                     course: '',
-                    message: ''
+                    message: '',
+                    date: '',
+                    time: ''
                 });
-
+            } else if (result.includes('already booked')) {
+                toast.error('This slot is already booked. Please choose another time.');
             } else {
-                toast.error('Error submitting the form: ' + result);
+                toast.error(`Submission error: ${resultText}`);
             }
         } catch (error) {
             console.error('Error submitting the form:', error);
-            toast.error('Error submitting the form');
+            toast.error('A network error occurred. Please try again.');
+        } finally {
+            setLoading(false);
+            // Optional: Reset loading spinner, disable state, etc.
         }
+
+
+
+
+
+
+
     };
 
     return (
@@ -115,6 +186,55 @@ const Enquiry = () => {
                                     </select>
                                 </div>
 
+
+
+
+
+                                <div className="mb-6 md:mb-10">
+                                    <label className="block text-[12px] md:text-[14px] text-gray-50 font-semibold mb-2" htmlFor="date">
+                                        Appointment Date
+                                    </label>
+                                    <input
+                                        type="date"
+                                        name="date"
+                                        id="date"
+                                        min={todayDate}
+                                        className="bg-transparent shadow border border-gray-100 text-[12px] rounded-lg w-full py-3 px-3 text-gray-300"
+                                        value={formData.date}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+
+                                {/* Time Picker */}
+                                <div className="mb-6 md:mb-10">
+                                    <label className="block text-[12px] md:text-[14px] text-gray-50 font-semibold mb-2" htmlFor="time">
+                                        Appointment Time
+                                    </label>
+                                    <select
+                                        name="time"
+                                        id="time"
+                                        className="shadow border border-gray-100 text-[12px] rounded-lg w-full py-3 px-3 text-gray-300"
+                                        value={formData.time}
+                                        onChange={handleChange}
+                                        required
+                                    >
+                                        <option className="bg-black" value="">Select Time</option>
+                                        {timeSlots.map(slot => (
+                                            <option
+                                                className="bg-black"
+                                                key={slot}
+                                                value={slot}
+                                                disabled={disabledSlots.includes(slot)}
+                                            >
+                                                {slot}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+
+
+
                                 <div className="mb-6 md:mb-8">
                                     <label className="block text-[12px] md:text-[14px] text-gray-50 font-semibold mb-2" htmlFor="message">Your Message</label>
                                     <div>
@@ -132,10 +252,23 @@ const Enquiry = () => {
                                     </div>
                                 </div>
 
-                                <button className="w-full cursor-pointer border border-[#6d918c] rounded-xl  bg-[#6d918c] uppercase text-white hover:scale-105 duration-500 font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline" type="submit">
-                                    Submit
+
+
+                                <button
+                                    type="submit"
+                                    disabled={loading}
+                                    className={`w-full cursor-pointer border border-[#6d918c] hover:bg-[#b05454] rounded-xl bg-[#a64c4f] uppercase text-white font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline duration-500 ${loading ? "opacity-60 cursor-not-allowed" : "hover:scale-105"
+                                        }`}
+                                >
+                                    {loading ? "Slot Booking..." : "Submit"}
                                 </button>
-                                
+
+
+
+                                {/* <button className="w-full cursor-pointer border border-[#6d918c] rounded-xl  bg-[#6d918c] uppercase text-white hover:scale-105 duration-500 font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline" type="submit">
+                                    Submit
+                                </button> */}
+
                             </form>
                         </div>
                     </div>
