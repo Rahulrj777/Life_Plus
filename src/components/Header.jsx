@@ -1,249 +1,167 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { MdPhoneIphone } from 'react-icons/md';
 import { gsap } from "gsap";
 
 import logo from '../images/logo.png';
-import call from '../images/call.gif'
-
-//icons
-import { GrWaypoint } from "react-icons/gr";
-import { MdOutlineEmail } from "react-icons/md";
-import { MdPhoneAndroid } from "react-icons/md";
-
-
-
+import { MdOutlineEmail, MdPhoneAndroid } from "react-icons/md";
 
 const Header = () => {
+  const [nav, setNav] = useState(false);
+  const [navbarBg, setNavbarBg] = useState('bg-gray-50 text-gray-700');
 
-    const [nav, setNav] = useState(false); // State to manage mobile menu visibility
-    const [navbarBg, setNavbarBg] = useState('bg-gray-50 text-gray-700'); // State to manage navbar background color
+  const handleNav = () => setNav(!nav);
 
-    const handleNav = () => {
-        setNav(!nav);
+  useEffect(() => {
+    const handleScroll = () => {
+      setNavbarBg(window.scrollY > 50 ? 'bg-slate-50 shadow-md text-black' : 'bg-gray-50 text-gray-700');
     };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setNavbarBg('bg-slate-50 shadow-md text-black');
-            } else {
-                setNavbarBg('bg-gray-50 text-gray-700');
-            }
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+  const topPage = () => window.scrollTo(0, 0);
 
-    const topPage = () => {
-        window.scrollTo(0, 0);
-    };
+  // Button hover animation
+  const buttonRef = useRef(null);
+  const borderRef = useRef(null);
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.set(borderRef.current, { scale: 1, opacity: 0.5 });
+    }, buttonRef);
+    return () => ctx.revert();
+  }, []);
 
+  const handleMouseEnter = () => {
+    gsap.to(borderRef.current, {
+      scale: 1.05,
+      opacity: 1,
+      borderColor: "#00FF99",
+      boxShadow: "0 0 15px #00FF99",
+      duration: 0.3,
+      ease: "power2.out",
+    });
+  };
 
-    // button
+  const handleMouseLeave = () => {
+    gsap.to(borderRef.current, {
+      scale: 1,
+      opacity: 0.5,
+      borderColor: "transparent",
+      boxShadow: "none",
+      duration: 0.3,
+      ease: "power2.inOut",
+    });
+  };
 
-    const buttonRef = useRef(null);
-    const borderRef = useRef(null);
+  return (
+    <>
+      {/* 🔹 Top Navbar */}
+      <div className="flex flex-col md:flex-row items-center gap-10 bg-[#0a7c1d] h-auto md:h-11 w-full font-[roboto] px-4 md:px-8 py-1 md:py-0 space-y-1 md:space-y-0">
 
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            gsap.set(borderRef.current, {
-                scale: 1,
-                opacity: 0.5,
-            });
-        }, buttonRef);
+        {/* Marquee */}
+        <div className="overflow-hidden w-full md:w-[60%] h-6 md:h-full flex items-center">
+          <div className="marquee-container w-full">
+            <p className="marquee-text text-[12px] md:text-[14px] font-bold text-white whitespace-nowrap">
+              Trusted hands. Natural care. LifePlusHerbal Healthcare Center
+            </p>
+          </div>
+        </div>
+        
+        {/* Email */}
+        <div className="flex items-center gap-x-1">
+          <MdOutlineEmail className="text-white text-[18px] md:text-[22px]" />
+          <span className="text-[12px] md:text-[14px] text-white md:font-medium">
+            lifeplusayushvadhyasala@gmail.com
+          </span>
+        </div>
 
-        return () => ctx.revert();
-    }, []);
+        {/* Phone */}
+        <div className="flex items-center gap-x-1">
+          <MdPhoneAndroid className='text-white text-[16px] md:text-[22px]' />
+          <span className="text-[12px] md:text-[14px] text-white md:font-medium">
+            +91 8015907797
+          </span>
+        </div>
 
-    const handleMouseEnter = () => {
-        gsap.to(borderRef.current, {
-            scale: 1.1,
-            opacity: 1,
-            borderColor: "#00FF99",
-            boxShadow: "0 0 15px #00FF99",
-            duration: 0.4,
-            ease: "power2.out",
-        });
-    };
+      </div>
 
-    const handleMouseLeave = () => {
-        gsap.to(borderRef.current, {
-            scale: 1,
-            opacity: 0.5,
-            borderColor: "transparent",
-            boxShadow: "none",
-            duration: 0.4,
-            ease: "power2.inOut",
-        });
-    };
+      {/* 🔹 Main Navbar */}
+      <nav className={`w-full sticky top-0 z-50 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
+        <div className="max-w-[1280px] mx-auto font-[poppins]">
+          <div className="flex justify-between items-center px-4 sm:px-9">
 
-
-
-    return (
-        <>
-            {/* Top Navbar */}
-            <div className="flex items-center justify-between bg-[#6d918c] h-8 md:h-11 w-full font-[roboto]">
-
-
-                <div className="overflow-hidden w-[30%] md:w-[50%] h-full">
-                    <div className="w-full px-4 md:px-6 h-full flex justify-center items-center">
-                        <div className="marquee-container relative overflow-hidden w-full">
-                            <p className="marquee-text text-[8px] md:text-[12px] font-bold text-white whitespace-nowrap">
-                                <span className="inline-block">Trusted hands. Natural care. LifePlusHerbal Healthcare Center</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="w-[70%] md:w-[50%] flex justify-end  gap-x-2 md:gap-x-6 pr-4 sm:pr-6 md:pr-8 lg:pr-10">
-
-                    <div>
-                        <a href="mailto:lifeplusayushvadhyasala@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <div className="flex items-center gap-x-1">
-                                <MdOutlineEmail className="text-white text-[17px] md:text-[21px]" />
-                                <span className="font-[Roboto] text-[8px] md:text-[12px] text-white md:font-medium">
-                                    lifeplusayushvadhyasala@gmail.com
-                                </span>
-                            </div>
-                        </a>
-
-                    </div>
-
-
-                    <div>
-                        <a href="tel:++918015907797" target="_blank" rel="noopener noreferrer">
-                            <div className="flex items-center gap-x-1">
-                                <div>
-                                    <MdPhoneAndroid className='text-white text-[15px] md:text-[21px] ' />
-                                </div>
-
-                                <span className="font-[Roboto] text-[8px] md:text-[12px] text-white md:font-medium mt-0.5">
-                                    +91 8015907797
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <Link to="/" onClick={topPage}>
+                <img src={logo} className="w-24 md:w-36" alt="LifePlus Logo" />
+              </Link>
             </div>
 
+            {/* Desktop Nav */}
+            <ul className="hidden md:flex flex-1 justify-center gap-x-8 xl:gap-x-12 font-semibold text-[14px] md:text-[16px]">
+              {['Home', 'About', 'Healthcare Services', 'Contact'].map((item, idx) => (
+                <li key={idx}>
+                  <Link
+                    to={item === 'Home' ? '/' : `/${item.replace(/\s+/g, '_').toLowerCase()}`}
+                    onClick={topPage}
+                    className="hover:text-green-700 hover:scale-110 active:scale-105 transition-transform duration-200 inline-block"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
+            {/* Button */}
+            <div className="cursor-pointer hidden md:flex justify-end items-end w-fit ml-6">
+              <div className="relative group" ref={buttonRef}>
+                <Link to="/contact" onClick={topPage}>
+                  <button
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#ec1a25] hover:bg-[#0a7c1d] text-white px-4 md:px-10 py-2 md:py-3 uppercase rounded-md duration-300 transform hover:scale-105 active:scale-105 text-[12px] md:text-[14px]"
+                  >
+                    book appointment
+                  </button>
+                </Link>
+              </div>
+            </div>
 
-            {/* Main Navbar */}
-            <nav className={`w-full sticky top-0 z-50 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
-                <div className="max-w-full mx-auto font-[poppins]">
-                    <div className="flex justify-between items-center px-4 sm:px-9 w-full xl:w-[90%] mx-auto">
-                        {/* Logo */}
-                        <div className="w-fit">
-                            <Link to="/" onClick={topPage}>
-                                {/* <span className="text-xl font-bold text-black">Logo</span> */}
-                                <img src={logo} className="w-20 md:w-32" alt="none" />
-                            </Link>
-                        </div>
+            {/* Mobile Menu Icon */}
+            <div onClick={handleNav} className="block lg:hidden cursor-pointer px-2">
+              {nav ? (
+                <AiOutlineClose className=" text-[20px] md:text-[24px] text-black" />
+              ) : (
+                <AiOutlineMenu className=" text-[20px] md:text-[24px] text-black" />
+              )}
+            </div>
+          </div>
 
-                        {/* Desktop Navigation */}
-                        <ul className="hidden md:flex w-fit justify-end ml-80  gap-x-4 xl:gap-x-10 font-semibold">
-                            <li>
-                                <Link to="/" onClick={topPage} className="hover:text-green-700  text-[13px] ">
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/about" onClick={topPage} className="hover:text-green-700 text-[13px]">
-                                    About Us
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/healthcare_services" onClick={topPage} className="hover:text-green-700 text-[13px]">
-                                    Healthcare Services
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/contact" onClick={topPage} className="hover:text-green-700 text-[13px]">
-                                    Contact Us
-                                </Link>
-                            </li>
-                        </ul>
-
-
-                        {/* WhatsApp Button */}
-                        <div className="cursor-pointer flex justify-end items-end w-full md:w-fit">
-                            <Link href="#">
-                                <div className="relative ">
-
-                                    <Link to="/contact" onClick={topPage}>
-                                        {/* Button */}
-                                        <div className="relative group" ref={buttonRef}>
-                                            <button
-                                                onMouseEnter={handleMouseEnter}
-                                                onMouseLeave={handleMouseLeave}
-                                                className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#a64c4f] hover:bg-slate-900 text-white  px-3 md:px-8 py-1.5 md:py-2 uppercase rounded-md duration-500 transform transition-transform hover:scale-105  text-[10px] md:text-[12px]"
-                                            >
-                                                book appointment
-                                            </button>
-
-
-                                        </div>
-                                    </Link>
-
-
-                                </div>
-                            </Link>
-                        </div>
-
-
-                        {/* Mobile Menu Icon */}
-                        <div onClick={handleNav} className="block lg:hidden cursor-pointer px-2 ">
-                            {nav ? (
-                                <AiOutlineClose className=" text-[16px] md:text-[20px] text-black" />
-                            ) : (
-                                <AiOutlineMenu className=" text-[16px] md:text-[20px] text-black" />
-                            )}
-                        </div>
-
-                        {/* Mobile Navigation */}
-                        <ul
-                            className={`fixed top-0 left-0 pt-10 pl-6 w-[60%] h-[100vh] md:h-full bg-gray-50 z-50 drop-shadow-md transition-transform ${nav ? 'translate-x-0' : '-translate-x-full'
-                                }`}
-                        >
-                            <li>
-                                <div className="w-fit">
-                                    <Link to="/" onClick={topPage}>
-                                        {/* <span className="text-xl font-bold text-black">Logo</span> */}
-                                        <img src={logo} className="w-20" alt="none" />
-                                    </Link>
-                                </div>
-                            </li>
-
-                            <li className="px-2 py-4" onClick={topPage}>
-                                <Link to="/" onClick={handleNav} className="text-[13px] font-semibold text-gray-700">
-                                    Home
-                                </Link>
-                            </li>
-                            <li className="px-2 py-4" onClick={topPage}>
-                                <Link to="/about" onClick={handleNav} className="text-[13px] font-semibold text-gray-700">
-                                    About Us
-                                </Link>
-                            </li>
-                            <li className="px-2 py-4" onClick={topPage}>
-                                <Link to="/healthcare_services" onClick={handleNav} className="text-[13px] font-semibold text-gray-700">
-                                    Healthcare Services
-                                </Link>
-                            </li>
-                            <li className="px-2 py-4" onClick={topPage}>
-                                <Link to="/contact" onClick={handleNav} className="text-[13px] font-semibold text-gray-700">
-                                    Contact Us
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </>
-    );
+          {/* Mobile Navigation */}
+          <ul className={`fixed top-0 left-0 pt-10 pl-6 w-[70%] h-[100vh] bg-gray-50 z-50 drop-shadow-md transition-transform ${nav ? 'translate-x-0' : '-translate-x-full'}`}>
+            <li className="mb-6">
+              <Link to="/" onClick={topPage}>
+                <img src={logo} className="w-24" alt="LifePlus Logo" />
+              </Link>
+            </li>
+            {['Home', 'About Us', 'Healthcare Services', 'Contact'].map((item, idx) => (
+              <li key={idx} className="px-2 py-4">
+                <Link
+                  to={item === 'Home' ? '/' : `/${item.replace(/\s+/g, '_').toLowerCase()}`}
+                  onClick={handleNav}
+                  className="text-[14px] font-semibold text-gray-700 hover:text-green-700 hover:scale-105 active:scale-105 transition-transform inline-block"
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
+    </>
+  );
 };
 
 export default Header;

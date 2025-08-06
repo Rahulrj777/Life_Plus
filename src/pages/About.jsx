@@ -1,20 +1,15 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Lightbulb, Eye, Heart } from 'lucide-react'; // lucide-react icons
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
+import DoctorList from '../components/DoctorList';
 
 import banner from '../images/about/about_banner.jpg';
 import banner1 from '../images/about/about_banner-1.jpg';
 import about from '../images/about/about.png';
 
 // icons
-import { LiaHeartbeatSolid } from "react-icons/lia";
 import MisionVision from '../components/MisionVision';
-import { GoGoal } from "react-icons/go";
-import { GiHiveMind } from "react-icons/gi";
-
-
-
 
 const data = [
     {
@@ -37,26 +32,15 @@ const data = [
     },
 ];
 
-
-
-
 const About = () => {
-
-
     const cardsRef = useRef([]);
-
     const buttonRef = useRef(null);
     const textRef = useRef(null);
 
-
-
-
     useEffect(() => {
-        // Scroll animation for each card
         cardsRef.current.forEach((card, idx) => {
             if (!card) return;
 
-            // Scroll animation for opacity and y position on scroll
             gsap.fromTo(
                 card,
                 { opacity: 0, y: 50 },
@@ -72,7 +56,6 @@ const About = () => {
                 }
             );
 
-            // Tilt effect on mouse move
             const handleMouseMove = (e) => {
                 const bounds = card.getBoundingClientRect();
                 const x = e.clientX - bounds.left;
@@ -113,9 +96,6 @@ const About = () => {
             };
         });
     }, []);
-
-
-
 
     useEffect(() => {
         // Button Hover Effect (Rotation and Scale)
@@ -166,10 +146,10 @@ const About = () => {
                         </div>
                         <div className='w-full md:w-[50%]'>
                             <div ref={textRef}>
-                                <p className='flex items-center gap-x-2 text-[12px] md:text-[14px] text-[#a64c4f] font-medium'>
-                                    About Us <span className='mt-0.5 rounded-3xl border border-[#a64c4f] w-[10%]'></span>
+                                <p className='flex items-center gap-x-2 text-[12px] md:text-[14px] text-[#d4252b] font-medium'>
+                                    About Us <span className='mt-0.5 rounded-3xl border border-[#b72c30] w-[10%]'></span>
                                 </p>
-                                <h3 className='text-[18px] md:text-[26px] font-bold mb-3 md:mb-6 uppercase text-[#6d918c]'>
+                                <h3 className='text-[18px] md:text-[26px] font-bold mb-3 md:mb-6 uppercase text-[#2c7f4c]'>
                                     Your Trusted Partner in Holistic Healthcare
                                 </h3>
                                 <p className='text-[11px] md:text-[14px] leading-5 md:leading-7 text-gray-600 text-justify'>
@@ -196,42 +176,20 @@ const About = () => {
                 <MisionVision />
             </div>
 
+            
+                {/* -------------- doctor list ---------------- */}
 
-
-            {/* Why Choose Us */}
-            {/* <section className='bg-[#f1f2f3] font-[poppins]'>
-                <div className="py-10 md:py-20">
-                    <div className='w-full px-4 md:w-[80%] mx-auto'>
-                        <div className='flex flex-col justify-center items-center w-full gap-y-1 mb-6 md:mb-14'>
-                            <p className='text-red-600 text-[12px] md:text-[14px] flex items-center justify-center gap-x-1 md:gap-x-3 text-center'>
-                                <span className='mt-0.5 rounded-3xl border border-red-600 w-[5%]'></span> Why Choose <span className='mt-0.5 rounded-3xl border border-red-600 w-[5%]'></span>
-                            </p>
-                            <h4 className='text-[16px] md:text-[24px] text-center font-semibold'>
-                                Choose us for personalized, effective care rooted in traditional healing and expert guidance
-                            </h4>
+                <section className='pt-4 pb-10 md:py-20 bg-white font-[poppins]'>
+                    <div className='w-full px-4 md:w-[90%] mx-auto'>
+                        <div className='flex flex-col items-center gap-y-2 mb-8 md:mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
+                            <h3 className='font-bold text-[16px] md:text-[32px] font-[Merriweather]'>Meet our professional therapist</h3>
+                            <p className='text-[10px] md:text-[12px] text-gray-600 text-center'>Our skilled therapists are experts in Siddha and Ayurveda, offering personalized care to support your unique healing journey with dedication and expertise</p>
                         </div>
-
-                        <div className='flex justify-center items-center w-full'>
-                            <div className='grid grid-cols-3 md:grid-cols-5 gap-y-9 md:gap-x-12 w-full'>
-                                {[
-                                    "Traditional Healing",
-                                    "Expert Practitioners",
-                                    "Safe & Natural Treatments",
-                                    "Personalized Care",
-                                    "Comprehensive Wellness"
-                                ].map((item, i) => (
-                                    <div key={i} className='flex flex-col items-center gap-y-4'>
-                                        <div className="bg-white p-5 rounded-sm relative shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_30px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]">
-                                            <LiaHeartbeatSolid className='text-[20px] md:text-[40px] text-red-500' />
-                                        </div>
-                                        <h3 className='font-[roboto] text-[10px] md:text-[13px] text-gray-700 text-center'>{item}</h3>
-                                    </div>
-                                ))}
-                            </div>
+                        <div>
+                            <DoctorList />
                         </div>
                     </div>
-                </div>
-            </section> */}
+                </section>
 
             {/* Banner CTA Section */}
             <section className='py-10 md:py-28 bg-black/55'>
@@ -245,7 +203,7 @@ const About = () => {
                                 <Link to='/contact' onClick={() => window.scrollTo(0, 0)} >
                                     <button
                                         ref={buttonRef}
-                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#a64c4f] text-white font-medium hover:scale-105 transition duration-300"
+                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#c73237] text-white font-medium hover:scale-105 transition duration-300"
                                     >
                                         Book Appointment
                                     </button>

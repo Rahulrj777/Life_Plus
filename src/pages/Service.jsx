@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import banner from '../images/banner/service_banner.jpg'
+import midBanner from '../images/banner/mid_banner.jpg'
 import bottombanner from '../images/banner/special.png'
 
 import highlight1 from '../images/icon/highlight1.png'
 import highlight2 from '../images/icon/highlight2.png'
 import highlight3 from '../images/icon/highlight3.png'
 import highlight4 from '../images/icon/highlight4.png'
-
 
 import service1 from '../images/services/Herbal_and_mineral.png'
 import service2 from '../images/services/Varmam_therapy.png'
@@ -38,7 +37,6 @@ import life2 from '../images/services/Detox.png'
 import life3 from '../images/services/Stress.png'
 import life4 from '../images/services/Diet.png'
 
-
 import speacil1 from '../images/icon/Back Pain.png'
 import speacil2 from '../images/icon/knee_pain.png'
 import speacil3 from '../images/icon/spine_disorders.png'
@@ -51,13 +49,6 @@ import speacil9 from '../images/icon/asthma.png'
 import speacil10 from '../images/icon/cold.png'
 import speacil11 from '../images/icon/Migraine_Treatment.png'
 
-
-//icons
-import { FaNotesMedical } from "react-icons/fa";
-import { FaUserDoctor } from "react-icons/fa6";
-
-import { FaCheck } from "react-icons/fa";
-
 const Service = () => {
 
     useEffect(() => {
@@ -66,13 +57,18 @@ const Service = () => {
 
     return (
         <>
-
             <div className='overflow-hidden'>
                 <div>
-
-                    <section className='w-full  z-0'>
-                        <div className=''>
-                            <img src={banner} className='w-full h-full object-cover  ' alt='service_banner' />
+                    <section className='bg-white'>
+                        <div className="relative">
+                            <img src={midBanner} className="w-full object-cover" alt="none" />
+    
+                            <div className="absolute md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
+                                <div className='w-[60%] md:w-[50%] mx-auto' data-aos='fade-up' data-aos-duratoin='2000'>
+                                    <h2 className="text-[#0d6c1d] text-[13px] md:text-[3rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
+                                    <p className='tracking-tight text-[8px]  md:text-[16px] text-gra'> Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way. </p>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -82,7 +78,6 @@ const Service = () => {
                         <div className=''>
                             <div className='flex items-center justify-center '>
                                 <div className='grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-10 w-full   pb-6 md:pb-6  px-6 md:px-9 rounded-md md:rounded-3xl'>
-
                                     <div>
                                         <div className='h-full bg-[#aabc9b]   drop-shadow-sm flex flex-col items-center pb-4 md:pb-8 px-4  rounded-xl'>
                                             <div className='bg-[#aabc9b] rounded-t-4xl p-4 -mt-6'>
@@ -202,220 +197,6 @@ const Service = () => {
                                     </div>
                                 </div>
                             </div>
-
-
-                            {/* <div className='flex justify-center items-center w-full'>
-                                <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-24 w-full'>
-
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Nasya Treatment </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Improves memory and focus.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Reduces headaches and tension.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Prevents skin diseases.</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> White Discharge Treatment  </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Tailored treatments for your unique needs.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Alleviates irritation, itching, and odor.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Compassionate care from certified practitioners.</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Natural Ayurvedic Migraine  </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>  Throbbing, Drilling, Pounding Headache</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Sensitivity to Light and Sound.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>  Inability to Focus or Concentrate.</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'>  Netra Tharpanam </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span> Balances Vata and Pitta doshas</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Removes dark circles under the eyes.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>  Revitalizes tired, dry, rough, or injured eyes.</span>  </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Janu Basti for Knee Health </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Rheumatoid arthritis.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Knee stiffness and swelling.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span> Joint degeneration due to aging.</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Ayurvedic Treatment for Piles and Fistula </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Avoid the risks and recovery time of surgery.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Minimal side effects with herbal remedies.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Treatments tailored to your body type and condition.</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Thalapothichil - Ayurvedic Head Therapy </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span> Relieves stress, anxiety, and headaches.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Improves sleep and mental clarity.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Balances Pitta dosha and calms the nervous system.</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'>Rejuvenating Body Therapy </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Boosts circulation and muscle strength.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Relieves joint pain, stiffness, and arthritis.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Reduces fatigue and promotes vitality.</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Nasya & Fumigation </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Clears nasal congestion and sinuses.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span> Improves focus, voice clarity, and immunity.</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span> Detoxifies and calms the mind.</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Reflexology </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span> Improves Sleep – Goodbye to sleep troubles</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span> Enhances Circulation – Boosts blood flow for better health</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span> Reduces Stress & Anxiety – Feel calm and refreshed</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Holistic Healing at Life Plus Ayush  </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Pain Relief – Back, joints, migraines</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Hair & Skin Care – Psoriasis, eczema, hair fall</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Respiratory Health – Sinusitis, asthma, detox</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-lg md:rounded-xl  drop-shadow-md p-4  md:p-5  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]'>
-                                                <FaNotesMedical className='text-[22px] md:text-[28px] text-[#017e1d] group-hover:-rotate-[55deg]' />
-                                            </div>
-
-                                            <div className='flex flex-col items-start gap-y-1 py-1 md:py-3 px-4'>
-                                                <h3 className='font-semibold text-[14px] md:text-[16px] font-[Merriweather]'> Empowering Pain Management  </h3>
-                                                <ul className='text-[10px] md:text-[12px] font-[roboto] space-y-1 mt-3 '>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Pain Relief – Neck, back, and knee pain</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Skin Care – Eczema, psoriasis, and more</span>  </li>
-                                                    <li className='flex items-center gap-x-2'> <FaCheck className='text-[8px] md:text-[10px] text-green-600 ' />  <span>Autoimmune Support – Balance and immunity</span>  </li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>  */}
-
                         </div>
                     </section>
 
@@ -890,25 +671,15 @@ const Service = () => {
                                                 </div>
                                                 <span className='font-[roboto] text-[10px] md:text-[12px]'>Migraine </span>
                                             </div>
-
-
-
-
-
-
                                         </div>
                                     </div>
 
                                 </div>
 
                             </div>
-
-
                         </div>
                     </section>
-
                 </div>
-
             </div>
 
         </>

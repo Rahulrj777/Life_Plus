@@ -2,23 +2,16 @@ import React, { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-
 import banner from '../images/banner/contact_banner.webp'
 
-import contact from '../images/contact.png'
 import phone from '../images/contact/phone.png'
 import cup from '../images/contact/cup.png'
 
-
-//icons
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Enquiry from '../components/Enquiry';
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-
-
 
 const Contact = () => {
 
@@ -29,7 +22,6 @@ const Contact = () => {
 
     return (
         <>
-
             <div className='overflow-hidden'>
 
                 <section>
@@ -57,7 +49,7 @@ const Contact = () => {
 
                 <section className='bg-[#f8f8ff] pt-0 md:pt-20 pb-0 md:pb-20 font-[poppins]'>
 
-                    <div className='relative  w-full px-4 md:w-[80%] mx-auto bg-[#6D918C] py-8 md:px-6 md:rounded-lg z-0'>
+                    <div className='relative  w-full px-4 md:w-[80%] mx-auto bg-[#33a54f] py-8 md:px-6 md:rounded-lg z-0'>
 
                         <div className='absolute bottom-8 left-0 -z-10' data-aos='fade-right' data-aos-delay="50" data-aos-duration="1000">
 
@@ -107,10 +99,6 @@ const Contact = () => {
                                 <Enquiry />
 
                             </div>
-
-
-
-
                         </div>
                     </div>
                 </section>
@@ -133,10 +121,10 @@ const Contact = () => {
                             <div className='w-full md:w-[50%]  h-[31vh] md:h-[35vh]'>
                                 <div className='flex flex-col justify-between bg-gray-50 rounded-md drop-shadow-md px-6 py-8 h-full'>
                                     <div className="flex flex-col justify-center items-center gap-y-3 md:gap-y-5">
-                                        <FaLocationDot className='text-[28px] md:text-[34px] text-[#a64c4f]' />
+                                        <FaLocationDot className='text-[28px] md:text-[34px] text-[#ea4951]' />
 
                                         <div>
-                                            <h3 className='text-center uppercase font-bold text-[#6d918c] text-[14px] md:text-[18px] '>Life Plus herbal health care centre </h3>
+                                            <h3 className='text-center uppercase font-bold text-[#79927c] text-[14px] md:text-[18px] '>Life Plus herbal health care centre </h3>
                                             <p className='text-center text-[11px] md:text-[14px] font-semibold font-[roboto] text-gray-600'>
                                                 27, Karuneegar St, Ramapuram, Paramesh Nagar, Adambakkam, Chennai, Tamil Nadu 600088
                                             </p>
@@ -156,7 +144,7 @@ const Contact = () => {
                             <div className='w-full md:w-[50%]  h-[31vh] md:h-[35vh]'>
                                 <div className='flex flex-col justify-between bg-gray-50 rounded-md drop-shadow-md px-6 py-8 h-full'>
                                     <div className="flex flex-col justify-center items-center gap-y-4 md:gap-y-5">
-                                        <FaLocationDot className='text-[28px] md:text-[34px] text-[#a64c4f]' />
+                                        <FaLocationDot className='text-[28px] md:text-[34px] text-[#ea4951]' />
                                         <div>
                                             <h3 className='text-center uppercase font-bold text-[#6d918c] text-[14px] md:text-[18px] '>Life Plus herbal health care centre </h3>
                                             <p className='text-center text-[11px] md:text-[14px] font-semibold font-[roboto] text-gray-600'>

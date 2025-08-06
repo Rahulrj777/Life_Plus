@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-
-
 .marquee-container {
   position: relative;
   overflow: hidden;
@@ -9,19 +7,18 @@
 
 .marquee-text {
   display: inline-block;
-  animation: marquee 10s linear infinite;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
 }
-
-
 
 /* button */
 

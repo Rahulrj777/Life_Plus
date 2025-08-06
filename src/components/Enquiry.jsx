@@ -186,10 +186,6 @@ const Enquiry = () => {
                                     </select>
                                 </div>
 
-
-
-
-
                                 <div className="mb-6 md:mb-10">
                                     <label className="block text-[12px] md:text-[14px] text-gray-50 font-semibold mb-2" htmlFor="date">
                                         Appointment Date
@@ -257,17 +253,11 @@ const Enquiry = () => {
                                 <button
                                     type="submit"
                                     disabled={loading}
-                                    className={`w-full cursor-pointer border border-[#6d918c] hover:bg-[#b05454] rounded-xl bg-[#a64c4f] uppercase text-white font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline duration-500 ${loading ? "opacity-60 cursor-not-allowed" : "hover:scale-105"
+                                    className={`w-full cursor-pointer hover:bg-[#b05454] rounded-xl bg-[#eb4b53] uppercase text-white font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline duration-500 ${loading ? "opacity-60 cursor-not-allowed" : "hover:scale-105"
                                         }`}
                                 >
                                     {loading ? "Slot Booking..." : "Submit"}
                                 </button>
-
-
-
-                                {/* <button className="w-full cursor-pointer border border-[#6d918c] rounded-xl  bg-[#6d918c] uppercase text-white hover:scale-105 duration-500 font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline" type="submit">
-                                    Submit
-                                </button> */}
 
                             </form>
                         </div>

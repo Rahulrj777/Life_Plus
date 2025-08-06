@@ -98,9 +98,6 @@ const DoctorList = () => {
                                 <p className="font-[roboto] font-medium text-[11px] md:text-[12px] text-gray-600 mt- ">
                                     {doctorInfo.quote}
                                 </p>
-                                {/* <p className="font-[roboto] text-[10px] md:text-[10px] text-center text-gray-600">
-                                    {doctorInfo.des}
-                                </p> */}
 
                                 <div
                                     className="absolute -top-6 left-2"
