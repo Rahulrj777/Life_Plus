@@ -5,8 +5,6 @@ import 'slick-carousel/slick/slick-theme.css'; // Slick Slider Theme CSS
 import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/ti'; // Import arrow icons from react-icons
 import gsap from 'gsap'; // Import GSAP for animation
 
-
-
 import icon1 from '../images/therapies/back_pain_neck_pain.png'
 import icon2 from '../images/therapies/spine_disorders.png'
 import icon3 from '../images/therapies/Frozen_Shoulder.png'
@@ -32,17 +30,9 @@ import icon22 from '../images/therapies/Gut_Health.png'
 import icon23 from '../images/therapies/Digestive_Care.png'
 import icon24 from '../images/therapies/kidney_stone.png'
 import icon25 from '../images/therapies/Urinary_Health.png'
-import icon26 from '../images/therapies/Renal_Care.png'
-
-
-
-
-import { FaLaptopMedical } from "react-icons/fa";
-
-
 
 const BestServices = () => {
-    const [centerIndex, setCenterIndex] = useState(2); // Initially setting the center slide to 2 (0-indexed)
+    const [centerIndex, setCenterIndex] = useState(2); 
     const sliderRef = useRef(null); // Create a reference for the Slider component
     const waveRef = useRef(null); // Reference for the wave SVG element
     const descriptionRef = useRef([]); // Array of refs for descriptions
