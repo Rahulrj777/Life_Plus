@@ -237,7 +237,7 @@ const BestServices = () => {
                 { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' } // Fade in and move up
             );
         }
-    }, [centerIndex]); // Trigger animation whenever the centerIndex changes
+    }, [centerIndex]);
 
     return (
         <div className="relative w-full md:w-full mx-auto overflow-hidden px-1 pb-4 ">
@@ -250,24 +250,12 @@ const BestServices = () => {
                                 <div className='px-5 md:px-4 py-3 md:py-2 rounded-lg drop-shadow-sm bg-white border border-gray-100 '>
                                     <img src={slide.img} className="text-3xl font-bold text-gray-950 mb-2 w-9  md:w-10 object-cover " />
                                 </div>
-                                {/* <div className="bg-white p-6 rounded-tr-3xl  rounded-bl-3xl border-l-2 border-green-500 shadow-md drop-shadow-md text-[28px] ">{slide.img}</div> */}
                             </div>
 
                             <div className='mt-4 '>
                                 <h3 className='text-center text-[9px] md:text-[11px]  font-medium font-[Merriweather]'>{slide.title}</h3>
                             </div>
-
-
-                            {/* <p
-                                ref={(el) => descriptionRef.current[index] = el} // Assign the ref to each description
-                                className={` text-[10px] md:text-[12px] text-black transition-opacity duration-500 ease-in-out ${centerIndex === index ? 'opacity-100' : 'opacity-0'}`}
-                            >
-                                {slide.description}
-                            </p> */}
-
-
                         </div>
-
                     </div>
                 ))}
             </Slider>
@@ -275,13 +263,13 @@ const BestServices = () => {
             {/* Left and Right Arrows */}
             <div className="flex items-center gap-x-4 md:gap-x-8 justify-start w-full px-4 md:w-[90%] ">
                 <div className="z-10">
-                    <button onClick={moveLeft} className="cursor-pointer bg-white hover:bg-[#dddddd] hover:border hover:border-gray-100 text-[#a64c4f] hover:text-gray-50 p-2 hover:scale-105 duration-100 rounded-full shadow-lg">
+                    <button onClick={moveLeft} className="cursor-pointer bg-white hover:bg-[#20a534] hover:border hover:border-gray-100 text-[#20a534] hover:text-gray-50 p-2 hover:scale-105 duration-100 rounded-full shadow-lg">
                         <TiArrowLeftThick className="text-[12px] md:text-[22px]" />
                     </button>
                 </div>
 
                 <div className="z-10">
-                    <button onClick={moveRight} className="cursor-pointer bg-white hover:bg-[#dddddd] hover:border hover:border-gray-100 text-[#a64c4f] hover:text-gray-50 p-2 hover:scale-105 duration-100 rounded-full shadow-lg">
+                    <button onClick={moveRight} className="cursor-pointer bg-white hover:bg-[#20a534] hover:border hover:border-gray-100 text-[#20a534] hover:text-gray-50 p-2 hover:scale-105 duration-100 rounded-full shadow-lg">
                         <TiArrowRightThick className="text-[12px] md:text-[22px]" />
                     </button>
                 </div>

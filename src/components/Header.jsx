@@ -88,14 +88,14 @@ const Header = () => {
       </div>
 
       {/* 🔹 Main Navbar */}
-      <nav className={`w-full sticky top-0 z-50 py-4 md:py-6 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
+      <nav className={`w-full sticky top-0 z-50 py-4 md:py-0 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
         <div className="max-w-[1280px] mx-auto font-[poppins]">
           <div className="flex justify-between items-center px-4 sm:px-9">
 
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link to="/" onClick={topPage}>
-                <img src={logo} className="w-24 md:w-36" alt="LifePlus Logo" />
+                <img src={logo} className="w-30 md:w-45 h-40" alt="LifePlus Logo" />
               </Link>
             </div>
 

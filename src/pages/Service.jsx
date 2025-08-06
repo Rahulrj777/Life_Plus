@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import BestServices from '../components/BestServices'
 
 import midBanner from '../images/banner/mid_banner.jpg'
 import bottombanner from '../images/banner/special.png'
@@ -679,6 +680,21 @@ const Service = () => {
                             </div>
                         </div>
                     </section>
+
+                    {/* ------------------ Popular Ayurveda Therapies ----------- */}
+
+                    <section className='py-10 md:py-20 bg-slate-100 font-[poppins]'>
+                        <div className='w-full px-4 md:w-[90%] mx-auto'>
+                            <div className='flex flex-col items-center gap-y-3 mb-8 md:mb-12' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
+                                <h3 className='font-bold text-[16px] md:text-[32px] font-[Merriweather] '>Popular Ayurveda Therapies</h3>
+                                <p className='text-[10px] md:text-[12px] text-gray-600 text-center'>Embrace the wisdom of nature with Ayurveda, a holistic approach to wellness that promotes balance and supports your journey to optimal health.</p>
+                            </div>
+                            <div data-aos='fade-up' data-aos-duratoin='1000'>
+                                <BestServices />
+                            </div>
+                        </div>
+                    </section >
+
                 </div>
             </div>
 

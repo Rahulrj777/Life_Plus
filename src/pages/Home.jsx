@@ -36,12 +36,8 @@ import why6 from '../images/icon/why6.png'
 import why7 from '../images/icon/why7.png'
 import why8 from '../images/icon/why8.png'
 
-import review from '../images/review-1.jpg'
-
 //icons
 import { GiLindenLeaf } from "react-icons/gi";
-import BestServices from '../components/BestServices'
-
 import { PiHeadsetFill } from "react-icons/pi";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
@@ -537,8 +533,8 @@ useEffect(() => {
                     <div className='w-full px-4 md:w-[80%] mx-auto'>
 
                         <div className='flex flex-col justify-center items-center mx-auto mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
-                            <p className='text-[12px] md:text-[14px] text font-semibold uppercase text-[#ec1a25]  mb-3'>Testimonial</p>
-                            <h2 className="text-[20px] md:text-[3rem]  font-[Merriweather]  text-[#0a7c1d] ">Customer Feedback & Reviews</h2>
+                            <p className='text-[14px] md:text-[16px] text font-semibold uppercase text-[#ec1a25]  mb-3'>Testimonial</p>
+                            <h2 className="text-[20px] md:text-[3rem]  text-[#0a7c1d] ">Customer Feedback & Reviews</h2>
                             <div className='flex items-center justify-center gap-x-3 mt-4 text-[16px] md:text-[20px]'>
                                 <FaStar className='text-yellow-500 ' />
                                 <FaStar className='text-yellow-500 ' />
@@ -551,9 +547,6 @@ useEffect(() => {
                         <div>
                             <Testimonials />
                         </div>
-
-
-
                     </div>
                 </section>
 
@@ -585,26 +578,8 @@ useEffect(() => {
                                         flex items-center justify-center gap-x-2 mx-auto">
                         Discover More <FaArrowRight className="text-[12px] md:text-[18px]" />
                         </button>
-
                     </div>
                 </section>
-
-                {/* ------------------ Popular Ayurveda Therapies ----------- */}
-
-                <section className='py-10 md:py-20 bg-slate-100 font-[poppins]'>
-                    <div className='w-full px-4 md:w-[90%] mx-auto'>
-                        <div className='flex flex-col items-center gap-y-3 mb-8 md:mb-12' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
-                            <h3 className='font-bold text-[16px] md:text-[32px] font-[Merriweather] '>Popular Ayurveda Therapies</h3>
-                            <p className='text-[10px] md:text-[12px] text-gray-600 text-center'>Embrace the wisdom of nature with Ayurveda, a holistic approach to wellness that promotes balance and supports your journey to optimal health.</p>
-                        </div>
-
-                        <div data-aos='fade-up' data-aos-duratoin='1000'>
-                            <BestServices />
-                        </div>
-
-                    </div>
-                </section >
-
             </div>
 
         </>
