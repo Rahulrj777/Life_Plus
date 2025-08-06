@@ -146,8 +146,8 @@ const About = () => {
                         </div>
                         <div className='w-full md:w-[50%]'>
                             <div ref={textRef}>
-                                <p className='flex items-center gap-x-2 text-[12px] md:text-[14px] text-[#d4252b] font-medium'>
-                                    About Us <span className='mt-0.5 rounded-3xl border border-[#b72c30] w-[10%]'></span>
+                                <p className='flex items-center gap-x-2 text-[12px] md:text-[14px] text-[#d480a1] font-medium'>
+                                    About Us <span className='mt-0.5 rounded-3xl border border-[#d480a1] w-[10%]'></span>
                                 </p>
                                 <h3 className='text-[18px] md:text-[26px] font-bold mb-3 md:mb-6 uppercase text-[#2c7f4c]'>
                                     Your Trusted Partner in Holistic Healthcare
@@ -203,7 +203,7 @@ const About = () => {
                                 <Link to='/contact' onClick={() => window.scrollTo(0, 0)} >
                                     <button
                                         ref={buttonRef}
-                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#c73237] text-white font-medium hover:scale-105 transition duration-300"
+                                        className="cursor-pointer text-[14px] md:text-[16px]  px-4 md:px-8 py-1.5 md:py-3 font-[roboto] rounded-md md:rounded-xl bg-[#d480a1] text-white font-medium hover:scale-105 transition duration-300"
                                     >
                                         Book Appointment
                                     </button>

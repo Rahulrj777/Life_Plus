@@ -121,7 +121,7 @@ const Header = () => {
                   <button
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#ec1a25] hover:bg-[#0a7c1d] text-white px-4 md:px-10 py-2 md:py-3 uppercase rounded-md duration-300 transform hover:scale-105 active:scale-105 text-[12px] md:text-[14px]"
+                    className="relative z-10 cursor-pointer drop-shadow-md font-semibold font-[poppins] bg-[#d480a1] hover:bg-[#0a7c1d] text-white px-4 md:px-10 py-2 md:py-3 uppercase rounded-md duration-300 transform hover:scale-105 active:scale-105 text-[12px] md:text-[14px]"
                   >
                     book appointment
                   </button>

@@ -139,7 +139,7 @@ useEffect(() => {
                     <div className='w-full flex flex-col md:flex-row gap-y-10 justify-center items-center overflow-hidden'>
 
                         <div className='md:pl-16 md:pr-5 flex flex-col items-center justify-center' data-aos="fade-up" data-aos-duration="3000">
-                            <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-[#ec1a25] flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
+                            <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-[#d480a1] flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
                             <div className='font-bold  md:tracking-[2px]  '>
                                 <h2 className='text-[2rem] md:text-[4.6rem] text-center uppercase  text-[#0a7c1d] drop-shadow-md'> Helping You Feel </h2>
                                 <h2 className='text-[1.8rem] md:text-[4.2rem] text-center uppercase text-[#0a7c1d]'> Better—Naturally </h2>
@@ -170,7 +170,7 @@ useEffect(() => {
                                         <div className='bg-white p-3 md:p-4 overflow-hidden  h-full  w-[80%] md:w-[50%] mx-auto rounded-bl-4xl'>
                                             <div className='bg-white p-3 md:p-7  mx-auto border-2 border-[#0a7c1d] rounded-bl-3xl  space-y-1 md:space-y-3'>
                                                 <div className='flex justify-center items-center'>
-                                                    <GiLindenLeaf className=' text-[14px] md:text-[20px] text-[#ec1a25]' />
+                                                    <GiLindenLeaf className=' text-[14px] md:text-[20px] text-[#0a7c1d]' />
                                                 </div>
                                                 <h3 className='text-center font-bold text-[10px] md:text-[16px] font-[Merriweather]'>Renew Yourself with Ayurveda</h3>
                                                 <p className='text-[10px] md:text-[12px] text-center'>
@@ -185,7 +185,7 @@ useEffect(() => {
 
                             <div className='w-full md:w-[50%] mx-auto'>
                                 <div data-aos='fade-left' data-aos-duratoin='1000'>
-                                    <p className='text-[#ec1a25] text-[12px] md:text-[13px] font-semibold uppercase md:mb-2'>Who We Are </p>
+                                    <p className='text-[#d480a1] text-[12px] md:text-[13px] font-semibold uppercase md:mb-2'>Who We Are </p>
                                     <h3 className='text-[16px] md:text-[30px] font-semibold font-[Merriweather] leading-11 '>Natural Healing. Real Results</h3>
                                     <p className='text-[12px] md:text-[14px] text-gray-500 mt-2  md:mt-5'>
                                      At our core, we honor the age-old wisdom of traditional healing. Drawing from the rich heritage of Siddha, Ayurveda, and other time-tested practices, we offer safe, plant-based therapies that are designed to optimize your health.
@@ -203,7 +203,7 @@ useEffect(() => {
                                     <div className="mt-6">
                                         <a
                                             href="/about"
-                                            className="inline-block bg-[#ec1a25] hover:bg-[#0a7c1d] text-white font-semibold px-6 py-3 rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
+                                            className="inline-block bg-[#d480a1] hover:bg-[#0a7c1d] text-white font-semibold px-6 py-3 rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
                                         >
                                             Know More
                                         </a>
@@ -226,7 +226,7 @@ useEffect(() => {
                             <h3 className='font-light text-[8px] md:text-[14px] flex items-center gap-x-2 md:gap-x-4'>  <span> <PiHeadsetFill className='text-[#426948] text-[20px] md:text-[40px]' /> </span> <span> Begin your personalized wellness journey with Life Plus. </span> </h3>
                             <div>
                                 <Link to='/contact' onClick={() => window.scrollTo(0, 0)}>
-                                    <button className='px-3 md:px-6 cursor-pointer mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#ec1a25] hover:scale-105 duration-300 font-bold hover:bg-[#0a7c1d] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white'>Contact us</button>
+                                    <button className='px-3 md:px-6 cursor-pointer mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#d480a1] hover:scale-105 duration-300 font-bold hover:bg-[#0a7c1d] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white'>Contact us</button>
                                 </Link>
                             </div>
                         </div>
@@ -241,7 +241,7 @@ useEffect(() => {
 
                         {/* TOP CONTENT */}
                         <div className="text-center mb-16">
-                        <p className="text-[12px] md:text-[14px] font-semibold mb-2 text-[#d33e24]">
+                        <p className="text-[12px] md:text-[14px] font-semibold mb-2 text-[#d480a1]">
                             Our Services
                         </p>
                         <h2 className="font-[Merriweather] font-bold text-[20px] md:text-[2.5rem] text-[#0a7c1d] leading-snug">
@@ -321,7 +321,7 @@ useEffect(() => {
                         <div className="w-full max-w-7xl">
                         {/* Heading */}
                         <div className="w-full mx-auto mb-10 md:mb-14" data-aos="fade-up" data-aos-duration="1000">
-                            <p className="text-[14px] md:text-[16px] font-semibold uppercase text-[#ec1a25] mb-3">
+                            <p className="text-[16px] md:text-[18px] font-semibold uppercase text-[#d480a1] mb-3">
                             What Makes Us Different
                             </p>
                             <h2 className="text-white text-[22px] md:text-[3rem] font-bold font-[Merriweather] leading-tight">
@@ -533,7 +533,7 @@ useEffect(() => {
                     <div className='w-full px-4 md:w-[80%] mx-auto'>
 
                         <div className='flex flex-col justify-center items-center mx-auto mb-14' data-aos='fade-up' data-aos-duration='2000' data-aos-delay='50'>
-                            <p className='text-[14px] md:text-[16px] text font-semibold uppercase text-[#ec1a25]  mb-3'>Testimonial</p>
+                            <p className='text-[14px] md:text-[16px] text font-semibold uppercase text-[#d480a1]  mb-3'>Testimonial</p>
                             <h2 className="text-[20px] md:text-[3rem]  text-[#0a7c1d] ">Customer Feedback & Reviews</h2>
                             <div className='flex items-center justify-center gap-x-3 mt-4 text-[16px] md:text-[20px]'>
                                 <FaStar className='text-yellow-500 ' />
@@ -573,7 +573,7 @@ useEffect(() => {
                         </p>
 
                         {/* Button */}
-                        <button className="px-6 md:px-10 py-2 md:py-3 bg-[#ec1a25] hover:bg-[#0a7c1d] transition-all duration-500 
+                        <button className="px-6 md:px-10 py-2 md:py-3 bg-[#d480a1] hover:bg-[#0a7c1d] transition-all duration-500 
                                         hover:rounded-full hover:scale-105 text-white text-[13px] md:text-[16px] font-semibold 
                                         flex items-center justify-center gap-x-2 mx-auto">
                         Discover More <FaArrowRight className="text-[12px] md:text-[18px]" />

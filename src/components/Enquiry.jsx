@@ -253,7 +253,7 @@ const Enquiry = () => {
                                 <button
                                     type="submit"
                                     disabled={loading}
-                                    className={`w-full cursor-pointer hover:bg-[#b05454] rounded-xl bg-[#eb4b53] uppercase text-white font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline duration-500 ${loading ? "opacity-60 cursor-not-allowed" : "hover:scale-105"
+                                    className={`w-full cursor-pointer hover:bg-[#c77c9a] rounded-xl bg-[#d480a1] uppercase text-white font-semibold text-[13px] py-3 px-4 focus:outline-none focus:shadow-outline duration-500 ${loading ? "opacity-60 cursor-not-allowed" : "hover:scale-105"
                                         }`}
                                 >
                                     {loading ? "Slot Booking..." : "Submit"}
