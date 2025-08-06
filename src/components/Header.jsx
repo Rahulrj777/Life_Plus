@@ -58,7 +58,7 @@ const Header = () => {
   return (
     <>
       {/* 🔹 Top Navbar */}
-      <div className="flex flex-col md:flex-row items-center gap-10 bg-[#0a7c1d] h-auto md:h-11 w-full font-[roboto] px-4 md:px-8 py-1 md:py-0 space-y-1 md:space-y-0">
+      <div className="flex flex-col md:flex-row items-center gap-10 bg-[#86a39f] h-auto md:h-11 w-full font-[roboto] px-4 md:px-8 py-1 md:py-0 space-y-1 md:space-y-0">
 
         {/* Marquee */}
         <div className="overflow-hidden w-full md:w-[60%] h-6 md:h-full flex items-center">
