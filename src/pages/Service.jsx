@@ -694,10 +694,8 @@ const Service = () => {
                             </div>
                         </div>
                     </section >
-
                 </div>
             </div>
-
         </>
     )
 }
