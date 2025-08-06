@@ -137,15 +137,7 @@ const BestServices = () => {
         {
             img: icon25,
             title: "Urinary Health",
-        },
-        {
-            img: icon26,
-            title: "Renal Care",
-        },
-
-
-
-
+        }
     ];
 
     const settings = {
