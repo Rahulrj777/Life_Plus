@@ -312,7 +312,7 @@ useEffect(() => {
                                 <div className="group [perspective:1000px]">
                                 <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#32a946] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why1} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Personalized Care
@@ -331,7 +331,7 @@ useEffect(() => {
                                 <div className="group [perspective:1000px]">
                                     <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#32a946] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why2} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Healing Support
@@ -350,7 +350,7 @@ useEffect(() => {
                                 <div className="group [perspective:1000px]">
                                     <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#32a946] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why3} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Secure Treatment
@@ -369,7 +369,7 @@ useEffect(() => {
                                 <div className="group [perspective:1000px]">
                                     <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#32a946] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why4} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Emergency Assistance
@@ -388,7 +388,7 @@ useEffect(() => {
                                 <div className="group [perspective:1000px]">
                                     <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#32a946] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why5} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Herbal Expertise
@@ -407,7 +407,7 @@ useEffect(() => {
                                 <div className="group [perspective:1000px]">
                                     <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#32a946] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why6} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Certified Doctors
@@ -426,7 +426,7 @@ useEffect(() => {
                                 <div className="group [perspective:1000px]">
                                     <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#32a946] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why7} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         24/7 Support
@@ -445,7 +445,7 @@ useEffect(() => {
                                 <div className="group [perspective:1000px]">
                                     <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#32a946] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why8} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Natural Treatment
