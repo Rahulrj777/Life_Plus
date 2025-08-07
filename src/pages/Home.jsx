@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import whychoosebanner from '../images/banner/whybanner.jpg'
-
 import patternbackground from '../images/banner/patternbackground1.jpg'
 
 import about1 from '../images/about1.jpg'
@@ -286,13 +284,13 @@ useEffect(() => {
 
                 {/* ---------- why choose us --------------*/}
 
-                <section className="bg-white">
+                <section className="bg-[#f9f3eb]">
                     <div className="relative h-[85rem] md:h-[45rem]">
                     {/* Background */}
-                    <div className="relative h-full">
+                    {/* <div className="relative h-full">
                         <img src={whychoosebanner} className="w-full h-full object-cover" alt="banner" />
                         <div className="absolute inset-0 bg-green-800/30 backdrop-blur-sm"></div>
-                    </div>
+                    </div> */}
 
                     {/* Centered Content */}
                     <div className="absolute inset-0 flex justify-center items-center text-center px-4">
@@ -302,19 +300,19 @@ useEffect(() => {
                             <p className="text-[16px] md:text-[18px] font-semibold uppercase text-[#d480a1] mb-3">
                             What Makes Us Different
                             </p>
-                            <h2 className="text-white text-[22px] md:text-[3rem] font-bold  leading-tight">
+                            <h2 className="text-black text-[22px] md:text-[3rem] font-bold  leading-tight">
                             Embracing Nature’s Healing Power for Better Health
                             </h2>
                         </div>
 
                         {/* Feature Flip Cards */}
-                        <div className="w-full md:w-[95%] mx-auto">
+                        <div className="w-full md:w-[95%] mx-auto ">
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
                                 {/* Card 1 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-48 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#0a7c1d] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why1} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Personalized Care
@@ -331,9 +329,9 @@ useEffect(() => {
 
                                 {/* Card 2 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-48 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#0a7c1d] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why2} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Healing Support
@@ -350,9 +348,9 @@ useEffect(() => {
 
                                 {/* Card 3 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-48 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#0a7c1d] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why3} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Secure Treatment
@@ -369,9 +367,9 @@ useEffect(() => {
 
                                 {/* Card 4 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-48 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#0a7c1d] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why4} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Emergency Assistance
@@ -388,9 +386,9 @@ useEffect(() => {
 
                                 {/* Card 5 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-48 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#0a7c1d] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why5} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Herbal Expertise
@@ -407,9 +405,9 @@ useEffect(() => {
 
                                 {/* Card 6 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-48 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#0a7c1d] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why6} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Certified Doctors
@@ -426,9 +424,9 @@ useEffect(() => {
 
                                 {/* Card 7 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-48 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#0a7c1d] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why7} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         24/7 Support
@@ -445,9 +443,9 @@ useEffect(() => {
 
                                 {/* Card 8 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-48 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
-                                    <div className="absolute inset-0 bg-[#0a7c1d] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
+                                    <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why8} className="w-12 mb-3" alt="Personalized Care" />
                                         <h3 className="text-[14px] md:text-[18px]  font-semibold">
                                         Natural Treatment
