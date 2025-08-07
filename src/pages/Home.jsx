@@ -310,7 +310,7 @@ useEffect(() => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
                                 {/* Card 1 */}
                                 <div className="group [perspective:1000px]">
-                                    <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                <div className="relative h-40 w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                                     {/* Front */}
                                     <div className="absolute inset-0 bg-[#d480a1] flex flex-col items-center justify-center p-4 text-white [backface-visibility:hidden] rounded-md">
                                         <img src={why1} className="w-12 mb-3" alt="Personalized Care" />

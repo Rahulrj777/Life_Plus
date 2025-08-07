@@ -50,6 +50,11 @@ import speacil9 from '../images/icon/asthma.png'
 import speacil10 from '../images/icon/cold.png'
 import speacil11 from '../images/icon/Migraine_Treatment.png'
 
+import kattu from '../images/services/kattu.jpg'
+import bodypain from '../images/therapies/back_pain_neck_pain.png'
+import steam from '../images/icon/steam_bath.png'
+import Sattigai from '../images/icon/service.1.png'
+
 const Service = () => {
 
     useEffect(() => {
@@ -556,19 +561,164 @@ const Service = () => {
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Diet & Lifestyle Plans </h3>
                                                             <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Tailored plans based on your unique body type (prakriti) for overall wellness.</p>
                                                         </div>
-
                                                     </div>
                                                 </div>
-                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </section>
 
+
+                    {/* --------------------Siddha External Therapies------------- */}
+
+                    <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-green-50/40'>
+                        <div className='w-full mx-auto'>
+                            <div className='w-full px-4 md:w-[85%] mx-auto space-y-26'>
+                            <div className='flex justify-center items-center w-full'>
+                                <div>
+                                <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto mb-16 md:mb-20'>
+                                    <h1 className='text-[16px] md:text-[32px] font-bold mx-auto text-center'>Siddha External Therapies</h1>
+                                    <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>
+                                    Explore traditional Siddha therapies aimed at healing, pain relief, detox, and overall well-being through time-tested external applications.
+                                    </p>
+                                </div>
+
+                                <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 md:gap-y-24 w-full'>
+
+                                    {/* Card i - Kattu (Bandaging) */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={kattu} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kattu </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Effective in treating wounds, fracture, muscle spasm, sprain, joint dislocation, and pain management.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card ii - Pathu (Poultice) */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={service2} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Pathu  </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Poultice is used in treating skin diseases like eczema, boils, abscess, musculoskeletal diseases like arthritis, sprain, injuries, and other conditions like sinusitis, wounds, and hemorrhoids.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card iii - Othadam (Fomentation) */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={bodypain} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Othadam  </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>It is helpful in treating inflammation, disc bulge, toothache, muscle cramps, body pain, asthma, and ano-rectal diseases.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card iv - Steam (Sufh-vedhiyal) */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={steam} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Steam  </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Local steaming is useful in inflammation, fluid accumulation, and spasm. Whole body steam is a cleansing and relaxing procedure.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card v - Vasthi */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={service3} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Vasthi  </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Helps in treating chronic ulcer and fistula.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card vi - Kaaram */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={service10} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kaaram  </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Applying various medical formulations to remove warts, corns, and skin tags.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card vii - Attai (Leech Therapy) */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={life1} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Attai  </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Helps to improve circulation, reduce inflammation, promote wound healing, and treat varicose veins.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card viii - Karanool */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={life2} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Karanool  </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Useful in treating ano-rectal diseases.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Card ix - Sattigai */}
+                                    <div>
+                                        <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
+                                            <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
+                                                <img src={Sattigai} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                            </div>
+
+                                            <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Sattigai  </h3>
+                                                <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Treats warts, corns, chronic pain, and is used to stop bleeding.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
 
 
                     {/* --------------------- Specialized in ------------------- */}
