@@ -136,10 +136,10 @@ useEffect(() => {
                         <div className='md:pl-16 md:pr-5 flex flex-col justify-center' data-aos="fade-up" data-aos-duration="3000">
                             <p className='text-[14px] md:text-[18px] tracking-tight md:tracking-normal font-semibold text-[#d480a1] flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
                             <div className='font-bold  md:tracking-[2px]  '>
-                                <h2 className='text-[2rem] md:text-[4.6rem] uppercase  text-[#0a7c1d] drop-shadow-md'> Helping You Feel </h2>
-                                <h2 className='text-[1.8rem] md:text-[4.2rem]  uppercase text-[#0a7c1d]'> Better—Naturally </h2>
+                                <h2 className='text-[2rem] md:text-[4.5rem] uppercase  text-[#0a7c1d] drop-shadow-md'> Helping You Feel </h2>
+                                <h2 className='text-[1.8rem] md:text-[4.1rem]  uppercase text-[#0a7c1d]'> Better—Naturally </h2>
                             </div>
-                            <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px] w-full px-4 md:w-[70%] text-black leading-5 md:leading-7 md:font-medium md:pr-8'>
+                            <p className='mt-2 -md:mt-5  text-[14px] md:text-[16px] w-full px-4 md:w-[70%] text-black leading-5 md:leading-7 md:font-medium md:pr-8'>
                                 We use natural herbs and safe treatments to support your health and well-being. Whether you're
                                 looking to reduce stress, boost your energy, or improve your overall health, we’re here to help with
                                 gentle and effective herbal care.
