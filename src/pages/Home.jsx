@@ -534,11 +534,11 @@ useEffect(() => {
 
                 {/* -------------- client ratings ---------------- */}
 
-                <section className="py-16 md:py-24 bg-[#f9f3eb]  relative overflow-hidden">
-                    <div className="w-full px-6 md:w-[75%] mx-auto text-center" data-aos="fade-up" data-aos-duration="1500">
+                <section className="py-16 md:py-24 bg-[#f9f3eb] relative overflow-hidden">
+                    <div className="w-full px-6 md:w-[75%] mx-auto text-center relative z-10" data-aos="fade-up" data-aos-duration="1500">
                         
                         {/* Decorative Background Element */}
-                        <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[30rem] h-[30rem] bg-[#0a7c1d]/10 rounded-full blur-3xl opacity-30"></div>
+                        <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[30rem] h-[30rem] bg-[#0a7c1d]/10 rounded-full blur-3xl opacity-30 z-0"></div>
                         
                         {/* Heading */}
                         <h2 className="text-[#0a7c1d] text-[22px] md:text-[48px]  font-bold leading-snug mb-6">
@@ -555,9 +555,9 @@ useEffect(() => {
 
                         {/* Button */}
                         <Link to="/healthcare_services"
-                            className="inline-flex gap-5 justify-center items-center bg-[#d480a1] hover:bg-[#0a7c1d] text-white px-10 py-4 cursor-pointer rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
-                            >
-                            Discover More <FaArrowRight className="text-[12px] md:text-[18px]" />
+                        className="relative z-10 inline-flex gap-2 items-center bg-[#d480a1] hover:bg-[#0a7c1d] text-white px-10 py-4 cursor-pointer rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
+                        >
+                        Discover More <FaArrowRight className="text-[12px] md:text-[18px]" />
                         </Link>
                     </div>
                 </section>
