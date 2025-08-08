@@ -134,7 +134,7 @@ useEffect(() => {
                     <div className='w-full flex flex-col md:flex-row justify-center items-center overflow-hidden'>
 
                         <div className='md:pl-16 md:pr-5 flex flex-col justify-center' data-aos="fade-up" data-aos-duration="3000">
-                            <p className='text-[12px] md:text-[16px] tracking-tight md:tracking-normal font-semibold text-[#d480a1] flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
+                            <p className='text-[14px] md:text-[18px] tracking-tight md:tracking-normal font-semibold text-[#d480a1] flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
                             <div className='font-bold  md:tracking-[2px]  '>
                                 <h2 className='text-[2rem] md:text-[4.6rem] uppercase  text-[#0a7c1d] drop-shadow-md'> Helping You Feel </h2>
                                 <h2 className='text-[1.8rem] md:text-[4.2rem]  uppercase text-[#0a7c1d]'> Better—Naturally </h2>
