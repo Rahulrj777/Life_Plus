@@ -36,7 +36,7 @@ const Contact = () => {
 
       {/* ---------------- Form & Info Section ---------------- */}
       <section className="bg-[#f8f8ff] py-14 font-[poppins]">
-        <div className="relative w-full px-4 md:w-[80%] mx-auto bg-[#33a54f] py-8 md:px-6 rounded-lg z-0">
+        <div className="relative w-full px-4 md:w-[80%] mx-auto bg-[#aabc9b] py-8 md:px-6 rounded-lg z-0">
 
           <div className="absolute bottom-8 left-0 -z-10" data-aos="fade-right">
             <img src={phone} className="w-60 object-cover" alt="Phone" />
