@@ -196,12 +196,12 @@ useEffect(() => {
                                         <li className='flex items-center gap-x-2'>  <span><img src={who4} className='w-6 md:w-8 object-cover' alt='none' /></span>   <span>Natural Treatments</span> </li>
                                     </ul>
                                     <div className="mt-6">
-                                        <a
-                                            href="/about"
+                                        <Link
+                                            to="/about"
                                             className="inline-block bg-[#d480a1] hover:bg-[#0a7c1d] text-white font-semibold px-6 py-3 rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
                                         >
                                             Know More
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -286,11 +286,6 @@ useEffect(() => {
 
                 <section className="bg-[#f9f3eb]">
                     <div className="relative h-[85rem] md:h-[45rem]">
-                    {/* Background */}
-                    {/* <div className="relative h-full">
-                        <img src={whychoosebanner} className="w-full h-full object-cover" alt="banner" />
-                        <div className="absolute inset-0 bg-green-800/30 backdrop-blur-sm"></div>
-                    </div> */}
 
                     {/* Centered Content */}
                     <div className="absolute inset-0 flex justify-center items-center text-center px-4">
@@ -559,12 +554,11 @@ useEffect(() => {
                         </p>
 
                         {/* Button */}
-                        <a
-                        href="/healthcare_services"
-                        className="inline-flex gap-5 justify-center items-center bg-[#d480a1] hover:bg-[#0a7c1d] text-white px-10 py-4 cursor-pointer rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
-                        >
-                        Discover More <FaArrowRight className="text-[12px] md:text-[18px]" />
-                        </a>
+                        <Link to="/healthcare_services"
+                            className="inline-flex gap-5 justify-center items-center bg-[#d480a1] hover:bg-[#0a7c1d] text-white px-10 py-4 cursor-pointer rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
+                            >
+                            Discover More <FaArrowRight className="text-[12px] md:text-[18px]" />
+                        </Link>
                     </div>
                 </section>
 
