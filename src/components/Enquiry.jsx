@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-
 const Enquiry = () => {
     const [formData, setFormData] = useState({
         name: '',
