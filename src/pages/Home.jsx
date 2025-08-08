@@ -139,7 +139,7 @@ useEffect(() => {
                                 <h2 className='text-[2rem] md:text-[4.6rem] uppercase  text-[#0a7c1d] drop-shadow-md'> Helping You Feel </h2>
                                 <h2 className='text-[1.8rem] md:text-[4.2rem]  uppercase text-[#0a7c1d]'> Better—Naturally </h2>
                             </div>
-                            <p className='mt-2 -md:mt-5  text-[14px] md:text-[16px] w-full px-4 md:w-[70%] text-black leading-5 md:leading-7 md:font-medium md:pr-8'>
+                            <p className='mt-2 -md:mt-5  text-[12px] md:text-[14px] w-full px-4 md:w-[70%] text-black leading-5 md:leading-7 md:font-medium md:pr-8'>
                                 We use natural herbs and safe treatments to support your health and well-being. Whether you're
                                 looking to reduce stress, boost your energy, or improve your overall health, we’re here to help with
                                 gentle and effective herbal care.
