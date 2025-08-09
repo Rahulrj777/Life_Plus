@@ -32,7 +32,7 @@ const testimonials = [
     id: 3,
     name: "Jaya",
     image: test3,
-    rating: 4,
+    rating: 5,
     review:
       "Life Plus is excellent for natural healthcare. Affordable, professional, and effective treatment with experienced doctors and therapists.",
   },

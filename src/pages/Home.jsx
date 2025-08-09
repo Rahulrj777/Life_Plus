@@ -519,7 +519,7 @@ useEffect(() => {
                             <FaStar className="text-yellow-500" />
                             <FaStar className="text-yellow-500" />
                             <FaStar className="text-yellow-500" />
-                            <FaStar className="text-gray-200" />
+                            <FaStar className="text-yellow-500" />
                         </div>
                         </div>
 
