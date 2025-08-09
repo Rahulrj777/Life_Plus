@@ -110,7 +110,7 @@ useEffect(() => {
                     {/* Phone */}
                     <a
                         href="tel:+1234567890"
-                        className="bg-[#0a7c1d] hover:bg-green-800 text-white p-3 rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110"
+                        className="bg-yellow-400 hover:bg-yellow-500 text-black p-3 rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110"
                         aria-label="Phone"
                     >
                         <FaPhoneAlt className="w-6 h-6" />
