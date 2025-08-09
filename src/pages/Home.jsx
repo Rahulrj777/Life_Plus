@@ -107,16 +107,6 @@ useEffect(() => {
                         <FaWhatsapp className="w-6 h-6" />
                     </a>
 
-                    {/* Book Appointment */}
-                    <Link
-                        to="/contact"
-                        className="bg-pink-400 hover:bg-pink-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110"
-                        aria-label="Book Appointment"
-                        onClick={() => window.scrollTo(0, 0)}
-                    >
-                        <FaCalendarAlt className="w-6 h-6" />
-                    </Link>
-
                     {/* Phone */}
                     <a
                         href="tel:+1234567890"
