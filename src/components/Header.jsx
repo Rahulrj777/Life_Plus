@@ -58,7 +58,7 @@ const Header = () => {
   return (
     <>
       {/* 🔹 Top Navbar */}
-      <div className="flex flex-col md:flex-row items-center gap-10 bg-[#86a39f] h-auto md:h-11 w-full font-[roboto] px-4 md:px-8 py-1 md:py-0 space-y-1 md:space-y-0">
+      <div className="flex flex-col md:flex-row items-center gap-2 bg-[#86a39f] w-full font-[roboto] px-4 md:px-8 py-2">
 
         {/* Marquee */}
         <div className="overflow-hidden w-full md:w-[60%] h-6 md:h-full flex items-center">
@@ -88,14 +88,14 @@ const Header = () => {
       </div>
 
       {/* 🔹 Main Navbar */}
-      <nav className={`w-full sticky top-0 z-50 py-4 md:py-0 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
+      <nav className={`w-full sticky top-0 z-50 md:py-0 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
         <div className="max-w-[1280px] mx-auto font-[poppins]">
           <div className="flex justify-between items-center px-4 sm:px-9">
 
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link to="/" onClick={topPage}>
-                <img src={logo} className="w-30 md:w-45 h-40" alt="LifePlus Logo" />
+                <img src={logo} className="h-30 md:h-36 w-auto object-contain" alt="LifePlus Logo" />
               </Link>
             </div>
 
@@ -130,7 +130,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu Icon */}
-            <div onClick={handleNav} className="block lg:hidden cursor-pointer px-2">
+            <div onClick={handleNav} className="block lg:hidden cursor-pointer px-5">
               {nav ? (
                 <AiOutlineClose className=" text-[20px] md:text-[24px] text-black" />
               ) : (
@@ -141,10 +141,12 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           <ul className={`fixed top-0 left-0 pt-10 pl-6 w-[70%] h-[100vh] bg-gray-50 z-50 drop-shadow-md transition-transform ${nav ? 'translate-x-0' : '-translate-x-full'}`}>
-            <li className="mb-6">
-              <Link to="/" onClick={topPage}>
-                <img src={logo} className="w-24" alt="LifePlus Logo" />
-              </Link>
+            <li className="ml-6">
+              <img
+                src={logo}
+                alt="LifePlus Logo"
+                className="h-40"
+              />
             </li>
             {['Home', 'About Us', 'Healthcare Services', 'Contact'].map((item, idx) => (
               <li key={idx} className="px-2 py-4">

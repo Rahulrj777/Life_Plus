@@ -67,16 +67,28 @@ const Service = () => {
                 <div>
                     <section className='bg-white'>
                         <div className="relative">
-                            <img src={midBanner} className="w-full object-cover" alt="none" />
-    
-                            <div className="absolute md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
-                                <div className='w-[60%] md:w-[50%] mx-auto' data-aos='fade-up' data-aos-duratoin='2000'>
-                                    <h2 className="text-[#0d6c1d] text-[13px] md:text-[3rem] font-semibold font-[Merriweather]">  We’re Here to Help You Heal Naturally </h2>
-                                    <p className='tracking-tight text-[8px]  md:text-[16px] text-gra'> Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way. </p>
-                                </div>
+                            <img
+                            src={midBanner}
+                            className="w-full object-cover"
+                            alt="none"
+                            />
+
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
+                            <div
+                                className='w-[80%] md:w-[55%] mx-auto flex flex-col gap-3'
+                                data-aos='fade-up'
+                                data-aos-duration='2000'
+                            >
+                                <h2 className="text-[#0d6c1d] text-[13px] md:text-[3rem] font-bold">
+                                We’re Here to Help You Heal Naturally
+                                </h2>
+                                <p className='tracking-tight text-[10px] md:text-[18px] text-gray-700'>
+                                Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way.
+                                </p>
+                            </div>
                             </div>
                         </div>
-                    </section>
+                        </section>
 
                     {/* ----------- benefits ------------ */}
 
@@ -142,20 +154,17 @@ const Service = () => {
 
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-yellow-50/50'>
                         <div className='w-full  mx-auto '>
-
-
-                            <div className='w-full px-4 md:w-[85%] mx-auto space-y-26'>
+                            <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                                 <div className='flex justify-center items-center w-full '>
                                     <div>
-
                                         <div className='flex flex-col justify-center items-center  md:gap-y-2 w-full md:w-[80%] mx-auto mb-14 md:mb-20'>
                                             <h1 className='font-[poppins]   text-[16px] md:text-[32px] font-bold mx-auto text-center'>Siddha Medicine & Therapies</h1>
-                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Siddha medicine is a traditional healing system that originated in South India. It focuses on balancing the body's energies and promoting overall well-being through natural remedies, herbal treatments, and lifestyle practices.</p>
+                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-justify md:text-center w-[90%] mx-auto mt-2 md:mt-0'>
+                                                Siddha medicine is a traditional healing system that originated in South India. It focuses on balancing the body's energies and promoting overall well-being through natural remedies, herbal treatments, and lifestyle practices.
+                                            </p>
                                         </div>
-
                                         <div>
                                             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 md:gap-y-24 w-full'>
-
                                                 <div>
                                                     <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
                                                         <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
@@ -166,7 +175,6 @@ const Service = () => {
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Herbal and mineral </h3>
                                                             <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Discover the power of herbal and mineral remedies, blending nature’s healing touch with ancient wisdom for your well-being</p>
                                                         </div>
-
                                                     </div>
                                                 </div>
 
@@ -215,13 +223,13 @@ const Service = () => {
 
                             {/* ------------------------------------------------------------------------------------------- */}
 
-                            <div className='w-full px-4  md:w-[85%] mx-auto space-y-26'>
+                            <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                                 <div className='flex justify-center items-center w-full '>
                                     <div>
 
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto mb-14 md:mb-20'>
                                             <h1 className='font-[poppins] text-[16px] md:text-[32px] font-bold mx-auto text-center'>Ayurveda Panchakarma & Wellness Therapies</h1>
-                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Discover the ancient secrets of holistic well-being through authentic Panchakarma treatments and personalized Ayurvedic therapies. Rooted in centuries-old wisdom, our therapies aim to detoxify, rejuvenate, and restore balance to your body, mind, and spirit</p>
+                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-justify md:text-center w-[90%] mx-auto mt-2 md:mt-0'>Discover the ancient secrets of holistic well-being through authentic Panchakarma treatments and personalized Ayurvedic therapies. Rooted in centuries-old wisdom, our therapies aim to detoxify, rejuvenate, and restore balance to your body, mind, and spirit</p>
                                         </div>
 
                                         <div>
@@ -390,13 +398,13 @@ const Service = () => {
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-green-50/40'>
                         <div className='w-full  mx-auto '>
 
-                            <div className='w-full px-4 md:w-[85%] mx-auto space-y-26'>
+                            <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                                 <div className='flex justify-center items-center w-full '>
                                     <div>
 
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto mb-20'>
                                             <h1 className='font-[poppins]   text-[16px] md:text-[32px] font-bold mx-auto text-center'>Naturopathy Therapies</h1>
-                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Embrace the power of nature to restore your health and vitality. Naturopathy focuses on drugless, holistic healing by stimulating the body’s self-healing abilities through natural elements like earth, water, sunlight, diet, and lifestyle.</p>
+                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-justify md:text-center w-[90%] mx-auto mt-2 md:mt-0'>Embrace the power of nature to restore your health and vitality. Naturopathy focuses on drugless, holistic healing by stimulating the body’s self-healing abilities through natural elements like earth, water, sunlight, diet, and lifestyle.</p>
                                         </div>
 
                                         <div>
@@ -498,13 +506,13 @@ const Service = () => {
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-green-50/40'>
                         <div className='w-full  mx-auto '>
 
-                            <div className='w-full px-4 md:w-[85%] mx-auto space-y-26'>
+                            <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                                 <div className='flex justify-center items-center w-full '>
                                     <div>
 
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto  mb-16 md:mb-20'>
                                             <h1 className='font-[poppins] text-[16px] md:text-[32px] font-bold mx-auto text-center'>Lifestyle & Holistic Wellness</h1>
-                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>Achieve balance in body, mind, and soul through an integrated approach to health. Lifestyle & Holistic Wellness focuses on mindful living, combining modern science with ancient wisdom to promote long-term well-being and inner harmony.</p>
+                                            <p className='text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-justify md:text-center w-[90%] mx-auto mt-2 md:mt-0'>Achieve balance in body, mind, and soul through an integrated approach to health. Lifestyle & Holistic Wellness focuses on mindful living, combining modern science with ancient wisdom to promote long-term well-being and inner harmony.</p>
                                         </div>
 
                                         <div>
@@ -576,12 +584,12 @@ const Service = () => {
 
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-green-50/40'>
                         <div className='w-full mx-auto'>
-                            <div className='w-full px-4 md:w-[85%] mx-auto space-y-26'>
+                            <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                             <div className='flex justify-center items-center w-full'>
                                 <div>
                                 <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto mb-16 md:mb-20'>
                                     <h1 className='text-[16px] md:text-[32px] font-bold mx-auto text-center'>Siddha External Therapies</h1>
-                                    <p className='text-[10px] md:text-[12px] font-[roboto] text-center text-gray-500'>
+                                    <p className='text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-justify md:text-center w-[90%] mx-auto mt-2 md:mt-0'>
                                     Explore traditional Siddha therapies aimed at healing, pain relief, detox, and overall well-being through time-tested external applications.
                                     </p>
                                 </div>

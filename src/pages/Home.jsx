@@ -95,7 +95,7 @@ useEffect(() => {
                     <img src={patternbackground} className='w-full h-screen object-cover' />
                 </div>
 
-                <div className="fixed right-4 md:right-8 bottom-20 md:bottom-16 z-50 flex flex-col gap-4">
+                <div className="fixed right-4 md:right-8 bottom-10 md:bottom-16 z-50 flex flex-col gap-4">
                     {/* WhatsApp */}
                     <a
                         href="https://wa.me/yourwhatsapplink"
@@ -130,16 +130,14 @@ useEffect(() => {
                 {/* -------------- banner slide ---------------- */}
 
                 <section className='w-full h-full py-10 md:py-20 relative overflow-hidden' id='home'>
-                   
                     <div className='w-full flex flex-col md:flex-row justify-center items-center overflow-hidden'>
-
                         <div className='md:pl-16 md:pr-5 flex flex-col justify-center' data-aos="fade-up" data-aos-duration="3000">
-                            <p className='text-[14px] md:text-[18px] tracking-tight md:tracking-normal font-semibold text-[#d480a1] flex items-center gap-1.5'> Balancing Body, Mind & Nature  </p>
-                            <div className='font-bold  md:tracking-[2px]  '>
-                                <h2 className='text-[2rem] md:text-[4.5rem] uppercase  text-[#0a7c1d] drop-shadow-md'> Helping You Feel </h2>
-                                <h2 className='text-[1.8rem] md:text-[4.1rem]  uppercase text-[#0a7c1d]'> Better—Naturally </h2>
+                            <p className='text-[12px] md:text-[18px] font-semibold text-[#d480a1] md:ml-0 ml-3'> Balancing Body, Mind & Nature  </p>
+                            <div className='font-bold  md:tracking-[2px]'>
+                                <h2 className='text-[1.5rem] md:text-[4.5rem] uppercase text-[#0a7c1d] drop-shadow-md md:ml-0 ml-3'> Helping You Feel </h2>
+                                <h2 className='text-[1.5rem] md:text-[4.1rem]  uppercase text-[#0a7c1d] md:ml-0 ml-3'> Better—Naturally </h2>
                             </div>
-                            <p className='mt-2 -md:mt-5  text-[14px] md:text-[16px] w-full px-4 md:w-[70%] text-black leading-5 md:leading-7 md:font-medium md:pr-8'>
+                            <p className='mt-1 text-[14px] md:text-[16px] w-full px-4 md:w-[70%] text-black leading-5 md:leading-7 md:font-medium md:pr-8'>
                                 We use natural herbs and safe treatments to support your health and well-being. Whether you're
                                 looking to reduce stress, boost your energy, or improve your overall health, we’re here to help with
                                 gentle and effective herbal care.
@@ -284,7 +282,7 @@ useEffect(() => {
 
                 {/* ---------- why choose us --------------*/}
 
-                <section className="bg-[#f9f3eb]">
+                <section className="bg-[#f9f3eb] py-35 md:py-0">
                     <div className="relative h-[85rem] md:h-[45rem]">
 
                     {/* Centered Content */}
@@ -527,7 +525,7 @@ useEffect(() => {
 
                         {/* Testimonials */}
                         <div>
-                        <Testimonials />
+                            <Testimonials />
                         </div>
                     </div>
                 </section>
