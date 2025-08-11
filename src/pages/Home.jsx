@@ -42,6 +42,7 @@ const Home = () => {
     const arrowRef = useRef(null);
     const arrowRef1 = useRef(null);
     const [stats, setStats] = useState({ customers: 0, services: 0, doctors: 0, experience: 0 });
+    const [popupOpen, setPopupOpen] = useState(false);
 
     useEffect(() => {
 
@@ -89,6 +90,20 @@ const Home = () => {
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+    const alreadyClosed = sessionStorage.getItem("appointmentPopupClosed");
+    if (!alreadyClosed) {
+      setTimeout(() => {
+        setPopupOpen(true);
+      }, 500); // delay for smooth effect
+    }
+  }, []);
+
+  const handleClose = () => {
+    setPopupOpen(false);
+    sessionStorage.setItem("appointmentPopupClosed", "true");
+  };
+
     return (
         <>
             <AppointmentPopup/>
@@ -109,15 +124,17 @@ const Home = () => {
                         <FaWhatsapp className="w-6 h-6" />
                     </a>
 
-                    {/* Book Appointment */}
-                    <Link
-                        to="/contact"
-                        className="bg-pink-400 hover:bg-pink-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110"
+                    {/* Floating "Book Appointment" Button */}
+                    <button
+                        className="bg-pink-400 hover:bg-pink-500 text-white p-3 rounded-full shadow-lg cursor-pointer flex items-center justify-center transition-transform hover:scale-110"
                         aria-label="Book Appointment"
-                        onClick={() => window.scrollTo(0, 0)}
+                        onClick={() => setPopupOpen(true)}
                     >
                         <FaCalendarAlt className="w-6 h-6" />
-                    </Link>
+                    </button>
+
+                    {/* Popup */}
+                    <AppointmentPopup show={popupOpen} onClose={handleClose} />
 
                     {/* Phone */}
                     <a

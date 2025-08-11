@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-export default function AppointmentPopup() {
-  const [show, setShow] = useState(false);
+export default function AppointmentPopup({ show, onClose }) {
   const [errors, setErrors] = useState({});
   const popupRef = useRef(null);
 
@@ -11,46 +10,23 @@ export default function AppointmentPopup() {
     phone: ""
   });
 
-useEffect(() => {
-  const alreadyClosed = sessionStorage.getItem("appointmentPopupClosed");
-  if (!alreadyClosed) {
-    setTimeout(() => {
-      setShow(true);
-    }, 500);
-  }
-}, []);
-
-const handleClose = () => {
-  setShow(false);
-  sessionStorage.setItem("appointmentPopupClosed", "true");
-};
-
-const handleSubmit = (e) => {
-  e.preventDefault();
-  if (validateForm()) {
-    sessionStorage.setItem("appointmentPopupClosed", "true");
-    setShow(false);
-  }
-};
-
-  // Close on outside click
+  // Close when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (popupRef.current && !popupRef.current.contains(e.target)) {
-        handleClose();
+        onClose();
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [onClose]);
 
   const validateForm = () => {
     let newErrors = {};
 
     if (!/^[A-Za-z ]+$/.test(formData.name)) {
-        newErrors.name = "Name must contain only letters and spaces";
+      newErrors.name = "Name must contain only letters and spaces";
     }
-
     if (!/^\d{10}$/.test(formData.phone)) {
       newErrors.phone = "Phone must be exactly 10 digits";
     }
@@ -60,6 +36,13 @@ const handleSubmit = (e) => {
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      onClose();
+    }
   };
 
   if (!show) return null;
@@ -73,7 +56,7 @@ const handleSubmit = (e) => {
         {/* Close Icon */}
         <span
           className="absolute top-2 right-3 text-red-500 text-2xl font-bold cursor-pointer"
-          onClick={handleClose}
+          onClick={onClose}
         >
           &times;
         </span>
@@ -89,7 +72,9 @@ const handleSubmit = (e) => {
               placeholder="Your Name"
               className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
               value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
               required
             />
             {errors.name && (
@@ -103,7 +88,9 @@ const handleSubmit = (e) => {
               placeholder="Your Email"
               className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
               value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
               required
             />
             {errors.email && (
@@ -117,7 +104,9 @@ const handleSubmit = (e) => {
               placeholder="Your Phone Number"
               className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
               value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, phone: e.target.value })
+              }
               required
             />
             {errors.phone && (
