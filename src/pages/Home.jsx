@@ -35,6 +35,7 @@ import { GiLindenLeaf } from "react-icons/gi";
 import { PiHeadsetFill } from "react-icons/pi";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
+import AppointmentPopup from './AppointmentPopup';
 
 const Home = () => {
 
@@ -67,29 +68,30 @@ const Home = () => {
         AOS.init({ duration: 2000 });
     }, []);
 
-useEffect(() => {
-    const targets = { customers: 45000, services: 40, doctors: 31, experience: 25 };
-    const duration = 2000;
-    const frameRate = 30;
-    const steps = duration / frameRate;
-    let frame = 0;
+    useEffect(() => {
+        const targets = { customers: 45000, services: 40, doctors: 31, experience: 25 };
+        const duration = 2000;
+        const frameRate = 30;
+        const steps = duration / frameRate;
+        let frame = 0;
 
-    const interval = setInterval(() => {
-      frame++;
-      setStats({
-        customers: Math.floor((targets.customers / steps) * frame),
-        services: Math.floor((targets.services / steps) * frame),
-        doctors: Math.floor((targets.doctors / steps) * frame),
-        experience: Math.floor((targets.experience / steps) * frame),
-      });
-      if (frame >= steps) clearInterval(interval);
-    }, frameRate);
+        const interval = setInterval(() => {
+        frame++;
+        setStats({
+            customers: Math.floor((targets.customers / steps) * frame),
+            services: Math.floor((targets.services / steps) * frame),
+            doctors: Math.floor((targets.doctors / steps) * frame),
+            experience: Math.floor((targets.experience / steps) * frame),
+        });
+        if (frame >= steps) clearInterval(interval);
+        }, frameRate);
 
-    return () => clearInterval(interval);
-  }, []);
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <>
+            <AppointmentPopup/>
             <div className='overflow-hidden z-20'>
                 <div className='fixed top-0 left-0 right-0 bottom-0 -z-10 '>
                     <img src={patternbackground} className='w-full h-screen object-cover' />
@@ -542,7 +544,7 @@ useEffect(() => {
                         </p>
 
                         {/* Button */}
-                        <Link to="/healthcare_services"
+                        <Link to="/services"
                         className="relative z-10 inline-flex gap-2 items-center bg-[#d480a1] hover:bg-[#0a7c1d] text-white px-10 py-4 cursor-pointer rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
                         >
                         Discover More <FaArrowRight className="text-[12px] md:text-[18px]" />

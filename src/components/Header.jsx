@@ -101,7 +101,7 @@ const Header = () => {
 
             {/* Desktop Nav */}
             <ul className="hidden md:flex flex-1 justify-center gap-x-8 xl:gap-x-12 font-semibold text-[14px] md:text-[16px]">
-              {['Home', 'About', 'Healthcare Services', 'Contact'].map((item, idx) => (
+              {['Home', 'About', 'Services', 'Contact'].map((item, idx) => (
                 <li key={idx}>
                   <Link
                     to={item === 'Home' ? '/' : `/${item.replace(/\s+/g, '_').toLowerCase()}`}
@@ -148,7 +148,7 @@ const Header = () => {
                 className="h-40"
               />
             </li>
-            {['Home', 'About Us', 'Healthcare Services', 'Contact'].map((item, idx) => (
+            {['Home', 'About Us', 'Services', 'Contact'].map((item, idx) => (
               <li key={idx} className="px-2 py-4">
                 <Link
                   to={item === 'Home' ? '/' : `/${item.replace(/\s+/g, '_').toLowerCase()}`}
