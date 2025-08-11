@@ -652,7 +652,7 @@ const Service = () => {
                                         </div>
                                     </div>
 
-                                    {/* Card v - Vasthi */}
+                                    {/* Card v - Varthi */}
                                     <div>
                                         <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
                                             <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
@@ -660,7 +660,7 @@ const Service = () => {
                                             </div>
 
                                             <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
-                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Vasthi  </h3>
+                                                <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Varthi  </h3>
                                                 <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Helps in treating chronic ulcer and fistula.</p>
                                             </div>
                                         </div>
