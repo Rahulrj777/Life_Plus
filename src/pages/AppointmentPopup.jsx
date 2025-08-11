@@ -127,7 +127,7 @@ const handleSubmit = (e) => {
 
           <button
             type="submit"
-            className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition"
+            className="w-full bg-[#d480a1] text-white py-2 rounded hover:bg-green-600 transition cursor-pointer"
           >
             Book Now
           </button>

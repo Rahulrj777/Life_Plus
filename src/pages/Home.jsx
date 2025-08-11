@@ -3,6 +3,7 @@ import Testimonials from '../components/Testmonials';
 import gsap from 'gsap'
 import { FaWhatsapp, FaPhoneAlt, FaCalendarAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import AppointmentPopup from './AppointmentPopup';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -35,7 +36,6 @@ import { GiLindenLeaf } from "react-icons/gi";
 import { PiHeadsetFill } from "react-icons/pi";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import AppointmentPopup from './AppointmentPopup';
 
 const Home = () => {
 
@@ -108,6 +108,16 @@ const Home = () => {
                     >
                         <FaWhatsapp className="w-6 h-6" />
                     </a>
+
+                    {/* Book Appointment */}
+                    <Link
+                        to="/contact"
+                        className="bg-pink-400 hover:bg-pink-500 text-white p-3 rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110"
+                        aria-label="Book Appointment"
+                        onClick={() => window.scrollTo(0, 0)}
+                    >
+                        <FaCalendarAlt className="w-6 h-6" />
+                    </Link>
 
                     {/* Phone */}
                     <a
