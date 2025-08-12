@@ -12,7 +12,12 @@ const auth = new google.auth.GoogleAuth({
   keyFile: 'credentials.json',
   scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
-const sheets = google.sheets({ version: 'v4', auth });
+
+async function getSheetsClient() {
+  const authClient = await auth.getClient();
+  return google.sheets({ version: 'v4', auth: authClient });
+}
+
 
 // Replace with your Sheet ID
 const SPREADSHEET_ID = '1n_i1vzWmzOe1-2pXZV6Pre95aFrAjxcaayIZHlCbv44';
@@ -29,7 +34,6 @@ function isValidPhone(phone) {
 app.post('/submit', async (req, res) => {
   const { name, email, phone } = req.body;
 
-  // Validate inputs
   if (!name || !email || !phone) {
     return res.status(400).json({ error: 'All fields are required' });
   }
@@ -41,6 +45,7 @@ app.post('/submit', async (req, res) => {
   }
 
   try {
+    const sheets = await getSheetsClient();
     await sheets.spreadsheets.values.append({
       spreadsheetId: SPREADSHEET_ID,
       range: 'Sheet1!A:D',
@@ -51,11 +56,12 @@ app.post('/submit', async (req, res) => {
     });
 
     res.json({ success: true, message: 'Data stored successfully' });
-  } catch (error) {
-    console.error(error);
+  } catch (err) {
+    console.error('Google Sheets API error:', err);
     res.status(500).json({ error: 'Failed to store data' });
   }
 });
+
 
 app.listen(3000, () => {
   console.log('✅ Server running on http://localhost:3000');
