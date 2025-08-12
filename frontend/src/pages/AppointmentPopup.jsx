@@ -1,0 +1,145 @@
+import { useState, useEffect, useRef } from "react";
+
+export default function AppointmentPopup({ show, onClose }) {
+  const [errors, setErrors] = useState({});
+  const popupRef = useRef(null);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: ""
+  });
+
+  // Close when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (popupRef.current && !popupRef.current.contains(e.target)) {
+        onClose();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [onClose]);
+
+  const validateForm = () => {
+    let newErrors = {};
+
+    if (!/^[A-Za-z ]+$/.test(formData.name)) {
+      newErrors.name = "Name must contain only letters and spaces";
+    }
+    if (!/^\d{10}$/.test(formData.phone)) {
+      newErrors.phone = "Phone must be exactly 10 digits";
+    }
+    if (!/^[a-zA-Z0-9._%+-]+@gmail\.com$/.test(formData.email)) {
+      newErrors.email = "Must be a valid Gmail address (example@gmail.com)";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      try {
+        const res = await fetch("http://localhost:3000/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData)
+        });
+
+        const data = await res.json();
+        if (data.success) {
+          alert("✅ Appointment saved!");
+          onClose();
+          setFormData({ name: "", email: "", phone: "" });
+        } else {
+          alert("❌ " + (data.error || "Something went wrong"));
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        alert("❌ Failed to connect to server");
+      }
+    }
+  };
+
+  if (!show) return null;
+
+  return (
+    <div className="fixed inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center z-50">
+      <div
+        ref={popupRef}
+        className="bg-white p-6 rounded-lg shadow-lg w-80 relative animate-fadeIn"
+      >
+        {/* Close Icon */}
+        <span
+          className="absolute top-2 right-3 text-red-500 text-2xl font-bold cursor-pointer"
+          onClick={onClose}
+        >
+          &times;
+        </span>
+
+        <h2 className="text-xl font-semibold mb-4 text-center">
+          📅 Book Your Appointment
+        </h2>
+
+        <form onSubmit={handleSubmit} className="space-y-3">
+          <div>
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+              required
+            />
+            {errors.name && (
+              <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+            )}
+          </div>
+
+          <div>
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
+              required
+            />
+            {errors.email && (
+              <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+            )}
+          </div>
+
+          <div>
+            <input
+              type="tel"
+              placeholder="Your Phone Number"
+              className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+              value={formData.phone}
+              onChange={(e) =>
+                setFormData({ ...formData, phone: e.target.value })
+              }
+              required
+            />
+            {errors.phone && (
+              <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
+            )}
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-[#d480a1] text-white py-2 rounded hover:bg-green-600 transition cursor-pointer"
+          >
+            Book Now
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
