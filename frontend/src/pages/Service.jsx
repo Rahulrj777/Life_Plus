@@ -55,6 +55,7 @@ import bodypain from '../images/therapies/back_pain_neck_pain.png'
 import steam from '../images/icon/steam_bath.png'
 import Sattigai from '../images/icon/service.1.png'
 import karram from '../images/services/1.png'
+import leech from "../images/services/leech.png"
 
 const Service = () => {
 
@@ -63,7 +64,7 @@ const Service = () => {
     }, []);
 
     return (
-        <>
+        <>                                              
             <div className='overflow-hidden'>
                 <div>
                     <section className='bg-white'>
@@ -167,41 +168,41 @@ const Service = () => {
                                         <div>
                                             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 md:gap-y-24 w-full'>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service1} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service1} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Herbal and mineral </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Discover the power of herbal and mineral remedies, blending nature’s healing touch with ancient wisdom for your well-being</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Discover the power of herbal and mineral remedies, blending nature’s healing touch with ancient wisdom for your well-being</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service2} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service2} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Varmam therapy </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Varmam therapy effectively treats pain, nerve imbalances, paralysis, and joint issues, promoting healing and restoring vitality</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Varmam therapy effectively treats pain, nerve imbalances, paralysis, and joint issues, promoting healing and restoring vitality</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service3} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service3} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Thokkanam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Traditional Siddha therapeutic massage offers effective pain relief and treats musculoskeletal issues, promoting overall wellness.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Traditional Siddha therapeutic massage offers effective pain relief and treats musculoskeletal issues, promoting overall wellness.</p>
                                                         </div>
                                                         
                                                     </div>
@@ -209,126 +210,126 @@ const Service = () => {
 
                                                 {/* Card i - Kattu (Bandaging) */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={kattu} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={kattu} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kattu </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Effective in treating wounds, fracture, muscle spasm, sprain, joint dislocation, and pain management.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Effective in treating wounds, fracture, muscle spasm, sprain, joint dislocation, and pain management.</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 {/* Card ii - Pathu (Poultice) */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service2} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service2} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Pattru  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Poultice is used in treating skin diseases like eczema, boils, abscess, musculoskeletal diseases like arthritis, sprain, injuries, and other conditions like sinusitis, wounds, and hemorrhoids.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Poultice is used in treating skin diseases like eczema, boils, abscess, musculoskeletal diseases like arthritis, sprain, injuries, and other conditions like sinusitis, wounds, and hemorrhoids.</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 {/* Card iii - Othadam (Fomentation) */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={bodypain} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={bodypain} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Ottradam  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>It is helpful in treating inflammation, disc bulge, toothache, muscle cramps, body pain, asthma, and ano-rectal diseases.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>It is helpful in treating inflammation, disc bulge, toothache, muscle cramps, body pain, asthma, and ano-rectal diseases.</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 {/* Card iv - Steam (Sufh-vedhiyal) */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={steam} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={steam} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Steam  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Local steaming is useful in inflammation, fluid accumulation, and spasm. Whole body steam is a cleansing and relaxing procedure.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Local steaming is useful in inflammation, fluid accumulation, and spasm. Whole body steam is a cleansing and relaxing procedure.</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 {/* Card v - Varthi */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service3} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service3} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Varthi  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Helps in treating chronic ulcer and fistula.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps in treating chronic ulcer and fistula.</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 {/* Card vi - Kaaram */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={karram} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={karram} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kaaram  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Applying various medical formulations to remove warts, corns, and skin tags.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Applying various medical formulations to remove warts, corns, and skin tags.</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                {/* Card vii - Attai (Leech Therapy) */}
+                                                {/* Card vii - Leech Therapy (Leech Therapy) */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service4} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={leech} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Attai  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Helps to improve circulation, reduce inflammation, promote wound healing, and treat varicose veins.</p>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Leech Therapy  </h3>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps to improve circulation, reduce inflammation, promote wound healing, and treat varicose veins.</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 {/* Card viii - Karanool */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={life2} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={life2} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Karanool  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Useful in treating ano-rectal diseases.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Useful in treating ano-rectal diseases.</p>
                                                         </div>
                                                     </div>
                                                 </div>
 
                                                 {/* Card ix - Sattigai */}
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={Sattigai} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={Sattigai} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Sattigai  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Treats warts, corns, chronic pain, and is used to stop bleeding.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Treats warts, corns, chronic pain, and is used to stop bleeding.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -359,147 +360,147 @@ const Service = () => {
                                             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16 md:gap-y-24 w-full'>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service4} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service4} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Abhyangam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Abhyangam is a full-body herbal oil massage that detoxifies, relieves stress, and enhances circulation for overall health.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Abhyangam is a full-body herbal oil massage that detoxifies, relieves stress, and enhances circulation for overall health.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service5} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service5} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Nasyam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Nasyam is the nasal administration of medicated oils, providing relief from sinus issues, migraines, and enhancing mental clarity.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Nasyam is the nasal administration of medicated oils, providing relief from sinus issues, migraines, and enhancing mental clarity.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service6} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service6} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Vamanam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Vamanam is a therapeutic emesis treatment that helps detoxify the body and balances Kapha-related disorders for improved health</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Vamanam is a therapeutic emesis treatment that helps detoxify the body and balances Kapha-related disorders for improved health</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service7} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service7} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Virechanam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Virechanam is a purgation therapy that cleanses Pitta, detoxifies the body, and restores balance for better health and vitality</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Virechanam is a purgation therapy that cleanses Pitta, detoxifies the body, and restores balance for better health and vitality</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service8} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service8} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Vasti </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Vasti is a therapeutic herbal enema treatment that balances Vata, detoxifies the body, and promotes overall wellness</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Vasti is a therapeutic herbal enema treatment that balances Vata, detoxifies the body, and promotes overall wellness</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service9} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service9} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' >
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Rakta Mokshanam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Bloodletting therapy for skin diseases and blood purification, promoting clear skin and wellness.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Bloodletting therapy for skin diseases and blood purification, promoting clear skin and wellness.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service10} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service10} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' >
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Shirodhara </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Medicated oil poured on the forehead to relax the mind, balance the nervous system, and reduce stress.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Medicated oil poured on the forehead to relax the mind, balance the nervous system, and reduce stress.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service11} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service11} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Navarakizhi </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Rice bolus massage to nourish, strengthen, and improve muscle tone, boosting vitality and overall health.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Rice bolus massage to nourish, strengthen, and improve muscle tone, boosting vitality and overall health.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service12} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service12} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Thalapothichil </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Herbal paste applied to the scalp to relieve stress, insomnia, and mental fatigue, promoting clarity.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Herbal paste applied to the scalp to relieve stress, insomnia, and mental fatigue, promoting clarity.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service13} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service13} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Podikizhi </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Herbal powder pouch massage to relieve pain, stiffness, and muscle tension, aiding in recovery and relaxation.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Herbal powder pouch massage to relieve pain, stiffness, and muscle tension, aiding in recovery and relaxation.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={service14} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={service14} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Herbal Steam Bath </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Detoxifies by opening body channels, removing toxins, improving circulation, and boosting well-being.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Detoxifies by opening body channels, removing toxins, improving circulation, and boosting well-being.</p>
                                                         </div>
 
                                                     </div>
@@ -534,81 +535,81 @@ const Service = () => {
                                             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16  gap-y-16 md:gap-y-24 w-full'>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={nature1} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg h-full transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={nature1} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'  data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Hydrotherapy </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Includes hip bath, foot bath, jet spray, and steam for circulation improvement and detoxification.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Includes hip bath, foot bath, jet spray, and steam for circulation improvement and detoxification.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={nature2} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={nature2} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'  data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Mud Therapy </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Local and full-body applications that cool, detoxify, and rejuvenate the body’s organs.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Local and full-body applications that cool, detoxify, and rejuvenate the body’s organs.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={nature3} className='w-10  md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={nature3} className='w-10  md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'  data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Plantain Leaf Bath </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Traditional treatment to cool the body and soothe skin inflammation naturally.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Traditional treatment to cool the body and soothe skin inflammation naturally.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={nature4} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={nature4} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'  data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Acupuncture </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Stimulates points to relieve pain, improve organ function, and balance energy flow in the body.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Stimulates points to relieve pain, improve organ function, and balance energy flow in the body.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={nature5} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={nature5} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'  data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Diet & Fasting Therapy </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Custom diet plans, therapeutic fasting, and lifestyle counseling for better health.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Custom diet plans, therapeutic fasting, and lifestyle counseling for better health.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={nature6} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={nature6} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'  data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Yoga & Pranayama  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Guided sessions to improve flexibility, mindfulness, and achieve inner peace and calm.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Guided sessions to improve flexibility, mindfulness, and achieve inner peace and calm.</p>
                                                         </div>
 
                                                     </div>
@@ -642,55 +643,56 @@ const Service = () => {
                                             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16  gap-y-16 md:gap-y-24 w-full'>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={life1} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={life1} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Preventive Checkups & Wellness </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Proactive care to maintain long-term health and well-being.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Proactive care to maintain long-term health and well-being.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={life2} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={life2} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Detox & Immunity Boost </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Cleansing and strengthening your body’s natural defense system.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Cleansing and strengthening your body’s natural defense system.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={life3} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={life3} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                             <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Stress & Mind-Body Care </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Holistic methods to calm the mind and enhance inner harmony.</p>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Holistic methods to calm the mind and enhance inner harmony.</p>
                                                         </div>
 
                                                     </div>
                                                 </div>
                                                 <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg hover:shadow-[0px_50px_100px_-10px_rgba(50,50,93,0.25),0px_30px_20px_-30px_rgba(0,0,0,0.3),0px_-2px_10px_0px_inset_rgba(10,37,64,0.35)]' >
-                                                        <div className='group-hover:scale-105 group-hover:rotate-[55deg] duration-500 ml-7 group-hover:-ml-5 w-fit  bg-white rounded-md md:rounded-xl  drop-shadow-md p-2  md:p-3  -mt-8 shadow-[0px_50px_100px_-20px_rgba(50,50,93,0.25),0px_90px_60px_-30px_rgba(0,0,0,0.3),0px_-2px_6px_0px_inset_rgba(10,37,64,0.35)]' data-aos='fade-up' data-aos-duration='2000'>
-                                                            <img src={life4} className='w-10 md:w-12 object-cover  group-hover:-rotate-[55deg]' alt='none' />
+                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>  
+                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
+                                                            <img src={life4} className='w-10 md:w-12 object-cover' alt='none' />
                                                         </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4' data-aos='zoom-in-left' data-aos-duration='2000'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Diet & Lifestyle Plans </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px] text-gray-700 '>Tailored plans based on your unique body type (prakriti) for overall wellness.</p>
+                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'>Diet & Lifestyle Plans</h3>
+                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>
+                                                                Tailored plans based on your unique body type (prakriti) for overall wellness.
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
