@@ -253,31 +253,31 @@ const Home = () => {
 
                             {/* Card 1 */}
                             <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#0a7c1d] hover:scale-105 transition-all duration-300">
-                            <div className="flex flex-col items-center gap-4">
-                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Siddha" />
-                                <h3 className="text-[14px] font-bold text-[#0a7c1d] text-center">
-                                Siddha Medicine & Therapies
-                                </h3>
-                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                Siddha is a powerful ancient healing science from Tamil Nadu,
-                                focusing on balancing the three humors — Vata, Pitta, and Kapha.
-                                </p>
-                            </div>
+                                <div className="flex flex-col items-center gap-4">
+                                    <img src={service1} className="w-14 md:w-20 object-cover" alt="Siddha" />
+                                    <h3 className="text-[14px] font-bold text-[#0a7c1d] text-center">
+                                    Siddha Medicine & Therapies
+                                    </h3>
+                                    <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                                    Siddha is a powerful ancient healing science from Tamil Nadu,
+                                    focusing on balancing the three humors — Vata, Pitta, and Kapha.
+                                    </p>
+                                </div>
                             </div>
 
                             {/* Card 2 */}
-                            <div className="bg-[#0a7c1d] drop-shadow-lg px-6 py-8 rounded-lg hover:scale-105 transition-all duration-300">
-                            <div className="flex flex-col items-center gap-4">
-                                <img src={service2} className="w-14 md:w-20 object-cover" alt="Ayurveda" />
-                                <h3 className="text-[14px] font-semibold  text-white text-center">
-                                Ayurveda Panchakarma & Wellness Therapies
-                                </h3>
-                                <p className="text-[11px] md:text-[12px] text-green-100 text-center">
-                                Our Ayurveda department offers classical Panchakarma and
-                                rejuvenation therapies for detoxification, restoration, and
-                                prevention of disease.
-                                </p>
-                            </div>
+                             <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#0a7c1d] hover:scale-105 transition-all duration-300">
+                                <div className="flex flex-col items-center gap-4">
+                                    <img src={service1} className="w-14 md:w-20 object-cover" alt="Siddha" />
+                                    <h3 className="text-[14px] font-bold text-[#0a7c1d] text-center">
+                                    Ayurveda Panchakarma & Wellness Therapies
+                                    </h3>
+                                    <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                                    Our Ayurveda department offers classical Panchakarma and
+                                    rejuvenation therapies for detoxification, restoration, and
+                                    prevention of disease.
+                                    </p>
+                                </div>
                             </div>
 
                             {/* Card 3 */}
