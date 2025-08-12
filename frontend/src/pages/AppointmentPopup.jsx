@@ -10,7 +10,6 @@ export default function AppointmentPopup({ show, onClose }) {
     phone: ""
   });
 
-  // Close when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (popupRef.current && !popupRef.current.contains(e.target)) {
@@ -39,29 +38,28 @@ export default function AppointmentPopup({ show, onClose }) {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (validateForm()) {
-      try {
-        const res = await fetch("http://localhost:3000/submit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData)
-        });
+  e.preventDefault();
 
-        const data = await res.json();
-        if (data.success) {
-          alert("✅ Appointment saved!");
-          onClose();
-          setFormData({ name: "", email: "", phone: "" });
-        } else {
-          alert("❌ " + (data.error || "Something went wrong"));
-        }
-      } catch (error) {
-        console.error("Error submitting form:", error);
-        alert("❌ Failed to connect to server");
-      }
-    }
-  };
+  if (!validateForm()) return; // stop if invalid
+
+  const url = "https://script.google.com/macros/s/AKfycbxfEsaKiSkb7E8P1kzc_KDs4nN9rd78U8db9HUvJenDJ7lxwrtgCgI5XUBrCgkbM87J/exec";
+  
+  fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: `Name=${encodeURIComponent(formData.name)}&Email=${encodeURIComponent(formData.email)}&Phone=${encodeURIComponent(formData.phone)}`
+  })
+    .then(res => res.text())
+    .then(data => {
+      alert("Your appointment has been booked successfully!");
+      console.log("Server response:", data);
+      onClose();
+    })
+    .catch(err => {
+      alert("There was an error booking your appointment. Please try again later.");
+      console.error(err);
+    });
+};
 
   if (!show) return null;
 

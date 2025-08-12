@@ -522,10 +522,10 @@ const Home = () => {
 
                         {/* Heading */}
                         <div 
-                        className="flex flex-col justify-center items-center mx-auto mb-14 text-center"
-                        data-aos="fade-up"
-                        data-aos-duration="2000"
-                        data-aos-delay="50"
+                            className="flex flex-col justify-center items-center mx-auto mb-14 text-center"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                            data-aos-delay="50"
                         >
                         <p className="text-[14px] md:text-[16px] font-semibold uppercase text-[#d480a1] mb-3">
                             Testimonial
