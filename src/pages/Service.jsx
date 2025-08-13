@@ -11,7 +11,6 @@ import highlight2 from '../images/icon/highlight2.png'
 import highlight3 from '../images/icon/highlight3.png'
 import highlight4 from '../images/icon/highlight4.png'
 
-import service1 from '../images/services/Herbal_and_mineral.png'
 import service2 from '../images/services/Varmam_therapy.png'
 import service3 from '../images/services/Thokkanam.png'
 import service4 from '../images/services/Abhyangam.png'
@@ -56,6 +55,10 @@ import steam from '../images/icon/steam_bath.png'
 import Sattigai from '../images/icon/service.1.png'
 import karram from '../images/services/1.png'
 import leech from "../images/services/leech.png"
+
+import simg1 from "../images/serviceimg/simg1.avif"
+import simg2 from "../images/serviceimg/simg2.jpg"
+import simg3 from "../images/serviceimg/simg3.jpg"
 
 const Service = () => {
 
@@ -165,173 +168,135 @@ const Service = () => {
                                                 Siddha medicine is a traditional healing system that originated in South India. It focuses on balancing the body's energies and promoting overall well-being through natural remedies, herbal treatments, and lifestyle practices.
                                             </p>
                                         </div>
-                                        <div>
-                                            <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 md:gap-y-24 w-full'>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service1} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Herbal and mineral </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Discover the power of herbal and mineral remedies, blending nature’s healing touch with ancient wisdom for your well-being</p>
-                                                        </div>
-                                                    </div>
+                                        <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-16 md:gap-y-24 w-full'>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={simg1} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service2} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Herbal and mineral </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Discover the power of herbal and mineral remedies, blending nature’s healing touch with ancient wisdom for your well-being</p>
+                                                </div>
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Varmam therapy </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Varmam therapy effectively treats pain, nerve imbalances, paralysis, and joint issues, promoting healing and restoring vitality</p>
-                                                        </div>
-
-                                                    </div>
+                                            <div className="group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden">
+                                                <div className="relative h-28 md:h-36 w-full"> 
+                                                    <img src={simg2} alt="Varmam therapy" className="absolute inset-0 w-full h-full object-cover" />
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service3} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className="flex flex-col items-start gap-y-1 md:gap-y-2 py-3 md:py-4 px-4">
+                                                    <h3 className="font-bold text-[14px] md:text-[18px] font-[Merriweather]"> Varmam therapy </h3> 
+                                                    <p className="font-[roboto] text-[11px] md:text-[13px]"> Varmam therapy effectively treats pain, nerve imbalances, paralysis, and joint issues, promoting healing and restoring vitality </p> 
+                                                </div> 
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Thokkanam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Traditional Siddha therapeutic massage offers effective pain relief and treats musculoskeletal issues, promoting overall wellness.</p>
-                                                        </div>
-                                                        
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={simg3} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Thokkanam </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Traditional Siddha therapeutic massage offers effective pain relief and treats musculoskeletal issues, promoting overall wellness.</p>
+                                                </div>
+                                            </div>
+
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={kattu} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card i - Kattu (Bandaging) */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={kattu} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kattu </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Effective in treating wounds, fracture, muscle spasm, sprain, joint dislocation, and pain management.</p>
+                                                </div>
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kattu </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Effective in treating wounds, fracture, muscle spasm, sprain, joint dislocation, and pain management.</p>
-                                                        </div>
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service2} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card ii - Pathu (Poultice) */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service2} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Pattru  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Poultice is used in treating skin diseases like eczema, boils, abscess, musculoskeletal diseases like arthritis, sprain, injuries, and other conditions like sinusitis, wounds, and hemorrhoids.</p>
+                                                </div>
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Pattru  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Poultice is used in treating skin diseases like eczema, boils, abscess, musculoskeletal diseases like arthritis, sprain, injuries, and other conditions like sinusitis, wounds, and hemorrhoids.</p>
-                                                        </div>
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={bodypain} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card iii - Othadam (Fomentation) */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={bodypain} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Ottradam  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>It is helpful in treating inflammation, disc bulge, toothache, muscle cramps, body pain, asthma, and ano-rectal diseases.</p>
+                                                </div>
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Ottradam  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>It is helpful in treating inflammation, disc bulge, toothache, muscle cramps, body pain, asthma, and ano-rectal diseases.</p>
-                                                        </div>
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={steam} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card iv - Steam (Sufh-vedhiyal) */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={steam} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Steam  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Local steaming is useful in inflammation, fluid accumulation, and spasm. Whole body steam is a cleansing and relaxing procedure.</p>
+                                                </div>
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Steam  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Local steaming is useful in inflammation, fluid accumulation, and spasm. Whole body steam is a cleansing and relaxing procedure.</p>
-                                                        </div>
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service3} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card v - Varthi */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service3} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Varthi  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps in treating chronic ulcer and fistula.</p>
+                                                </div>
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Varthi  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps in treating chronic ulcer and fistula.</p>
-                                                        </div>
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={karram} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card vi - Kaaram */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={karram} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kaaram  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Applying various medical formulations to remove warts, corns, and skin tags.</p>
-                                                        </div>
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kaaram  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Applying various medical formulations to remove warts, corns, and skin tags.</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={leech} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card vii - Leech Therapy (Leech Therapy) */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={leech} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Leech Therapy  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps to improve circulation, reduce inflammation, promote wound healing, and treat varicose veins.</p>
+                                                </div>
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Leech Therapy  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps to improve circulation, reduce inflammation, promote wound healing, and treat varicose veins.</p>
-                                                        </div>
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={life2} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card viii - Karanool */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={life2} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Karanool  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Useful in treating ano-rectal diseases.</p>
+                                                </div>
+                                            </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Karanool  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Useful in treating ano-rectal diseases.</p>
-                                                        </div>
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={Sattigai} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                {/* Card ix - Sattigai */}
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={Sattigai} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Sattigai  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Treats warts, corns, chronic pain, and is used to stop bleeding.</p>
-                                                        </div>
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Sattigai  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Treats warts, corns, chronic pain, and is used to stop bleeding.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -344,166 +309,143 @@ const Service = () => {
 
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-yellow-50/50 from-white'>
                         <div className='w-full  mx-auto '>
-
-                            {/* ------------------------------------------------------------------------------------------- */}
-
                             <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                                 <div className='flex justify-center items-center w-full '>
                                     <div>
-
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto mb-14 md:mb-20'>
                                             <h1 className='font-[poppins] text-[16px] md:text-[32px] font-bold mx-auto text-center'>Ayurveda Panchakarma & Wellness Therapies</h1>
                                             <p className='text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-justify md:text-center w-[90%] mx-auto mt-2 md:mt-0'>Discover the ancient secrets of holistic well-being through authentic Panchakarma treatments and personalized Ayurvedic therapies. Rooted in centuries-old wisdom, our therapies aim to detoxify, rejuvenate, and restore balance to your body, mind, and spirit</p>
                                         </div>
-
-                                        <div>
-                                            <div className='grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16 md:gap-y-24 w-full'>
-
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service4} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Abhyangam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Abhyangam is a full-body herbal oil massage that detoxifies, relieves stress, and enhances circulation for overall health.</p>
-                                                        </div>
-
-                                                    </div>
+                                        <div className='grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16 md:gap-y-24 w-full'>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service4} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service5} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Nasyam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Nasyam is the nasal administration of medicated oils, providing relief from sinus issues, migraines, and enhancing mental clarity.</p>
-                                                        </div>
-
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Abhyangam </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Abhyangam is a full-body herbal oil massage that detoxifies, relieves stress, and enhances circulation for overall health.</p>
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service6} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Vamanam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Vamanam is a therapeutic emesis treatment that helps detoxify the body and balances Kapha-related disorders for improved health</p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service7} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Virechanam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Virechanam is a purgation therapy that cleanses Pitta, detoxifies the body, and restores balance for better health and vitality</p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service8} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Vasti </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Vasti is a therapeutic herbal enema treatment that balances Vata, detoxifies the body, and promotes overall wellness</p>
-                                                        </div>
-
-                                                    </div>
+                                            </div>
+                                    
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service5} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service9} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' >
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Rakta Mokshanam </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Bloodletting therapy for skin diseases and blood purification, promoting clear skin and wellness.</p>
-                                                        </div>
-
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Nasyam </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Nasyam is the nasal administration of medicated oils, providing relief from sinus issues, migraines, and enhancing mental clarity.</p>
                                                 </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service10} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' >
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Shirodhara </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Medicated oil poured on the forehead to relax the mind, balance the nervous system, and reduce stress.</p>
-                                                        </div>
+                                            </div>
 
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service6} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service11} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Navarakizhi </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Rice bolus massage to nourish, strengthen, and improve muscle tone, boosting vitality and overall health.</p>
-                                                        </div>
-
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Vamanam </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Vamanam is a therapeutic emesis treatment that helps detoxify the body and balances Kapha-related disorders for improved health</p>
                                                 </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service12} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
 
-                                                        <div className='flex flex-col items-start gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Thalapothichil </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Herbal paste applied to the scalp to relieve stress, insomnia, and mental fatigue, promoting clarity.</p>
-                                                        </div>
+                                            </div>
 
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service7} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service13} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Podikizhi </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Herbal powder pouch massage to relieve pain, stiffness, and muscle tension, aiding in recovery and relaxation.</p>
-                                                        </div>
-
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Virechanam </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Virechanam is a purgation therapy that cleanses Pitta, detoxifies the body, and restores balance for better health and vitality</p>
                                                 </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={service14} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
 
-                                                        <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Herbal Steam Bath </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Detoxifies by opening body channels, removing toxins, improving circulation, and boosting well-being.</p>
-                                                        </div>
+                                            </div>
 
-                                                    </div>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service8} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Vasti </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Vasti is a therapeutic herbal enema treatment that balances Vata, detoxifies the body, and promotes overall wellness</p>
+                                                </div>
+
+                                            </div>
+
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service9} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' >
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Rakta Mokshanam </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Bloodletting therapy for skin diseases and blood purification, promoting clear skin and wellness.</p>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service10} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' >
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Shirodhara </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Medicated oil poured on the forehead to relax the mind, balance the nervous system, and reduce stress.</p>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service11} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Navarakizhi </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Rice bolus massage to nourish, strengthen, and improve muscle tone, boosting vitality and overall health.</p>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service12} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Thalapothichil </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Herbal paste applied to the scalp to relieve stress, insomnia, and mental fatigue, promoting clarity.</p>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service13} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Podikizhi </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Herbal powder pouch massage to relieve pain, stiffness, and muscle tension, aiding in recovery and relaxation.</p>
+                                                </div>
+
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={service14} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Herbal Steam Bath </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Detoxifies by opening body channels, removing toxins, improving circulation, and boosting well-being.</p>
                                                 </div>
 
                                             </div>
@@ -511,8 +453,6 @@ const Service = () => {
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </section>
 
@@ -521,100 +461,78 @@ const Service = () => {
 
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-green-50/40'>
                         <div className='w-full  mx-auto '>
-
                             <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                                 <div className='flex justify-center items-center w-full '>
                                     <div>
-
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto mb-20'>
                                             <h1 className='font-[poppins]   text-[16px] md:text-[32px] font-bold mx-auto text-center'>Naturopathy Therapies</h1>
                                             <p className='text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-justify md:text-center w-[90%] mx-auto mt-2 md:mt-0'>Embrace the power of nature to restore your health and vitality. Naturopathy focuses on drugless, holistic healing by stimulating the body’s self-healing abilities through natural elements like earth, water, sunlight, diet, and lifestyle.</p>
                                         </div>
-
-                                        <div>
-                                            <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16  gap-y-16 md:gap-y-24 w-full'>
-
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg h-full transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={nature1} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Hydrotherapy </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Includes hip bath, foot bath, jet spray, and steam for circulation improvement and detoxification.</p>
-                                                        </div>
-
-                                                    </div>
+                                        <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16  gap-y-16 md:gap-y-24 w-full'>
+                                            <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg h-full transition-all duration-300 hover:scale-105'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={nature1} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={nature2} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Mud Therapy </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Local and full-body applications that cool, detoxify, and rejuvenate the body’s organs.</p>
-                                                        </div>
-
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Hydrotherapy </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Includes hip bath, foot bath, jet spray, and steam for circulation improvement and detoxification.</p>
+                                                </div>
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={nature2} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={nature3} className='w-10  md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Plantain Leaf Bath </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Traditional treatment to cool the body and soothe skin inflammation naturally.</p>
-                                                        </div>
-
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Mud Therapy </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Local and full-body applications that cool, detoxify, and rejuvenate the body’s organs.</p>
                                                 </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={nature4} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Acupuncture </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Stimulates points to relieve pain, improve organ function, and balance energy flow in the body.</p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={nature5} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Diet & Fasting Therapy </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Custom diet plans, therapeutic fasting, and lifestyle counseling for better health.</p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={nature6} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Yoga & Pranayama  </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Guided sessions to improve flexibility, mindfulness, and achieve inner peace and calm.</p>
-                                                        </div>
-
-                                                    </div>
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={nature3} className='w-10  md:w-12 object-cover' alt='none' />
                                                 </div>
 
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Plantain Leaf Bath </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Traditional treatment to cool the body and soothe skin inflammation naturally.</p>
+                                                </div>
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={nature4} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Acupuncture </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Stimulates points to relieve pain, improve organ function, and balance energy flow in the body.</p>
+                                                </div>
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={nature5} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Diet & Fasting Therapy </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Custom diet plans, therapeutic fasting, and lifestyle counseling for better health.</p>
+                                                </div>
+                                            </div>
+                                    
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={nature6} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Yoga & Pranayama  </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Guided sessions to improve flexibility, mindfulness, and achieve inner peace and calm.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -629,72 +547,56 @@ const Service = () => {
 
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-green-50/40'>
                         <div className='w-full  mx-auto '>
-
                             <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                                 <div className='flex justify-center items-center w-full '>
                                     <div>
-
                                         <div className='flex flex-col justify-center items-center gap-y-2 w-full md:w-[80%] mx-auto  mb-16 md:mb-20'>
                                             <h1 className='font-[poppins] text-[16px] md:text-[32px] font-bold mx-auto text-center'>Lifestyle & Holistic Wellness</h1>
                                             <p className='text-[10px] md:text-[12px] font-[roboto] text-gray-500 text-justify md:text-center w-[90%] mx-auto mt-2 md:mt-0'>Achieve balance in body, mind, and soul through an integrated approach to health. Lifestyle & Holistic Wellness focuses on mindful living, combining modern science with ancient wisdom to promote long-term well-being and inner harmony.</p>
                                         </div>
-
-                                        <div>
-                                            <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16  gap-y-16 md:gap-y-24 w-full'>
-
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={life1} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Preventive Checkups & Wellness </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Proactive care to maintain long-term health and well-being.</p>
-                                                        </div>
-
-                                                    </div>
+                                        <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16  gap-y-16 md:gap-y-24 w-full'>
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={life1} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={life2} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Detox & Immunity Boost </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Cleansing and strengthening your body’s natural defense system.</p>
-                                                        </div>
-
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Preventive Checkups & Wellness </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Proactive care to maintain long-term health and well-being.</p>
+                                                </div>
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={life2} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105' >
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={life3} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Stress & Mind-Body Care </h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>Holistic methods to calm the mind and enhance inner harmony.</p>
-                                                        </div>
-
-                                                    </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Detox & Immunity Boost </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Cleansing and strengthening your body’s natural defense system.</p>
                                                 </div>
-                                                <div>
-                                                    <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>  
-                                                        <div className='ml-7 w-fit bg-white rounded-md md:rounded-xl drop-shadow-md p-2 md:p-3 -mt-8'>
-                                                            <img src={life4} className='w-10 md:w-12 object-cover' alt='none' />
-                                                        </div>
-                                                        <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                            <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'>Diet & Lifestyle Plans</h3>
-                                                            <p className='font-[roboto] text-[11px] md:text-[13px]'>
-                                                                Tailored plans based on your unique body type (prakriti) for overall wellness.
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={life3} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Stress & Mind-Body Care </h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Holistic methods to calm the mind and enhance inner harmony.</p>
+                                                </div>
+                                            </div>
+                                        
+                                            <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>  
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={life4} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'>Diet & Lifestyle Plans</h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>
+                                                        Tailored plans based on your unique body type (prakriti) for overall wellness.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
