@@ -11,32 +11,6 @@ import highlight2 from '../images/icon/highlight2.png'
 import highlight3 from '../images/icon/highlight3.png'
 import highlight4 from '../images/icon/highlight4.png'
 
-import service2 from '../images/services/Varmam_therapy.png'
-import service3 from '../images/services/Thokkanam.png'
-import service4 from '../images/services/Abhyangam.png'
-import service5 from '../images/services/Nasyam.png'
-import service6 from '../images/services/Vamanam.png'
-import service7 from '../images/services/Virechanam.png'
-import service8 from '../images/services/Vasti.png'
-import service9 from '../images/services/Rakta_Mokshanam.png'
-import service10 from '../images/services/shirodhara.png'
-import service11 from '../images/services/Navarakizhi.png'
-import service12 from '../images/services/Thalapothichil.png'
-import service13 from '../images/services/Podikizhi.png'
-import service14 from '../images/services/Herbal_Steam_Bath.png'
-
-import nature1 from '../images/services/Hydrotherapy.png'
-import nature2 from '../images/services/Mud_Therapy.png'
-import nature3 from '../images/services/Plantain_Leaf_Bath.png'
-import nature4 from '../images/services/Acupuncture.png'
-import nature5 from '../images/services/Diet_Fasting_Therapy.png'
-import nature6 from '../images/services/Yoga_Pranayama.png'
-
-import life1 from '../images/services/Wellness.png'
-import life2 from '../images/services/Detox.png'
-import life3 from '../images/services/Stress.png'
-import life4 from '../images/services/Diet.png'
-
 import speacil1 from '../images/icon/Back Pain.png'
 import speacil2 from '../images/icon/knee_pain.png'
 import speacil3 from '../images/icon/spine_disorders.png'
@@ -49,16 +23,32 @@ import speacil9 from '../images/icon/asthma.png'
 import speacil10 from '../images/icon/cold.png'
 import speacil11 from '../images/icon/Migraine_Treatment.png'
 
-import kattu from '../images/services/kattu.jpg'
-import bodypain from '../images/therapies/back_pain_neck_pain.png'
-import steam from '../images/icon/steam_bath.png'
-import Sattigai from '../images/icon/service.1.png'
-import karram from '../images/services/1.png'
-import leech from "../images/services/leech.png"
-
 import simg1 from "../images/serviceimg/simg1.avif"
-import simg2 from "../images/serviceimg/simg2.jpg"
+import simg2 from "../images/serviceimg/simg2.jpeg"
 import simg3 from "../images/serviceimg/simg3.jpg"
+import simg4 from "../images/serviceimg/simg4.webp"
+import simg6 from "../images/serviceimg/simg6.jpeg"
+import simg7 from "../images/serviceimg/simg7.jpeg"  
+import simg9 from "../images/serviceimg/simg9.jpg"  
+import simg10 from "../images/serviceimg/simg10.webp"
+import simg13 from "../images/serviceimg/simg13.jpg"
+import simg14 from "../images/serviceimg/simg14.jpg"
+import simg16 from "../images/serviceimg/simg16.jpeg"
+import simg17 from "../images/serviceimg/simg17.jpg"
+import simg18 from "../images/serviceimg/simg18.webp"
+import simg19 from "../images/serviceimg/simg19.jpg"
+import simg20 from "../images/serviceimg/simg20.webp"
+import simg21 from "../images/serviceimg/simg21.jpg"
+import simg22 from "../images/serviceimg/simg22.jpeg"
+import simg25 from "../images/serviceimg/simg25.webp"
+import simg26 from "../images/serviceimg/simg26.jpg"
+import simg27 from "../images/serviceimg/simg27.jpg"
+import simg28 from "../images/serviceimg/simg28.jpg"
+import simg29 from "../images/serviceimg/simg29.svg"
+import simg30 from "../images/serviceimg/simg30.png"
+import simg31 from "../images/serviceimg/simg31.webp"
+import simg32 from "../images/serviceimg/simg32.webp"
+import simg33 from "../images/serviceimg/simg33.jpg"
 
 const Service = () => {
 
@@ -182,7 +172,7 @@ const Service = () => {
 
                                             <div className="group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden">
                                                 <div className="relative h-28 md:h-36 w-full"> 
-                                                    <img src={simg2} alt="Varmam therapy" className="absolute inset-0 w-full h-full object-cover" />
+                                                    <img src={simg2} alt="Varmam therapy" className="absolute inset-0 w-full h-full object-contain" />
                                                 </div>
 
                                                 <div className="flex flex-col items-start gap-y-1 md:gap-y-2 py-3 md:py-4 px-4">
@@ -203,7 +193,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={kattu} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg4} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -214,7 +204,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service2} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    {/* <img src={simg5} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -225,7 +215,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={bodypain} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg6} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -236,7 +226,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={steam} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg7} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -247,7 +237,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service3} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    {/* <img src={simg8} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -258,7 +248,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={karram} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg9} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -269,7 +259,7 @@ const Service = () => {
                                             
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={leech} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg10} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -280,7 +270,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={life2} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    {/* <img src={simg11} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -291,7 +281,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={Sattigai} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    {/* <img src={simg12} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -307,6 +297,9 @@ const Service = () => {
                     </section>
 
 
+                    {/* -------Ayurveda Panchakarma & Wellness Therapies------ */}
+
+
                     <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-yellow-50/50 from-white'>
                         <div className='w-full  mx-auto '>
                             <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
@@ -319,7 +312,7 @@ const Service = () => {
                                         <div className='grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16 md:gap-y-24 w-full'>
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service4} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg13} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
@@ -331,7 +324,7 @@ const Service = () => {
                                     
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service5} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg14} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
@@ -343,7 +336,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service6} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    {/* <img src={simg15} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
@@ -355,7 +348,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service7} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg16} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
@@ -367,7 +360,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service8} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg17} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
@@ -379,7 +372,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service9} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg18} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' >
@@ -392,7 +385,7 @@ const Service = () => {
 
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service10} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg19} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4' >
@@ -404,7 +397,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service11} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg20} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
@@ -416,7 +409,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service12} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg21} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-2 py-1 md:py-3 px-4'>
@@ -428,7 +421,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service13} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg22} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
@@ -440,7 +433,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={service14} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg7} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4'>
@@ -471,7 +464,7 @@ const Service = () => {
                                         <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16  gap-y-16 md:gap-y-24 w-full'>
                                             <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md  pb-2 md:pb-3 drop-shadow-lg h-full transition-all duration-300 hover:scale-105'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={nature1} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg7} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -482,7 +475,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={nature2} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg25} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -493,7 +486,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={nature3} className='w-10  md:w-12 object-cover' alt='none' />
+                                                    <img src={simg26} className='wabsolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -504,7 +497,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={nature4} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg27} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -515,7 +508,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={nature5} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg28} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -526,7 +519,7 @@ const Service = () => {
                                     
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={nature6} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg29} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -557,7 +550,7 @@ const Service = () => {
                                         <div className='grid grid-cols-1 md:grid-cols-3 gap-x-16  gap-y-16 md:gap-y-24 w-full'>
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={life1} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg30} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -568,7 +561,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={life2} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg31} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -579,7 +572,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={life3} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg32} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -590,7 +583,7 @@ const Service = () => {
                                         
                                             <div className='group bg-[#f5f6f6] flex flex-col gap-y-2 w-full md:gap-y-4 rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105'>  
                                                 <div className='relative h-28 md:h-36 w-full'>
-                                                    <img src={life4} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                    <img src={simg33} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                                 </div>
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'>Diet & Lifestyle Plans</h3>
