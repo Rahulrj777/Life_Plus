@@ -198,7 +198,7 @@ const Service = () => {
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Kattu </h3>
-                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Effective in treating wounds, fracture, muscle spasm, sprain, joint dislocation, and pain management.</p>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Effective in treating wounds, fractures, muscle spasms, sprains, joint dislocations, and for pain management.</p>
                                                 </div>
                                             </div>
 
@@ -209,7 +209,7 @@ const Service = () => {
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Pattru  </h3>
-                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Poultice is used in treating skin diseases like eczema, boils, abscess, musculoskeletal diseases like arthritis, sprain, injuries, and other conditions like sinusitis, wounds, and hemorrhoids.</p>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Poultice is used for treating skin conditions such as eczema, boils, and abscesses; musculoskeletal conditions like arthritis, sprains, and injuries; as well as other conditions including sinusitis, wounds, and hemorrhoids.</p>
                                                 </div>
                                             </div>
 
@@ -220,7 +220,7 @@ const Service = () => {
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Ottradam  </h3>
-                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>It is helpful in treating inflammation, disc bulge, toothache, muscle cramps, body pain, asthma, and ano-rectal diseases.</p>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>It is helpful in treating inflammation, disc bulge, toothache, muscle cramps, body pain, asthma, and anorectal diseases.</p>
                                                 </div>
                                             </div>
 
@@ -231,7 +231,7 @@ const Service = () => {
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Steam  </h3>
-                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Local steaming is useful in inflammation, fluid accumulation, and spasm. Whole body steam is a cleansing and relaxing procedure.</p>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Local steaming is useful for reducing inflammation, fluid accumulation, and muscle spasms, while whole-body steam is a cleansing and relaxing procedure.</p>
                                                 </div>
                                             </div>
 
@@ -242,7 +242,7 @@ const Service = () => {
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Varthi  </h3>
-                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps in treating chronic ulcer and fistula.</p>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps in treating chronic ulcers and fistulas.</p>
                                                 </div>
                                             </div>
 
@@ -264,7 +264,7 @@ const Service = () => {
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Leech Therapy  </h3>
-                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps to improve circulation, reduce inflammation, promote wound healing, and treat varicose veins.</p>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Helps improve circulation, reduce inflammation, promote wound healing, and treat varicose veins.</p>
                                                 </div>
                                             </div>
 
@@ -286,7 +286,7 @@ const Service = () => {
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
                                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Sattigai  </h3>
-                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Treats warts, corns, chronic pain, and is used to stop bleeding.</p>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>Used to treat warts, corns, chronic pain, and to stop bleeding.</p>
                                                 </div>
                                             </div>
                                         </div>
