@@ -85,6 +85,18 @@ const About = () => {
           alt="About Banner"
           loading="lazy"
         />
+
+        {/* Right Side Text */}
+        <div className="relative z-10 w-full h-full flex items-center justify-end pr-10 md:pr-24">
+          <div className="text-right leading-tight">
+            <h1 className="text-[#6b8e23] text-4xl md:text-6xl font-serif drop-shadow-md">
+              Your Wellness,
+            </h1>
+            <h1 className="text-white text-3xl md:text-5xl font-sans font-bold drop-shadow-lg">
+              Our Priority
+            </h1>
+          </div>
+        </div>
       </section>
 
       {/* 2️⃣ Our Journey / Story */}

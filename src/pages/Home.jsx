@@ -151,7 +151,7 @@ const Home = () => {
                 {/* -------------- banner slide ---------------- */}
 
                 <section
-                className="w-full h-full md:h-[74vh] relative overflow-hidden"
+                className="w-full h-[30vh] md:h-[75vh] relative overflow-hidden"
                 id="home"
                 >
                 <Swiper
@@ -162,106 +162,93 @@ const Home = () => {
                     autoplay={{
                     delay: 5000,
                     disableOnInteraction: false,
-                    pauseOnMouseEnter: true, // stop autoplay on hover
+                    pauseOnMouseEnter: true,
                     }}
                     pagination={{ clickable: true }}
                     className="w-full h-full"
                 >
                     {/* Banner 1 */}
                     <SwiperSlide>
-                    <div className="relative w-full h-[500px] md:h-[74vh] flex items-center justify-start px-6 md:px-16">
-                        {/* Background image using object-fit */}
-                        <img
-                        src={Hbanner4}
-                        alt="Banner 1"
-                        className="absolute inset-0 w-full h-full object-cover"
-                        />
-                        {/* Optional dark overlay for readability */}
-                        <div className="absolute inset-0 "></div>
-
-                        {/* Text content */}
-                        <div className="relative z-10 text-white max-w-3xl">
-                        <p className="text-[12px] md:text-[18px] font-semibold text-[#d480a1]">
+                    <div
+                        className="relative w-full h-full flex items-center justify-start px-4 md:px-16 
+                                bg-no-repeat bg-right md:bg-center bg-cover"
+                        style={{ backgroundImage: `url(${Hbanner4})` }}
+                    >
+                        <div className="relative z-10 text-white w-[60%] break-words">
+                        <p className="text-[10px] md:text-[18px] font-semibold text-[#d480a1]">
                             Balancing Body, Mind & Nature
                         </p>
-                        <div className="font-bold md:tracking-[2px]">
-                            <h2 className="text-[1.5rem] md:text-[4.5rem] text-[#aabc9b] uppercase drop-shadow-md">
-                            Helping You Feel
+                        <div className="font-bold md:tracking-[2px] leading-tight">
+                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] text-[#aabc9b] uppercase drop-shadow-md">
+                            Harmony in Motion
                             </h2>
-                            <h2 className="text-[1.5rem] md:text-[4.1rem] text-[#aabc9b] uppercase">
-                            Better—Naturally
+                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-[#aabc9b]">
+                            Rebalance Your Body, Mind & Nature
                             </h2>
                         </div>
-                        <p className="mt-2 text-[14px] md:text-[16px] leading-6 md:leading-7 md:font-medium md:w-[70%]">
-                            We use natural herbs and safe treatments to support your health and
-                            well-being. Whether you're looking to reduce stress, boost your energy,
-                            or improve your overall health, we’re here to help with gentle and
-                            effective herbal care.
-                        </p>
                         </div>
                     </div>
                     </SwiperSlide>
 
                     {/* Banner 2 */}
                     <SwiperSlide>
-                    <div className="relative w-full h-[500px] md:h-[74vh] flex items-center justify-start px-6 md:px-16">
-                        <img
-                        src={Hbanner1}
-                        alt="Banner 2"
-                        className="absolute inset-0 w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 "></div>
-
-                        <div className="relative z-10 max-w-3xl">
-                        <p className="text-[12px] md:text-[18px] font-semibold text-[#d480a1]">
-                            Natural Healing
+                    <div
+                        className="relative w-full h-full flex items-center justify-start px-4 md:px-16 
+                                bg-no-repeat bg-right md:bg-center bg-cover"
+                        style={{ backgroundImage: `url(${Hbanner1})` }}
+                    >
+                        <div className="relative z-10 text-white w-[60%] break-words">
+                        <p className="text-[10px] md:text-[18px] font-semibold text-[#d480a1]">
+                            Whole-Body Wellness
                         </p>
-                        <div className="font-bold md:tracking-[2px]">
-                            <h2 className="text-[1.5rem] md:text-[4.5rem] uppercase text-[#aabc9b] drop-shadow-md">
-                            Restore Balance
+                        <div className="font-bold md:tracking-[2px] leading-tight">
+                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] uppercase text-[#aabc9b] drop-shadow-md">
+                            Feel Better, Live Better
                             </h2>
-                            <h2 className="text-[1.5rem] md:text-[4.1rem] uppercase text-[#aabc9b]">
-                            With Herbal Care
+                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-[#aabc9b]">
+                            Whole-Body Wellness, Naturally
                             </h2>
                         </div>
-                        <p className="mt-2 text-[14px] md:text-[16px] leading-6 md:leading-7 md:font-medium md:w-[70%]">
-                            Experience the benefits of holistic wellness. Our treatments are
-                            designed to nurture both body and mind.
-                        </p>
                         </div>
                     </div>
                     </SwiperSlide>
 
                     {/* Banner 3 */}
                     <SwiperSlide>
-                    <div className="relative w-full h-[500px] md:h-[74vh] flex items-center justify-start px-6 md:px-16">
-                        <img
-                        src={Hbanner3}
-                        alt="Banner 3"
-                        className="absolute inset-0 w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 "></div>
-
-                        <div className="relative z-10 max-w-3xl">
-                        <p className="text-[12px] md:text-[18px] font-semibold text-[#d480a1]">
-                            Healthy Lifestyle
+                    <div
+                        className="relative w-full h-full flex items-center justify-start px-4 md:px-16 
+                                bg-no-repeat bg-right md:bg-center bg-cover"
+                        style={{ backgroundImage: `url(${Hbanner3})` }}
+                    >
+                        <div className="relative z-10 text-white w-[60%] break-words">
+                        <p className="text-[10px] md:text-[18px] font-semibold text-[#d480a1]">
+                            Thrive the Natural Way
                         </p>
-                        <div className="font-bold md:tracking-[2px]">
-                            <h2 className="text-[1.5rem] md:text-[4.5rem] uppercase text-[#aabc9b] drop-shadow-md">
-                            Live Stronger
+                        <div className="font-bold md:tracking-[2px] leading-tight">
+                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] uppercase text-[#aabc9b] drop-shadow-md">
+                            Revitalize. Reconnect. Rebalance.
                             </h2>
-                            <h2 className="text-[1.5rem] md:text-[4.1rem] uppercase text-[#aabc9b]">
-                            Feel Healthier
+                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-[#aabc9b]">
+                            Thrive the Natural Way
                             </h2>
                         </div>
-                        <p className="mt-2 text-[14px] md:text-[16px] leading-6 md:leading-7 md:font-medium md:w-[70%]">
-                            Embrace nature’s power to transform your well-being. Discover
-                            treatments that work with your body, not against it.
-                        </p>
                         </div>
                     </div>
                     </SwiperSlide>
                 </Swiper>
+
+                {/* Fix dots inside banner */}
+                <style jsx>{`
+                    .swiper-pagination {
+                    position: absolute !important;
+                    bottom: 10px !important;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: fit-content;
+                    z-index: 20;
+                    }
+                `}</style>
                 </section>
 
                 {/* --------------- About us ---------------- */}

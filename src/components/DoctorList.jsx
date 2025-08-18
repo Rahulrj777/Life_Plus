@@ -23,10 +23,10 @@ import doctor6 from "../images/doctors/1.jpg";
 
 // ✅ Add images to the doctor list
 const doctorList = [
-    { name: "Dr. A. Sheeladevi BSMS, MD(S)", quote: "Registered Medical Practitioner", image: doctor1 },
+    { name: "Dr. A. Sheeladevi BSMS, MD(S)", quote: "Registered Medical Practitioner", image: "" },
     { name: "Dr. A. Vivekanandan BSMS, MD(S)", quote: "Registered Medical Practitioner", image: doctor2 },
     // { name: "Dr. T. Sophia BNYS", quote: "Registered Medical Practitioner", image: doctor3 },
-    { name: "Dr. M.S. Sivaranjani BNYS, MD(YOGA)", quote: "Registered Medical Practitioner", image: doctor4 },
+    { name: "Dr. M.S. Sivaranjani BNYS, MD(YOGA)", quote: "Registered Medical Practitioner", image: "" },
     { name: "Dr. B. Atchaya BAMS", quote: "Registered Medical Practitioner", image: doctor5 },
     { name: "Dr. M. Suguna BAMS", quote: "Registered Ayurvedic Physician", image: doctor6 },
 ];
@@ -56,7 +56,6 @@ const DoctorList = () => {
     return (
         <div className="w-full  relative">
 
-
             <Swiper
                 slidesPerView={3}
                 spaceBetween={90}
@@ -84,9 +83,9 @@ const DoctorList = () => {
                     <SwiperSlide key={index}>
                         <div className="flex flex-col items-center font-[poppins]">
                             <img
-                                src={doctorInfo.image}
+                                src={doctorInfo.image || "/path/to/placeholder.jpg"} // fallback image
                                 alt={doctorInfo.name}
-                                className="w-full object-cover rounded-xl drop-shadow-md shadow-md "
+                                className="w-full h-[250px] object-cover rounded-xl drop-shadow-md shadow-md"
                             />
 
                             <div

@@ -9,16 +9,19 @@ import Loader from './components/Loader'
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
-const Service = lazy(() => import('./pages/Service'));
 const Contact = lazy(() => import('./pages/Contact'));
-// const Admin = lazy(() => import('./admin/Admin'))
+
+// Lazy load individual services
+const Service1 = lazy(() => import('./pages/service/Service1'));
+const Service2 = lazy(() => import('./pages/service/Service2'));
+const Service3 = lazy(() => import('./pages/service/Service3'));
+const Service4 = lazy(() => import('./pages/service/Service4'));
 
 // 🔹 ScrollToTop Component
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Scroll to top instantly when route changes
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, [pathname]);
 
@@ -39,22 +42,22 @@ const App = () => {
   return (
     <Router>
       <ToastContainer />
-      {/* Add ScrollToTop inside Router */}
       <ScrollToTop />
       <Suspense fallback={<Loader />}>
         <Routes>
-          {/* User Layout */}
           <Route path="/" element={<UserLayout />}>
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Service />} />
             <Route path="/contact" element={<Contact />} />
+
+            {/* Individual Service Routes */}
+            <Route path="/services/service1" element={<Service1 />} />
+            <Route path="/services/service2" element={<Service2 />} />
+            <Route path="/services/service3" element={<Service3 />} />
+            <Route path="/services/service4" element={<Service4 />} />
           </Route>
 
-          {/* Admin Layout */}
-          <Route path="/admin" element={<AdminLayout />}>
-            {/* <Route index element={<Admin />} /> */}
-          </Route>
+          <Route path="/admin" element={<AdminLayout />} />
         </Routes>
       </Suspense>
     </Router>
