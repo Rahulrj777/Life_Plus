@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Lightbulb, Heart, Leaf } from 'lucide-react';
+import { Lightbulb, Heart, Leaf } from "lucide-react";
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import DoctorList from '../components/DoctorList';
@@ -7,24 +7,52 @@ import bannerOptimized from '../images/about/about_banner-3.jpg';
 import bgbanner from '../images/about/about_banner-1.jpg';
 import aboutIllustration from '../images/about/about.png';
 
+import Gimg1 from '../images/Gallery/Gimg1.jpg';
+import Gimg2 from '../images/Gallery/Gimg2.jpg';
+import Gimg3 from '../images/Gallery/Gimg3.jpg';
+
 const data = [
   {
-    title: 'Our Mission',
+    title: "Our Vision",
     icon: <Lightbulb className="w-10 h-10 text-green-500" />,
     description:
-      'To deliver safe, effective, and holistic therapies that harmonize nature and science for complete well-being.',
+      "To be a trusted center of excellence in Siddha medicine, blending time-tested traditional wisdom with modern healthcare practices to improve the quality of life for people worldwide.",
   },
   {
-    title: 'Our Values',
+    title: "Our Mission",
     icon: <Heart className="w-10 h-10 text-pink-500" />,
-    description:
-      'Integrity, compassion, expertise, and commitment to natural wellness guide everything we do.',
+    description: (
+      <ul className="list-disc text-left ml-5 space-y-2">
+        <li>To provide holistic, patient-centered healthcare through authentic Siddha practices.</li>
+        <li>To promote lifestyle transformation and preventive care alongside curative treatments.</li>
+        <li>To ensure accessibility of Siddha medicine for all sections of society.</li>
+        <li>To nurture skilled practitioners and uphold the rich heritage of the Siddha system with integrity and compassion.</li>
+      </ul>
+    ),
   },
   {
-    title: 'Our Approach',
+    title: "Our Approach",
     icon: <Leaf className="w-10 h-10 text-emerald-600" />,
     description:
-      'We combine ancient healing traditions with modern insights to help you heal naturally and live better.',
+      "We combine ancient healing traditions with modern insights to help you heal naturally and live better.",
+  },
+];
+
+const galleryData = [
+  {
+    id: 1,
+    name: "Treating with Care",
+    img: Gimg1,
+  },
+  {
+    id: 2,
+    name: "Life Plus - Ayurveda Medical",
+    img:Gimg2,
+  },
+  {
+    id: 3,
+    name: "Plantain Leaf Bath",
+    img: Gimg3,
   },
 ];
 
@@ -78,15 +106,10 @@ const About = () => {
                 Our Journey Towards Holistic Healing
               </h2>
               <p className="text-[12px] md:text-[14px] text-gray-600 leading-6 mb-3 text-justify">
-                Life Plus Herbal Healthcare began with a simple mission: to bring the
-                time-tested wisdom of traditional healing to modern lifestyles. Rooted in
-                Siddha, Ayurveda, and Naturopathy, we aim to restore balance to body,
-                mind, and spirit with safe, plant-based therapies.
+                Life Plus Ayush vaidhyasala was founded in 2022 by Dr. A. Sheela Devi with the vision of enhancing the quality of life of people through the traditional Siddha system of medicine. The hospital is supported by a team of skilled doctors and dedicated staff, providing holistic care ranging from lifestyle management to life-saving treatments. Over the past three years, more than 45,000 patients have benefitted from its services.
               </p>
               <p className="text-[12px] md:text-[14px] text-gray-600 leading-6 text-justify">
-                Over the years, we’ve grown into a trusted partner in holistic care,
-                providing natural solutions that focus on the root cause of health
-                concerns while supporting lasting wellness.
+                Dr. A. Sheela Devi, M.D (S), brings over 15 years of expertise in Siddha medicine. She completed both her Bachelor’s and Postgraduate Siddha degrees at the Government Siddha Medical College, Tirunelveli. She possesses profound knowledge in Naadi diagnostics, Panchakarma, and Varma techniques, offering a comprehensive approach to patient care.
               </p>
             </div>
           </div>
@@ -97,7 +120,7 @@ const About = () => {
       <section className="py-10 md:py-20 bg-gradient-to-b from-green-50 to-white">
         <div className="w-full px-5 md:w-[85%] mx-auto text-center">
           <h2 className="text-[20px] md:text-[32px] font-bold text-[#2c7f4c] mb-10">
-            Our Mission & Values
+            Mission, Vision & Approach
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {data.map((item, index) => (
@@ -109,7 +132,9 @@ const About = () => {
                 <h3 className="text-[16px] md:text-[20px] font-semibold text-gray-800 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-[12px] md:text-[14px] text-gray-600">{item.description}</p>
+                <div className="text-[12px] md:text-[14px] text-gray-600">
+                  {item.description}
+                </div>
               </div>
             ))}
           </div>
@@ -126,7 +151,36 @@ const About = () => {
         </div>
       </section>
 
-      {/* 5️⃣ Call-to-Action Section */}
+      {/* 5️⃣ Gallery Section */}
+      <div className="bg-gray-50 py-10">
+        <div className="w-[90%] md:w-[80%] mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
+            Clinic Gallery
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {galleryData.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition duration-300"
+              >
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-60 object-cover"
+                />
+                <div className="p-2 text-center">
+                  <p className="text-sm md:text-base font-medium text-gray-700">
+                    {item.name}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* 6️⃣ Call-to-Action Section */}
         <section className="py-10 md:py-28 bg-black/55 relative overflow-hidden">
             {/* Soft herbal background image with dark overlay */}
             <div className="absolute inset-0">

@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 import { FiInstagram } from "react-icons/fi";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { PiLinkedinLogoBold } from "react-icons/pi";
 import { LuFacebook } from "react-icons/lu";
+import { FaYoutube } from "react-icons/fa";
 import { MdOutlinePhoneAndroid, MdOutlineMail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -40,13 +39,37 @@ const Footer = () => {
             <h3 className="text-[13px] sm:text-[15px] md:text-[16px] uppercase text-white font-bold font-[Merriweather] mb-3">
               Quick Links
             </h3>
-            <div className="grid grid-cols-1">
-              <Link onClick={topPage} className={linkClass} to="/">Home</Link>
-              <Link onClick={topPage} className={linkClass} to="/about">About</Link>
-              <Link onClick={topPage} className={linkClass} to="/contact">Contact</Link>
-              <Link onClick={topPage} className={linkClass} to="/">Help Center</Link>
-              <Link onClick={topPage} className={linkClass} to="/">Privacy Policy</Link>
-              <Link onClick={topPage} className={linkClass} to="/">Terms & Conditions</Link>
+            <div className="grid grid-cols-1 gap-y-2">
+              <Link onClick={topPage} to="/" className="group w-fit">
+                <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                  Home
+                </span>
+              </Link>
+              <Link onClick={topPage} to="/about" className="group w-fit">
+                <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                  About
+                </span>
+              </Link>
+              <Link onClick={topPage} to="/contact" className="group w-fit">
+                <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                  Contact
+                </span>
+              </Link>
+              <Link onClick={topPage} to="/" className="group w-fit">
+                <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                  Help Center
+                </span>
+              </Link>
+              <Link onClick={topPage} to="/" className="group w-fit">
+                <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                  Privacy Policy
+                </span>
+              </Link>
+              <Link onClick={topPage} to="/" className="group w-fit">
+                <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                  Terms & Conditions
+                </span>
+              </Link>
             </div>
           </div>
 
@@ -57,9 +80,9 @@ const Footer = () => {
             </h3>
 
             {/* Address 1 */}
-            <div className="flex items-start gap-x-2 mb-3">
-              <FaLocationDot className="text-white text-[16px] md:text-[20px] mt-0.5" />
-              <p className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] leading-5">
+            <div className="group flex items-start gap-x-2 mb-3">
+              <FaLocationDot className="text-white text-[16px] md:text-[20px] mt-0.5 group-hover:text-black transition" />
+              <p className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] leading-5 group-hover:text-black transition">
                 No:212, Imayam Colony, 2nd Street,
                 <br /> Anna Nagar West Extension,
                 <br /> Chennai - 600101
@@ -67,9 +90,9 @@ const Footer = () => {
             </div>
 
             {/* Address 2 */}
-            <div className="flex items-start gap-x-2 mb-3">
-              <FaLocationDot className="text-white text-[16px] md:text-[20px] mt-0.5" />
-              <p className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] leading-5">
+            <div className="group flex items-start gap-x-2 mb-3">
+              <FaLocationDot className="text-white text-[16px] md:text-[20px] mt-0.5 group-hover:text-black transition" />
+              <p className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] leading-5 group-hover:text-black transition">
                 27th Karuneegar Street, Adambakkam,
                 <br /> Chennai - 600088
               </p>
@@ -80,18 +103,33 @@ const Footer = () => {
               href="mailto:lifeplusayushvadhyasala@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="text-gray-100 flex items-center gap-x-2 text-[11px] sm:text-[12px] md:text-[13px] hover:text-black mb-2"
+              className="group flex items-center gap-x-2 mb-2 w-fit"
             >
-              <MdOutlineMail className="text-[16px] md:text-[20px]" />
-              lifeplusayushvadhyasala@gmail.com
+              <MdOutlineMail className="text-white text-[16px] md:text-[20px] group-hover:text-black transition" />
+              <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                lifeplusayushvadhyasala@gmail.com
+              </span>
             </a>
 
             {/* Phone Numbers */}
-            <a href="tel:918015907797" className="text-gray-100 flex items-center gap-x-2 text-[11px] sm:text-[12px] md:text-[13px] hover:text-black mb-2">
-              <MdOutlinePhoneAndroid className="text-[16px] md:text-[20px]" /> +91 8015907797
+            <a
+              href="tel:918015907797"
+              className="group flex items-center gap-x-2 mb-2 w-fit"
+            >
+              <MdOutlinePhoneAndroid className="text-white text-[16px] md:text-[20px] group-hover:text-black transition" />
+              <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                +91 8015907797
+              </span>
             </a>
-            <a href="tel:918015525797" className="text-gray-100 flex items-center gap-x-2 text-[11px] sm:text-[12px] md:text-[13px] hover:text-black">
-              <MdOutlinePhoneAndroid className="text-[16px] md:text-[20px]" /> +91 8015525797
+
+            <a
+              href="tel:918015525797"
+              className="group flex items-center gap-x-2 w-fit"
+            >
+              <MdOutlinePhoneAndroid className="text-white text-[16px] md:text-[20px] group-hover:text-black transition" />
+              <span className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] group-hover:text-black transition">
+                +91 8015525797
+              </span>
             </a>
           </div>
         </div>
@@ -103,10 +141,35 @@ const Footer = () => {
           
           {/* Social Icons */}
           <div className="flex flex-row gap-x-4 md:gap-x-8 mt-2">
-            <a href="#" target="_blank" className={socialIconClass}><FaSquareXTwitter className={socialIconStyle} /></a>
-            <a href="https://www.instagram.com/lifeplusayushvaidhyasala" target="_blank" className={socialIconClass}><FiInstagram className={socialIconStyle} /></a>
-            <a href="#" target="_blank" className={socialIconClass}><PiLinkedinLogoBold className={socialIconStyle} /></a>
-            <a href="#" target="_blank" className={socialIconClass}><LuFacebook className={socialIconStyle} /></a>
+            {/* YouTube */}
+            <a
+              href="https://youtube.com/@lifeplusayushvaidhyasala-m4j?si=vahgK24kC-UdMKVb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition"
+            >
+              <FaYoutube className="text-red-500 group-hover:text-white text-xl" />
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/lifeplusayushvaidhyasala?igsh=bzZ1cGVuazJhZHdi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition"
+            >
+              <FiInstagram className="text-pink-500 group-hover:text-white text-xl" />
+            </a>
+
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/profile.php?id=61578276728854"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition"
+            >
+              <LuFacebook className="text-blue-500 group-hover:text-white text-xl" />
+            </a>
           </div>
 
           {/* Copyright */}

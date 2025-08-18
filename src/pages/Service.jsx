@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import BestServices from '../components/BestServices'
+import { Users, Stethoscope } from "lucide-react";
 
 import midBanner from '../images/banner/mid_banner.jpg'
 import bottombanner from '../images/banner/special.png'
@@ -49,6 +50,7 @@ import simg30 from "../images/serviceimg/simg30.png"
 import simg31 from "../images/serviceimg/simg31.webp"
 import simg32 from "../images/serviceimg/simg32.webp"
 import simg33 from "../images/serviceimg/simg33.jpg"
+import simg34 from "../images/serviceimg/simg34.jpeg"
 
 const Service = () => {
 
@@ -145,9 +147,86 @@ const Service = () => {
                         </div>
                     </section>
 
+                    {/* ----------- Special Services -------------- */}
+
+                    <section className="py-10 md:py-20 bg-gradient-to-b from-green-50 to-white">
+                        <div className="w-full px-5 md:w-[85%] mx-auto">
+                            <h2 className="text-[20px] md:text-[32px] font-bold text-[#2c7f4c] mb-10 text-center">
+                            Our Services
+                            </h2>
+
+                            {/* Out Patients */}
+                            <div className="bg-white p-6 rounded-lg shadow-md mb-10">
+                            <div className="flex items-center mb-4">
+                                <Users className="w-10 h-10 text-blue-500 mr-3" />
+                                <h3 className="text-[18px] md:text-[22px] font-semibold text-gray-800">
+                                Out Patients
+                                </h3>
+                            </div>
+                            <div className="space-y-3 text-[14px] md:text-[16px] text-gray-600">
+                                <p>
+                                At Life Plus Ayush Vaidhyasala, the Outpatient Department is
+                                committed to creating a supportive and comfortable experience for
+                                every patient.
+                                </p>
+                                <p>
+                                Our Reception Team works diligently to manage appointments
+                                efficiently, whether booked over the phone, by email, or in
+                                person. For smoother service and timely care, we recommend
+                                scheduling consultations in advance.
+                                </p>
+                                <p>
+                                When you arrive, please check in at the reception desk to confirm
+                                your appointment time. If there are any delays, our staff will
+                                keep you informed. We encourage you to share any questions or
+                                concerns with us, as our team is always ready to assist you.
+                                </p>
+                            </div>
+                            </div>
+
+                            {/* Consultation */}
+                            <div className="bg-white p-6 rounded-lg shadow-md">
+                            <div className="flex items-center mb-4">
+                                <Stethoscope className="w-10 h-10 text-green-600 mr-3" />
+                                <h3 className="text-[18px] md:text-[22px] font-semibold text-gray-800">
+                                Consultation
+                                </h3>
+                            </div>
+                            <div className="space-y-3 text-[14px] md:text-[16px] text-gray-600">
+                                <p>
+                                Our consultants will assess your condition. To ensure you receive
+                                the best possible care, please prepare a short summary of your
+                                medical history along with details of any medications you are
+                                currently using. You may also find it helpful to note down any
+                                questions you would like to ask.
+                                </p>
+                                <p>
+                                Life Plus Ayush Vaidhyasala offers specialized expertise and
+                                extensive experience in managing the following conditions:
+                                </p>
+                                <ul className="list-disc ml-6 space-y-2">
+                                <li>
+                                    Skin Diseases like Eczema, Psoriasis, Urticaria, Lichen planus,
+                                    etc.
+                                </li>
+                                <li>Respiratory diseases like Asthma</li>
+                                <li>
+                                    Osteoarthritis, Rheumatoid Arthritis, Cervical Spondylosis,
+                                    Lumbar Spondylosis, Lesthesis, Hemiplegia, Paraplegia
+                                </li>
+                                <li>Diabetes mellitus</li>
+                                <li>Hypertension</li>
+                                <li>Hyperlipidemia</li>
+                                <li>Obesity</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        </section>
+
                     {/* ----------- Healthcare Services -------------- */}
 
-                    <section className='py-10 md:py-20 font-[poppins] bg-gradient-to-t to-white from-yellow-50/50'>
+                    <section className='py-10 md:py-0 font-[poppins] bg-gradient-to-t to-white from-yellow-50/50'>
                         <div className='w-full  mx-auto '>
                             <div className='px-15 md:px-0 w-full md:w-[85%] mx-auto space-y-26'>
                                 <div className='flex justify-center items-center w-full '>
@@ -285,7 +364,7 @@ const Service = () => {
                                                 </div>
 
                                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Sattigai  </h3>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Suttigai  </h3>
                                                     <p className='font-[roboto] text-[11px] md:text-[13px]'>Used to treat warts, corns, chronic pain, and to stop bleeding.</p>
                                                 </div>
                                             </div>
@@ -527,14 +606,23 @@ const Service = () => {
                                                     <p className='font-[roboto] text-[11px] md:text-[13px]'>Guided sessions to improve flexibility, mindfulness, and achieve inner peace and calm.</p>
                                                 </div>
                                             </div>
+
+                                            <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden' >
+                                                <div className='relative h-28 md:h-36 w-full'>
+                                                    <img src={simg34} className='absolute inset-0 w-full h-full object-cover' alt='none' />
+                                                </div>
+
+                                                <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
+                                                    <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Physiotherapy</h3>
+                                                    <p className='font-[roboto] text-[11px] md:text-[13px]'>The Physiotherapy Department at Life Plus Ayush vaidhyasala is dedicated to delivering both in-patient and out-patient services with the highest standards of care and quality. Our approach focuses on thorough assessments and personalized treatment plans that integrate education, ongoing support, tailored home exercise programs, and professional guidance. By applying our deep scientific knowledge of human anatomy and physiology, we ensure the delivery of effective and holistic patient care.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-
-
 
                     {/* <!-- ------------------------------- Lifestyle & Holistic Wellness ------------------------------- --> */}
 
