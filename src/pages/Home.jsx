@@ -4,11 +4,13 @@ import gsap from 'gsap'
 import { FaWhatsapp, FaPhoneAlt, FaCalendarAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import AppointmentPopup from './AppointmentPopup';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-import patternbackground from '../images/banner/patternbackground1.jpg'
 
 import about1 from '../images/about1.jpg'
 import about2 from '../images/about2.jpg'
@@ -19,7 +21,6 @@ import who3 from '../images/icon/who3.png'
 import who4 from '../images/icon/who4.png'
 
 import service1 from '../images/icon/service1.png'
-import service2 from '../images/icon/service2.png'
 import service3 from '../images/icon/service3.png'
 
 import why1 from '../images/icon/why1.png'
@@ -30,6 +31,11 @@ import why5 from '../images/icon/why5.png'
 import why6 from '../images/icon/why6.png'
 import why7 from '../images/icon/why7.png'
 import why8 from '../images/icon/why8.png'
+
+import Hbanner1 from '../images/banner/Hbanner1.jpeg';
+import Hbanner2 from '../images/banner/Hbanner2.jpeg';
+import Hbanner3 from '../images/banner/Hbanner3.jpeg';
+import Hbanner4 from '../images/banner/Hbanner4.jpeg';
 
 //icons
 import { GiLindenLeaf } from "react-icons/gi";
@@ -107,11 +113,7 @@ const Home = () => {
     return (
         <>
             <AppointmentPopup/>
-            <div className='overflow-hidden z-20'>
-                <div className='fixed top-0 left-0 right-0 bottom-0 -z-10 '>
-                    <img src={patternbackground} className='w-full h-screen object-cover' />
-                </div>
-
+            <div className='overflow-hidden'>
                 <div className="fixed right-4 md:right-8 bottom-10 md:bottom-16 z-50 flex flex-col gap-4">
                     {/* WhatsApp */}
                     <a
@@ -148,21 +150,118 @@ const Home = () => {
 
                 {/* -------------- banner slide ---------------- */}
 
-                <section className='w-full h-full py-10 md:py-20 relative overflow-hidden' id='home'>
-                    <div className='w-full flex flex-col md:flex-row justify-center items-center overflow-hidden'>
-                        <div className='md:pl-16 md:pr-5 flex flex-col justify-center' data-aos="fade-up" data-aos-duration="3000">
-                            <p className='text-[12px] md:text-[18px] font-semibold text-[#d480a1] md:ml-0 ml-3'> Balancing Body, Mind & Nature  </p>
-                            <div className='font-bold  md:tracking-[2px]'>
-                                <h2 className='text-[1.5rem] md:text-[4.5rem] uppercase text-[#0a7c1d] drop-shadow-md md:ml-0 ml-3'> Helping You Feel </h2>
-                                <h2 className='text-[1.5rem] md:text-[4.1rem]  uppercase text-[#0a7c1d] md:ml-0 ml-3'> Better—Naturally </h2>
-                            </div>
-                            <p className='mt-1 text-[14px] md:text-[16px] w-full px-4 md:w-[70%] text-black leading-5 md:leading-7 md:font-medium md:pr-8'>
-                                We use natural herbs and safe treatments to support your health and well-being. Whether you're
-                                looking to reduce stress, boost your energy, or improve your overall health, we’re here to help with
-                                gentle and effective herbal care.
-                            </p>
+                <section
+                className="w-full h-full md:h-[74vh] relative overflow-hidden"
+                id="home"
+                >
+                <Swiper
+                    modules={[Autoplay, Pagination]}
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    loop={true}
+                    autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true, // stop autoplay on hover
+                    }}
+                    pagination={{ clickable: true }}
+                    className="w-full h-full"
+                >
+                    {/* Banner 1 */}
+                    <SwiperSlide>
+                    <div className="relative w-full h-[500px] md:h-[74vh] flex items-center justify-start px-6 md:px-16">
+                        {/* Background image using object-fit */}
+                        <img
+                        src={Hbanner4}
+                        alt="Banner 1"
+                        className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        {/* Optional dark overlay for readability */}
+                        <div className="absolute inset-0 "></div>
+
+                        {/* Text content */}
+                        <div className="relative z-10 text-white max-w-3xl">
+                        <p className="text-[12px] md:text-[18px] font-semibold text-[#d480a1]">
+                            Balancing Body, Mind & Nature
+                        </p>
+                        <div className="font-bold md:tracking-[2px]">
+                            <h2 className="text-[1.5rem] md:text-[4.5rem] text-[#aabc9b] uppercase drop-shadow-md">
+                            Helping You Feel
+                            </h2>
+                            <h2 className="text-[1.5rem] md:text-[4.1rem] text-[#aabc9b] uppercase">
+                            Better—Naturally
+                            </h2>
+                        </div>
+                        <p className="mt-2 text-[14px] md:text-[16px] leading-6 md:leading-7 md:font-medium md:w-[70%]">
+                            We use natural herbs and safe treatments to support your health and
+                            well-being. Whether you're looking to reduce stress, boost your energy,
+                            or improve your overall health, we’re here to help with gentle and
+                            effective herbal care.
+                        </p>
                         </div>
                     </div>
+                    </SwiperSlide>
+
+                    {/* Banner 2 */}
+                    <SwiperSlide>
+                    <div className="relative w-full h-[500px] md:h-[74vh] flex items-center justify-start px-6 md:px-16">
+                        <img
+                        src={Hbanner1}
+                        alt="Banner 2"
+                        className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 "></div>
+
+                        <div className="relative z-10 max-w-3xl">
+                        <p className="text-[12px] md:text-[18px] font-semibold text-[#d480a1]">
+                            Natural Healing
+                        </p>
+                        <div className="font-bold md:tracking-[2px]">
+                            <h2 className="text-[1.5rem] md:text-[4.5rem] uppercase text-[#aabc9b] drop-shadow-md">
+                            Restore Balance
+                            </h2>
+                            <h2 className="text-[1.5rem] md:text-[4.1rem] uppercase text-[#aabc9b]">
+                            With Herbal Care
+                            </h2>
+                        </div>
+                        <p className="mt-2 text-[14px] md:text-[16px] leading-6 md:leading-7 md:font-medium md:w-[70%]">
+                            Experience the benefits of holistic wellness. Our treatments are
+                            designed to nurture both body and mind.
+                        </p>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+
+                    {/* Banner 3 */}
+                    <SwiperSlide>
+                    <div className="relative w-full h-[500px] md:h-[74vh] flex items-center justify-start px-6 md:px-16">
+                        <img
+                        src={Hbanner3}
+                        alt="Banner 3"
+                        className="absolute inset-0 w-full h-full object-cover"
+                        />
+                        <div className="absolute inset-0 "></div>
+
+                        <div className="relative z-10 max-w-3xl">
+                        <p className="text-[12px] md:text-[18px] font-semibold text-[#d480a1]">
+                            Healthy Lifestyle
+                        </p>
+                        <div className="font-bold md:tracking-[2px]">
+                            <h2 className="text-[1.5rem] md:text-[4.5rem] uppercase text-[#aabc9b] drop-shadow-md">
+                            Live Stronger
+                            </h2>
+                            <h2 className="text-[1.5rem] md:text-[4.1rem] uppercase text-[#aabc9b]">
+                            Feel Healthier
+                            </h2>
+                        </div>
+                        <p className="mt-2 text-[14px] md:text-[16px] leading-6 md:leading-7 md:font-medium md:w-[70%]">
+                            Embrace nature’s power to transform your well-being. Discover
+                            treatments that work with your body, not against it.
+                        </p>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                </Swiper>
                 </section>
 
                 {/* --------------- About us ---------------- */}

@@ -58,13 +58,13 @@ const Header = () => {
   return (
     <>
       {/* 🔹 Top Navbar */}
-      <div className="flex flex-col md:flex-row items-center gap-2 bg-[#86a39f] w-full font-[roboto] px-4 md:px-8 py-2">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-2 bg-[#86a39f] w-full font-[roboto] px-4 md:px-8 py-2">
 
         {/* Marquee */}
         <div className="overflow-hidden w-full md:w-[60%] h-6 md:h-full flex items-center">
           <div className="marquee-container w-full">
             <p className="marquee-text text-[12px] md:text-[14px] font-bold text-white whitespace-nowrap">
-              Trusted hands. Natural care. LifePlusHerbal Healthcare Center
+              Trusted hands. Natural care. LifePlus Herbal Healthcare Center
             </p>
           </div>
         </div>
