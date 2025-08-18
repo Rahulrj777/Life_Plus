@@ -21,7 +21,7 @@ const Contact = () => {
     <div className="overflow-hidden">
 
       {/* ---------------- Hero Section ---------------- */}
-      <section className="relative w-full h-[40vh] md:h-[60vh]">
+      {/* <section className="relative w-full h-[40vh] md:h-[60vh]">
         <img src={banner} className="w-full h-full object-cover" alt="Contact Banner" />
         <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center px-4">
           <h3 className="font-black text-[18px] md:text-[42px] text-white text-center mb-2">
@@ -32,7 +32,7 @@ const Contact = () => {
             Contact us for consultations, treatments, or any queries about our services.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------------- Form & Info Section ---------------- */}
       <section className="bg-[#f8f8ff] py-14 font-[poppins]">

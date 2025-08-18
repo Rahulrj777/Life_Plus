@@ -1,5 +1,5 @@
-import React, { Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom'
+import React, { Suspense, lazy, useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route, Outlet, useLocation } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header'
@@ -12,6 +12,18 @@ const About = lazy(() => import('./pages/About'));
 const Service = lazy(() => import('./pages/Service'));
 const Contact = lazy(() => import('./pages/Contact'));
 // const Admin = lazy(() => import('./admin/Admin'))
+
+// 🔹 ScrollToTop Component
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to top instantly when route changes
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname]);
+
+  return null;
+};
 
 const UserLayout = () => (
   <>
@@ -27,6 +39,8 @@ const App = () => {
   return (
     <Router>
       <ToastContainer />
+      {/* Add ScrollToTop inside Router */}
+      <ScrollToTop />
       <Suspense fallback={<Loader />}>
         <Routes>
           {/* User Layout */}

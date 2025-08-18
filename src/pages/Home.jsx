@@ -312,7 +312,7 @@ const Home = () => {
                             <p className="text-[16px] md:text-[18px] font-semibold uppercase text-[#d480a1] mb-3">
                             What Makes Us Different
                             </p>
-                            <h2 className="text-black text-[22px] md:text-[3rem] font-bold  leading-tight">
+                            <h2 className="text-black text-[22px] md:text-[2.4rem] font-bold uppercase leading-tight">
                             Embracing Nature’s Healing Power for Better Health
                             </h2>
                         </div>
