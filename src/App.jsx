@@ -12,10 +12,10 @@ const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 
 // Lazy load individual services
-const Service1 = lazy(() => import('./pages/service/Service1'));
-const Service2 = lazy(() => import('./pages/service/Service2'));
-const Service3 = lazy(() => import('./pages/service/Service3'));
-const Service4 = lazy(() => import('./pages/service/Service4'));
+const Service1 = lazy(() => import('./pages/Service/Service1'));
+const Service2 = lazy(() => import('./pages/Service/Service2'));
+const Service3 = lazy(() => import('./pages/Service/Service3'));
+const Service4 = lazy(() => import('./pages/Service/Service4'));
 
 // 🔹 ScrollToTop Component
 const ScrollToTop = () => {
