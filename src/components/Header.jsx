@@ -171,21 +171,72 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <ul className={`fixed top-0 left-0 pt-10 pl-6 w-[70%] h-[100vh] bg-gray-50 z-50 drop-shadow-md transition-transform ${nav ? 'translate-x-0' : '-translate-x-full'}`}>
+          <ul
+            className={`fixed top-0 left-0 pt-10 pl-6 w-[70%] h-[100vh] bg-gray-50 z-50 drop-shadow-md transition-transform ${
+              nav ? 'translate-x-0' : '-translate-x-full'
+            }`}
+          >
             <li className="ml-6">
               <img src={logo} alt="LifePlus Logo" className="h-40" />
             </li>
-            {['Home', 'About Us', 'Services', 'Contact'].map((item, idx) => (
-              <li key={idx} className="px-2 py-4">
-                <Link
-                  to={item === 'Home' ? '/' : `/${item.replace(/\s+/g, '_').toLowerCase()}`}
-                  onClick={handleNav}
-                  className="text-[14px] font-semibold text-gray-700 hover:text-green-700 hover:scale-105 active:scale-105 transition-transform inline-block"
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
+
+            {/* Home */}
+            <li className="px-2 py-4">
+              <Link
+                to="/"
+                onClick={handleNav}
+                className="text-[14px] font-semibold text-gray-700 hover:text-green-700"
+              >
+                Home
+              </Link>
+            </li>
+
+            {/* About */}
+            <li className="px-2 py-4">
+              <Link
+                to="/about"
+                onClick={handleNav}
+                className="text-[14px] font-semibold text-gray-700 hover:text-green-700"
+              >
+                About
+              </Link>
+            </li>
+
+            {/* Services with submenu */}
+            <li className="px-2 py-4">
+              <span className="block text-[14px] font-semibold text-gray-700">
+                Services
+              </span>
+              <ul className="ml-4 mt-2 space-y-2">
+                {[
+                  { label: "Siddha External Therapies", path: "/services/Siddha External Therapies" },
+                  { label: "Ayurveda Panchakarma & Wellness Therapies", path: "/services/Ayurveda Panchakarma & Wellness Therapies" },
+                  { label: "Lifestyle & Holistic Wellness", path: "/services/Lifestyle & Holistic Wellness" },
+                  { label: "Naturopathy Therapies", path: "/services/Naturopathy Therapies" }
+                ].map((item, idx) => (
+                  <li key={idx}>
+                    <Link
+                      to={item.path}
+                      onClick={handleNav}
+                      className="text-[13px] text-gray-600 hover:text-green-700 block"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+
+            {/* Contact */}
+            <li className="px-2 py-4">
+              <Link
+                to="/contact"
+                onClick={handleNav}
+                className="text-[14px] font-semibold text-gray-700 hover:text-green-700"
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

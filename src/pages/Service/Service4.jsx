@@ -1,19 +1,10 @@
 import simg7 from '../../images/serviceimg/simg7.jpeg';
-import simg13 from '../../images/serviceimg/simg13.jpg';
-import simg14 from '../../images/serviceimg/simg14.jpg';
-import simg16 from '../../images/serviceimg/simg16.jpeg';
-import simg17 from '../../images/serviceimg/simg17.jpg';
-import simg18 from '../../images/serviceimg/simg18.webp';
-import simg19 from '../../images/serviceimg/simg19.jpg';
-import simg20 from '../../images/serviceimg/simg20.webp';
-import simg21 from '../../images/serviceimg/simg21.jpg';
-import simg22 from '../../images/serviceimg/simg22.jpeg';
 import simg25 from '../../images/serviceimg/simg25.webp';
 import simg26 from '../../images/serviceimg/simg26.jpg';
 import simg27 from '../../images/serviceimg/simg27.jpg';
 import simg28 from '../../images/serviceimg/simg28.jpg';
 import simg29 from '../../images/serviceimg/simg29.svg';
-import simg34 from '../../images/serviceimg/simg34.jpeg';
+import simg34 from '../../images/serviceimg/simg34.png';
 
 
 import Service_top from "../Service/Service_top";

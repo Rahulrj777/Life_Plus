@@ -179,10 +179,10 @@ const Home = () => {
                             Balancing Body, Mind & Nature
                         </p>
                         <div className="font-bold md:tracking-[2px] leading-tight">
-                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] text-[#aabc9b] uppercase drop-shadow-md">
+                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] text-[#8cbc64] uppercase drop-shadow-md">
                             Harmony in Motion
                             </h2>
-                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-[#aabc9b]">
+                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-gray-400">
                             Rebalance Your Body, Mind & Nature
                             </h2>
                         </div>
@@ -202,10 +202,10 @@ const Home = () => {
                             Whole-Body Wellness
                         </p>
                         <div className="font-bold md:tracking-[2px] leading-tight">
-                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] uppercase text-[#aabc9b] drop-shadow-md">
+                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] uppercase text-[#8cbc64] drop-shadow-md">
                             Feel Better, Live Better
                             </h2>
-                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-[#aabc9b]">
+                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-gray-400">
                             Whole-Body Wellness, Naturally
                             </h2>
                         </div>
@@ -225,10 +225,10 @@ const Home = () => {
                             Thrive the Natural Way
                         </p>
                         <div className="font-bold md:tracking-[2px] leading-tight">
-                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] uppercase text-[#aabc9b] drop-shadow-md">
+                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] uppercase text-[#8cbc64] drop-shadow-md">
                             Revitalize. Reconnect. Rebalance.
                             </h2>
-                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-[#aabc9b]">
+                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-gray-400">
                             Thrive the Natural Way
                             </h2>
                         </div>
@@ -283,8 +283,7 @@ const Home = () => {
 
                             <div className='w-full md:w-[50%] mx-auto'>
                                 <div data-aos='fade-left' data-aos-duratoin='1000'>
-                                    <p className='text-[#d480a1] text-[12px] md:text-[13px] font-semibold uppercase md:mb-2'>Who We Are </p>
-                                    <h3 className='text-[16px] md:text-[30px] font-semibold leading-11 '>Natural Healing. Real Results</h3>
+                                    <p className='text-[#d480a1] text-[12px] md:text-[13px] font-semibold uppercase md:mb-2'>About Us </p>
                                     <p className='text-[12px] md:text-[14px] text-gray-500 mt-2  md:mt-5'>
                                      At our core, we honor the age-old wisdom of traditional healing. Drawing from the rich heritage of Siddha, Ayurveda, and other time-tested practices, we offer safe, plant-based therapies that are designed to optimize your health.
                                     Our herbal treatments support stress reduction, boost energy, and enhance overall well-being—all grounded in evidence-informed care and guided by nature’s healing power.
