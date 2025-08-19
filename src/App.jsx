@@ -51,10 +51,10 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
 
             {/* Individual Service Routes */}
-            <Route path="/services/service1" element={<Service1 />} />
-            <Route path="/services/service2" element={<Service2 />} />
-            <Route path="/services/service3" element={<Service3 />} />
-            <Route path="/services/service4" element={<Service4 />} />
+            <Route path="/services/Siddha External Therapies" element={<Service1 />} />
+            <Route path="/services/Ayurveda Panchakarma & Wellness Therapies" element={<Service2 />} />
+            <Route path="/services/Lifestyle & Holistic Wellness" element={<Service3 />} />
+            <Route path="/services/Naturopathy Therapies" element={<Service4 />} />
           </Route>
 
           <Route path="/admin" element={<AdminLayout />} />

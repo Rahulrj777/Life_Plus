@@ -120,10 +120,10 @@ const Header = () => {
                 </span>
                 <ul className="absolute left-0 top-full mt-2 w-72 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   {[
-                    { label: "Siddha External Therapies", path: "/services/service1" },
-                    { label: "Ayurveda Panchakarma & Wellness Therapies", path: "/services/service2" },
-                    { label: "Lifestyle & Holistic Wellness", path: "/services/service3" },
-                    { label: "Other Specialized Therapies", path: "/services/service4" }
+                    { label: "Siddha External Therapies", path: "/services/Siddha External Therapies" },
+                    { label: "Ayurveda Panchakarma & Wellness Therapies", path: "/services/Ayurveda Panchakarma & Wellness Therapies" },
+                    { label: "Lifestyle & Holistic Wellness", path: "/services/Lifestyle & Holistic Wellness" },
+                    { label: "Naturopathy Therapies", path: "/services/Naturopathy Therapies" }
                   ].map((item, idx) => (
                     <li key={idx} className="px-4 py-2 hover:bg-gray-100">
                       <Link to={item.path} className="block text-gray-700">

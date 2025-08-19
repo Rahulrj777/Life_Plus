@@ -1,4 +1,4 @@
-import simg7 from "../../images/serviceimg/simg7.jpeg" 
+import simg7 from "../../images/serviceimg/simg7.jpeg"  
 import simg13 from "../../images/serviceimg/simg13.jpg"
 import simg14 from "../../images/serviceimg/simg14.jpg"
 import simg16 from "../../images/serviceimg/simg16.jpeg"
@@ -156,7 +156,6 @@ const Service2 = () => {
                                     <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'> Herbal Steam Bath </h3>
                                     <p className='font-[roboto] text-[11px] md:text-[13px]'>Detoxifies by opening body channels, removing toxins, improving circulation, and boosting well-being.</p>
                                 </div>
-
                             </div>
                         </div>
                     </div>
