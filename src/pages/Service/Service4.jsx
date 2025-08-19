@@ -4,7 +4,6 @@ import simg26 from '../../images/serviceimg/simg26.jpg';
 import simg27 from '../../images/serviceimg/simg27.jpg';
 import simg28 from '../../images/serviceimg/simg28.jpg';
 import simg29 from '../../images/serviceimg/simg29.svg';
-import simg34 from '../../images/serviceimg/simg34.png';
 
 
 import Service_top from "../Service/Service_top";
@@ -138,24 +137,6 @@ const Service3 = () => {
                     </div>
 
                     </div>
-
-                    <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
-
-                    <div className='relative h-28 md:h-36 w-full'>
-                        <img src={simg34} className='absolute inset-0 w-full h-full object-cover' alt='none' />
-                    </div>
-
-                    <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
-                        <h3 className='font-bold text-[14px] md:text-[18px] font-[Merriweather]'>
-                        Physiotherapy
-                        </h3>
-                        <p className='font-[roboto] text-[11px] md:text-[13px]'>
-                        The Physiotherapy Department at Life Plus Ayush vaidhyasala is dedicated to delivering both in-patient and out-patient services with the highest standards of care and quality. Our approach focuses on thorough assessments and personalized treatment plans that integrate education, ongoing support, tailored home exercise programs, and professional guidance. By applying our deep scientific knowledge of human anatomy and physiology, we ensure the delivery of effective and holistic patient care.
-                        </p>
-                    </div>
-
-                    </div>
-
                 </div>
 
                 </div>

@@ -123,7 +123,8 @@ const Header = () => {
                     { label: "Siddha External Therapies", path: "/services/Siddha External Therapies" },
                     { label: "Ayurveda Panchakarma & Wellness Therapies", path: "/services/Ayurveda Panchakarma & Wellness Therapies" },
                     { label: "Lifestyle & Holistic Wellness", path: "/services/Lifestyle & Holistic Wellness" },
-                    { label: "Naturopathy Therapies", path: "/services/Naturopathy Therapies" }
+                    { label: "Naturopathy Therapies", path: "/services/Naturopathy Therapies" },
+                    { label: "Physiotherapy", path: "/services/Physiotherapy" }
                   ].map((item, idx) => (
                     <li key={idx} className="px-4 py-2 hover:bg-gray-100">
                       <Link to={item.path} className="block text-gray-700">

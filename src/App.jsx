@@ -16,6 +16,7 @@ const Service1 = lazy(() => import('./pages/Service/Service1'));
 const Service2 = lazy(() => import('./pages/Service/Service2'));
 const Service3 = lazy(() => import('./pages/Service/Service3'));
 const Service4 = lazy(() => import('./pages/Service/Service4'));
+const Service5 = lazy(() => import('./pages/Service/Service5'));
 
 // 🔹 ScrollToTop Component
 const ScrollToTop = () => {
@@ -55,6 +56,7 @@ const App = () => {
             <Route path="/services/Ayurveda Panchakarma & Wellness Therapies" element={<Service2 />} />
             <Route path="/services/Lifestyle & Holistic Wellness" element={<Service3 />} />
             <Route path="/services/Naturopathy Therapies" element={<Service4 />} />
+            <Route path="/services/Physiotherapy" element={<Service5 />} />
           </Route>
 
           <Route path="/admin" element={<AdminLayout />} />
