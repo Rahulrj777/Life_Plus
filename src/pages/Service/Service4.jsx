@@ -5,7 +5,6 @@ import simg27 from '../../images/serviceimg/simg27.jpg';
 import simg28 from '../../images/serviceimg/simg28.jpg';
 import simg29 from '../../images/serviceimg/simg29.svg';
 
-
 import Service_top from "../Service/Service_top";
 import Service_bottom from "../Service/Service_down";
 

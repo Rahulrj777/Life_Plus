@@ -30,7 +30,7 @@ const Service5 = () => {
             </div>
 
             {/* Card */}
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 w-full'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-12 w-full'>
 
               <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                 <div className='relative h-40 md:h-60 w-full'>
@@ -39,13 +39,10 @@ const Service5 = () => {
 
                 <div className='flex flex-col items-start gap-y-2 py-2 md:py-4 px-4'>
                   <h3 className='font-bold text-[16px] md:text-[20px] font-[Merriweather]'>
-                    Personalized Physiotherapy Care
+                    Physiotherapy
                   </h3>
                   <p className='font-[roboto] text-[12px] md:text-[14px] text-gray-600'>
-                    Our Physiotherapy services include customized rehabilitation programs, advanced manual therapy, 
-                    electrotherapy, pain management, and post-surgical recovery support. 
-                    Every treatment is designed to suit your specific condition and health goals, 
-                    ensuring faster recovery and long-term well-being.
+                    The Physiotherapy Department at Life Plus Ayush vaidhyasala is dedicated to delivering both in-patient and out-patient services with the highest standards of care and quality. Our approach focuses on thorough assessments and personalized treatment plans that integrate education, ongoing support, tailored home exercise programs, and professional guidance. By applying our deep scientific knowledge of human anatomy and physiology, we ensure the delivery of effective and holistic patient care.
                   </p>
                 </div>
               </div>
