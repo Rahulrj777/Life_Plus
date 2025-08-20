@@ -3,9 +3,9 @@ import { Lightbulb, Heart, Leaf } from "lucide-react";
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import DoctorList from '../components/DoctorList';
-import bannerOptimized from '../images/about/about_banner-3.jpg';
 import bgbanner from '../images/about/about_banner-1.jpg';
 import aboutIllustration from '../images/about/about.png';
+import herobanner from '../images/banner/About_banner.jpg'
 
 import Gimg1 from '../images/Gallery/Gimg1.jpg';
 import Gimg2 from '../images/Gallery/Gimg2.jpg';
@@ -80,23 +80,11 @@ const About = () => {
       {/* 1️⃣ Hero Section */}
       <section className="relative w-full md:h-[67vh] flex items-center justify-center overflow-hidden">
         <img
-          src={bannerOptimized}
+          src={herobanner}
           className="absolute w-full h-full object-cover"
           alt="About Banner"
           loading="lazy"
         />
-
-        {/* Right Side Text */}
-        <div className="relative z-10 w-full h-full flex items-center justify-end pr-10 md:pr-24">
-          <div className="text-right leading-tight">
-            <h1 className="text-[#6b8e23] text-4xl md:text-6xl font-serif drop-shadow-md">
-              Your Wellness,
-            </h1>
-            <h1 className="text-white text-3xl md:text-5xl font-sans font-bold drop-shadow-lg">
-              Our Priority
-            </h1>
-          </div>
-        </div>
       </section>
 
       {/* 2️⃣ Our Journey / Story */}

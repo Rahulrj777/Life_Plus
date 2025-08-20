@@ -300,7 +300,7 @@ const Home = () => {
                                     <div className="mt-6">
                                         <Link
                                             to="/about"
-                                            className="inline-block bg-[#d480a1] hover:bg-[#0a7c1d] text-white font-semibold px-6 py-3 rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
+                                            className="inline-block bg-[#d480a1] hover:bg-[#687445] text-white font-semibold px-6 py-3 rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
                                         >
                                             Know More
                                         </Link>
@@ -322,59 +322,77 @@ const Home = () => {
                         <p className="text-[12px] md:text-[14px] font-semibold mb-2 text-[#d480a1]">
                             Our Services
                         </p>
-                        <h2 className="font-bold text-[20px] md:text-[2.5rem] text-[#0a7c1d] leading-snug">
+                        <h2 className="font-bold text-[20px] md:text-[2.5rem] text-[#687445] leading-snug">
                             Your Wellness Journey Starts Naturally
                         </h2>
-                        <div className="border border-green-200 w-100 mx-auto mt-4"></div>
+                        <div className="border border-[#687445] w-100 mx-auto mt-4"></div>
                         </div>
 
                         {/* SERVICE CARDS */}
-                        <div
-                        className="relative mt-10"
-                        data-aos="fade-up"
-                        data-aos-duration="2000"
-                        >
+                        <div className="relative mt-10" data-aos="fade-up" data-aos-duration="2000">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                             {/* Card 1 */}
-                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#0a7c1d] hover:scale-105 transition-all duration-300">
-                                <div className="flex flex-col items-center gap-4">
-                                    <img src={service1} className="w-14 md:w-20 object-cover" alt="Siddha" />
-                                    <h3 className="text-[14px] font-bold text-[#0a7c1d] text-center">
-                                    Siddha Medicine & Therapies
-                                    </h3>
-                                    <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                    Siddha is a powerful ancient healing science from Tamil Nadu,
-                                    focusing on balancing the three humors — Vata, Pitta, and Kapha.
-                                    </p>
-                                </div>
+                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
+                            <div className="flex flex-col items-center gap-4">
+                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Siddha External Therapies" />
+                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                                Siddha External Therapies
+                                </h3>
+                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                                Siddha therapies focus on external treatments to balance the body's energy and promote natural healing.
+                                </p>
+                            </div>
                             </div>
 
                             {/* Card 2 */}
-                             <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#0a7c1d] hover:scale-105 transition-all duration-300">
-                                <div className="flex flex-col items-center gap-4">
-                                    <img src={service1} className="w-14 md:w-20 object-cover" alt="Siddha" />
-                                    <h3 className="text-[14px] font-bold text-[#0a7c1d] text-center">
-                                    Ayurveda Panchakarma & Wellness Therapies
-                                    </h3>
-                                    <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                    Our Ayurveda department offers classical Panchakarma and
-                                    rejuvenation therapies for detoxification, restoration, and
-                                    prevention of disease.
-                                    </p>
-                                </div>
+                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
+                            <div className="flex flex-col items-center gap-4">
+                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Ayurveda Panchakarma & Wellness Therapies" />
+                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                                Ayurveda Panchakarma & Wellness Therapies
+                                </h3>
+                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                                Our Ayurveda department offers classical Panchakarma and rejuvenation therapies for detoxification, restoration, and prevention of disease.
+                                </p>
+                            </div>
                             </div>
 
                             {/* Card 3 */}
-                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#0a7c1d] hover:scale-105 transition-all duration-300">
+                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
                             <div className="flex flex-col items-center gap-4">
-                                <img src={service3} className="w-14 md:w-20 object-cover" alt="Naturopathy" />
-                                <h3 className="text-[14px] font-bold  text-[#0a7c1d] text-center">
+                                <img src={service3} className="w-14 md:w-20 object-cover" alt="Lifestyle & Holistic Wellness" />
+                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                                Lifestyle & Holistic Wellness
+                                </h3>
+                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                                Personalized lifestyle programs and holistic wellness guidance to maintain balance in body, mind, and spirit.
+                                </p>
+                            </div>
+                            </div>
+
+                            {/* Card 4 */}
+                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
+                            <div className="flex flex-col items-center gap-4">
+                                <img src={service3} className="w-14 md:w-20 object-cover" alt="Naturopathy Therapies" />
+                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
                                 Naturopathy Therapies
                                 </h3>
                                 <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                Naturopathy restores health using elements of nature like water,
-                                mud, air, and plant-based remedies.
+                                Naturopathy restores health using elements of nature like water, mud, air, and plant-based remedies.
+                                </p>
+                            </div>
+                            </div>
+
+                            {/* Card 5 */}
+                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
+                            <div className="flex flex-col items-center gap-4">
+                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Physiotherapy" />
+                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                                Physiotherapy
+                                </h3>
+                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                                Targeted physiotherapy programs to improve mobility, strength, and recovery after injury or chronic conditions.
                                 </p>
                             </div>
                             </div>
@@ -615,7 +633,7 @@ const Home = () => {
                         <p className="text-[14px] md:text-[16px] font-semibold uppercase text-[#d480a1] mb-3">
                             Testimonial
                         </p>
-                        <h2 className="text-[20px] md:text-[3rem]  text-[#0a7c1d]">
+                        <h2 className="text-[20px] md:text-[3rem]  text-[#687445]">
                             Customer Feedback & Reviews
                         </h2>
                         <div className="flex items-center justify-center gap-x-3 mt-4 text-[16px] md:text-[20px]">
@@ -643,7 +661,7 @@ const Home = () => {
                         <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[30rem] h-[30rem] bg-[#0a7c1d]/10 rounded-full blur-3xl opacity-30 z-0"></div>
                         
                         {/* Heading */}
-                        <h2 className="text-[#0a7c1d] text-[22px] md:text-[48px]  font-bold leading-snug mb-6">
+                        <h2 className="text-[#687445] text-[22px] md:text-[48px]  font-bold leading-snug mb-6">
                             Your Health is a Reflection of Nature’s Balance
                         </h2>
 
@@ -657,7 +675,7 @@ const Home = () => {
 
                         {/* Button */}
                         <Link to="/services"
-                        className="relative z-10 inline-flex gap-2 items-center bg-[#d480a1] hover:bg-[#0a7c1d] text-white px-10 py-4 cursor-pointer rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
+                        className="relative z-10 inline-flex gap-2 items-center bg-[#d480a1] hover:bg-[#687445] text-white px-10 py-4 cursor-pointer rounded-md text-[12px] md:text-[14px] transition-all duration-300 hover:scale-105"
                         >
                         Discover More <FaArrowRight className="text-[12px] md:text-[18px]" />
                         </Link>
@@ -674,12 +692,12 @@ const Home = () => {
 
                         <div className='flex flex-col md:flex-row items-center  md:gap-x-10 bg-white z-40 border border-gray-200 px-5 md:px-16 py-2 md:py-4 rounded-xl  md:rounded-4xl' data-aos='fade-up' data-aos-duratoin='1000'>
                             <h3 className='font-light text-[8px] md:text-[14px] flex items-center gap-x-2 md:gap-x-4'>
-                              <span> <PiHeadsetFill className='text-[#426948] text-[20px] md:text-[40px]' /> </span> 
+                              <span> <PiHeadsetFill className='text-[#687445] text-[20px] md:text-[40px]' /> </span> 
                               <span> Begin your personalized wellness journey with Life Plus. </span>
                             </h3>
                             <div>
                                 <Link to='/contact' onClick={() => window.scrollTo(0, 0)}>
-                                    <button className='px-3 md:px-6 cursor-pointer mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#d480a1] hover:scale-105 duration-300 font-bold hover:bg-[#0a7c1d] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white'>Contact us</button>
+                                    <button className='px-3 md:px-6 cursor-pointer mt-1 md:mt-0 py-1.5 md:py-2.5 bg-[#d480a1] hover:scale-105 duration-300 font-bold hover:bg-[#687445] rounded-md md:rounded-xl text-[10px] md:text-[14px] text-white'>Contact us</button>
                                 </Link>
                             </div>
                         </div>

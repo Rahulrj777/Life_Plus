@@ -139,16 +139,16 @@ const Footer = () => {
       <div className="bg-[#86a39f] md:pt-2 border-t border-gray-200 mt-6">
         <div className="flex flex-col md:flex-row-reverse justify-between items-center w-full md:w-[85%] mx-auto px-2 py-3 md:py-5">
           
-          {/* Social Icons */}
+          {/* Social Icons with unified color and hover zoom */}
           <div className="flex flex-row gap-x-4 md:gap-x-8 mt-2">
             {/* YouTube */}
             <a
               href="https://youtube.com/@lifeplusayushvaidhyasala-m4j?si=vahgK24kC-UdMKVb"
               target="_blank"
               rel="noopener noreferrer"
-              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition"
+              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition transform hover:scale-110"
             >
-              <FaYoutube className="text-red-500 group-hover:text-white text-xl" />
+              <FaYoutube className="text-white text-xl" />
             </a>
 
             {/* Instagram */}
@@ -156,9 +156,9 @@ const Footer = () => {
               href="https://www.instagram.com/lifeplusayushvaidhyasala?igsh=bzZ1cGVuazJhZHdi"
               target="_blank"
               rel="noopener noreferrer"
-              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition"
+              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition transform hover:scale-110"
             >
-              <FiInstagram className="text-pink-500 group-hover:text-white text-xl" />
+              <FiInstagram className="text-white text-xl" />
             </a>
 
             {/* Facebook */}
@@ -166,12 +166,11 @@ const Footer = () => {
               href="https://www.facebook.com/profile.php?id=61578276728854"
               target="_blank"
               rel="noopener noreferrer"
-              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition"
+              className="group w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-black transition transform hover:scale-110"
             >
-              <LuFacebook className="text-blue-500 group-hover:text-white text-xl" />
+              <LuFacebook className="text-white text-xl" />
             </a>
           </div>
-
           {/* Copyright */}
           <div className="mt-3 md:my-5 text-[9px] sm:text-[11px] md:text-[13px] text-gray-100 text-center">
             Life Plus Pvt Ltd © 2025. All Rights Reserved.

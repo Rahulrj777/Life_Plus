@@ -1,5 +1,3 @@
-import midBanner from '../../images/banner/mid_banner.jpg'
-
 import highlight1 from '../../images/icon/highlight1.png'
 import highlight2 from '../../images/icon/highlight2.png'
 import highlight3 from '../../images/icon/highlight3.png'
@@ -9,27 +7,12 @@ const Service_top = () => {
   return (
     <>
     <section className='bg-white'>
-        <div className="relative h-[50vh] md:h-[70vh]">
+        <div className="h-[50vh] md:h-[70vh]">
             <img
-            src={midBanner}
+            src={service1}
             className="w-full h-full object-cover"
             alt="none"
             />
-
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full text-center">
-                <div
-                    className='w-[80%] md:w-[55%] mx-auto flex flex-col gap-3'
-                    data-aos='fade-up'
-                    data-aos-duration='2000'
-                >
-                    <h2 className="text-[#0d6c1d] text-[13px] md:text-[3rem] font-bold">
-                    We’re Here to Help You Heal Naturally
-                    </h2>
-                    <p className='tracking-tight text-[10px] md:text-[18px] text-gray-700'>
-                    Take the first step toward holistic wellness. Whether you're curious about our services or ready to make an appointment, our team is here for you every step of the way.
-                    </p>
-                </div>
-            </div>
         </div>
     </section>
 

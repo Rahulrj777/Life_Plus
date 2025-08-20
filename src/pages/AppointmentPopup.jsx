@@ -40,7 +40,7 @@ export default function AppointmentPopup({ show, onClose }) {
   const handleSubmit = async (e) => {
   e.preventDefault();
 
-  if (!validateForm()) return; // stop if invalid
+  if (!validateForm()) return;
 
   const url = "https://script.google.com/macros/s/AKfycbxfEsaKiSkb7E8P1kzc_KDs4nN9rd78U8db9HUvJenDJ7lxwrtgCgI5XUBrCgkbM87J/exec";
   
