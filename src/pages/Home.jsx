@@ -32,10 +32,9 @@ import why6 from '../images/icon/why6.png'
 import why7 from '../images/icon/why7.png'
 import why8 from '../images/icon/why8.png'
 
-import Hbanner1 from '../images/banner/Hbanner1.jpeg';
-import Hbanner2 from '../images/banner/Hbanner2.jpeg';
-import Hbanner3 from '../images/banner/Hbanner3.jpeg';
-import Hbanner4 from '../images/banner/Hbanner4.jpeg';
+import Hbanner1 from '../images/banner/Hbanner1.jpg';
+import Hbanner2 from '../images/banner/Hbanner2.jpg';
+import Hbanner3 from '../images/banner/Hbanner3.jpg';
 
 //icons
 import { GiLindenLeaf } from "react-icons/gi";
@@ -172,21 +171,8 @@ const Home = () => {
                     <div
                         className="relative w-full h-full flex items-center justify-start px-4 md:px-16 
                                 bg-no-repeat bg-right md:bg-center bg-cover"
-                        style={{ backgroundImage: `url(${Hbanner4})` }}
+                        style={{ backgroundImage: `url(${Hbanner1})` }}
                     >
-                        <div className="relative z-10 text-white w-[60%] break-words">
-                        <p className="text-[10px] md:text-[18px] font-semibold text-[#d480a1]">
-                            Balancing Body, Mind & Nature
-                        </p>
-                        <div className="font-bold md:tracking-[2px] leading-tight">
-                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] text-[#8cbc64] uppercase drop-shadow-md">
-                            Harmony in Motion
-                            </h2>
-                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-gray-400">
-                            Rebalance Your Body, Mind & Nature
-                            </h2>
-                        </div>
-                        </div>
                     </div>
                     </SwiperSlide>
 
@@ -195,21 +181,8 @@ const Home = () => {
                     <div
                         className="relative w-full h-full flex items-center justify-start px-4 md:px-16 
                                 bg-no-repeat bg-right md:bg-center bg-cover"
-                        style={{ backgroundImage: `url(${Hbanner1})` }}
+                        style={{ backgroundImage: `url(${Hbanner2})` }}
                     >
-                        <div className="relative z-10 text-white w-[60%] break-words">
-                        <p className="text-[10px] md:text-[18px] font-semibold text-[#d480a1]">
-                            Whole-Body Wellness
-                        </p>
-                        <div className="font-bold md:tracking-[2px] leading-tight">
-                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] uppercase text-[#8cbc64] drop-shadow-md">
-                            Feel Better, Live Better
-                            </h2>
-                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-gray-400">
-                            Whole-Body Wellness, Naturally
-                            </h2>
-                        </div>
-                        </div>
                     </div>
                     </SwiperSlide>
 
@@ -220,19 +193,6 @@ const Home = () => {
                                 bg-no-repeat bg-right md:bg-center bg-cover"
                         style={{ backgroundImage: `url(${Hbanner3})` }}
                     >
-                        <div className="relative z-10 text-white w-[60%] break-words">
-                        <p className="text-[10px] md:text-[18px] font-semibold text-[#d480a1]">
-                            Thrive the Natural Way
-                        </p>
-                        <div className="font-bold md:tracking-[2px] leading-tight">
-                            <h2 className="text-[1rem] md:text-[3rem] lg:text-[4.5rem] uppercase text-[#8cbc64] drop-shadow-md">
-                            Revitalize. Reconnect. Rebalance.
-                            </h2>
-                            <h2 className="text-[0.9rem] md:text-[2rem] lg:text-[3rem] text-gray-400">
-                            Thrive the Natural Way
-                            </h2>
-                        </div>
-                        </div>
                     </div>
                     </SwiperSlide>
                 </Swiper>
@@ -315,92 +275,103 @@ const Home = () => {
                 {/* ---------------------- Our Services -------------- */}
 
                 <section className="pt-14 pb-20 md:py-24 bg-white relative overflow-hidden">
-                    <div className="w-full px-4 md:w-[80%] mx-auto relative z-10">
+  <div className="w-full px-4 md:w-[80%] mx-auto relative z-10">
 
-                        {/* TOP CONTENT */}
-                        <div className="text-center mb-16">
-                        <p className="text-[12px] md:text-[14px] font-semibold mb-2 text-[#d480a1]">
-                            Our Services
-                        </p>
-                        <h2 className="font-bold text-[20px] md:text-[2.5rem] text-[#687445] leading-snug">
-                            Your Wellness Journey Starts Naturally
-                        </h2>
-                        <div className="border border-[#687445] w-100 mx-auto mt-4"></div>
-                        </div>
+    {/* TOP CONTENT */}
+    <div className="text-center mb-16">
+      <p className="text-[12px] md:text-[14px] font-semibold mb-2 text-[#d480a1]">
+        Our Services
+      </p>
+      <h2 className="font-bold text-[20px] md:text-[2.5rem] text-[#687445] leading-snug">
+        Your Wellness Journey Starts Naturally
+      </h2>
+      <div className="border border-[#687445] w-100 mx-auto mt-4"></div>
+    </div>
 
-                        {/* SERVICE CARDS */}
-                        <div className="relative mt-10" data-aos="fade-up" data-aos-duration="2000">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    {/* SERVICE CARDS */}
+    <div className="relative mt-10" data-aos="fade-up" data-aos-duration="2000">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                            {/* Card 1 */}
-                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
-                            <div className="flex flex-col items-center gap-4">
-                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Siddha External Therapies" />
-                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
-                                Siddha External Therapies
-                                </h3>
-                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                Siddha therapies focus on external treatments to balance the body's energy and promote natural healing.
-                                </p>
-                            </div>
-                            </div>
+        {/* Card 1 */}
+        <Link to="/services/Siddha External Therapies" className="h-full">
+          <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300 h-full flex flex-col">
+            <div className="flex flex-col items-center gap-4 flex-grow">
+              <img src={service1} className="w-14 md:w-20 object-cover" alt="Siddha External Therapies" />
+              <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                Siddha External Therapies
+              </h3>
+              <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                Siddha therapies focus on external treatments to balance the body's energy and promote natural healing.
+              </p>
+            </div>
+          </div>
+        </Link>
 
-                            {/* Card 2 */}
-                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
-                            <div className="flex flex-col items-center gap-4">
-                                <img src={service3} className="w-14 md:w-20 object-cover" alt="Ayurveda Panchakarma & Wellness Therapies" />
-                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
-                                Ayurveda Panchakarma & Wellness Therapies
-                                </h3>
-                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                Our Ayurveda department offers classical Panchakarma and rejuvenation therapies for detoxification, restoration, and prevention of disease.
-                                </p>
-                            </div>
-                            </div>
+        {/* Card 2 */}
+        <Link to="/services/Ayurveda Panchakarma & Wellness Therapies" className="h-full">
+          <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300 h-full flex flex-col">
+            <div className="flex flex-col items-center gap-4 flex-grow">
+              <img src={service3} className="w-14 md:w-20 object-cover" alt="Ayurveda Panchakarma & Wellness Therapies" />
+              <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                Ayurveda Panchakarma & Wellness Therapies
+              </h3>
+              <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                Our Ayurveda department offers classical Panchakarma and rejuvenation therapies for detoxification, restoration, and prevention of disease.
+              </p>
+            </div>
+          </div>
+        </Link>
 
-                            {/* Card 3 */}
-                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
-                            <div className="flex flex-col items-center gap-4">
-                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Lifestyle & Holistic Wellness" />
-                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
-                                Lifestyle & Holistic Wellness
-                                </h3>
-                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                Personalized lifestyle programs and holistic wellness guidance to maintain balance in body, mind, and spirit.
-                                </p>
-                            </div>
-                            </div>
+        {/* Card 3 */}
+        <Link to="/services/Lifestyle & Holistic Wellness" className="h-full">
+          <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300 h-full flex flex-col">
+            <div className="flex flex-col items-center gap-4 flex-grow">
+              <img src={service1} className="w-14 md:w-20 object-cover" alt="Lifestyle & Holistic Wellness" />
+              <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                Lifestyle & Holistic Wellness
+              </h3>
+              <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                Personalized lifestyle programs and holistic wellness guidance to maintain balance in body, mind, and spirit.
+              </p>
+            </div>
+          </div>
+        </Link>
 
-                            {/* Card 4 */}
-                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
-                            <div className="flex flex-col items-center gap-4">
-                                <img src={service3} className="w-14 md:w-20 object-cover" alt="Naturopathy Therapies" />
-                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
-                                Naturopathy Therapies
-                                </h3>
-                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                Naturopathy restores health using elements of nature like water, mud, air, and plant-based remedies.
-                                </p>
-                            </div>
-                            </div>
+        {/* Card 4 */}
+        <Link to="/services/Naturopathy Therapies" className="h-full">
+          <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300 h-full flex flex-col">
+            <div className="flex flex-col items-center gap-4 flex-grow">
+              <img src={service3} className="w-14 md:w-20 object-cover" alt="Naturopathy Therapies" />
+              <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                Naturopathy Therapies
+              </h3>
+              <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                Naturopathy restores health using elements of nature like water, mud, air, and plant-based remedies.
+              </p>
+            </div>
+          </div>
+        </Link>
 
-                            {/* Card 5 */}
-                            <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
-                            <div className="flex flex-col items-center gap-4">
-                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Physiotherapy" />
-                                <h3 className="text-[14px] font-bold text-[#687445] text-center">
-                                Physiotherapy
-                                </h3>
-                                <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
-                                Targeted physiotherapy programs to improve mobility, strength, and recovery after injury or chronic conditions.
-                                </p>
-                            </div>
-                            </div>
+        {/* Card 5 */}
+        <Link to="/services/Physiotherapy" className="h-full">
+          <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300 h-full flex flex-col">
+            <div className="flex flex-col items-center gap-4 flex-grow">
+              <img src={service1} className="w-14 md:w-20 object-cover" alt="Physiotherapy" />
+              <h3 className="text-[14px] font-bold text-[#687445] text-center">
+                Physiotherapy
+              </h3>
+              <p className="text-[11px] md:text-[12px] text-gray-600 text-center">
+                Targeted physiotherapy programs to improve mobility, strength, and recovery after injury or chronic conditions.
+              </p>
+            </div>
+          </div>
+        </Link>
 
-                        </div>
-                        </div>
-                    </div>
-                </section>
+      </div>
+    </div>
+  </div>
+</section>
+
 
                 {/* ---------- why choose us --------------*/}
 
