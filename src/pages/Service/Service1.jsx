@@ -15,15 +15,17 @@ import simg10 from "../../images/serviceimg/simg10.webp"
 
 import Service_bottom from "../Service/Service_down";
 
+import ss1 from "../../images/banner/ss1.jpeg"
+import ss from '../../images/banner/ss.jpeg'
+
 import { useState } from 'react';
-import { Users, Stethoscope } from 'lucide-react';
 
 const services = [
   {
-    icon: <Users className="w-12 h-12 text-blue-500 mb-4" />,
+    bg: ss1,
     title: "Out Patients",
     content: (
-      <div className="space-y-3 text-gray-600 text-[14px] md:text-[16px]">
+      <div className="space-y-3 text-white text-[14px] md:text-[16px]">
         <p>
           At Life Plus Ayush Vaidhyasala, the Outpatient Department is
           committed to creating a supportive and comfortable experience for
@@ -45,10 +47,10 @@ const services = [
     ),
   },
   {
-    icon: <Stethoscope className="w-12 h-12 text-green-600 mb-4" />,
+    bg: ss,
     title: "Consultation",
     content: (
-      <div className="space-y-3 text-gray-600 text-[14px] md:text-[16px]">
+      <div className="space-y-3 text-white text-[14px] md:text-[16px]">
         <p>
           Our consultants will assess your condition. To ensure you receive the
           best possible care, please prepare a short summary of your medical
@@ -60,7 +62,7 @@ const services = [
           Life Plus Ayush Vaidhyasala offers specialized expertise and extensive
           experience in managing the following conditions:
         </p>
-        <ul className="list-disc ml-6 space-y-2">
+        <ul className="list-disc ml-6 space-y-2 text-white">
           <li>Skin Diseases like Eczema, Psoriasis, Urticaria, Lichen planus, etc.</li>
           <li>Respiratory diseases like Asthma</li>
           <li>Osteoarthritis, Rheumatoid Arthritis, Cervical Spondylosis, Lumbar Spondylosis, Lesthesis, Hemiplegia, Paraplegia</li>
@@ -157,26 +159,36 @@ const Service1 = () => {
     {/* ----------- services ------------ */}
 
     <section className="py-12 md:py-20 bg-gradient-to-b from-green-50 to-white">
-      <div className="w-full px-5 md:w-[85%] mx-auto">
-        <h2 className="text-[20px] md:text-[32px] font-bold text-[#2c7f4c] mb-12 text-center">
-          Our Services
+    <div className="w-full px-5 md:w-[85%] mx-auto">
+        <h2 className="text-[20px] md:text-[32px] font-bold text-[#d480a1] mb-12 text-center">
+        Our Services
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
+        {services.map((service, index) => (
             <div
-              key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center"
+            key={index}
+            className="relative rounded-xl overflow-hidden shadow-lg p-6 flex flex-col items-center text-center"
+            style={{
+                backgroundImage: `url(${service.bg})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+            }}
             >
-              {service.icon}
-              <h3 className="text-[18px] md:text-[22px] font-semibold text-gray-800 mb-4">
+            {/* White overlay across full div for readability */}
+            <div className="absolute inset-0 bg-black/60"></div>
+
+            {/* Content */}
+            <div className="relative z-10">
+                <h3 className="text-[18px] md:text-[22px] font-semibold text-[#8ba344] mb-4">
                 {service.title}
-              </h3>
-              <div>{service.content}</div>
+                </h3>
+                <div className="text-black">{service.content}</div>
             </div>
-          ))}
+            </div>
+        ))}
         </div>
-      </div>
+    </div>
     </section>
 
     {/* --------------content---------------- */}
