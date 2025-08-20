@@ -17,24 +17,7 @@ const services = [
     title: "Out Patients",
     content: (
       <div className="space-y-3 text-gray-600 text-[14px] md:text-[16px]">
-        <p>
-          At Life Plus Ayush Vaidhyasala, the Outpatient Department is
-          committed to creating a supportive and comfortable experience for
-          every patient.
-        </p>
-        <p>
-          Our Reception Team works diligently to manage appointments efficiently,
-          whether booked over the phone, by email, or in person. For smoother
-          service and timely care, we recommend scheduling consultations in
-          advance.
-        </p>
-        <p>
-          When you arrive, please check in at the reception desk to confirm your
-          appointment time. If there are any delays, our staff will keep you
-          informed. We encourage you to share any questions or concerns with us,
-          as our team is always ready to assist you.
-        </p>
-      </div>
+        At Life Plus Ayush Vaidhyasala, we ensure a comfortable outpatient experience. Book appointments in advance via phone, email, or in person. Check in at reception upon arrival. Our staff keeps you informed of any delays and is always ready to address your questions or concerns.      </div>
     ),
   },
   {
@@ -49,19 +32,6 @@ const services = [
           You may also find it helpful to note down any questions you would like
           to ask.
         </p>
-        <p>
-          Life Plus Ayush Vaidhyasala offers specialized expertise and extensive
-          experience in managing the following conditions:
-        </p>
-        <ul className="list-disc ml-6 space-y-2">
-          <li>Skin Diseases like Eczema, Psoriasis, Urticaria, Lichen planus, etc.</li>
-          <li>Respiratory diseases like Asthma</li>
-          <li>Osteoarthritis, Rheumatoid Arthritis, Cervical Spondylosis, Lumbar Spondylosis, Lesthesis, Hemiplegia, Paraplegia</li>
-          <li>Diabetes mellitus</li>
-          <li>Hypertension</li>
-          <li>Hyperlipidemia</li>
-          <li>Obesity</li>
-        </ul>
       </div>
     ),
   },
