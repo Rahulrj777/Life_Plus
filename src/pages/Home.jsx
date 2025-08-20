@@ -348,7 +348,7 @@ const Home = () => {
                             {/* Card 2 */}
                             <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
                             <div className="flex flex-col items-center gap-4">
-                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Ayurveda Panchakarma & Wellness Therapies" />
+                                <img src={service3} className="w-14 md:w-20 object-cover" alt="Ayurveda Panchakarma & Wellness Therapies" />
                                 <h3 className="text-[14px] font-bold text-[#687445] text-center">
                                 Ayurveda Panchakarma & Wellness Therapies
                                 </h3>
@@ -361,7 +361,7 @@ const Home = () => {
                             {/* Card 3 */}
                             <div className="bg-white drop-shadow-lg px-6 py-8 rounded-lg border-t-4 border-[#687445] hover:scale-105 transition-all duration-300">
                             <div className="flex flex-col items-center gap-4">
-                                <img src={service3} className="w-14 md:w-20 object-cover" alt="Lifestyle & Holistic Wellness" />
+                                <img src={service1} className="w-14 md:w-20 object-cover" alt="Lifestyle & Holistic Wellness" />
                                 <h3 className="text-[14px] font-bold text-[#687445] text-center">
                                 Lifestyle & Holistic Wellness
                                 </h3>
