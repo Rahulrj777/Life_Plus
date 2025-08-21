@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import about1 from '../images/about1.jpg'
+import about1 from '../images/about1.jpeg'
 import about2 from '../images/about2.jpg'
 
 import who1 from '../images/icon/who1.png'
