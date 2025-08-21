@@ -8,15 +8,16 @@ import simg1 from "../../images/serviceimg/simg1.avif"
 import simg2 from "../../images/serviceimg/simg2.jpeg"
 import simg3 from "../../images/serviceimg/simg3.jpg"
 import simg4 from "../../images/serviceimg/simg4.webp"
+import simg5 from "../../images/serviceimg/simg5.jpg"
 import simg6 from "../../images/serviceimg/simg6.jpeg"
 import simg7 from "../../images/serviceimg/simg7.jpeg"  
+import simg8 from "../../images/serviceimg/simg8.jpg"
 import simg9 from "../../images/serviceimg/simg9.jpg"  
 import simg10 from "../../images/serviceimg/simg10.webp"
+import simg11 from "../../images/serviceimg/simg11.jpg"
+import simg12 from "../../images/serviceimg/simg12.png"
 
 import Service_bottom from "../Service/Service_down";
-
-import ss1 from "../../images/banner/ss1.jpeg"
-import ss from '../../images/banner/ss.jpeg'
 
 import { useState } from 'react';
 import { Users, Stethoscope } from 'lucide-react';
@@ -211,7 +212,7 @@ const Service1 = () => {
 
                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                 <div className='relative h-28 md:h-36 w-full'>
-                                    {/* <img src={simg5} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
+                                    <img src={simg5} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                 </div>
 
                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -244,7 +245,7 @@ const Service1 = () => {
 
                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                 <div className='relative h-28 md:h-36 w-full'>
-                                    {/* <img src={simg8} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
+                                    <img src={simg8} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                 </div>
 
                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -277,7 +278,7 @@ const Service1 = () => {
 
                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                 <div className='relative h-28 md:h-36 w-full'>
-                                    {/* <img src={simg11} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
+                                    <img src={simg11} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                 </div>
 
                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
@@ -288,7 +289,7 @@ const Service1 = () => {
 
                             <div className='group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden'>
                                 <div className='relative h-28 md:h-36 w-full'>
-                                    {/* <img src={simg12} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
+                                    <img src={simg12} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                                 </div>
 
                                 <div className='flex flex-col items-start gap-y-1 md:gap-y-2 py-1 md:py-3 px-4'>
