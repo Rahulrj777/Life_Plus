@@ -10,7 +10,7 @@ import herobanner from '../images/banner/About_banner.jpg'
 import Gimg1 from '../images/Gallery/Gimg1.jpg';
 import Gimg2 from '../images/Gallery/Gimg2.jpg';
 import Gimg3 from '../images/Gallery/Gimg3.jpg';
-
+import Gimg4 from '../images/Gallery/Gimg4.png';
 const data = [
   {
     title: "Our Vision",
@@ -53,6 +53,11 @@ const galleryData = [
     id: 3,
     name: "Plantain Leaf Bath",
     img: Gimg3,
+  },
+  {
+    id: 4,
+    name: "Treating with Care",
+    img: Gimg4,
   },
 ];
 
