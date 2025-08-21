@@ -83,7 +83,7 @@ const About = () => {
   return (
     <div className="overflow-hidden">
       {/* 1️⃣ Hero Section */}
-      <section className="relative w-full md:h-[67vh] flex items-center justify-center overflow-hidden">
+      <section className="relative w-full h-[18vh] md:h-[67vh] flex items-center justify-center overflow-hidden">
         <img
           src={herobanner}
           className="absolute w-full h-full object-cover"

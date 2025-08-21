@@ -48,7 +48,7 @@ const Service5 = () => {
   return (
     <>
       <section className='bg-white'>
-          <div className="h-[50vh] md:h-[70vh]">
+          <div className="h-[20vh] md:h-[70vh]">
               <img
               src={service5}
               className="w-full h-full object-cover"
@@ -59,7 +59,7 @@ const Service5 = () => {
   
       {/* ----------- benefits ------------ */}
   
-      <section className=' w-[95%] md:w-[99%] mx-auto   -mt-[2rem] md:-mt-[4rem] pb-2 font-[poppins]' data-aos='fade-up'>
+      <section className=' w-[95%] md:w-[99%] mx-auto   -mt-[0rem] md:-mt-[4rem] pb-2 font-[poppins]' data-aos='fade-up'>
           <div className=''>
               <div className='flex items-center justify-center '>
                   <div className='grid grid-cols-1 md:grid-cols-4 gap-x-4 gap-y-10 w-full   pb-6 md:pb-6  px-6 md:px-9 rounded-md md:rounded-3xl'>

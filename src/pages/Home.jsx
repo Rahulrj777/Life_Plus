@@ -150,7 +150,7 @@ const Home = () => {
                 {/* -------------- banner slide ---------------- */}
 
                 <section
-                className="w-full h-[30vh] md:h-[75vh] relative overflow-hidden"
+                className="w-full h-[18vh] md:h-[75vh] relative overflow-hidden"
                 id="home"
                 >
                 <Swiper
