@@ -37,7 +37,7 @@ const testimonials = [
 { id: 12, name: "Anand", image: test12, rating: 5, review: "Well experienced doctor and staff, affordable price only" },
 { id: 13, name: "Babu x", image: test13, rating: 5, review: "Its feeling like home. Specially Dr sheel is way of talking and advising very good." },
 { id: 14, name: "Kalaiarasan", image: test14, rating: 5, review: "Good treatment" },
-{ id: 15, name: "Lakshmi", image: test15, rating: 4, review: "" },
+{ id: 15, name: "Lakshmi", image: test15, rating: 5, review: "" },
 ];
 
 const Testimonials = () => {
