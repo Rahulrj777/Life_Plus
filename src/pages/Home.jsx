@@ -638,10 +638,7 @@ const Home = () => {
 
                         {/* Paragraph */}
                         <p className="text-[13px] md:text-[16px] text-gray-600 leading-6 md:leading-8 mb-8 md:mb-12 max-w-3xl mx-auto">
-                            Discover the harmony between your body, mind, and nature. 
-                            Our Siddha and Ayurvedic treatments are designed to restore 
-                            balance, boost immunity, and nurture your well-being — 
-                            the natural way.
+                            Harness the proven benefits of herbal medicine with our safe, plant-based therapies designed to optimize your health. From stress reduction to energy enhancement, our treatments support your well-being using time-tested natural ingredients and evidence-informed care.
                         </p>
 
                         {/* Button */}
