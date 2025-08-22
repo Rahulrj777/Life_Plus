@@ -116,7 +116,7 @@ const Header = () => {
               {/* Services Dropdown */}
               <li className="relative group">
                 <span className="cursor-pointer hover:text-[#687445] hover:scale-110 transition-transform duration-200">
-                  Services
+                  Popular Therapies
                 </span>
                 <ul className="absolute left-0 top-full mt-2 w-72 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   {[
@@ -206,7 +206,7 @@ const Header = () => {
             {/* Services with submenu */}
             <li className="px-2 py-4">
               <span className="block text-[14px] font-semibold text-gray-700">
-                Services
+                Popular Therapies
               </span>
               <ul className="ml-4 mt-2 space-y-2">
                 {[

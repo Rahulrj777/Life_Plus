@@ -596,7 +596,7 @@ const Home = () => {
 
                         {/* Heading */}
                         <div 
-                            className="flex flex-col justify-center items-center mx-auto mb-14 text-center"
+                            className="flex flex-col justify-center items-center mx-auto text-center"
                             data-aos="fade-up"
                             data-aos-duration="2000"
                             data-aos-delay="50"
@@ -607,13 +607,6 @@ const Home = () => {
                         <h2 className="text-[20px] md:text-[3rem]  text-[#687445]">
                             Customer Feedback & Reviews
                         </h2>
-                        <div className="flex items-center justify-center gap-x-3 mt-4 text-[16px] md:text-[20px]">
-                            <FaStar className="text-yellow-500" />
-                            <FaStar className="text-yellow-500" />
-                            <FaStar className="text-yellow-500" />
-                            <FaStar className="text-yellow-500" />
-                            <FaStar className="text-yellow-500" />
-                        </div>
                         </div>
 
                         {/* Testimonials */}
