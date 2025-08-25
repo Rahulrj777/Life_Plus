@@ -86,20 +86,20 @@ const Testimonials = () => {
 
             return (
               <SwiperSlide key={testimonial.id}>
-                <div className="bg-[#f9f3eb] drop-shadow-sm px-6 py-10 relative overflow-hidden rounded-lg min-h-[420px] flex flex-col items-center transition-transform duration-300 hover:-translate-y-2">
+                <div className="bg-[#f9f3eb] drop-shadow-sm px-6 py-10 relative overflow-hidden rounded-lg min-h-[380px] flex flex-col items-center transition-transform duration-300 hover:-translate-y-2">
                   {/* Quote Icon */}
                   <div className="bg-white absolute w-fit -top-1 right-0 pt-5 pr-5 pl-7 pb-7 rounded-bl-full shadow-sm">
                     <FaQuoteRight className="text-[24px] text-[#a64c4f]" />
                   </div>
 
                   {/* Avatar */}
-                  <div className="w-20 h-20 rounded-full drop-shadow-md shadow-lg overflow-hidden mb-6">
+                  {/* <div className="w-20 h-20 rounded-full drop-shadow-md shadow-lg overflow-hidden mb-6">
                     <img
                       src={testimonial.image}
                       className="w-full h-full object-cover"
                       alt={testimonial.name || "User"}
                     />
-                  </div>
+                  </div> */}
 
                   {/* Content */}
                   <div className="flex flex-col items-center gap-y-2 px-3 flex-1 overflow-hidden">
