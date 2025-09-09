@@ -23,8 +23,8 @@ import who4 from "../images/icon/who4.png";
 import service1 from "../images/icon/service1.png";
 import service3 from "../images/icon/service3.png";
 
-import why1 from "../images/icon/why1.png";
-import why2 from "../images/icon/why2.png";
+import why1 from "../images/icon/why1.2.png";
+import why2 from "../images/icon/why2.2.png";
 import why3 from "../images/icon/why3.png";
 import why4 from "../images/icon/why4.png";
 import why5 from "../images/icon/why5.png";
