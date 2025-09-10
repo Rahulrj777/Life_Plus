@@ -24,13 +24,13 @@ const Footer = () => {
       {/* Upper Footer */}
       <div className="pt-10 md:pt-14">
         <div className="px-4 w-full md:w-[85%] mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-gray-800">
-          
           {/* Logo + About */}
           <div>
             <img src={logo} className="w-16 sm:w-40 object-cover" alt="logo" />
             <p className="text-gray-100 text-[11px] sm:text-[12px] md:text-[13px] mt-3 leading-5">
-              Life Plus Herbal Healthcare is dedicated to holistic healing through
-              Siddha, Ayurveda, and Naturopathy, bringing wellness to modern lifestyles.
+              Life Plus Herbal Healthcare is dedicated to holistic healing
+              through Siddha, Ayurveda, and Naturopathy, bringing wellness to
+              modern lifestyles.
             </p>
           </div>
 
@@ -138,7 +138,6 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="bg-[#86a39f] md:pt-2 border-t border-gray-200 mt-6">
         <div className="flex flex-col md:flex-row-reverse justify-between items-center w-full md:w-[85%] mx-auto px-2 py-3 md:py-5">
-          
           {/* Social Icons with unified color and hover zoom */}
           <div className="flex flex-row gap-x-4 md:gap-x-8 mt-2">
             {/* YouTube */}

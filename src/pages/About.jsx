@@ -1,16 +1,16 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 import { Lightbulb, Heart, Leaf } from "lucide-react";
-import { Link } from 'react-router-dom';
-import gsap from 'gsap';
-import DoctorList from '../components/DoctorList';
-import bgbanner from '../images/about/about_banner-1.jpg';
-import aboutIllustration from '../images/about/about.png';
-import herobanner from '../images/banner/About_banner.jpg'
+import { Link } from "react-router-dom";
+import gsap from "gsap";
+import DoctorList from "../components/DoctorList";
+import bgbanner from "../images/about/about_banner-1.jpg";
+import aboutIllustration from "../images/about/about.png";
+import herobanner from "../images/banner/About_banner.jpg";
 
-import Gimg1 from '../images/Gallery/Gimg1.jpg';
-import Gimg2 from '../images/Gallery/Gimg2.jpg';
-import Gimg3 from '../images/Gallery/Gimg3.jpg';
-import Gimg4 from '../images/Gallery/Gimg4.png';
+import Gimg1 from "../images/Gallery/Gimg1.jpg";
+import Gimg2 from "../images/Gallery/Gimg2.jpg";
+import Gimg3 from "../images/Gallery/Gimg3.jpg";
+import Gimg4 from "../images/Gallery/Gimg4.png";
 const data = [
   {
     title: "Our Vision",
@@ -23,10 +23,22 @@ const data = [
     icon: <Heart className="w-10 h-10 text-pink-500" />,
     description: (
       <ul className="list-disc text-left ml-5 space-y-2">
-        <li>To provide holistic, patient-centered healthcare through authentic Siddha practices.</li>
-        <li>To promote lifestyle transformation and preventive care alongside curative treatments.</li>
-        <li>To ensure accessibility of Siddha medicine for all sections of society.</li>
-        <li>To nurture skilled practitioners and uphold the rich heritage of the Siddha system with integrity and compassion.</li>
+        <li>
+          To provide holistic, patient-centered healthcare through authentic
+          Siddha practices.
+        </li>
+        <li>
+          To promote lifestyle transformation and preventive care alongside
+          curative treatments.
+        </li>
+        <li>
+          To ensure accessibility of Siddha medicine for all sections of
+          society.
+        </li>
+        <li>
+          To nurture skilled practitioners and uphold the rich heritage of the
+          Siddha system with integrity and compassion.
+        </li>
       </ul>
     ),
   },
@@ -47,7 +59,7 @@ const galleryData = [
   {
     id: 2,
     name: "Life Plus - Ayurveda Medical",
-    img:Gimg2,
+    img: Gimg2,
   },
   {
     id: 3,
@@ -70,13 +82,19 @@ const About = () => {
     gsap.fromTo(
       buttonRef.current,
       { scale: 1 },
-      { scale: 1.05, duration: 0.8, ease: 'power2.inOut', repeat: -1, yoyo: true }
+      {
+        scale: 1.05,
+        duration: 0.8,
+        ease: "power2.inOut",
+        repeat: -1,
+        yoyo: true,
+      }
     );
 
     gsap.fromTo(
       textRef.current,
       { x: -20, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1, ease: 'power3.out' }
+      { x: 0, opacity: 1, duration: 1, ease: "power3.out" }
     );
   }, []);
 
@@ -111,10 +129,21 @@ const About = () => {
                 Our Journey Towards Holistic Healing
               </h2>
               <p className="text-[12px] md:text-[14px] text-gray-600 leading-6 mb-3 text-justify">
-                Life Plus Ayush vaidhyasala was founded in 2022 by Dr. A. Sheela Devi with the vision of enhancing the quality of life of people through the traditional Siddha system of medicine. The hospital is supported by a team of skilled doctors and dedicated staff, providing holistic care ranging from lifestyle management to life-saving treatments. Over the past three years, more than 45,000 patients have benefitted from its services.
+                Life Plus Ayush vaidhyasala was founded in 2022 by Dr. A. Sheela
+                Devi with the vision of enhancing the quality of life of people
+                through the traditional Siddha system of medicine. The hospital
+                is supported by a team of skilled doctors and dedicated staff,
+                providing holistic care ranging from lifestyle management to
+                life-saving treatments. Over the past three years, more than
+                45,000 patients have benefitted from its services.
               </p>
               <p className="text-[12px] md:text-[14px] text-gray-600 leading-6 text-justify">
-                Dr. A. Sheela Devi, M.D (S), brings over 15 years of expertise in Siddha medicine. She completed both her Bachelor’s and Postgraduate Siddha degrees at the Government Siddha Medical College, Tirunelveli. She possesses profound knowledge in Naadi diagnostics, Panchakarma, and Varma techniques, offering a comprehensive approach to patient care.
+                Dr. A. Sheela Devi, M.D (S), brings over 15 years of expertise
+                in Siddha medicine. She completed both her Bachelor’s and
+                Postgraduate Siddha degrees at the Government Siddha Medical
+                College, Tirunelveli. She possesses profound knowledge in Naadi
+                diagnostics, Panchakarma, and Varma techniques, offering a
+                comprehensive approach to patient care.
               </p>
             </div>
           </div>
@@ -186,39 +215,39 @@ const About = () => {
       </div>
 
       {/* 6️⃣ Call-to-Action Section */}
-        <section className="py-10 md:py-28 bg-black/55 relative overflow-hidden">
-            {/* Soft herbal background image with dark overlay */}
-            <div className="absolute inset-0">
-                <img
-                src={bgbanner}
-                className="w-full h-full object-cover opacity-30"
-                alt="Herbal Background"
-                />
-                <div className="absolute inset-0 bg-black/40" />
-            </div>
+      <section className="py-10 md:py-28 bg-black/55 relative overflow-hidden">
+        {/* Soft herbal background image with dark overlay */}
+        <div className="absolute inset-0">
+          <img
+            src={bgbanner}
+            className="w-full h-full object-cover opacity-30"
+            alt="Herbal Background"
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
 
-            <div className="relative w-full px-4 md:w-[80%] mx-auto">
-                <div className="flex justify-center items-center">
-                    <div className="flex flex-col items-center gap-y-6 md:gap-y-8 text-center">
-                        <p className="text-[12px] md:text-[24px] md:w-[90%] leading-5 md:leading-11 font-semibold text-white">
-                        Rooted in Siddha and Ayurveda, we offer holistic treatments that restore
-                        balance, promoting lasting health and natural wellness.
-                        </p>
+        <div className="relative w-full px-4 md:w-[80%] mx-auto">
+          <div className="flex justify-center items-center">
+            <div className="flex flex-col items-center gap-y-6 md:gap-y-8 text-center">
+              <p className="text-[12px] md:text-[24px] md:w-[90%] leading-5 md:leading-11 font-semibold text-white">
+                Rooted in Siddha and Ayurveda, we offer holistic treatments that
+                restore balance, promoting lasting health and natural wellness.
+              </p>
 
-                        <div className="flex flex-col md:flex-row gap-6">
-                        <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
-                            <button
-                            ref={buttonRef}
-                            className="cursor-pointer text-[14px] md:text-[16px] px-6 md:px-10 py-2 md:py-3 rounded-md md:rounded-xl bg-[#d480a1] text-white font-medium hover:scale-105 transition duration-300"
-                            >
-                            Book Appointment
-                            </button>
-                        </Link>
-                        </div>
-                    </div>
-                </div>
+              <div className="flex flex-col md:flex-row gap-6">
+                <Link to="/contact" onClick={() => window.scrollTo(0, 0)}>
+                  <button
+                    ref={buttonRef}
+                    className="cursor-pointer text-[14px] md:text-[16px] px-6 md:px-10 py-2 md:py-3 rounded-md md:rounded-xl bg-[#d480a1] text-white font-medium hover:scale-105 transition duration-300"
+                  >
+                    Book Appointment
+                  </button>
+                </Link>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

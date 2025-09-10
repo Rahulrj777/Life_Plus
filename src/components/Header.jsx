@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { gsap } from "gsap";
 
-import logo from '../images/logo.png';
+import logo from "../images/logo.png";
 import { MdOutlineEmail, MdPhoneAndroid } from "react-icons/md";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
-  const [navbarBg, setNavbarBg] = useState('bg-gray-50 text-gray-700');
+  const [navbarBg, setNavbarBg] = useState("bg-gray-50 text-gray-700");
 
   const handleNav = () => setNav(!nav);
 
@@ -16,10 +16,14 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setNavbarBg(window.scrollY > 50 ? 'bg-slate-50 shadow-md text-black' : 'bg-gray-50 text-gray-700');
+      setNavbarBg(
+        window.scrollY > 50
+          ? "bg-slate-50 shadow-md text-black"
+          : "bg-gray-50 text-gray-700"
+      );
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Button hover animation
@@ -73,7 +77,7 @@ const Header = () => {
           </span>
         </div>
         <div className="flex items-center gap-x-1">
-          <MdPhoneAndroid className='text-white text-[16px] md:text-[22px]' />
+          <MdPhoneAndroid className="text-white text-[16px] md:text-[22px]" />
           <span className="text-[12px] md:text-[14px] text-white md:font-medium">
             +91 8015907797
           </span>
@@ -81,13 +85,19 @@ const Header = () => {
       </div>
 
       {/* 🔹 Main Navbar */}
-      <nav className={`w-full sticky top-0 z-50 md:py-0 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}>
+      <nav
+        className={`w-full sticky top-0 z-50 md:py-0 border-b border-gray-50 drop-shadow-sm ${navbarBg}`}
+      >
         <div className="max-w-[1280px] mx-auto font-[poppins]">
           <div className="flex justify-between items-center px-4 sm:px-9">
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link to="/" onClick={topPage}>
-                <img src={logo} className="h-30 md:h-36 w-auto object-contain" alt="LifePlus Logo" />
+                <img
+                  src={logo}
+                  className="h-30 md:h-36 w-auto object-contain"
+                  alt="LifePlus Logo"
+                />
               </Link>
             </div>
 
@@ -120,11 +130,23 @@ const Header = () => {
                 </span>
                 <ul className="absolute left-0 top-full mt-2 w-72 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-50">
                   {[
-                    { label: "Siddha External Therapies", path: "/services/Siddha External Therapies" },
-                    { label: "Ayurveda Panchakarma & Wellness Therapies", path: "/services/Ayurveda Panchakarma & Wellness Therapies" },
-                    { label: "Lifestyle & Holistic Wellness", path: "/services/Lifestyle & Holistic Wellness" },
-                    { label: "Naturopathy Therapies", path: "/services/Naturopathy Therapies" },
-                    { label: "Physiotherapy", path: "/services/Physiotherapy" }
+                    {
+                      label: "Siddha External Therapies",
+                      path: "/services/Siddha External Therapies",
+                    },
+                    {
+                      label: "Ayurveda Panchakarma & Wellness Therapies",
+                      path: "/services/Ayurveda Panchakarma & Wellness Therapies",
+                    },
+                    {
+                      label: "Lifestyle & Holistic Wellness",
+                      path: "/services/Lifestyle & Holistic Wellness",
+                    },
+                    {
+                      label: "Naturopathy Therapies",
+                      path: "/services/Naturopathy Therapies",
+                    },
+                    { label: "Physiotherapy", path: "/services/Physiotherapy" },
                   ].map((item, idx) => (
                     <li key={idx} className="px-4 py-2 hover:bg-gray-100">
                       <Link to={item.path} className="block text-gray-700">
@@ -162,7 +184,10 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu Icon */}
-            <div onClick={handleNav} className="block lg:hidden cursor-pointer px-5">
+            <div
+              onClick={handleNav}
+              className="block lg:hidden cursor-pointer px-5"
+            >
               {nav ? (
                 <AiOutlineClose className=" text-[20px] md:text-[24px] text-black" />
               ) : (
@@ -174,7 +199,7 @@ const Header = () => {
           {/* Mobile Navigation */}
           <ul
             className={`fixed top-0 left-0 pt-10 pl-6 w-[70%] h-[100vh] bg-gray-50 z-50 drop-shadow-md transition-transform ${
-              nav ? 'translate-x-0' : '-translate-x-full'
+              nav ? "translate-x-0" : "-translate-x-full"
             }`}
           >
             <li className="ml-6">
@@ -210,12 +235,23 @@ const Header = () => {
               </span>
               <ul className="ml-4 mt-2 space-y-2">
                 {[
-                  { label: "Siddha External Therapies", path: "/services/Siddha External Therapies" },
-                  { label: "Ayurveda Panchakarma & Wellness Therapies", path: "/services/Ayurveda Panchakarma & Wellness Therapies" },
-                  { label: "Lifestyle & Holistic Wellness", path: "/services/Lifestyle & Holistic Wellness" },
-                  { label: "Naturopathy Therapies", path: "/services/Naturopathy Therapies" },
-                  { label: "Physiotherapy", path: "/services/Physiotherapy" }
-
+                  {
+                    label: "Siddha External Therapies",
+                    path: "/services/Siddha External Therapies",
+                  },
+                  {
+                    label: "Ayurveda Panchakarma & Wellness Therapies",
+                    path: "/services/Ayurveda Panchakarma & Wellness Therapies",
+                  },
+                  {
+                    label: "Lifestyle & Holistic Wellness",
+                    path: "/services/Lifestyle & Holistic Wellness",
+                  },
+                  {
+                    label: "Naturopathy Therapies",
+                    path: "/services/Naturopathy Therapies",
+                  },
+                  { label: "Physiotherapy", path: "/services/Physiotherapy" },
                 ].map((item, idx) => (
                   <li key={idx}>
                     <Link
