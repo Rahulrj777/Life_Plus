@@ -7,6 +7,7 @@ import highlight4 from "../../images/icon/highlight4.png";
 import simg7 from "../../images/serviceimg/simg7.jpeg";
 import simg13 from "../../images/serviceimg/simg13.jpg";
 import simg14 from "../../images/serviceimg/simg14.jpg";
+import simg15 from "../../images/serviceimg/simg15.jpg";
 import simg16 from "../../images/serviceimg/simg16.jpeg";
 import simg17 from "../../images/serviceimg/simg17.jpg";
 import simg18 from "../../images/serviceimg/simg18.webp";
@@ -265,7 +266,7 @@ const Service2 = () => {
 
                   <div className="group bg-[#f5f6f6] rounded-md pb-2 md:pb-3 h-full drop-shadow-lg transition-all duration-300 hover:scale-105 overflow-hidden">
                     <div className="relative h-28 md:h-36 w-full">
-                      {/* <img src={simg15} className='absolute inset-0 w-full h-full object-cover' alt='none' /> */}
+                      <img src={simg15} className='absolute inset-0 w-full h-full object-cover' alt='none' />
                     </div>
 
                     <div className="flex flex-col items-start gap-y-1  md:gap-y-2 py-1 md:py-3 px-4">
