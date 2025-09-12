@@ -218,6 +218,12 @@ const Enquiry = () => {
                     >
                       Lifestyle & Holistic Wellness
                     </option>
+                    <option
+                      className="bg-black"
+                      value="Physiotherapy"
+                    >
+                      Physiotherapy
+                    </option>
                   </select>
                 </div>
 

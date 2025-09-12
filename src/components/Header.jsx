@@ -139,12 +139,12 @@ const Header = () => {
                       path: "/services/Ayurveda Panchakarma & Wellness Therapies",
                     },
                     {
-                      label: "Lifestyle & Holistic Wellness",
-                      path: "/services/Lifestyle & Holistic Wellness",
-                    },
-                    {
                       label: "Naturopathy Therapies",
                       path: "/services/Naturopathy Therapies",
+                    },
+                    {
+                      label: "Lifestyle & Holistic Wellness",
+                      path: "/services/Lifestyle & Holistic Wellness",
                     },
                     { label: "Physiotherapy", path: "/services/Physiotherapy" },
                   ].map((item, idx) => (
@@ -244,12 +244,12 @@ const Header = () => {
                     path: "/services/Ayurveda Panchakarma & Wellness Therapies",
                   },
                   {
-                    label: "Lifestyle & Holistic Wellness",
-                    path: "/services/Lifestyle & Holistic Wellness",
-                  },
-                  {
                     label: "Naturopathy Therapies",
                     path: "/services/Naturopathy Therapies",
+                  },
+                  {
+                    label: "Lifestyle & Holistic Wellness",
+                    path: "/services/Lifestyle & Holistic Wellness",
                   },
                   { label: "Physiotherapy", path: "/services/Physiotherapy" },
                 ].map((item, idx) => (
