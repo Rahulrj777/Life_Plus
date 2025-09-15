@@ -176,7 +176,7 @@ const Home = () => {
               <div
                 className="relative w-full h-full flex items-center justify-start px-4 md:px-16 
                                 bg-no-repeat bg-right md:bg-center bg-cover"
-                style={{ backgroundImage: `url(${Hbanner1})` }}
+                style={{ backgroundImage: `url(${Hbanner1})`, backgroundSize: '100% 100%' }}
               ></div>
             </SwiperSlide>
 
@@ -185,7 +185,7 @@ const Home = () => {
               <div
                 className="relative w-full h-full flex items-center justify-start px-4 md:px-16 
                                 bg-no-repeat bg-right md:bg-center bg-cover"
-                style={{ backgroundImage: `url(${Hbanner2})` }}
+                style={{ backgroundImage: `url(${Hbanner2})`, backgroundSize: '100% 100%' }}
               ></div>
             </SwiperSlide>
 
@@ -194,7 +194,7 @@ const Home = () => {
               <div
                 className="relative w-full h-full flex items-center justify-start px-4 md:px-16 
                                 bg-no-repeat bg-right md:bg-center bg-cover"
-                style={{ backgroundImage: `url(${Hbanner3})` }}
+                style={{ backgroundImage: `url(${Hbanner3})`, backgroundSize: '100% 100%' }}
               ></div>
             </SwiperSlide>
           </Swiper>
