@@ -32,14 +32,13 @@ import why6 from "../images/icon/why6.png";
 import why7 from "../images/icon/why7.png";
 import why8 from "../images/icon/why8.png";
 
-import Hbanner1 from "../images/banner/Hbanner1.jpg";
-import Hbanner2 from "../images/banner/Hbanner2.jpg";
-import Hbanner3 from "../images/banner/Hbanner3.jpg";
+import Hbanner1 from "../images/banner/banner1.jpg";
+import Hbanner2 from "../images/banner/banner2.jpg";
+import Hbanner3 from "../images/banner/banner3.jpg";
 
 //icons
 import { GiLindenLeaf } from "react-icons/gi";
 import { PiHeadsetFill } from "react-icons/pi";
-import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Home = () => {
@@ -167,7 +166,7 @@ const Home = () => {
             autoplay={{
               delay: 5000,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+              pauseOnMouseEnter: false,
             }}
             pagination={{ clickable: true }}
             className="w-full h-full"
